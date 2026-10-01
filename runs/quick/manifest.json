@@ -1,0 +1,107 @@
+{
+  "name": "quick-offline-baseline",
+  "created_at": "2026-09-30T16:46:05.775260+00:00",
+  "config": {
+    "name": "quick-offline-baseline",
+    "dataset": "../caption_samples_50/all_samples.jsonl",
+    "output_dir": "../runs/quick",
+    "seed": 42,
+    "transforms": [
+      {
+        "name": "identity"
+      },
+      {
+        "name": "compact",
+        "label": "compact_10w",
+        "max_words": 10
+      },
+      {
+        "name": "compact",
+        "label": "compact_20w",
+        "max_words": 20
+      },
+      {
+        "name": "compact",
+        "label": "compact_40w",
+        "max_words": 40
+      },
+      {
+        "name": "synonym",
+        "label": "synonym_light",
+        "probability": 0.35,
+        "max_replacements": 4
+      },
+      {
+        "name": "clause_exchange"
+      },
+      {
+        "name": "clause_reverse"
+      },
+      {
+        "name": "color_change",
+        "domains": [
+          "person",
+          "vehicle"
+        ],
+        "skip_unchanged": true
+      },
+      {
+        "name": "attribute_exchange",
+        "domains": [
+          "person",
+          "vehicle"
+        ],
+        "skip_unchanged": true
+      },
+      {
+        "name": "negation",
+        "domains": [
+          "person",
+          "face"
+        ],
+        "skip_unchanged": true
+      },
+      {
+        "name": "word_dropout",
+        "label": "dropout_10pct",
+        "probability": 0.1
+      }
+    ],
+    "contrasts": [
+      {
+        "reference": "synonym_light",
+        "changed": "color_change",
+        "label": "synonym_minus_color_change"
+      },
+      {
+        "reference": "synonym_light",
+        "changed": "attribute_exchange",
+        "label": "synonym_minus_attribute_exchange"
+      },
+      {
+        "reference": "synonym_light",
+        "changed": "negation",
+        "label": "synonym_minus_negation"
+      }
+    ],
+    "models": [
+      {
+        "name": "lexical_hash_baseline",
+        "backend": "hash",
+        "dimension": 768
+      }
+    ]
+  },
+  "caption_count": 150,
+  "variant_count": 1431,
+  "models": [
+    "lexical_hash_baseline"
+  ],
+  "notes": [
+    "Retrieval ranking is computed against original captions within the same domain.",
+    "Cosine scales are not calibrated across model families; compare ranks, margins and relative changes.",
+    "word_dropout is a stress test and is not guaranteed to preserve all identity evidence.",
+    "Bootstrap intervals use 2,000 deterministic resamples per model/domain/variant group.",
+    "encoder_agreement.csv compares the complete 150x150 original-caption similarity geometry."
+  ]
+}

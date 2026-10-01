@@ -1,0 +1,7 @@
+model,domain,contrast,n,delta_cosine_mean,delta_cosine_std,positive_rate
+clip_b16,face,synonym_minus_negation,50,0.0006016457080841065,0.0026792410520657386,0.56
+clip_b16,person,synonym_minus_attribute_exchange,32,-0.014719119295477867,0.029421279245280565,0.4375
+clip_b16,person,synonym_minus_color_change,48,0.031091948350270588,0.034117702339096265,0.8541666666666666
+clip_b16,person,synonym_minus_negation,36,-0.002054747607972887,0.030492889902699105,0.5
+clip_b16,vehicle,synonym_minus_attribute_exchange,15,0.015300099054972332,0.016137905545938733,1.0
+clip_b16,vehicle,synonym_minus_color_change,50,0.04012777805328369,0.02647599462828077,1.0

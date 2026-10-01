@@ -1,0 +1,4 @@
+model,domain,within_domain_cosine_mean,within_domain_cosine_std,global_domain_silhouette
+lexical_hash_baseline,face,0.5917200446128845,0.07465977966785431,0.2864324774209792
+lexical_hash_baseline,person,0.3283397853374481,0.10955988615751266,0.2864324774209792
+lexical_hash_baseline,vehicle,0.1626170128583908,0.1124570444226265,0.2864324774209792

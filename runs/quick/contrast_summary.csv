@@ -1,0 +1,7 @@
+model,domain,contrast,n,delta_cosine_mean,delta_cosine_std,positive_rate
+lexical_hash_baseline,face,synonym_minus_negation,50,-0.018943818807601927,0.009369341798129701,0.0
+lexical_hash_baseline,person,synonym_minus_attribute_exchange,32,-0.04441629722714424,0.1000640443272396,0.4375
+lexical_hash_baseline,person,synonym_minus_color_change,48,-0.04081344728668531,0.1034661382265115,0.375
+lexical_hash_baseline,person,synonym_minus_negation,36,-0.06779684457514021,0.108794938285404,0.2777777777777778
+lexical_hash_baseline,vehicle,synonym_minus_attribute_exchange,15,0.10216830571492513,0.04261520967499743,1.0
+lexical_hash_baseline,vehicle,synonym_minus_color_change,50,0.12015888333320618,0.10543029425607571,0.92

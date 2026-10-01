@@ -1,0 +1,42 @@
+name: priority-d1-d4-three-family-comparison
+dataset: ../caption_samples_50/all_samples.jsonl
+output_dir: ../runs/priority
+seed: 42
+agreement_k: 10
+
+transforms:
+  - {name: identity}
+  - {name: compact, label: compact_10w, max_words: 10}
+  - {name: compact, label: compact_20w, max_words: 20}
+  - {name: compact, label: compact_40w, max_words: 40}
+  - {name: synonym, label: synonym_light, probability: 0.35, max_replacements: 4}
+  - {name: clause_reverse}
+  - {name: color_change, domains: [person, vehicle], skip_unchanged: true}
+  - {name: attribute_exchange, domains: [person, vehicle], skip_unchanged: true}
+  - {name: negation, domains: [person, face], skip_unchanged: true}
+
+contrasts:
+  - {reference: synonym_light, changed: color_change, label: synonym_minus_color_change}
+  - {reference: synonym_light, changed: attribute_exchange, label: synonym_minus_attribute_exchange}
+  - {reference: synonym_light, changed: negation, label: synonym_minus_negation}
+
+models:
+  - name: clip_b16
+    backend: hf_text_features
+    model_id: openai/clip-vit-base-patch16
+    revision: refs/pr/16
+    use_safetensors: true
+    max_length: 77
+    batch_size: 64
+  - name: siglip2_b16_224
+    backend: hf_text_features
+    model_id: google/siglip2-base-patch16-224
+    padding: max_length
+    max_length: 64
+    batch_size: 32
+  - name: minilm_l6
+    backend: hf_mean_pool
+    model_id: sentence-transformers/all-MiniLM-L6-v2
+    max_length: 256
+    batch_size: 64
+

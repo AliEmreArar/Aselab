@@ -1,0 +1,31 @@
+name: clip-b16-priority-d1-d4
+dataset: ../caption_samples_50/all_samples.jsonl
+output_dir: ../runs/clip_b16
+seed: 42
+
+transforms:
+  - {name: identity}
+  - {name: compact, label: compact_10w, max_words: 10}
+  - {name: compact, label: compact_20w, max_words: 20}
+  - {name: compact, label: compact_40w, max_words: 40}
+  - {name: synonym, label: synonym_light, probability: 0.35, max_replacements: 4}
+  - {name: clause_reverse}
+  - {name: color_change, domains: [person, vehicle], skip_unchanged: true}
+  - {name: attribute_exchange, domains: [person, vehicle], skip_unchanged: true}
+  - {name: negation, domains: [person, face], skip_unchanged: true}
+
+contrasts:
+  - {reference: synonym_light, changed: color_change, label: synonym_minus_color_change}
+  - {reference: synonym_light, changed: attribute_exchange, label: synonym_minus_attribute_exchange}
+  - {reference: synonym_light, changed: negation, label: synonym_minus_negation}
+
+models:
+  - name: clip_b16
+    backend: hf_text_features
+    model_id: openai/clip-vit-base-patch16
+    # Official repository safetensors conversion PR; avoids unsafe legacy .bin loading on torch<2.6.
+    revision: refs/pr/16
+    use_safetensors: true
+    max_length: 77
+    batch_size: 64
+

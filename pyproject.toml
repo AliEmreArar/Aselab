@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "caption-encoder-bench"
+version = "0.1.0"
+description = "Extensible caption robustness benchmark for text encoders"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.26",
+  "pandas>=2.0",
+  "PyYAML>=6.0",
+  "torch>=2.1",
+  "transformers>=4.48",
+]
+
+[project.optional-dependencies]
+sentence-transformers = ["sentence-transformers>=3.3"]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+caption-bench = "caption_bench.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["caption_bench*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
