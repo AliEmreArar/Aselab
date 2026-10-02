@@ -1,0 +1,33 @@
+name: gemini-summaries-three-encoder-comparison
+dataset: ../caption_samples_50/all_samples.jsonl
+output_dir: ../runs/gemini
+seed: 42
+agreement_k: 10
+transforms:
+  - {name: identity}
+variant_files:
+  - ../variants/gemini/variants.jsonl
+  - ../variants/gemini_human/variants.jsonl
+contrasts:
+  - {reference: llm_synonym, changed: llm_color_change, label: synonym_minus_color_change}
+  - {reference: llm_synonym, changed: llm_attribute_exchange, label: synonym_minus_attribute_exchange}
+  - {reference: llm_synonym, changed: llm_negation, label: synonym_minus_negation}
+models:
+  - name: clip_b16
+    backend: hf_text_features
+    model_id: openai/clip-vit-base-patch16
+    revision: refs/pr/16
+    use_safetensors: true
+    max_length: 77
+    batch_size: 64
+  - name: siglip2_b16_224
+    backend: hf_text_features
+    model_id: google/siglip2-base-patch16-224
+    padding: max_length
+    max_length: 64
+    batch_size: 32
+  - name: minilm_l6
+    backend: hf_mean_pool
+    model_id: sentence-transformers/all-MiniLM-L6-v2
+    max_length: 256
+    batch_size: 64

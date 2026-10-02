@@ -1,0 +1,16 @@
+{
+  "sample_id": "face::train::170623.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_human_description",
+        "text": "He's a middle-aged guy with an oval face and a friendly smile. He has a bit of a receding hairline and arched eyebrows. His eyes are almond-shaped, and his nose is pretty straight. He looks like he's in a good mood, with his head tilted just a little to the side."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_human_description": []
+  }
+}

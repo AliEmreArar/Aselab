@@ -1,0 +1,16 @@
+{
+  "signature": "5be2ef381cb112bc70f528c3b054e94cd881a436168d8b4d1478834a115d3f90",
+  "model": "gemini-3.1-flash-lite",
+  "prompt_sha256": "224d213ab0982cba7247d4eda63b77f908db32a54734c3a3b5e8d72c47642581",
+  "created_at": "2026-10-01T18:09:57.767923+00:00",
+  "completed_captions": 1,
+  "variant_count": 1,
+  "specs": [
+    {
+      "name": "llm_human_description",
+      "operation": "human_description"
+    }
+  ],
+  "skipped": [],
+  "review_note": "Word counts are measurements only. Optional model notes do not determine acceptance."
+}

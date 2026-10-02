@@ -1,5 +1,111 @@
 # Caption Encoder Benchmark
 
+## Gemini ile gerçek özet ve varyant üretimi
+
+Kelime hedefi olmadan, birini arkadaşına tarif eder gibi günlük dilde caption üretmek için
+[prompts/gemini_human_description.md](prompts/gemini_human_description.md) ve
+`configs/gemini_human.yaml` kullanılır. Bu config tek API isteği yapar:
+
+```powershell
+python -m caption_bench generate --config configs/gemini_human.yaml --sample 170623.jpg
+```
+
+Çıktı `variants/gemini_human/variants.jsonl` içindeki `llm_human_description` varyantıdır.
+Gemini benchmark'ı ve HTML üreticisi bu varyantı diğer üç özetle birlikte gösterir.
+
+Her çalıştırmada caption başına en fazla **3 API isteği** gönderilir; HTTP tekrarları ve
+içerik düzeltme tekrarları aynı sayaca dahildir. Sınırı `max_api_requests_per_caption`
+ayarından değiştirebilirsiniz. Terminal her isteği ve HTTP durumunu ayrı gösterir.
+Yeni çalıştırma yeni bir istek sayacı başlatır; başarısız komutu tekrar çalıştırmak yeni
+API istekleri gönderebilir.
+
+Gemini'nin yanıtları ve yerel doğrulama sonucu `variants/gemini/diagnostics` altında
+kaydedilir. `api_requests` altındaki dosyalar HTTP durumunu ve görünür model yanıtını;
+`*-validation-*.json` dosyaları kabul/ret gerekçesini gösterir. Anahtar ve HTTP başlıkları
+bu kayıtlara yazılmaz. 10/20/40 kelime yaklaşık hedeflerdir; daha kısa veya daha uzun
+yanıtlar aynen kabul edilir. Gerçek kelime sayıları sonuçlarda ve HTML'de gösterilir.
+Alıntılar, korunan/çıkarılan bilgi listeleri ve açıklama notları isteğe bağlıdır; metni
+alıntı formatı veya kelime sayısı yüzünden yeniden üretmeyiz. Sadece eksik/boş caption
+ve okunamayan yanıt gibi sonuç kaydetmeyi engelleyen hatalar yeniden denenir.
+
+Gemini entegrasyonu `gemini-3.1-flash-lite` modelini kullanır. API anahtarını proje kökündeki
+`.env` dosyasında `GEMINI_API_KEY=` satırına girin. Modeli `GEMINI_MODEL=` satırından
+değiştirebilirsiniz. `.env` Git tarafından yok sayılır; anahtar HTML'e veya sonuçlara yazılmaz.
+Bağlantı standart Python REST istemcisiyle çalışır; ek Gemini paketi gerekmez.
+
+İlk olarak **170623.jpg için yalnızca caption üretip HTML'de inceleyin**:
+
+```powershell
+cd C:\Users\ali\Desktop\aselab\Aselab
+python scripts/run_gemini.py --sample 170623.jpg --generate-only
+```
+
+Script caption üretir ve `caption_inceleme.html` dosyasını günceller. Üretilen caption'lar
+"Gemini özetleri — skor bekleniyor" deneyinde görünür. Encoder çalıştırılmadan hiçbir
+benzerlik skoru gösterilmez. Aynı görselin yeni caption'larını üç encoder ile ölçmek için:
+
+```powershell
+python scripts/run_gemini.py --sample 170623.jpg
+```
+
+Tüm 150 caption için üretim, CLIP/SigLIP2/MiniLM deneyi ve HTML güncellemesi:
+
+```powershell
+python scripts/run_gemini.py
+```
+
+Aşamaları ayrı ayrı çalıştırmak için:
+
+```powershell
+python -m caption_bench generate --config configs/gemini_variants.yaml --sample 170623.jpg
+python scripts/build_caption_viewer.py
+python -m caption_bench run --config configs/gemini_benchmark.yaml
+python scripts/build_caption_viewer.py
+```
+
+`--sample` kaldırılınca tüm veri seti üretilir. `--limit 3` küçük bir deneme yapar.
+Anahtarsız ve API isteği göndermeden prompt/istek önizlemesi:
+
+```powershell
+python -m caption_bench generate --config configs/gemini_variants.yaml --sample 170623.jpg --dry-run
+```
+
+Prompt: [prompts/gemini_caption_variants.md](prompts/gemini_caption_variants.md).
+Gemini, görseli yeniden yorumlamak yerine **caption'ın tamamından** ayırt edici bilgileri
+seçerek yaklaşık 10/20/40 kelimelik doğal özetler yazar. Yeni bilgi eklememesi ve
+özellikleri doğru nesneye bağlaması istenir. Sayısal hedefler için kelime sayması,
+birebir alıntı yapması veya açıklama yazması zorunlu değildir. Hedefi aşan yanıt da
+değiştirilmeden kaydedilir.
+
+Önceden alınmış bir Gemini yanıtını yeni kurallarla API çağrısı yapmadan kullanabilirsiniz:
+
+```powershell
+python scripts/run_gemini.py --sample 170623.jpg --generate-only --reuse-response variants/gemini/diagnostics/RESPONSE-validation-2.json
+```
+
+`RESPONSE-validation-2.json` yerine kayıt dosyasının gerçek adını yazın. Eski yanıtın
+kaynak caption'ı ve modeli eşleşen API kaydından doğrulanır; eski üretimin prompt bilgisi
+korunur ve sonuçta `recovered_from` alanı gösterir.
+
+[configs/gemini_variants.yaml](configs/gemini_variants.yaml) içinde `enabled: true` yaparak
+paraphrase, bağlama uygun synonym, attribute_order, tek olgunun negation'ı, color_change
+ve attribute_exchange deneylerini açabilirsiniz. Uygulanamayan değişiklikler skorlanmaz;
+gerekçeleri `generation_manifest.json` içinde saklanır.
+
+Çıktılar `variants/gemini/variants.jsonl`, `checkpoint.json` ve `generation_manifest.json`
+dosyalarıdır. Her başarılı caption sonrasında kaydedilir; aynı komut kaldığı yerden devam eder.
+Prompt, model veya etkin deneyler değişirse eski ve yeni üretimleri karıştırmamak için config'de
+yeni `output_dir` seçin ve benchmark config'inin `variant_files` yolunu güncelleyin. Bu durumda
+HTML üreticisindeki `--generated-variants` ve `--gemini-run-dir` seçenekleriyle yeni yolları belirtin.
+
+Yeni encoder sonuçları `runs/gemini` altına gider; eski `compact_*` sonuçları geçmiş deney
+olarak korunur. Kelime uzunluğu ile CLIP'in 77 token sınırı farklıdır; encoder kesilme
+bilgisini raporda görebilirsiniz. Deney, LLM özetlerinin gerçek uzunluklarıyla encoder
+benzerliğini ölçer.
+
+Resmi kaynaklar: [model](https://ai.google.dev/gemini-api/docs/models/gemini-3.1-flash-lite),
+[structured output](https://ai.google.dev/gemini-api/docs/structured-output).
+
 Bu proje, aynı görsel açıklamasının özetlenmiş, yeniden sıralanmış, eş anlamlılarla değiştirilmiş veya paraphrase edilmiş biçimlerinin farklı text encoder'larda ne kadar kararlı kaldığını ölçer. Veri setindeki 150 caption (`person`, `face`, `vehicle`) doğrudan desteklenir.
 
 ## Ne ölçülür?

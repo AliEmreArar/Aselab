@@ -1,0 +1,27 @@
+{
+  "signature": "994e771b83706c57b292837e2aa8b96e17e844371782981dbc236aea3e4fa6ca",
+  "model": "gemini-3.1-flash-lite",
+  "prompt_sha256": "600300ce83e168c9cff9b7825e1084e65665fe2bcde8365be6dd0e5ea1826dd3",
+  "created_at": "2026-10-01T17:47:47.834302+00:00",
+  "completed_captions": 1,
+  "variant_count": 3,
+  "specs": [
+    {
+      "name": "summary_10w",
+      "operation": "summary",
+      "target_words": 10
+    },
+    {
+      "name": "summary_20w",
+      "operation": "summary",
+      "target_words": 20
+    },
+    {
+      "name": "summary_40w",
+      "operation": "summary",
+      "target_words": 40
+    }
+  ],
+  "skipped": [],
+  "review_note": "Local validation checks format, word budgets and source quotes, not semantic correctness. Review the generated captions."
+}

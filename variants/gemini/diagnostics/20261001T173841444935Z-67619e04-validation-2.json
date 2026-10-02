@@ -1,0 +1,75 @@
+{
+  "sample_id": "face::train::170623.jpg",
+  "validation_attempt": 2,
+  "status": "rejected",
+  "reason": "summary_40w: 41 words exceeds the 40-word limit. Rewrite semantically; do not truncate mechanically.",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "summary_10w",
+        "applicable": true,
+        "text": "Middle-aged man with M-shaped hairline and smiling expression.",
+        "retained_facts": [
+          "Male-presenting middle-aged adult",
+          "Hairline M-shaped",
+          "smiling expression"
+        ],
+        "omitted_facts": [
+          "oval facial shape",
+          "eyebrows medium in thickness",
+          "Eyes almond-shaped",
+          "Nasal root moderate in width"
+        ],
+        "change_note": "",
+        "skip_reason": ""
+      },
+      {
+        "variant_type": "summary_20w",
+        "applicable": true,
+        "text": "A middle-aged man with an M-shaped hairline, almond-shaped eyes, and a defined cupid's bow, captured smiling in a medium close-up.",
+        "retained_facts": [
+          "Male-presenting middle-aged adult",
+          "Hairline M-shaped",
+          "Eyes almond-shaped",
+          "cupid's bow defined",
+          "smiling expression",
+          "medium close-up"
+        ],
+        "omitted_facts": [
+          "oval facial shape",
+          "jawline with moderate definition",
+          "Nasal root moderate in width",
+          "indoor directional lighting"
+        ],
+        "change_note": "",
+        "skip_reason": ""
+      },
+      {
+        "variant_type": "summary_40w",
+        "applicable": true,
+        "text": "A middle-aged man with an oval face, M-shaped hairline, and almond-shaped eyes. He has a straight nasal dorsum, defined cupid's bow, and average ears. He is shown smiling in a medium close-up, illuminated by indoor directional lighting against a blue backdrop.",
+        "retained_facts": [
+          "Male-presenting middle-aged adult",
+          "oval facial shape",
+          "Hairline M-shaped",
+          "Eyes almond-shaped",
+          "dorsum straight",
+          "cupid's bow defined",
+          "Ears average in size",
+          "smiling expression",
+          "medium close-up",
+          "indoor directional lighting",
+          "blue gradient backdrop"
+        ],
+        "omitted_facts": [
+          "balanced thirds",
+          "moderate palpebral fissure length",
+          "upper-to-lower lip fullness ratio balanced",
+          "soft focus throughout"
+        ],
+        "change_note": "",
+        "skip_reason": ""
+      }
+    ]
+  }
+}

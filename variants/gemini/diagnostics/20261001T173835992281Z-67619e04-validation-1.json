@@ -1,0 +1,84 @@
+{
+  "sample_id": "face::train::170623.jpg",
+  "validation_attempt": 1,
+  "status": "rejected",
+  "reason": "summary_10w: omitted_facts must contain only nonempty exact source quotes.",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "summary_10w",
+        "applicable": true,
+        "text": "Smiling middle-aged male with M-shaped hairline, indoor close-up shot.",
+        "retained_facts": [
+          "Male-presenting middle-aged adult",
+          "M-shaped",
+          "smiling expression",
+          "medium close-up"
+        ],
+        "omitted_facts": [
+          "oval facial shape",
+          "balanced thirds",
+          "eyebrows medium in thickness",
+          "almond-shaped",
+          "nasal root moderate",
+          "mouth width moderate",
+          "blue gradient backdrop"
+        ],
+        "change_note": "",
+        "skip_reason": ""
+      },
+      {
+        "variant_type": "summary_20w",
+        "applicable": true,
+        "text": "Middle-aged male with oval face, M-shaped hairline, and defined cupid's bow, captured in a smiling medium close-up, blue backdrop.",
+        "retained_facts": [
+          "Male-presenting middle-aged adult",
+          "oval facial shape",
+          "Hairline M-shaped",
+          "cupid's bow defined",
+          "smiling expression",
+          "medium close-up",
+          "blue gradient backdrop"
+        ],
+        "omitted_facts": [
+          "balanced thirds",
+          "average facial depth",
+          "eyebrows medium in thickness",
+          "almond-shaped eyes",
+          "nasal root moderate",
+          "mouth width moderate"
+        ],
+        "change_note": "",
+        "skip_reason": ""
+      },
+      {
+        "variant_type": "summary_40w",
+        "applicable": true,
+        "text": "Middle-aged male with an oval face, M-shaped hairline, and soft-arched eyebrows. He has almond-shaped eyes, a straight nasal dorsum, and a defined cupid's bow. Captured in a smiling medium close-up, against a blue gradient backdrop with soft focus.",
+        "retained_facts": [
+          "Male-presenting middle-aged adult",
+          "oval facial shape",
+          "Hairline M-shaped",
+          "eyebrows medium in thickness, soft-arched",
+          "Eyes almond-shaped",
+          "dorsum straight",
+          "cupid's bow defined",
+          "smiling expression",
+          "medium close-up",
+          "blue gradient backdrop",
+          "soft focus"
+        ],
+        "omitted_facts": [
+          "balanced thirds",
+          "jawline with moderate definition",
+          "average distance between inner corners",
+          "nasal root moderate in width and depth",
+          "upper-to-lower lip fullness ratio balanced",
+          "Ears average in size"
+        ],
+        "change_note": "",
+        "skip_reason": ""
+      }
+    ]
+  }
+}

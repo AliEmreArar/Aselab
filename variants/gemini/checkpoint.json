@@ -1,0 +1,91 @@
+{
+  "signature": "994e771b83706c57b292837e2aa8b96e17e844371782981dbc236aea3e4fa6ca",
+  "model": "gemini-3.1-flash-lite",
+  "created_at": "2026-10-01T17:47:47.834302+00:00",
+  "captions": {
+    "face::train::170623.jpg": {
+      "sample_id": "face::train::170623.jpg",
+      "source_sha256": "386f2c517f92466eeb6a9d5904f36bf8abba118b50e3c9dad0b4b7bf52d8962b",
+      "generated_at": "2026-10-01T17:47:47.854907+00:00",
+      "variants": [
+        {
+          "variant_type": "summary_10w",
+          "applicable": true,
+          "text": "Middle-aged man with M-shaped hairline and smiling expression.",
+          "retained_facts": [
+            "Male-presenting middle-aged adult",
+            "Hairline M-shaped",
+            "smiling expression"
+          ],
+          "omitted_facts": [
+            "oval facial shape",
+            "eyebrows medium in thickness",
+            "Eyes almond-shaped",
+            "Nasal root moderate in width"
+          ],
+          "change_note": "",
+          "skip_reason": "",
+          "review_warnings": [],
+          "word_count": 8,
+          "target_words": 10
+        },
+        {
+          "variant_type": "summary_20w",
+          "applicable": true,
+          "text": "A middle-aged man with an M-shaped hairline, almond-shaped eyes, and a defined cupid's bow, captured smiling in a medium close-up.",
+          "retained_facts": [
+            "Male-presenting middle-aged adult",
+            "Hairline M-shaped",
+            "Eyes almond-shaped",
+            "cupid's bow defined",
+            "smiling expression",
+            "medium close-up"
+          ],
+          "omitted_facts": [
+            "oval facial shape",
+            "jawline with moderate definition",
+            "Nasal root moderate in width",
+            "indoor directional lighting"
+          ],
+          "change_note": "",
+          "skip_reason": "",
+          "review_warnings": [],
+          "word_count": 20,
+          "target_words": 20
+        },
+        {
+          "variant_type": "summary_40w",
+          "applicable": true,
+          "text": "A middle-aged man with an oval face, M-shaped hairline, and almond-shaped eyes. He has a straight nasal dorsum, defined cupid's bow, and average ears. He is shown smiling in a medium close-up, illuminated by indoor directional lighting against a blue backdrop.",
+          "retained_facts": [
+            "Male-presenting middle-aged adult",
+            "oval facial shape",
+            "Hairline M-shaped",
+            "Eyes almond-shaped",
+            "dorsum straight",
+            "cupid's bow defined",
+            "Ears average in size",
+            "smiling expression",
+            "medium close-up",
+            "indoor directional lighting",
+            "blue gradient backdrop"
+          ],
+          "omitted_facts": [
+            "balanced thirds",
+            "moderate palpebral fissure length",
+            "upper-to-lower lip fullness ratio balanced",
+            "soft focus throughout"
+          ],
+          "change_note": "",
+          "skip_reason": "",
+          "review_warnings": [],
+          "word_count": 41,
+          "target_words": 40
+        }
+      ],
+      "recovered_from": "C:\\Users\\ali\\Desktop\\aselab\\Aselab\\variants\\gemini\\diagnostics\\20261001T173841444935Z-67619e04-validation-2.json",
+      "generation_prompt_sha256": "a2b93cd676b80ea28f25989c6e413c9a093551663ec4ca57757a8061464ea8b1",
+      "generator": "gemini:gemini-3.1-flash-lite:recovered-ac117c33c6ff"
+    }
+  }
+}

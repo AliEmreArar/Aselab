@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import hashlib
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -8,7 +9,7 @@ import pandas as pd
 import numpy as np
 import yaml
 
-from .data import load_captions, load_variants, write_jsonl
+from .data import load_captions, load_variants, read_jsonl, write_jsonl
 from .encoders import create_encoder
 from .metrics import contrast_scores, score_variants, summarize
 from .report import build_report
@@ -29,6 +30,14 @@ def run_experiment(config_path: str | Path) -> Path:
     variants = generate_variants(captions, list(config.get("transforms", [])), seed)
     variant_files = [resolve(path) for path in config.get("variant_files", [])]
     variants.extend(load_variants(variant_files))
+    # LLM variants are tied to the exact source caption used during generation.
+    originals = {c.sample_id: c.text for c in captions}
+    for path in variant_files:
+        for row in read_jsonl(path):
+            if row.get("source_sha256") and row["sample_id"] in originals:
+                source_hash = hashlib.sha256(originals[row["sample_id"]].encode("utf-8")).hexdigest()
+                if source_hash != row["source_sha256"]:
+                    raise ValueError(f"Source caption changed for {row['sample_id']}; regenerate its LLM variants.")
     if not variants:
         raise ValueError("No variants configured. Add transforms or variant_files.")
 

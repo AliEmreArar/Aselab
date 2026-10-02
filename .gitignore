@@ -7,4 +7,8 @@ __pycache__/
 venv/
 .DS_Store
 Thumbs.db
+.env
+.env.*
+!.env.example
+.model_cache/
 

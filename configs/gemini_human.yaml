@@ -1,0 +1,15 @@
+name: gemini-natural-human-description
+dataset: ../caption_samples_50/all_samples.jsonl
+env_file: ../.env
+model: gemini-3.1-flash-lite
+prompt_file: ../prompts/gemini_human_description.md
+output_dir: ../variants/gemini_human
+temperature: 1.0
+max_output_tokens: 4096
+timeout_seconds: 120
+request_retries: 0
+validation_retries: 0
+max_api_requests_per_caption: 1
+request_interval_seconds: 0
+variants:
+  - {name: llm_human_description, operation: human_description}

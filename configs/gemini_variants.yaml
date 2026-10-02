@@ -1,0 +1,27 @@
+name: gemini-caption-variants-v1
+dataset: ../caption_samples_50/all_samples.jsonl
+env_file: ../.env
+model: gemini-3.1-flash-lite
+prompt_file: ../prompts/gemini_caption_variants.md
+output_dir: ../variants/gemini
+temperature: 1.0
+max_output_tokens: 16384
+timeout_seconds: 120
+request_retries: 1
+validation_retries: 1
+# Shared limit across HTTP retries AND content-validation retries for one caption.
+max_api_requests_per_caption: 3
+request_interval_seconds: 1.0
+
+# One request per caption produces all enabled variants.
+# Set enabled: true to include the other experiments below.
+variants:
+  - {name: summary_10w, operation: summary, target_words: 10}
+  - {name: summary_20w, operation: summary, target_words: 20}
+  - {name: summary_40w, operation: summary, target_words: 40}
+  - {name: llm_paraphrase, operation: paraphrase, enabled: false}
+  - {name: llm_synonym, operation: synonym, enabled: false}
+  - {name: llm_attribute_order, operation: attribute_order, enabled: false}
+  - {name: llm_negation, operation: negation, enabled: false}
+  - {name: llm_color_change, operation: color_change, enabled: false}
+  - {name: llm_attribute_exchange, operation: attribute_exchange, enabled: false}
