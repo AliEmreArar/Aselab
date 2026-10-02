@@ -1,0 +1,31 @@
+{
+  "sample_id": "person::train::03736_1.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "Man with short dark hair, eyeglasses, and a black quilted jacket, carrying a white plastic bag."
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "Average-build man with short dark hair and eyeglasses, wearing a black long-sleeved quilted jacket with gray collar lining, black pants, and black shoes, carrying a white plastic bag."
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "Average-build man with medium skin tone, short dark hair, and eyeglasses. He is wearing a black long-sleeved quilted jacket that features a light gray collar lining over a dark inner collar, paired with black long pants and black shoes. He is holding a white plastic bag."
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "That is an average-build man with short dark hair and glasses. He has on a black quilted jacket with a light gray collar lining, black pants, and black shoes, and he is holding a white plastic bag."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

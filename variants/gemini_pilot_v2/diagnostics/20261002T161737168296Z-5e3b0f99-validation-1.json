@@ -1,0 +1,100 @@
+{
+  "sample_id": "face::test::186223.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "An adult female with an oval face, dark hair styled up with bangs, and almond-shaped eyes.",
+        "retained_facts": [
+          "adult",
+          "female",
+          "oval face",
+          "dark hair styled up",
+          "bangs",
+          "almond-shaped eyes"
+        ],
+        "omitted_facts": [
+          "precise facial measurements",
+          "tiara",
+          "veil",
+          "necklace",
+          "smiling expression"
+        ]
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "An adult female with an oval face, dark hair styled up with bangs, and almond-shaped eyes. She is wearing a tiara, veil, and necklace.",
+        "retained_facts": [
+          "adult",
+          "female",
+          "oval face",
+          "dark hair styled up",
+          "bangs",
+          "almond-shaped eyes",
+          "tiara",
+          "veil",
+          "necklace"
+        ],
+        "omitted_facts": [
+          "precise bone and tissue measurements",
+          "philtrum details",
+          "alar base proportions"
+        ]
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "An adult female with an oval face, smooth skin, and dark hair styled up with bangs and loose side strands. Features include medium-thickness soft-arched eyebrows, almond-shaped eyes with visible lid creases, a straight nose with a rounded tip, and medium-width lips with a defined cupid's bow. She is wearing a tiara, veil, and necklace.",
+        "retained_facts": [
+          "adult",
+          "female",
+          "oval face",
+          "dark hair styled up",
+          "bangs",
+          "loose side strands",
+          "medium-thickness soft-arched eyebrows",
+          "almond-shaped eyes",
+          "visible lid creases",
+          "straight nose",
+          "rounded tip",
+          "medium-width lips",
+          "defined cupid's bow",
+          "tiara",
+          "veil",
+          "necklace",
+          "smooth skin"
+        ],
+        "omitted_facts": [
+          "precise anatomical measurements like intercanthal distance and glabella width",
+          "camera and lighting conditions"
+        ]
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "A woman with an oval face and dark hair pulled up with bangs framing her face. She has almond-shaped eyes and a nice smile, and she is wearing bridal accessories like a tiara, veil, and necklace.",
+        "retained_facts": [
+          "woman",
+          "oval face",
+          "dark hair pulled up",
+          "bangs",
+          "almond-shaped eyes",
+          "smile",
+          "tiara",
+          "veil",
+          "necklace"
+        ],
+        "omitted_facts": [
+          "clinical anatomical descriptions",
+          "facial measurements"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

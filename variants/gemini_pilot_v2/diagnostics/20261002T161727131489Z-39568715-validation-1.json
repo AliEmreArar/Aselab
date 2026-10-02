@@ -1,0 +1,85 @@
+{
+  "sample_id": "face::test::189457.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "A young adult male with an oval face, almond-shaped eyes, a straight nose, and short facial stubble along the jawline.",
+        "retained_facts": [
+          "young adult male",
+          "oval face",
+          "almond-shaped eyes",
+          "straight nose",
+          "short facial stubble along jawline"
+        ],
+        "omitted_facts": [
+          "bone structure details",
+          "hairline details",
+          "lip details",
+          "smiling expression"
+        ]
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "A young adult male with an oval face, moderate-height forehead with slight temporal recession, almond-shaped eyes, and a straight-bridged nose. He has balanced lips, a well-defined jawline with a rounded chin, and short facial stubble along the jawline.",
+        "retained_facts": [
+          "young adult male",
+          "oval face",
+          "moderate-height forehead",
+          "slight temporal recession",
+          "almond-shaped eyes",
+          "straight-bridged nose",
+          "balanced lips",
+          "well-defined jawline",
+          "rounded chin",
+          "short facial stubble along jawline"
+        ]
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "Young adult male with an oval face shape, moderate brow ridge, and a rounded hairline with moderate temporal recession. Features prominent cheekbones, a well-defined jawline, and a rounded chin. He has almond-shaped eyes with double upper-lid creases, a straight nasal dorsum with a rounded tip, and balanced, full lips with a defined cupid's bow. Short facial stubble is present along the jawline.",
+        "retained_facts": [
+          "young adult male",
+          "oval face",
+          "moderate brow ridge",
+          "rounded hairline",
+          "moderate temporal recession",
+          "prominent cheekbones",
+          "well-defined jawline",
+          "rounded chin",
+          "almond-shaped eyes",
+          "double upper-lid creases",
+          "straight nasal dorsum",
+          "rounded nasal tip",
+          "balanced full lips",
+          "defined cupid's bow",
+          "short facial stubble along jawline"
+        ]
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "This is a young man with an oval face and almond-shaped eyes. He has a straight nose, full lips, and a well-defined jawline with some short stubble along the chin. He has a bit of a receding hairline and is smiling in the photo.",
+        "retained_facts": [
+          "young adult male",
+          "oval face",
+          "almond-shaped eyes",
+          "straight nose",
+          "full lips",
+          "well-defined jawline",
+          "short stubble along jawline",
+          "receding hairline",
+          "smiling expression"
+        ],
+        "change_note": "Described in casual terms for recognition."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

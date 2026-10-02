@@ -18,6 +18,7 @@ def main() -> None:
     generate_parser = subparsers.add_parser("generate", help="Generate grounded LLM variants using Gemini")
     generate_parser.add_argument("--config", required=True)
     generate_parser.add_argument("--limit", type=int)
+    generate_parser.add_argument("--per-domain", type=int, help="Select a deterministic split-balanced pilot from each domain")
     generate_parser.add_argument("--sample", help="Generate one filename or sample ID")
     generate_parser.add_argument("--dry-run", action="store_true", help="Write a request preview without API calls")
     generate_parser.add_argument("--reuse-response", help="Import a saved model response for --sample without API calls")
@@ -29,7 +30,8 @@ def main() -> None:
     elif args.command == "generate":
         from .gemini import generate_variants
         try:
-            generate_variants(args.config, limit=args.limit, sample=args.sample, dry_run=args.dry_run, reuse_response=args.reuse_response)
+            generate_variants(args.config, limit=args.limit, per_domain=args.per_domain, sample=args.sample,
+                              dry_run=args.dry_run, reuse_response=args.reuse_response)
         except (ValueError, RuntimeError) as exc:
             parser.exit(1, f"{exc}\n")
     else:

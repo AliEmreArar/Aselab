@@ -1,0 +1,35 @@
+{
+  "sample_id": "face::train::170623.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "applicable": true,
+        "text": "Middle-aged male with an oval face, M-shaped hairline, and almond-shaped eyes."
+      },
+      {
+        "variant_type": "llm_balanced",
+        "applicable": true,
+        "text": "Middle-aged male with an oval face, M-shaped hairline with temporal recession, almond-shaped eyes, and a straight-bridged nose with a rounded tip."
+      },
+      {
+        "variant_type": "llm_detailed",
+        "applicable": true,
+        "text": "Male-presenting middle-aged adult with oval facial shape, balanced thirds, and average facial depth. Jawline is moderately defined with a rounded, moderately projecting chin. Hairline is M-shaped with temporal recession. Eyebrows are medium-thick, soft-arched with low peaks. Eyes are almond-shaped with horizontal slant and double upper-lid crease. Nasal dorsum is straight, bridge is moderate, and tip is rounded with moderate projection. Mouth has balanced lip fullness, defined cupid's bow, and visible upper dental alignment. Ears are average size with rolled helix, defined antihelix, and free lobes."
+      },
+      {
+        "variant_type": "llm_human_description",
+        "applicable": true,
+        "text": "This is a middle-aged man with an oval-shaped face. He has a receding M-shaped hairline, almond-shaped eyes, and medium-thick, softly arched eyebrows. His nose is straight-bridged with a rounded tip, and he has a defined, balanced smile showing his upper teeth."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

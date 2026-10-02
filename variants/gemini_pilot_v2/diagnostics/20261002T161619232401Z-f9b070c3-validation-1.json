@@ -1,0 +1,31 @@
+{
+  "sample_id": "person::train::00197_4.png",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "Average-build woman with long brown hair in a light brown winter jacket, blue pants, and white shoes."
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "Average-build woman with long brown hair, wearing a light brown winter jacket with a fur hood, light blue pants, and white shoes."
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "An average-build woman with long brown hair is wearing a light brown winter jacket featuring a fur hood, paired with light blue pants and white shoes."
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "That's a woman with a normal build and long brown hair. She is wearing a light brown winter jacket that has a hood with fur on it, plus light blue pants and a pair of white shoes."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

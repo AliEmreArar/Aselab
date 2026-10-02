@@ -1,0 +1,94 @@
+{
+  "name": "gemini-caption-quality-pilot-v2-truncation-vs-chunking",
+  "created_at": "2026-10-02T16:19:01.641512+00:00",
+  "config": {
+    "name": "gemini-caption-quality-pilot-v2-truncation-vs-chunking",
+    "dataset": "../caption_samples_50/all_samples.jsonl",
+    "output_dir": "../runs/gemini_pilot_v2",
+    "seed": 42,
+    "agreement_k": 10,
+    "transforms": [
+      {
+        "name": "identity"
+      }
+    ],
+    "variant_files": [
+      "../variants/gemini_pilot_v2/variants.jsonl"
+    ],
+    "models": [
+      {
+        "name": "clip_b16_truncate",
+        "backend": "hf_text_features",
+        "model_id": "openai/clip-vit-base-patch16",
+        "revision": "refs/pr/16",
+        "use_safetensors": true,
+        "max_length": 77,
+        "batch_size": 64,
+        "image_retrieval": true
+      },
+      {
+        "name": "clip_b16_chunked",
+        "backend": "hf_text_features",
+        "model_id": "openai/clip-vit-base-patch16",
+        "revision": "refs/pr/16",
+        "use_safetensors": true,
+        "max_length": 77,
+        "long_text_strategy": "chunk_weighted_mean",
+        "batch_size": 64,
+        "image_retrieval": true
+      },
+      {
+        "name": "siglip2_b16_224_truncate",
+        "backend": "hf_text_features",
+        "model_id": "google/siglip2-base-patch16-224",
+        "padding": "max_length",
+        "max_length": 64,
+        "batch_size": 32,
+        "image_retrieval": true
+      },
+      {
+        "name": "siglip2_b16_224_chunked",
+        "backend": "hf_text_features",
+        "model_id": "google/siglip2-base-patch16-224",
+        "padding": "max_length",
+        "max_length": 64,
+        "long_text_strategy": "chunk_weighted_mean",
+        "batch_size": 32,
+        "image_retrieval": true
+      },
+      {
+        "name": "minilm_l6_truncate",
+        "backend": "hf_mean_pool",
+        "model_id": "sentence-transformers/all-MiniLM-L6-v2",
+        "max_length": 256,
+        "batch_size": 64
+      },
+      {
+        "name": "minilm_l6_chunked",
+        "backend": "hf_mean_pool",
+        "model_id": "sentence-transformers/all-MiniLM-L6-v2",
+        "max_length": 256,
+        "long_text_strategy": "chunk_weighted_mean",
+        "batch_size": 64
+      }
+    ]
+  },
+  "caption_count": 150,
+  "variant_count": 210,
+  "models": [
+    "clip_b16_truncate",
+    "clip_b16_chunked",
+    "siglip2_b16_224_truncate",
+    "siglip2_b16_224_chunked",
+    "minilm_l6_truncate",
+    "minilm_l6_chunked"
+  ],
+  "notes": [
+    "Retrieval ranking is computed against original captions within the same domain.",
+    "Cosine scales are not calibrated across model families; compare ranks, margins and relative changes.",
+    "word_dropout is a stress test and is not guaranteed to preserve all identity evidence.",
+    "Bootstrap intervals use 2,000 deterministic resamples per model/domain/variant group.",
+    "encoder_agreement.csv compares the complete 150x150 original-caption similarity geometry.",
+    "image_retrieval files rank each caption's matching image within the same domain for multimodal encoders."
+  ]
+}

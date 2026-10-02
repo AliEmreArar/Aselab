@@ -1,0 +1,80 @@
+{
+  "sample_id": "person::gallery::26474_5.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "Male with short black hair, eyeglasses, a light hooded jacket, purple-patterned shirt, blue pants, and a black backpack.",
+        "retained_facts": [
+          "Male",
+          "short black hair",
+          "eyeglasses",
+          "light-colored hooded zip-up jacket",
+          "purple-patterned collared shirt",
+          "dark blue pants",
+          "black backpack"
+        ],
+        "omitted_facts": [
+          "average build",
+          "dark shoes"
+        ]
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "A man of average build with short black hair and eyeglasses, wearing a light-colored hooded zip-up jacket over a purple-patterned collared shirt, dark blue pants, and dark shoes, carrying a black backpack.",
+        "retained_facts": [
+          "Male",
+          "average build",
+          "short black hair",
+          "eyeglasses",
+          "light-colored hooded zip-up jacket",
+          "purple-patterned collared shirt",
+          "dark blue pants",
+          "dark shoes",
+          "black backpack"
+        ],
+        "omitted_facts": []
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "A male of average build, featuring short black hair and eyeglasses. He wears a light-colored hooded zip-up jacket layered over a purple-patterned collared shirt. His outfit includes dark blue pants, dark shoes, and a black backpack worn on both shoulders.",
+        "retained_facts": [
+          "Male",
+          "average build",
+          "short black hair",
+          "eyeglasses",
+          "light-colored hooded zip-up jacket",
+          "purple-patterned collared shirt",
+          "dark blue pants",
+          "dark shoes",
+          "black backpack worn on both shoulders"
+        ],
+        "omitted_facts": []
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "I'm looking for a man with short black hair and glasses. He has an average build and is wearing a light-colored zip-up hoodie over a purple patterned collared shirt, along with dark blue pants and dark shoes. He is also carrying a black backpack on both shoulders.",
+        "retained_facts": [
+          "Male",
+          "short black hair",
+          "eyeglasses",
+          "average build",
+          "light-colored hooded zip-up jacket",
+          "purple-patterned collared shirt",
+          "dark blue pants",
+          "dark shoes",
+          "black backpack worn on both shoulders"
+        ],
+        "omitted_facts": []
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

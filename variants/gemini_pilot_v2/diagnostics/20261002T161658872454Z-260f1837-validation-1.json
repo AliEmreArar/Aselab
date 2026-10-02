@@ -1,0 +1,31 @@
+{
+  "sample_id": "vehicle::query_images::20204_c041_01.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "Black sedan with alloy wheels."
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "Black sedan featuring alloy wheels and chrome trunk trim."
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "Black sedan with alloy wheels, chrome trunk trim, and tinted rear window."
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "It is a black sedan that has alloy wheels, some chrome trim on the trunk, and a tinted rear window."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

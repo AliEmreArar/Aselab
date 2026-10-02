@@ -1,0 +1,73 @@
+{
+  "sample_id": "vehicle::gallery_images::20591_c110_03.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "Black BMW 5 Series (F10) sedan with a sunroof.",
+        "retained_facts": [
+          "vehicle type: sedan",
+          "make/model: BMW 5 Series (F10)",
+          "color: black",
+          "feature: sunroof"
+        ],
+        "omitted_facts": [
+          "multi-spoke alloy wheels",
+          "light window tint",
+          "stickers on the front windshield (passenger side)"
+        ]
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "Black BMW 5 Series (F10) sedan featuring a sunroof, multi-spoke alloy wheels, and light window tint.",
+        "retained_facts": [
+          "vehicle type: sedan",
+          "make/model: BMW 5 Series (F10)",
+          "color: black",
+          "feature: sunroof",
+          "feature: multi-spoke alloy wheels",
+          "feature: light window tint"
+        ],
+        "omitted_facts": [
+          "stickers on the front windshield (passenger side)"
+        ]
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "Black BMW 5 Series (F10) sedan with multi-spoke alloy wheels, a sunroof, light window tint, and stickers on the passenger side of the front windshield.",
+        "retained_facts": [
+          "vehicle type: sedan",
+          "make/model: BMW 5 Series (F10)",
+          "color: black",
+          "feature: multi-spoke alloy wheels",
+          "feature: sunroof",
+          "feature: light window tint",
+          "feature: stickers on the front windshield (passenger side)"
+        ],
+        "omitted_facts": []
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "This is a black BMW 5 Series sedan from the F10 generation. It has a sunroof, light window tint, and some multi-spoke alloy wheels. You can also see a few stickers on the passenger side of the front windshield.",
+        "retained_facts": [
+          "vehicle type: sedan",
+          "make/model: BMW 5 Series (F10)",
+          "color: black",
+          "feature: sunroof",
+          "feature: light window tint",
+          "feature: multi-spoke alloy wheels",
+          "feature: stickers on the front windshield (passenger side)"
+        ],
+        "omitted_facts": []
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

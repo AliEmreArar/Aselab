@@ -1,0 +1,31 @@
+{
+  "sample_id": "vehicle::train_images::19666_c077_02.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "Black Volkswagen Touran minivan."
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "Black Volkswagen Touran minivan with alloy rims and silver roof rails."
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "Black Volkswagen Touran minivan featuring alloy rims, silver roof rails, and tinted windows."
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "That is a black Volkswagen Touran minivan. It has alloy wheels, silver rails on the roof, and tinted windows."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

@@ -27,6 +27,18 @@ RELATIONS = {
     "attribute_exchange": "semantic_changed",
 }
 
+_CONTEXT_TERMS = (
+    "close-up", "medium shot", "camera", "lighting", "backdrop", "background", "soft focus",
+)
+_INFERRED_STATE_TERMS = (
+    "friendly", "good mood", "happy person", "sad person", "angry person", "kind-looking",
+    "nice smile", "serious", "bridal",
+)
+_COLORS = (
+    "black", "white", "red", "blue", "green", "yellow", "orange", "purple", "pink",
+    "brown", "gray", "grey", "silver", "gold", "beige",
+)
+
 
 def load_env(path: Path) -> None:
     """Load the two Gemini settings without overriding the process environment."""
@@ -105,6 +117,8 @@ class GeminiClient:
                 "responseMimeType": "application/json", "responseJsonSchema": schema,
             },
         }
+        if self.config.get("seed") is not None:
+            payload["generationConfig"]["seed"] = int(self.config["seed"])
         url = f"https://generativelanguage.googleapis.com/v1beta/models/{quote(self.model, safe='')}:generateContent"
         request = Request(url, data=json.dumps(payload).encode("utf-8"), headers={
             "Content-Type": "application/json", "x-goog-api-key": self.key,
@@ -200,6 +214,25 @@ def validate_batch(body: dict, caption: Caption, specs: list[dict]) -> list[dict
         item["skip_reason"] = ""
         item["change_note"] = item["change_note"].strip()
         item["text"] = text
+        source_lower = caption.text.lower()
+        text_lower = text.lower()
+        if spec["operation"] in {"summary", "human_description"}:
+            found_context = sorted(term for term in _CONTEXT_TERMS if term in text_lower)
+            if found_context:
+                item["review_warnings"].append(
+                    "Contains capture/context detail: " + ", ".join(found_context)
+                )
+            inferred = sorted(term for term in _INFERRED_STATE_TERMS if term in text_lower and term not in source_lower)
+            if inferred:
+                item["review_warnings"].append(
+                    "Possible unsupported mood/context inference: " + ", ".join(inferred)
+                )
+            new_colors = sorted(color for color in _COLORS if re.search(rf"\b{color}\b", text_lower)
+                                and not re.search(rf"\b{color}\b", source_lower))
+            if new_colors:
+                item["review_warnings"].append(
+                    "Color absent from source caption: " + ", ".join(new_colors)
+                )
     if seen != set(expected):
         raise ValueError("Response must include exactly one item per requested variant.")
     return sorted(items, key=lambda item: list(expected).index(item["variant_type"]))
@@ -214,7 +247,8 @@ def generation_request(caption: Caption, specs: list[dict], correction: str | No
 
 
 def generate_variants(config_path: str | Path, *, limit: int | None = None,
-                      sample: str | None = None, dry_run: bool = False, client=None,
+                      per_domain: int | None = None, sample: str | None = None,
+                      dry_run: bool = False, client=None,
                       reuse_response: str | Path | None = None) -> Path:
     config_file = Path(config_path).resolve()
     config = yaml.safe_load(config_file.read_text(encoding="utf-8"))
@@ -227,12 +261,16 @@ def generate_variants(config_path: str | Path, *, limit: int | None = None,
     for spec in specs:
         if spec["operation"] not in RELATIONS:
             raise ValueError(f"Unknown operation: {spec['operation']}")
-        if spec["operation"] == "summary":
+        if spec["operation"] == "summary" and ("max_words" in spec or "target_words" in spec):
             spec["target_words"] = spec.pop("max_words", spec.get("target_words"))
             if type(spec["target_words"]) is not int or spec["target_words"] <= 0:
                 raise ValueError("Summary target_words must be a positive approximate length.")
     if limit is not None and limit <= 0:
         raise ValueError("--limit must be positive.")
+    if per_domain is not None and per_domain <= 0:
+        raise ValueError("--per-domain must be positive.")
+    if sum(value is not None for value in (sample, limit, per_domain)) > 1:
+        raise ValueError("Use only one of --sample, --limit, or --per-domain.")
     load_env(resolve(config.get("env_file", "../.env")))
     model = os.environ.get("GEMINI_MODEL") or config.get("model", "gemini-3.1-flash-lite")
     if not re.fullmatch(r"[a-zA-Z0-9._-]+", model):
@@ -245,6 +283,24 @@ def generate_variants(config_path: str | Path, *, limit: int | None = None,
             raise ValueError(f"Sample not found: {sample}")
     if limit:
         captions = captions[:limit]
+    if per_domain:
+        selected: list[Caption] = []
+        domains = list(dict.fromkeys(caption.domain for caption in captions))
+        for domain in domains:
+            domain_rows = [caption for caption in captions if caption.domain == domain]
+            splits = list(dict.fromkeys(caption.split for caption in domain_rows))
+            queues = {split: [caption for caption in domain_rows if caption.split == split] for split in splits}
+            while len([caption for caption in selected if caption.domain == domain]) < min(per_domain, len(domain_rows)):
+                progressed = False
+                for split in splits:
+                    if queues[split]:
+                        selected.append(queues[split].pop(0))
+                        progressed = True
+                        if len([caption for caption in selected if caption.domain == domain]) >= per_domain:
+                            break
+                if not progressed:
+                    break
+        captions = selected
     recovered_origin = None
     if reuse_response:
         if len(captions) != 1:
@@ -279,10 +335,16 @@ def generate_variants(config_path: str | Path, *, limit: int | None = None,
     output = output_dir / "variants.jsonl"
     signature = digest(json.dumps({"model": model, "prompt": prompt, "specs": specs,
         "dataset": digest(dataset.read_text(encoding="utf-8")),
-        "temperature": config.get("temperature", 1.0), "max_output_tokens": config.get("max_output_tokens", 16384)}, sort_keys=True))
+        "temperature": config.get("temperature", 1.0), "seed": config.get("seed"),
+        "max_output_tokens": config.get("max_output_tokens", 16384)}, sort_keys=True))
     if dry_run:
         preview = output_dir / "request_preview.json"
         atomic_json(preview, {"model": model, "caption_count": len(captions), "system_instruction": prompt,
+            "selected_samples": [{"sample_id": caption.sample_id, "domain": caption.domain,
+                                  "split": caption.split, "filename": caption.filename} for caption in captions],
+            "generation_config": {"temperature": config.get("temperature", 1.0),
+                                  "seed": config.get("seed"),
+                                  "max_output_tokens": config.get("max_output_tokens", 16384)},
             "first_request": json.loads(generation_request(captions[0], specs)), "response_schema": response_schema(names)})
         print(f"Dry run: {len(captions)} captions, {len(specs)} variants each; no API calls. Preview: {preview}")
         return preview

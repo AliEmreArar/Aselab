@@ -4,6 +4,7 @@ import json
 import hashlib
 from datetime import datetime, timezone
 from pathlib import Path
+import gc
 
 import pandas as pd
 import numpy as np
@@ -11,7 +12,13 @@ import yaml
 
 from .data import load_captions, load_variants, read_jsonl, write_jsonl
 from .encoders import create_encoder
-from .metrics import contrast_scores, score_variants, summarize
+from .metrics import (
+    contrast_scores,
+    score_image_retrieval,
+    score_variants,
+    summarize,
+    summarize_image_retrieval,
+)
 from .report import build_report
 from .transforms import generate_variants
 
@@ -25,7 +32,8 @@ def run_experiment(config_path: str | Path) -> Path:
         path = Path(value)
         return path if path.is_absolute() else (base / path).resolve()
 
-    captions = load_captions(resolve(config["dataset"]))
+    dataset_path = resolve(config["dataset"])
+    captions = load_captions(dataset_path)
     seed = int(config.get("seed", 42))
     variants = generate_variants(captions, list(config.get("transforms", [])), seed)
     variant_files = [resolve(path) for path in config.get("variant_files", [])]
@@ -70,6 +78,8 @@ def run_experiment(config_path: str | Path) -> Path:
     embedding_dir = output_dir / "embeddings"
     embedding_dir.mkdir(exist_ok=True)
     all_frames: list[pd.DataFrame] = []
+    all_image_frames: list[pd.DataFrame] = []
+    image_embedding_cache: dict[tuple[str, str], np.ndarray] = {}
     original_embeddings: dict[str, np.ndarray] = {}
     original_texts = [caption.text for caption in captions]
     variant_texts = [variant.text for variant in variants]
@@ -89,11 +99,43 @@ def run_experiment(config_path: str | Path) -> Path:
         all_frames.append(
             score_variants(encoder.name, captions, variants, original_batch, variant_batch)
         )
+        if bool(model_spec.get("image_retrieval", False)):
+            missing_images = [caption.sample_id for caption in captions if not caption.image]
+            if missing_images:
+                raise ValueError(f"Image retrieval requested but image paths are missing: {missing_images[:5]}")
+            if not encoder.supports_images:
+                raise ValueError(f"Model {encoder.name} does not expose a compatible image encoder")
+            image_paths = [(dataset_path.parent / str(caption.image)).resolve() for caption in captions]
+            absent = [str(path) for path in image_paths if not path.is_file()]
+            if absent:
+                raise FileNotFoundError(f"Image retrieval files not found: {absent[:5]}")
+            cache_key = (str(model_spec["model_id"]), str(model_spec.get("revision", "")))
+            image_embeddings = image_embedding_cache.get(cache_key)
+            if image_embeddings is None:
+                image_embeddings = encoder.encode_images(image_paths)
+                image_embedding_cache[cache_key] = image_embeddings
+            all_image_frames.append(
+                score_image_retrieval(encoder.name, captions, variants, variant_batch, image_embeddings)
+            )
+        del encoder
+        gc.collect()
+        try:
+            import torch
+            if torch.cuda.is_available():
+                torch.cuda.empty_cache()
+        except ImportError:
+            pass
 
     details = pd.concat(all_frames, ignore_index=True)
     summary = summarize(details)
     details.to_csv(output_dir / "details.csv", index=False)
     summary.to_csv(output_dir / "summary.csv", index=False)
+    if all_image_frames:
+        image_details = pd.concat(all_image_frames, ignore_index=True)
+        image_details.to_csv(output_dir / "image_retrieval_details.csv", index=False)
+        summarize_image_retrieval(image_details).to_csv(
+            output_dir / "image_retrieval_summary.csv", index=False
+        )
 
     contrast = contrast_scores(details, list(config.get("contrasts", [])))
     if not contrast.empty:
@@ -168,6 +210,7 @@ def run_experiment(config_path: str | Path) -> Path:
             "word_dropout is a stress test and is not guaranteed to preserve all identity evidence.",
             "Bootstrap intervals use 2,000 deterministic resamples per model/domain/variant group.",
             "encoder_agreement.csv compares the complete 150x150 original-caption similarity geometry.",
+            "image_retrieval files rank each caption's matching image within the same domain for multimodal encoders.",
         ],
     }
     (output_dir / "manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")

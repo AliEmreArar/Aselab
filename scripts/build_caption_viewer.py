@@ -49,7 +49,16 @@ def build(*, generated_path=None, gemini_folder=None, output_path=None):
                 score = {key: float(row[key]) for key in ("cosine", "margin", "hardest_negative_cosine")}
                 score.update({key: int(row[key]) for key in ("rank", "original_tokens", "variant_tokens", "retrieval_pool_size")})
                 score.update({key: row[key].lower() == "true" for key in ("original_truncated", "variant_truncated")})
+                score.update({key: int(row[key]) for key in ("original_chunks", "variant_chunks") if key in row})
+                score.update({key: row[key].lower() == "true" for key in ("original_overflowed", "variant_overflowed") if key in row})
                 lookup[row["sample_id"], row["variant_type"]]["scores"][row["model"]] = score
+        image_details_path = folder / "image_retrieval_details.csv"
+        if image_details_path.exists():
+            with image_details_path.open(encoding="utf-8", newline="") as stream:
+                for row in csv.DictReader(stream):
+                    score = lookup[row["sample_id"], row["variant_type"]]["scores"][row["model"]]
+                    score.update({key: float(row[key]) for key in ("image_cosine", "image_margin")})
+                    score.update({key: int(row[key]) for key in ("image_rank", "image_pool_size")})
         pairs = {sample["id"]: {} for sample in samples}
         for model in manifest["models"]:
             safe_name = "".join(c if c.isalnum() or c in "-_" else "_" for c in model)

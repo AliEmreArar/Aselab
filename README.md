@@ -2,6 +2,35 @@
 
 ## Gemini ile gerçek özet ve varyant üretimi
 
+### V2: kelime sınırı olmadan caption kalitesi ve uzun-caption pilotu
+
+Yeni pilotta keskin kelime sınırı kullanılmaz. `brief`, `balanced`, `detailed` ve
+`human_description` profilleri uzunluğu değil, korunan kimlik bilgisinin yoğunluğunu değiştirir.
+Her domainden split-dengeli 5 örnek seçmek, Gemini caption'larını üretmek, standart truncation
+ile tüm parçaları token-ağırlıklı birleştiren chunked embedding'i karşılaştırmak ve HTML'i
+yenilemek için:
+
+```powershell
+python scripts/run_gemini_pilot_v2.py --per-domain 5
+```
+
+API çağrısı yapmadan önce seçilecek 15 örneği ve isteği görmek için:
+
+```powershell
+python scripts/run_gemini_pilot_v2.py --per-domain 5 --dry-run
+```
+
+CLIP'in 77 ve SigLIP2'nin 64 token mimari sınırı kaldırılamaz. Standart model bu sınırdan
+sonrasını görmez. `chunk_weighted_mean` stratejisi metni sınıra uyan parçalara böler, her
+parçayı aynı text encoder ile işler, normalize parça embedding'lerini içerik-token sayısıyla
+ağırlıklandırıp yeniden normalize eder. Böylece tüm metin hesaba katılır; ancak model parçalar
+arası ilişkileri birlikte görmediği ve bu toplama yöntemiyle eğitilmediği için ayrı bir deney
+kolu olarak raporlanır. Pilot ayrıca eşleşen CLIP/SigLIP2 vision encoder'larıyla her caption'ın
+kendi görselini aynı domain içindeki görseller arasından bulma sırasını ölçer. Sonuçlar
+`image_retrieval_details.csv` ve aynı örneklerin orijinal caption'larına göre eşleştirilmiş
+farkları içeren `image_retrieval_summary.csv` dosyalarına yazılır; böylece truncation, summary
+ve chunked stratejiler doğrudan karşılaştırılır.
+
 Kelime hedefi olmadan, birini arkadaşına tarif eder gibi günlük dilde caption üretmek için
 [prompts/gemini_human_description.md](prompts/gemini_human_description.md) ve
 `configs/gemini_human.yaml` kullanılır. Bu config tek API isteği yapar:

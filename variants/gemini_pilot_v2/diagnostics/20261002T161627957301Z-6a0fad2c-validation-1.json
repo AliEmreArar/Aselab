@@ -1,0 +1,31 @@
+{
+  "sample_id": "person::query::26685_1.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "Male with short dark hair in a light blue button-down shirt and light brown trousers."
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "A man of average build with short dark hair, wearing a long-sleeved light blue button-down shirt, light brown trousers, and dark shoes."
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "A male of average build, featuring short dark hair. He is dressed in a long-sleeved light blue button-down shirt, light brown trousers, and dark footwear."
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "That is an average-build guy with short dark hair, wearing a light blue long-sleeved button-down shirt with light brown pants and dark shoes."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

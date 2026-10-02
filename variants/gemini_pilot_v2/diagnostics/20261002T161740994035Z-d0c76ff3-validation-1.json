@@ -1,0 +1,31 @@
+{
+  "sample_id": "face::train::137722.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "An older woman with an oval face, thin arched eyebrows, and a textured white flat cap with a dark band."
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "An older woman with an oval face, straight bangs, thin arched eyebrows, and medium-thin lips. She is wearing a textured white flat cap with a dark band."
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "Older adult with an oval face, soft cheek and jawline fullness, and straight bangs under a textured white flat cap with a dark band. Features include thin, sparse arched eyebrows, almond-shaped eyes with visible creases, a straight nasal dorsum with a rounded tip, medium-thin lips with a defined cupid's bow, and mild vertical neck creases."
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "This is an older woman with an oval face shape and straight bangs. She has thin eyebrows, almond-shaped eyes, and medium-thin lips. She is wearing a textured white flat cap that has a dark band on it."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "sample_id": "person::query::14604_1.png",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "Male with average build wearing black headwear, dark gray long-sleeved shirt, blue pants, and black shoes, carrying a black backpack."
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "Average build male in black headwear, dark gray long-sleeved top, blue pants, and black shoes, carrying a black backpack on both shoulders."
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "Male of average build, wearing black headwear, a dark gray long-sleeved upper garment, blue pants, and black shoes, with a black backpack worn on both shoulders."
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "A guy of average build wearing a dark gray long-sleeved shirt and blue pants. He has black headwear on, black shoes, and is carrying a black backpack on his back."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "sample_id": "vehicle::train_images::13184_c012_02.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "Silver sedan with a sunroof and steel wheels.",
+        "retained_facts": [
+          "Sedan",
+          "silver",
+          "sunroof",
+          "steel wheels"
+        ],
+        "omitted_facts": [
+          "multi-spoke hubcaps",
+          "white cloth items on rear parcel shelf"
+        ]
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "Silver sedan featuring a sunroof, steel wheels with multi-spoke hubcaps, and white cloth items on the rear parcel shelf.",
+        "retained_facts": [
+          "Sedan",
+          "silver",
+          "sunroof",
+          "steel wheels",
+          "multi-spoke hubcaps",
+          "white cloth items on rear parcel shelf"
+        ],
+        "omitted_facts": []
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "Silver sedan, equipped with a sunroof and steel wheels with multi-spoke hubcaps. Several white cloth items are visible on the interior rear parcel shelf.",
+        "retained_facts": [
+          "Sedan",
+          "silver",
+          "sunroof",
+          "steel wheels",
+          "multi-spoke hubcaps",
+          "white cloth items on rear parcel shelf"
+        ],
+        "omitted_facts": []
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "I see a silver sedan that has a sunroof and steel wheels with multi-spoke hubcaps. There are some white cloth items sitting on the rear shelf inside.",
+        "retained_facts": [
+          "Sedan",
+          "silver",
+          "sunroof",
+          "steel wheels",
+          "multi-spoke hubcaps",
+          "white cloth items on rear parcel shelf"
+        ],
+        "omitted_facts": []
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

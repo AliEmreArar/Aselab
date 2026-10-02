@@ -1,0 +1,31 @@
+{
+  "sample_id": "face::train::081413.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "Older man with short grey hair and a short grey mustache."
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "Older man with an oblong face, receding grey hairline, and a short grey mustache. He has a straight nose with a bulbous tip and a sharp jawline."
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "Older adult with an oblong facial shape, defined bone structure, and high forehead with horizontal creases. Features include a receding hairline, moderate brow ridge with soft-arched eyebrows, almond-shaped deep-set eyes, and a straight nasal bridge with a bulbous tip. The mouth has thin lips, the philtrum is short with defined ridges, and the jawline is sharp with a rounded chin. Ears are of moderate size with attached lobes. He has short grey hair styled back and a short grey mustache."
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "This is an older man with short, swept-back grey hair and a short grey mustache. He has a distinct oblong face with a sharp jawline and a prominent forehead with some horizontal lines. His nose is straight but rounded at the tip, and he has a serious, defined look with deep-set eyes."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}
