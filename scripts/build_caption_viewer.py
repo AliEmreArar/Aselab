@@ -74,12 +74,23 @@ def build(*, generated_path=None, gemini_folder=None, output_path=None):
                     identity = next(i for i, v in enumerate(group) if v["type"] == "identity")
                     for i, v in enumerate(group):
                         assert abs(matrix[identity, i] - v["scores"][model]["cosine"]) < 2e-5
+        pair_summary = []
+        pair_summary_path = folder / "different_face_original_pair_summary.csv"
+        if pair_summary_path.exists():
+            with pair_summary_path.open(encoding="utf-8", newline="") as stream:
+                for row in csv.DictReader(stream):
+                    pair_summary.append({
+                        **{key: row[key] for key in ("model", "top_sample_a", "top_sample_b", "fixed_sample_a", "fixed_sample_b")},
+                        **{key: float(row[key]) for key in ("median", "p95", "maximum", "share_ge_0_90", "share_ge_0_95", "fixed_pair_cosine")},
+                        "pair_count": int(row["pair_count"]),
+                    })
         runs[name] = {
             "name": manifest.get("name", name),
             "models": manifest["models"],
             "date": manifest["created_at"],
             "variants": variants,
             "pairs": pairs,
+            "differentFaceStats": pair_summary,
         }
     if generated:
         scored = runs.get("gemini", {}).get("variants", {})
