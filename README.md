@@ -3,8 +3,9 @@
 ## Aligned multimodal encoder expansion
 
 CLIP ViT-L/14, SigLIP2, Jina-CLIP-v2, EVA02-CLIP-L/14 and AltCLIP, plus the
-text-only DeBERTa-v3-base mean-pooling baseline and BGE-M3 sentence encoder, can be run
-on the same Gemini pilot captions with:
+text-only DeBERTa-v3-base mean-pooling baseline, BGE-M3 sentence encoder and
+Mamba-3 SISO 187M last-token baseline, can be run on the same Gemini pilot captions.
+The Windows-compatible seven-model run is:
 
 ```powershell
 pip install -e ".[open-clip,jina-clip,altclip,sentence-transformers,deberta]"
@@ -18,6 +19,27 @@ DeBERTa is deliberately labeled as a raw-backbone mean-pooling baseline because 
 trained as a sentence embedding model. The Jina and BGE-M3 adapters use their native 8,192-token
 text paths, while EVA02 uses the official OpenCLIP checkpoint. Results are saved under
 `runs/encoder_expansion_pilot_v2` and merged into `caption_inceleme.html`.
+
+Mamba-3 uses the official Linux/Triton implementation and therefore runs separately under
+Linux or WSL with CUDA. It is a raw causal language model, not a sentence-embedding model.
+The adapter takes the final real token's 768-dimensional backbone state; short sequences are
+right-padded to the 64-token kernel chunk size, which cannot affect that earlier state in a
+causal model. The checkpoint's documented Llama-3.1 tokenizer is loaded from the public
+`NousResearch/Meta-Llama-3.1-8B` tokenizer mirror because the Meta repository is gated.
+
+```bash
+# Requires Linux/WSL, CUDA, torch 2.9+, Triton 3.5+ and the latest official mamba_ssm source.
+python -m caption_bench run --config configs/mamba3_siso_pilot.yaml
+```
+
+The independent run can be combined without recomputing the seven existing encoders:
+
+```powershell
+python scripts/merge_encoder_runs.py --base runs/encoder_expansion_pilot_v2 `
+  --addition runs/mamba3_siso_pilot --output runs/encoder_expansion_pilot_v3
+python scripts/build_caption_viewer.py --generated-variants variants/gemini_pilot_v2/variants.jsonl `
+  --gemini-run-dir runs/encoder_expansion_pilot_v3 --output caption_inceleme.html
+```
 
 ## Gemini ile gerçek özet ve varyant üretimi
 

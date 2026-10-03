@@ -1,0 +1,43 @@
+{
+  "name": "mamba3-siso-text-only-pilot",
+  "created_at": "2026-10-03T15:16:10.933240+00:00",
+  "config": {
+    "name": "mamba3-siso-text-only-pilot",
+    "dataset": "../caption_samples_50/all_samples.jsonl",
+    "output_dir": "../runs/mamba3_siso_pilot",
+    "seed": 42,
+    "agreement_k": 10,
+    "transforms": [
+      {
+        "name": "identity"
+      }
+    ],
+    "variant_files": [
+      "../variants/gemini_pilot_v2/variants.jsonl"
+    ],
+    "models": [
+      {
+        "name": "mamba3_siso_187m_last_token",
+        "backend": "mamba3",
+        "model_id": "state-spaces/mamba3-siso-187m",
+        "tokenizer_id": "NousResearch/Meta-Llama-3.1-8B",
+        "dtype": "bfloat16",
+        "max_length": 2048,
+        "kernel_min_length": 64
+      }
+    ]
+  },
+  "caption_count": 150,
+  "variant_count": 210,
+  "models": [
+    "mamba3_siso_187m_last_token"
+  ],
+  "notes": [
+    "Retrieval ranking is computed against original captions within the same domain.",
+    "Cosine scales are not calibrated across model families; compare ranks, margins and relative changes.",
+    "word_dropout is a stress test and is not guaranteed to preserve all identity evidence.",
+    "Bootstrap intervals use 2,000 deterministic resamples per model/domain/variant group.",
+    "encoder_agreement.csv compares the complete 150x150 original-caption similarity geometry.",
+    "image_retrieval files rank each caption's matching image within the same domain for multimodal encoders."
+  ]
+}

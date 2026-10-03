@@ -1,0 +1,4 @@
+model,domain,within_domain_cosine_mean,within_domain_cosine_std,global_domain_silhouette
+mamba3_siso_187m_last_token,face,0.9767003059387207,0.019318167120218277,0.5105975031474215
+mamba3_siso_187m_last_token,person,0.9745969176292419,0.017636625096201897,0.5105975031474215
+mamba3_siso_187m_last_token,vehicle,0.9468398094177246,0.03566475957632065,0.5105975031474215

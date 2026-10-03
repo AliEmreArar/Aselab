@@ -404,6 +404,76 @@ class OpenClipEncoder(TextEncoder):
         return _normalize(np.vstack(vectors))
 
 
+class Mamba3Encoder(TextEncoder):
+    """Last-token baseline for the raw Mamba-3 causal language model backbone."""
+
+    def __init__(self, spec: dict):
+        super().__init__(spec)
+        try:
+            from mamba_ssm.models.mixer_seq_simple import MambaLMHeadModel
+        except ImportError as exc:
+            raise RuntimeError(
+                "The mamba3 backend needs the latest official mamba_ssm source on Linux: "
+                "pip install git+https://github.com/state-spaces/mamba.git --no-build-isolation"
+            ) from exc
+        import torch
+        from transformers import AutoTokenizer
+
+        self.torch = torch
+        self.device = str(spec.get("device", "cuda" if torch.cuda.is_available() else "cpu"))
+        if not self.device.startswith("cuda"):
+            raise RuntimeError("The official Mamba-3 Triton kernels require a CUDA device.")
+        self.model_id = str(spec["model_id"])
+        self.tokenizer_id = str(spec.get("tokenizer_id", "meta-llama/Llama-3.1-8B"))
+        self.max_length = int(spec.get("max_length", 2048))
+        self.kernel_min_length = int(spec.get("kernel_min_length", 64))
+        dtype_name = str(spec.get("dtype", "bfloat16"))
+        dtype_map = {"float16": torch.float16, "bfloat16": torch.bfloat16, "float32": torch.float32}
+        if dtype_name not in dtype_map:
+            raise ValueError("dtype must be float16, bfloat16, or float32")
+        self.tokenizer = AutoTokenizer.from_pretrained(self.tokenizer_id)
+        self.model = MambaLMHeadModel.from_pretrained(
+            self.model_id, device=self.device, dtype=dtype_map[dtype_name]
+        ).eval()
+
+    def encode(self, texts: list[str]) -> EncodingBatch:
+        prefixed = [self.prefix + text for text in texts]
+        embeddings: list[np.ndarray] = []
+        counts: list[int] = []
+        truncated: list[bool] = []
+        # Mamba has no attention mask. Encoding one sequence at a time avoids padding
+        # tokens changing the recurrent state used for last-token pooling.
+        for text in prefixed:
+            raw = self.tokenizer(text, add_special_tokens=True, truncation=False)["input_ids"]
+            count = len(raw)
+            tokens = self.tokenizer(
+                text, add_special_tokens=True, truncation=True,
+                max_length=self.max_length, return_tensors="pt",
+            )["input_ids"]
+            actual_length = tokens.shape[1]
+            if actual_length < self.kernel_min_length:
+                pad_id = self.tokenizer.pad_token_id
+                if pad_id is None:
+                    pad_id = self.tokenizer.eos_token_id
+                if pad_id is None:
+                    raise ValueError(f"Tokenizer for {self.tokenizer_id} has no pad or EOS token")
+                padding = self.torch.full(
+                    (1, self.kernel_min_length - actual_length), pad_id, dtype=tokens.dtype
+                )
+                tokens = self.torch.cat([tokens, padding], dim=1)
+            tokens = tokens.to(self.device)
+            with self.torch.inference_mode():
+                hidden = self.model.backbone(tokens)
+            # Right padding is causally invisible to the final real token.
+            embeddings.append(hidden[:, actual_length - 1, :].detach().float().cpu().numpy())
+            counts.append(count)
+            truncated.append(count > self.max_length)
+        return EncodingBatch(
+            _normalize(np.vstack(embeddings)), counts, truncated,
+            chunk_counts=[1] * len(texts), overflowed=list(truncated),
+        )
+
+
 class SentenceTransformersEncoder(TextEncoder):
     def __init__(self, spec: dict):
         super().__init__(spec)
@@ -457,8 +527,10 @@ def create_encoder(spec: dict) -> TextEncoder:
         return JinaClipEncoder(spec)
     if backend == "open_clip":
         return OpenClipEncoder(spec)
+    if backend == "mamba3":
+        return Mamba3Encoder(spec)
     raise ValueError(
         f"Unknown backend '{backend}'. Expected hash, hf_mean_pool, hf_text_features, "
-        "sentence_transformers, jina_clip, or open_clip."
+        "sentence_transformers, jina_clip, open_clip, or mamba3."
     )
 
