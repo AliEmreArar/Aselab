@@ -74,7 +74,13 @@ def build(*, generated_path=None, gemini_folder=None, output_path=None):
                     identity = next(i for i, v in enumerate(group) if v["type"] == "identity")
                     for i, v in enumerate(group):
                         assert abs(matrix[identity, i] - v["scores"][model]["cosine"]) < 2e-5
-        runs[name] = {"models": manifest["models"], "date": manifest["created_at"], "variants": variants, "pairs": pairs}
+        runs[name] = {
+            "name": manifest.get("name", name),
+            "models": manifest["models"],
+            "date": manifest["created_at"],
+            "variants": variants,
+            "pairs": pairs,
+        }
     if generated:
         scored = runs.get("gemini", {}).get("variants", {})
         all_scored = all(any(v["type"] == row["variant_type"] and v["text"] == row["text"] for v in scored.get(row["sample_id"], [])) for row in generated)

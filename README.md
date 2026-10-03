@@ -1,5 +1,21 @@
 # Caption Encoder Benchmark
 
+## Aligned multimodal encoder expansion
+
+CLIP ViT-L/14, SigLIP2, Jina-CLIP-v2, EVA02-CLIP-L/14 and AltCLIP can be run on the
+same Gemini pilot captions and matching images with:
+
+```powershell
+pip install -e ".[open-clip,jina-clip,altclip]"
+python scripts/run_encoder_expansion_pilot.py
+```
+
+The models are loaded sequentially. Each text tower is evaluated only with its jointly aligned
+vision tower; embeddings from different families are never mixed. The Jina adapter uses its
+native 8,192-token text path, EVA02 uses the official OpenCLIP checkpoint, and the other three
+use their Transformers-native feature APIs. Results are saved under
+`runs/encoder_expansion_pilot` and merged into `caption_inceleme.html`.
+
 ## Gemini ile gerçek özet ve varyant üretimi
 
 ### V2: kelime sınırı olmadan caption kalitesi ve uzun-caption pilotu

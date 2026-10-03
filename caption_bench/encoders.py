@@ -88,9 +88,18 @@ class TransformersEncoder(TextEncoder):
         self.tokenizer = AutoTokenizer.from_pretrained(self.model_id, **hub_kwargs)
         self.hub_kwargs = hub_kwargs
         model_kwargs = dict(hub_kwargs)
+        if spec.get("code_revision"):
+            model_kwargs["code_revision"] = str(spec["code_revision"])
         if spec.get("use_safetensors") is not None:
             model_kwargs["use_safetensors"] = bool(spec["use_safetensors"])
+        dtype_name = spec.get("dtype")
+        if dtype_name:
+            dtype_map = {"float16": torch.float16, "bfloat16": torch.bfloat16, "float32": torch.float32}
+            if dtype_name not in dtype_map:
+                raise ValueError("dtype must be float16, bfloat16, or float32")
+            model_kwargs["dtype"] = dtype_map[dtype_name]
         self.model = AutoModel.from_pretrained(self.model_id, **model_kwargs).to(self.device).eval()
+        self.compute_dtype = next(self.model.parameters()).dtype
         configured_max = spec.get("max_length")
         tokenizer_max = int(getattr(self.tokenizer, "model_max_length", 512))
         if tokenizer_max > 1_000_000:
@@ -248,9 +257,147 @@ class TransformersEncoder(TextEncoder):
                 with Image.open(path) as image:
                     images.append(image.convert("RGB"))
             inputs = self.processor(images=images, return_tensors="pt")
-            inputs = {key: value.to(self.device) for key, value in inputs.items()}
+            inputs = {
+                key: value.to(self.device, dtype=self.compute_dtype) if value.is_floating_point() else value.to(self.device)
+                for key, value in inputs.items()
+            }
             with self.torch.inference_mode():
                 vectors.append(self._to_numpy(self.model.get_image_features(**inputs)))
+        return _normalize(np.vstack(vectors))
+
+
+class JinaClipEncoder(TextEncoder):
+    """Adapter for jina-clip-v2's remote-code encode_text/encode_image API."""
+
+    def __init__(self, spec: dict):
+        super().__init__(spec)
+        import torch
+        from transformers import AutoModel, AutoTokenizer
+
+        self.torch = torch
+        self.device = str(spec.get("device", "cuda" if torch.cuda.is_available() else "cpu"))
+        self.batch_size = int(spec.get("batch_size", 4))
+        self.model_id = str(spec["model_id"])
+        self.max_length = int(spec.get("max_length", 8192))
+        self.truncate_dim = spec.get("truncate_dim")
+        hub_kwargs = {"trust_remote_code": True}
+        if spec.get("revision"):
+            hub_kwargs["revision"] = str(spec["revision"])
+        self.tokenizer = AutoTokenizer.from_pretrained(self.model_id, **hub_kwargs)
+        model_kwargs = dict(hub_kwargs)
+        if spec.get("code_revision"):
+            model_kwargs["code_revision"] = str(spec["code_revision"])
+        dtype_name = spec.get("dtype")
+        if dtype_name:
+            dtype_map = {"float16": torch.float16, "bfloat16": torch.bfloat16, "float32": torch.float32}
+            if dtype_name not in dtype_map:
+                raise ValueError("dtype must be float16, bfloat16, or float32")
+            model_kwargs["dtype"] = dtype_map[dtype_name]
+        self.model = AutoModel.from_pretrained(self.model_id, **model_kwargs).to(self.device).eval()
+
+    @staticmethod
+    def _as_numpy(value) -> np.ndarray:
+        if hasattr(value, "detach"):
+            return value.detach().float().cpu().numpy()
+        return np.asarray(value, dtype=np.float32)
+
+    def encode(self, texts: list[str]) -> EncodingBatch:
+        prefixed = [self.prefix + text for text in texts]
+        raw = self.tokenizer(prefixed, padding=False, truncation=False)
+        counts = [len(ids) for ids in raw["input_ids"]]
+        vectors: list[np.ndarray] = []
+        for start in range(0, len(prefixed), self.batch_size):
+            batch = prefixed[start : start + self.batch_size]
+            kwargs = {"truncate_dim": self.truncate_dim} if self.truncate_dim else {}
+            vectors.append(self._as_numpy(self.model.encode_text(batch, **kwargs)))
+        overflowed = [count > self.max_length for count in counts]
+        return EncodingBatch(
+            _normalize(np.vstack(vectors)), counts, list(overflowed),
+            chunk_counts=[1] * len(texts), overflowed=overflowed,
+        )
+
+    @property
+    def supports_images(self) -> bool:
+        return True
+
+    def encode_images(self, paths: list[str | Path]) -> np.ndarray:
+        vectors: list[np.ndarray] = []
+        string_paths = [str(Path(path)) for path in paths]
+        for start in range(0, len(string_paths), self.batch_size):
+            batch = string_paths[start : start + self.batch_size]
+            kwargs = {"truncate_dim": self.truncate_dim} if self.truncate_dim else {}
+            vectors.append(self._as_numpy(self.model.encode_image(batch, **kwargs)))
+        return _normalize(np.vstack(vectors))
+
+
+class OpenClipEncoder(TextEncoder):
+    """Adapter for OpenCLIP checkpoints such as EVA02-CLIP-L/14."""
+
+    def __init__(self, spec: dict):
+        super().__init__(spec)
+        try:
+            import open_clip
+        except ImportError as exc:
+            raise RuntimeError(
+                "The open_clip backend needs the optional dependency: pip install -e '.[open-clip]'"
+            ) from exc
+        import torch
+
+        self.torch = torch
+        self.device = str(spec.get("device", "cuda" if torch.cuda.is_available() else "cpu"))
+        self.batch_size = int(spec.get("batch_size", 8))
+        self.model_id = str(spec["model_id"])
+        self.pretrained = str(spec["pretrained"])
+        self.precision = str(spec.get("precision", "fp16" if self.device.startswith("cuda") else "fp32"))
+        self.model, _, self.preprocess = open_clip.create_model_and_transforms(
+            self.model_id, pretrained=self.pretrained, device=self.device, precision=self.precision
+        )
+        self.model.eval()
+        self.tokenizer = open_clip.get_tokenizer(self.model_id)
+        self.max_length = int(spec.get("max_length", getattr(self.model, "context_length", 77)))
+        if str(spec.get("long_text_strategy", "truncate")) != "truncate":
+            raise ValueError("open_clip currently supports only long_text_strategy=truncate")
+
+    def _content_count(self, text: str) -> int:
+        tokenizer = getattr(self.tokenizer, "tokenizer", self.tokenizer)
+        if hasattr(tokenizer, "encode"):
+            encoded = tokenizer.encode(text)
+            return len(encoded.ids if hasattr(encoded, "ids") else encoded) + 2
+        tokens = self.tokenizer([text], context_length=self.max_length)
+        return int((tokens != 0).sum().item())
+
+    def encode(self, texts: list[str]) -> EncodingBatch:
+        prefixed = [self.prefix + text for text in texts]
+        counts = [self._content_count(text) for text in prefixed]
+        vectors: list[np.ndarray] = []
+        for start in range(0, len(prefixed), self.batch_size):
+            batch = prefixed[start : start + self.batch_size]
+            tokens = self.tokenizer(batch, context_length=self.max_length).to(self.device)
+            with self.torch.inference_mode():
+                vectors.append(self.model.encode_text(tokens, normalize=True).detach().float().cpu().numpy())
+        overflowed = [count > self.max_length for count in counts]
+        return EncodingBatch(
+            _normalize(np.vstack(vectors)), counts, list(overflowed),
+            chunk_counts=[1] * len(texts), overflowed=overflowed,
+        )
+
+    @property
+    def supports_images(self) -> bool:
+        return True
+
+    def encode_images(self, paths: list[str | Path]) -> np.ndarray:
+        from PIL import Image
+
+        vectors: list[np.ndarray] = []
+        dtype = next(self.model.parameters()).dtype
+        for start in range(0, len(paths), self.batch_size):
+            tensors = []
+            for path in paths[start : start + self.batch_size]:
+                with Image.open(path) as image:
+                    tensors.append(self.preprocess(image.convert("RGB")))
+            batch = self.torch.stack(tensors).to(self.device, dtype=dtype)
+            with self.torch.inference_mode():
+                vectors.append(self.model.encode_image(batch, normalize=True).detach().float().cpu().numpy())
         return _normalize(np.vstack(vectors))
 
 
@@ -303,7 +450,12 @@ def create_encoder(spec: dict) -> TextEncoder:
         return TransformersEncoder(spec, feature_mode=True)
     if backend == "sentence_transformers":
         return SentenceTransformersEncoder(spec)
+    if backend == "jina_clip":
+        return JinaClipEncoder(spec)
+    if backend == "open_clip":
+        return OpenClipEncoder(spec)
     raise ValueError(
-        f"Unknown backend '{backend}'. Expected hash, hf_mean_pool, hf_text_features, or sentence_transformers."
+        f"Unknown backend '{backend}'. Expected hash, hf_mean_pool, hf_text_features, "
+        "sentence_transformers, jina_clip, or open_clip."
     )
 

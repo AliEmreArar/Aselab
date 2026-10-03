@@ -1,0 +1,50 @@
+name: aligned-multimodal-encoder-expansion-pilot
+dataset: ../caption_samples_50/all_samples.jsonl
+output_dir: ../runs/encoder_expansion_pilot
+seed: 42
+agreement_k: 10
+transforms:
+  - {name: identity}
+variant_files:
+  - ../variants/gemini_pilot_v2/variants.jsonl
+models:
+  - name: clip_l14
+    backend: hf_text_features
+    model_id: openai/clip-vit-large-patch14
+    use_safetensors: true
+    dtype: float16
+    max_length: 77
+    batch_size: 16
+    image_retrieval: true
+  - name: siglip2_b16_224
+    backend: hf_text_features
+    model_id: google/siglip2-base-patch16-224
+    dtype: float16
+    padding: max_length
+    max_length: 64
+    batch_size: 24
+    image_retrieval: true
+  - name: jina_clip_v2
+    backend: jina_clip
+    model_id: jinaai/jina-clip-v2
+    revision: e10d47f5691d0454a0fb5d13f46f2199b74cb436
+    code_revision: 39e6a55ae971b59bea6e44675d237c99762e7ee2
+    trust_remote_code: true
+    dtype: bfloat16
+    max_length: 8192
+    batch_size: 2
+    image_retrieval: true
+  - name: eva02_clip_l14
+    backend: open_clip
+    model_id: EVA02-L-14
+    pretrained: merged2b_s4b_b131k
+    precision: fp16
+    max_length: 77
+    batch_size: 16
+    image_retrieval: true
+  - name: altclip
+    backend: hf_text_features
+    model_id: BAAI/AltCLIP
+    dtype: float16
+    batch_size: 8
+    image_retrieval: true

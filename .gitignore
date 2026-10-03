@@ -11,4 +11,5 @@ Thumbs.db
 .env.*
 !.env.example
 .model_cache/
+*.egg-info/
 
