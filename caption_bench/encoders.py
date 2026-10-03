@@ -85,7 +85,10 @@ class TransformersEncoder(TextEncoder):
             hub_kwargs["revision"] = str(spec["revision"])
         if spec.get("trust_remote_code"):
             hub_kwargs["trust_remote_code"] = True
-        self.tokenizer = AutoTokenizer.from_pretrained(self.model_id, **hub_kwargs)
+        tokenizer_kwargs = dict(hub_kwargs)
+        if spec.get("tokenizer_use_fast") is not None:
+            tokenizer_kwargs["use_fast"] = bool(spec["tokenizer_use_fast"])
+        self.tokenizer = AutoTokenizer.from_pretrained(self.model_id, **tokenizer_kwargs)
         self.hub_kwargs = hub_kwargs
         model_kwargs = dict(hub_kwargs)
         if spec.get("code_revision"):

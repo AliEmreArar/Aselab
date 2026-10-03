@@ -1,10 +1,10 @@
-"""Run the five aligned multimodal encoder families and refresh the caption viewer."""
+"""Run five aligned multimodal and two text-only encoders, then refresh the viewer."""
 import subprocess
 import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-RUN_DIR = "runs/encoder_expansion_pilot"
+RUN_DIR = "runs/encoder_expansion_pilot_v2"
 
 
 def main() -> int:

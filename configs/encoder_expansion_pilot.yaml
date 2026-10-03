@@ -1,6 +1,6 @@
-name: aligned-multimodal-encoder-expansion-pilot
+name: multimodal-and-text-encoder-expansion-pilot
 dataset: ../caption_samples_50/all_samples.jsonl
-output_dir: ../runs/encoder_expansion_pilot
+output_dir: ../runs/encoder_expansion_pilot_v2
 seed: 42
 agreement_k: 10
 transforms:
@@ -48,3 +48,15 @@ models:
     dtype: float16
     batch_size: 8
     image_retrieval: true
+  - name: deberta_v3_base_mean_pool
+    backend: hf_mean_pool
+    model_id: microsoft/deberta-v3-base
+    tokenizer_use_fast: false
+    dtype: float16
+    max_length: 512
+    batch_size: 16
+  - name: bge_m3
+    backend: sentence_transformers
+    model_id: BAAI/bge-m3
+    max_length: 8192
+    batch_size: 4

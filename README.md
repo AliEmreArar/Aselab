@@ -2,19 +2,22 @@
 
 ## Aligned multimodal encoder expansion
 
-CLIP ViT-L/14, SigLIP2, Jina-CLIP-v2, EVA02-CLIP-L/14 and AltCLIP can be run on the
-same Gemini pilot captions and matching images with:
+CLIP ViT-L/14, SigLIP2, Jina-CLIP-v2, EVA02-CLIP-L/14 and AltCLIP, plus the
+text-only DeBERTa-v3-base mean-pooling baseline and BGE-M3 sentence encoder, can be run
+on the same Gemini pilot captions with:
 
 ```powershell
-pip install -e ".[open-clip,jina-clip,altclip]"
+pip install -e ".[open-clip,jina-clip,altclip,sentence-transformers,deberta]"
 python scripts/run_encoder_expansion_pilot.py
 ```
 
-The models are loaded sequentially. Each text tower is evaluated only with its jointly aligned
-vision tower; embeddings from different families are never mixed. The Jina adapter uses its
-native 8,192-token text path, EVA02 uses the official OpenCLIP checkpoint, and the other three
-use their Transformers-native feature APIs. Results are saved under
-`runs/encoder_expansion_pilot` and merged into `caption_inceleme.html`.
+The models are loaded sequentially. Multimodal text towers are evaluated only with their jointly
+aligned vision towers; embeddings from different families are never mixed. DeBERTa and BGE-M3
+are text-only and therefore report caption-to-caption metrics but no image retrieval metrics.
+DeBERTa is deliberately labeled as a raw-backbone mean-pooling baseline because it was not
+trained as a sentence embedding model. The Jina and BGE-M3 adapters use their native 8,192-token
+text paths, while EVA02 uses the official OpenCLIP checkpoint. Results are saved under
+`runs/encoder_expansion_pilot_v2` and merged into `caption_inceleme.html`.
 
 ## Gemini ile gerçek özet ve varyant üretimi
 
