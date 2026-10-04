@@ -59,6 +59,16 @@ def build(*, generated_path=None, gemini_folder=None, output_path=None):
                     score = lookup[row["sample_id"], row["variant_type"]]["scores"][row["model"]]
                     score.update({key: float(row[key]) for key in ("image_cosine", "image_margin")})
                     score.update({key: int(row[key]) for key in ("image_rank", "image_pool_size")})
+        discrimination_path = folder / "discrimination_details.csv"
+        if discrimination_path.exists():
+            with discrimination_path.open(encoding="utf-8", newline="") as stream:
+                for row in csv.DictReader(stream):
+                    lookup[row["sample_id"], row["variant_type"]]["scores"][row["model"]]["calibration"] = {
+                        "hardest_sample_id": row["hardest_sample_id"],
+                        **{key: float(row[key]) for key in
+                           ("negative_percentile", "negative_median", "median_margin", "hardest_margin",
+                            "hard_set_margin", "hardest_cosine")},
+                    }
         pairs = {sample["id"]: {} for sample in samples}
         for model in manifest["models"]:
             safe_name = "".join(c if c.isalnum() or c in "-_" else "_" for c in model)

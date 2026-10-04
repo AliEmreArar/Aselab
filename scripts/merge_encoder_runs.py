@@ -77,7 +77,7 @@ def merge(base: Path, additions: list[Path], output: Path) -> None:
     pd.concat(summaries, ignore_index=True).to_csv(output / "summary.csv", index=False)
     pd.concat(diagnostics, ignore_index=True).to_csv(output / "embedding_diagnostics.csv", index=False)
     manifest = manifests[0]
-    manifest["name"] = "multimodal-and-text-encoder-expansion-pilot-v3"
+    manifest["name"] = manifests[0]["name"] + "-merged"
     manifest["created_at"] = datetime.now(timezone.utc).isoformat()
     manifest["models"] = [model for item in manifests for model in item["models"]]
     manifest["config"]["models"] = [model for item in manifests for model in item["config"]["models"]]

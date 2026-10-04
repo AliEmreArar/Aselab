@@ -266,3 +266,65 @@ Yeni encoder eklemek için `caption_bench/encoders.py` içindeki `TextEncoder` a
 5. Varyantların gerçekten eşdeğer olduğunu küçük bir manuel denetimle doğrulayın.
 6. Son aşamada eşleşen vision encoder ile image→text ve text→image Recall@K ölçümünü ayrı bir deney olarak ekleyin.
 
+## Kontrollü caption ayrımı pilotu
+
+`runs/controlled_comparison_v2` sekiz encoder için aynı 150 orijinal caption havuzunu
+(kategori başına 50) kullanır. Varyantlı 15 örnekte mevcut 60 caption'a 27 tek-ifade
+kontrolü eklendi. Kurala uygun ifade bulunmadığında kontrol atlanır; 12 örnekte iki
+kontrol birlikte vardır (yüz 3, insan 4, taşıt 5). Değişiklikler
+`variants/controlled_pilot/variants.jsonl` içinde `change_note` ile kayıtlıdır.
+
+- Kaynak ayrımı: her varyantın kendi orijinali, aynı kategorideki diğer 49 orijinal
+  caption ile yarışır. `negative_percentile` rakiplere karşı ikili kazanma oranıdır;
+  eşitlik yarım puandır, olasılık veya kalibre edilmiş güven değildir.
+- `hardest_margin`: kaynak cosine − en güçlü rakip cosine. Pozitif değer kaynak
+  caption'ın tüm rakipleri geçtiğini gösterir. Sabit zor-5 kümesi her model/anchor
+  için **orijinal** caption'ın komşularından seçilir; sorgu dönüşümüyle değiştirilmez.
+- `discrimination_summary.csv`: cosine, margin, percentile, R@1, MRR ve örnek bazlı
+  bootstrap ortalama-margin aralığı. Sıra/MRR eşitliklerde en kötü sıra kullanır.
+- Tek-olgu duyarlılığı: aynı dengeli caption'a göre eş anlamlı ve olgu-değiştirilmiş
+  caption'ların cosine farkı `control_sensitivity_*.csv` dosyalarında verilir.
+  Bilgi azaltma, eş anlamlı dönüşüm ve farklı kaynakların evrensel bir skor
+  sıralaması izlemesi beklenmez. Olgu-değiştirilmiş sorgunun yüksek kaynak R@1'i
+  iyi caption anlamına gelmez; kaynak ayrımı ile doğruluk ayrı sorulardır.
+
+Yüzlerde dengeli varyantlar için DeBERTa ortalama cosine 0.949 ve kaynak R@1 0/5;
+CLIP 0.707 ve 2/5; BGE-M3 0.802 ve 2/5. Bu küçük pilot, ham cosine'ın modeller
+arasında başarı ölçüsü olmadığını gösterir; model üstünlüğüne dair yeterli örnek yoktur.
+
+Kontroller, mevcut Gemini dengeli metninin tek ifadesini değiştirir; görüntüye göre
+doğrulukları bağımsız insan denetimiyle onaylanmış değildir. Farklı dosyaların farklı
+kimlikler olduğu da doğrulanmamıştır. Bu test caption kaynak ayrımıdır; mevcut
+görsel retrieval aynı görseli bulmadır, cross-camera ReID değildir. Gerçek ReID
+iddiası için kimlik etiketleri, ayrı sorgu/galeri görselleri ve kimlik bazlı pozitif/
+negatif eşleşmeler gerekir. Aynı pilotla eşik seçip genelleme iddia etmeyin;
+kontrolleri denetleyip daha büyük, ayrılmış bir test kümesinde tekrarlayın.
+
+Çalıştırmada Transformers, Jina/AltCLIP tokenizer regex'i için uyarı verdi.
+Bu pilot önceki koşuların tokenizer davranışını korur; uyarının etkisi burada
+izole edilmedi. Model üstünlüğü çıkarmadan önce tokenizer sürüm/ayar kontrolünü
+ayrı bir ablation olarak doğrulayın. `runs/controlled_comparison` ilk kontrol
+metinlerini saklar; güncel sonuç ve sayfa `controlled_comparison_v2` kullanır.
+
+Doğrulama: `python -m pytest -q` (31 test) ve `node tests/viewer_smoke.cjs`.
+İkinci test 150 örnekte JavaScript render akışını sahte DOM ile çalıştırır;
+gerçek tarayıcıdaki görsel yerleşim doğrulaması değildir.
+
+Tekrarlama (Windows encoder'ları model cache'i mevcutsa offline çalıştırılabilir):
+
+```powershell
+python scripts/prepare_controlled_pilot.py
+$env:HF_HUB_OFFLINE='1'
+python -m caption_bench run --config configs/controlled_pilot.yaml
+# Mamba config'i desteklenen CUDA/Triton ortamında ayrıca çalıştırılır:
+# python -m caption_bench run --config configs/controlled_mamba3.yaml
+python scripts/merge_encoder_runs.py --base runs/controlled_pilot --addition runs/controlled_mamba3 --output runs/controlled_comparison_v2
+python scripts/evaluate_discrimination.py --run runs/controlled_comparison_v2
+python scripts/analyze_original_pairs.py --run runs/controlled_comparison_v2 --domain face --fixed-a face::train::170623.jpg --fixed-b face::test::189457.jpg
+python scripts/build_caption_viewer.py --generated-variants variants/controlled_pilot/variants.jsonl --gemini-run-dir runs/controlled_comparison_v2 --output caption_inceleme.html
+```
+
+Merge yeni bir çıktı dizini ister; mevcut sonuçları korumak için tekrar çalıştırmada
+yeni bir dizin adı seçin. Sayfada A/B karşılaştırmasının altında negatif referansı,
+en güçlü rakip caption ve aynı dengeli metne göre iki kontrolün farkı gösterilir.
+
