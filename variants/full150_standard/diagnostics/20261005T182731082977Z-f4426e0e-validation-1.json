@@ -1,0 +1,99 @@
+{
+  "sample_id": "face::test::201409.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "Young adult male with an oval face, receding hairline, thick eyebrows, and short facial stubble.",
+        "retained_facts": [
+          "young adult male",
+          "oval face shape",
+          "receding hairline",
+          "thick eyebrows",
+          "short facial stubble"
+        ],
+        "omitted_facts": [
+          "face proportions",
+          "eye shape",
+          "nose details",
+          "mouth details",
+          "ear details",
+          "glitch artifacts",
+          "expression",
+          "gaze"
+        ]
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "Young adult male with an oval face, receding hairline, thick soft-arched eyebrows, almond-shaped eyes, and short facial stubble on the cheeks, jaw, and chin.",
+        "retained_facts": [
+          "young adult male",
+          "oval face shape",
+          "receding hairline",
+          "thick soft-arched eyebrows",
+          "almond-shaped eyes",
+          "short facial stubble on cheeks, jaw, and chin"
+        ],
+        "omitted_facts": [
+          "face thirds",
+          "forehead details",
+          "nasal details",
+          "mouth details",
+          "ear details",
+          "glitch artifacts"
+        ]
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "Young adult male, oval face with strong bone structure, high forehead, and receding hairline. Features include thick, dense, soft-arched eyebrows, almond-shaped eyes with visible creases, a straight-dorsum nose with a rounded tip, and medium-width mouth with defined cupid's bow. Short facial stubble covers the cheeks, jaw, and chin; ears have free lobes.",
+        "retained_facts": [
+          "young adult male",
+          "oval face",
+          "strong bone structure",
+          "high forehead",
+          "receding hairline",
+          "thick dense soft-arched eyebrows",
+          "almond-shaped eyes",
+          "straight dorsum nose",
+          "rounded tip",
+          "medium-width mouth",
+          "defined cupid's bow",
+          "short facial stubble on cheeks jaw and chin",
+          "free ear lobes"
+        ],
+        "omitted_facts": [
+          "glitch artifacts",
+          "gaze",
+          "pose"
+        ]
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "That young guy has an oval face with a receding hairline, thick dark eyebrows, and short stubble on his jaw. He has a pretty standard straight nose and almond-shaped eyes.",
+        "retained_facts": [
+          "young adult",
+          "oval face",
+          "receding hairline",
+          "thick eyebrows",
+          "short stubble on jaw",
+          "straight nose",
+          "almond-shaped eyes"
+        ],
+        "omitted_facts": [
+          "bone structure details",
+          "ear details",
+          "mouth details",
+          "glitch artifacts"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

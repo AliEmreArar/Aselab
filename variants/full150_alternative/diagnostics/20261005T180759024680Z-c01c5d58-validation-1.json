@@ -1,0 +1,21 @@
+{
+  "sample_id": "vehicle::query_images::20298_c122_00.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "MPV; silver; silver alloy wheels."
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Silver MPV with silver alloy wheels."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

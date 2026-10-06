@@ -1,0 +1,31 @@
+{
+  "sample_id": "face::train::001042.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "An adult with an oval face, rounded hairline with slight temporal recession, medium arched eyebrows, and almond-shaped eyes."
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "An adult with an oval face, rounded hairline with slight temporal recession, medium arched eyebrows, almond-shaped eyes, and a straight-bridged nose with a rounded tip."
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "Feminine-presenting adult with an oval face, moderate soft tissue, and distinct bone structure. Features include a rounded hairline with slight temporal recession, medium-thickness arched eyebrows, almond-shaped eyes with visible upper-lid creases, a straight-dorsum nose with a rounded tip, and moderately full lips with a defined cupid's bow. A finger partially occludes the mouth, and the skin is clear."
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "You can recognize this person by their oval-shaped face, a hairline that slightly recedes at the temples, and medium-thick eyebrows with a soft arch. They have almond-shaped eyes and a straight nose with a rounded tip. Their lips are moderately full, though one of their fingers is partially covering their mouth."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

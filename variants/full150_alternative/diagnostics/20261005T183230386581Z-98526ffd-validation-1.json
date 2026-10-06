@@ -1,0 +1,21 @@
+{
+  "sample_id": "face::train::178129.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "face shape: oval; jawline: moderately wide; facial thirds: balanced; hairline: natural, rounded shape, moderate temporal recession; eyebrows: thin, soft-arched, high arch peak position; eyes: almond-shaped, neutral canthal tilt, double upper-lid creases, moderate lid exposure; nose: narrow root, straight dorsum, narrow bridge, rounded tip, moderate projection; mouth: medium-width, thin upper and lower lips, level corners; teeth: visible upper; skin: smooth, no persistent marks; ear lobes: free; earrings: drop style"
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Drop earrings accent an oval face with a moderately wide jawline and a natural, rounded hairline showing moderate temporal recession. The face features thin, soft-arched eyebrows with a high arch peak position above almond-shaped eyes that have double upper-lid creases and neutral canthal tilt. The nose has a narrow root and bridge with a straight dorsum and rounded, moderately projecting tip. The mouth is medium-width with thin lips and visible upper teeth, and the skin is smooth with free ear lobes."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

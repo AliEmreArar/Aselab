@@ -1,0 +1,31 @@
+{
+  "sample_id": "person::train::08634_3.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "A woman with short gray hair and sunglasses wearing a white sleeveless vest, a striped shirt, and black pants, carrying a shoulder bag."
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "A female of average build with short gray hair and sunglasses, wearing a white sleeveless vest over a white, black, and blue striped shirt, paired with black pants and shoes. She carries a black shoulder bag with a blue garment and wears a watch on her left wrist."
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "A female with light skin tone and average build, sporting short gray hair and sunglasses. She is dressed in a white sleeveless outer vest, a short-sleeved shirt with horizontal white, black, and blue stripes and a dark blue collar, black pants, and black shoes. Accessories include a watch on her left wrist and a black shoulder bag with a long strap, which has a blue garment draped over it."
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "I'm looking for a woman with short gray hair and sunglasses. She has a white sleeveless vest on over a striped shirt that has white, black, and blue horizontal stripes. She's wearing black pants and shoes, and she has a watch on her left wrist. She's also carrying a black shoulder bag that has a blue piece of clothing draped over it."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

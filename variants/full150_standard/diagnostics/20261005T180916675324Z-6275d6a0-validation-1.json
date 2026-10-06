@@ -1,0 +1,31 @@
+{
+  "sample_id": "face::train::168471.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "An adult female with an oval face, thick soft-arched eyebrows, and dark hair styled in loose waves with side-swept bangs."
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "Adult female with an oval face shape, prominent cheekbones, and a defined jawline. She has thick soft-arched eyebrows, almond-shaped eyes, and dark hair styled in loose waves with side-swept bangs."
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "Adult female with an oval face, straight forehead, and rounded hairline with temporal recession. Features include prominent cheekbones, a defined jawline, and a rounded chin. She has thick soft-arched eyebrows, almond-shaped eyes with double creases, and a straight nasal dorsum. Her mouth has a defined cupid's bow and fuller lower lip. She has attached earlobes and dark hair in loose waves with side-swept bangs."
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "This is an adult woman with an oval face, dark wavy hair, and side-swept bangs. She has distinctively thick, arched eyebrows and almond-shaped eyes. Her cheekbones are quite prominent, and she has a defined jawline with a rounded chin."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

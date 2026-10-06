@@ -1,0 +1,4 @@
+model,domain,n,mean_gap,preserving_win_rate,tie_rate
+jina_clip_v2,face,15,0.008093217947914148,1.0,0.0
+jina_clip_v2,person,39,0.03182463755990624,1.0,0.0
+jina_clip_v2,vehicle,31,0.09859125503332539,1.0,0.0

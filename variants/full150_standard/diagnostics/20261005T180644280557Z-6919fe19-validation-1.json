@@ -1,0 +1,31 @@
+{
+  "sample_id": "face::train::090489.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "A young adult with an oval face, almond-shaped eyes, and short blonde hair pulled back."
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "A young adult with an oval face, medium-arched eyebrows, almond-shaped eyes, a straight nose, and short blonde hair pulled straight back."
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "Young adult with an oval face, moderately defined bone structure, and a rounded chin. Features include medium-thickness soft-arched eyebrows, almond-shaped eyes with double eyelid creases, a straight nose with a rounded tip, and medium-width mouth. The hair is short and blonde, pulled straight back from a rounded hairline with slight temporal recession."
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "This is a young woman with an oval-shaped face and short blonde hair that is pulled straight back. She has natural-looking eyebrows, almond-shaped eyes, and a straight nose."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

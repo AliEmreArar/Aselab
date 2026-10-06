@@ -1,0 +1,21 @@
+{
+  "sample_id": "face::test::189858.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "face; oval shape; forehead; obscured by hair; cheekbones; moderate width and projection; lower face; tapering; chin; rounded with moderate projection; mentolabial sulcus; shallow; eyebrows; soft-arched and moderate thickness; eyes; almond-shaped with double creases; nose; straight dorsum and rounded tip; mouth; open with moderate lip fullness and defined cupid's bow; hair; voluminous curly reddish-brown with bangs; skin; clear without persistent marks"
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Voluminous curly reddish-brown hair styled with bangs across the forehead frames an oval face featuring almond-shaped eyes with double creases and a nose with a straight dorsum and rounded tip. The individual has moderate cheekbone width and projection, a rounded chin with moderate projection, and a shallow mentolabial sulcus. The mouth is open with moderate lip fullness and a defined cupid's bow, and the clear skin is devoid of persistent marks."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

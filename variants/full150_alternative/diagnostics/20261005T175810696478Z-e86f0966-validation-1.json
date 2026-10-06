@@ -1,0 +1,35 @@
+{
+  "sample_id": "person::gallery::26721_4.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "person: average build; jacket: dark long-sleeved; trousers: dark; shoes: dark.",
+        "retained_facts": [
+          "average build",
+          "dark long-sleeved jacket",
+          "dark trousers",
+          "dark shoes"
+        ],
+        "omitted_facts": []
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Dark long-sleeved jacket worn with dark trousers and dark shoes on a person of average build.",
+        "retained_facts": [
+          "dark long-sleeved jacket",
+          "dark trousers",
+          "dark shoes",
+          "average build"
+        ],
+        "omitted_facts": []
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

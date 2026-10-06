@@ -1,0 +1,31 @@
+{
+  "sample_id": "face::train::008309.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "Middle-aged male with an oblong face, receding dark wavy hair, and light stubble."
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "Middle-aged male with an oblong face, dark wavy hair with a receding hairline, medium-thickness eyebrows, and light stubble on the upper lip and chin."
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "Middle-aged male with an oblong face characterized by prominent bone structure. Features include dark wavy hair, a receding hairline with deep temporal recession, medium-thickness arched eyebrows, almond-shaped eyes with defined creases, a straight nose with a rounded tip, and a medium-width mouth. Light stubble is present on the upper lip and chin, and the skin is smooth without persistent marks."
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "A middle-aged man with an oblong face shape. He has dark, wavy hair that is receding at the temples and light stubble on his chin and upper lip. He has arched eyebrows, almond-shaped eyes, and a straight nose."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

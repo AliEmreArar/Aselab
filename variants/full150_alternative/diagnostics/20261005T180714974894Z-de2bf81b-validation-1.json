@@ -1,0 +1,21 @@
+{
+  "sample_id": "vehicle::train_images::08361_c094_04.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "vehicle: Nissan Tiida sedan; vehicle color: silver; wheels: alloy wheels; vehicle feature: sunroof; front windows: wind deflectors; rear passenger windows: wind deflectors"
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Silver Nissan Tiida sedan equipped with wind deflectors on the front and rear passenger windows, featuring alloy wheels and a sunroof."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

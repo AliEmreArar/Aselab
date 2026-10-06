@@ -1,0 +1,43 @@
+{
+  "sample_id": "person::train::08924_1.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "person; average-build; female; hair; dark; top; dark blue; long-sleeved; pants; dark; shoes; dark; bag; dark; strap; smartphone; holding",
+        "retained_facts": [
+          "average-build",
+          "female",
+          "dark hair",
+          "dark blue long-sleeved top",
+          "dark pants",
+          "dark shoes",
+          "dark bag",
+          "strap",
+          "holding a smartphone"
+        ]
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "A dark blue long-sleeved top is worn by an average-build female with dark hair who carries a dark bag by its strap and holds a smartphone, while wearing dark pants and dark shoes.",
+        "retained_facts": [
+          "average-build",
+          "female",
+          "dark hair",
+          "dark blue long-sleeved top",
+          "dark pants",
+          "dark shoes",
+          "dark bag",
+          "strap",
+          "holding a smartphone"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

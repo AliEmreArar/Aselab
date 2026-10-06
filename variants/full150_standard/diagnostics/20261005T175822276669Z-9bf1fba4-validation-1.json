@@ -1,0 +1,57 @@
+{
+  "sample_id": "vehicle::train_images::04724_c110_02.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "A white hatchback.",
+        "retained_facts": [
+          "Hatchback",
+          "white"
+        ],
+        "omitted_facts": [
+          "sunroof",
+          "alloy wheels"
+        ]
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "A white hatchback with a sunroof and alloy wheels.",
+        "retained_facts": [
+          "Hatchback",
+          "white",
+          "sunroof",
+          "alloy wheels"
+        ]
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "A white hatchback featuring a sunroof and alloy wheels.",
+        "retained_facts": [
+          "Hatchback",
+          "white",
+          "sunroof",
+          "alloy wheels"
+        ]
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "It's a white hatchback that has alloy wheels and a sunroof.",
+        "retained_facts": [
+          "Hatchback",
+          "white",
+          "sunroof",
+          "alloy wheels"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

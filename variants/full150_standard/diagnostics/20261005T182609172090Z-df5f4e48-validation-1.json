@@ -1,0 +1,31 @@
+{
+  "sample_id": "face::train::088914.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "Adult male with an oval face, receding hairline, and thin mustache and goatee, wearing dark sunglasses."
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "Adult male with an oval face, receding hairline, and defined jawline. He has a thin mustache and goatee, and is wearing dark sunglasses."
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "Adult male with an oval face shape, receding hairline, and prominent cheekbones. He has a defined jawline, rounded chin, straight nose, and thin mustache and goatee. He wears dark sunglasses covering his eyes."
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "This is a man with an oval face and a receding hairline. He has a thin mustache and goatee, and he is wearing dark sunglasses."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "sample_id": "vehicle::train_images::10529_c003_02.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "Sedan, Kia Rio; vehicle color, silver; wheels, five-spoke alloy; windshield, rain guard deflectors.",
+        "retained_facts": [
+          "Sedan",
+          "Kia Rio",
+          "silver",
+          "five-spoke alloy wheels",
+          "windshield rain guard deflectors"
+        ]
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Silver Kia Rio sedan featuring five-spoke alloy wheels and windshield rain guard deflectors.",
+        "retained_facts": [
+          "silver",
+          "Kia Rio",
+          "sedan",
+          "five-spoke alloy wheels",
+          "windshield rain guard deflectors"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

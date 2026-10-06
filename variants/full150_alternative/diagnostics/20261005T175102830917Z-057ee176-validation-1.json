@@ -1,0 +1,35 @@
+{
+  "sample_id": "person::query::26789_3.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "person: average build; male; hair: dark, short; shirt: dark red, long-sleeved; pants: blue; backpack: light-colored, straps on both shoulders",
+        "retained_facts": [
+          "average-build male",
+          "dark short hair",
+          "dark red long-sleeved shirt",
+          "blue pants",
+          "light-colored backpack with straps on both shoulders"
+        ]
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "The light-colored backpack with straps on both shoulders is worn by an average-build male with dark short hair, wearing a dark red long-sleeved shirt and blue pants.",
+        "retained_facts": [
+          "light-colored backpack with straps on both shoulders",
+          "average-build male",
+          "dark short hair",
+          "dark red long-sleeved shirt",
+          "blue pants"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "sample_id": "person::train::01924_2.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "Person: male, average build, short dark hair; hooded puffer jacket: grey and black patterned design; shirt: striped; pants: dark blue; shoes: red with white soles.",
+        "retained_facts": [
+          "Male",
+          "average build",
+          "short dark hair",
+          "hooded puffer jacket: grey and black patterned",
+          "striped shirt",
+          "dark blue pants",
+          "red shoes with white soles"
+        ]
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Grey and black patterned hooded puffer jacket worn over a striped shirt, paired with dark blue pants and red shoes with white soles on a male of average build with short dark hair.",
+        "retained_facts": [
+          "grey and black patterned hooded puffer jacket",
+          "striped shirt",
+          "dark blue pants",
+          "red shoes with white soles",
+          "male",
+          "average build",
+          "short dark hair"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

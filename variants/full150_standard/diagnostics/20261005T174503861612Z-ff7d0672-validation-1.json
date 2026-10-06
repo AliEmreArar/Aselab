@@ -1,0 +1,64 @@
+{
+  "sample_id": "person::query::26761_2.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "Person with dark hair wearing a dark hooded jacket, dark pants, and dark shoes.",
+        "retained_facts": [
+          "dark hair",
+          "dark hooded jacket",
+          "dark pants",
+          "dark shoes"
+        ],
+        "omitted_facts": [
+          "average build"
+        ]
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "Person of average build with dark hair, wearing a dark long-sleeved hooded jacket, dark pants, and dark shoes.",
+        "retained_facts": [
+          "average build",
+          "dark hair",
+          "dark long-sleeved hooded jacket",
+          "dark pants",
+          "dark shoes"
+        ],
+        "omitted_facts": []
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "Person of average build, dark hair, wearing a dark long-sleeved hooded jacket, dark pants, and dark shoes.",
+        "retained_facts": [
+          "average build",
+          "dark hair",
+          "dark long-sleeved hooded jacket",
+          "dark pants",
+          "dark shoes"
+        ],
+        "omitted_facts": []
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "I'm looking for a person of average build with dark hair, dressed in a dark hooded jacket with long sleeves, matching dark pants, and dark shoes.",
+        "retained_facts": [
+          "average build",
+          "dark hair",
+          "dark long-sleeved hooded jacket",
+          "dark pants",
+          "dark shoes"
+        ],
+        "omitted_facts": []
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

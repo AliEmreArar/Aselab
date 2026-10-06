@@ -1,0 +1,39 @@
+{
+  "sample_id": "person::train::02167_1.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "person; slim build; short dark hair; eyeglasses with thin frames; dark jacket; long sleeves; light-colored collar; black pants; black backpack; backpack on both shoulders",
+        "retained_facts": [
+          "slim build",
+          "short dark hair",
+          "eyeglasses with thin frames",
+          "dark jacket with long sleeves",
+          "light-colored collar",
+          "black pants",
+          "black backpack on both shoulders"
+        ]
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Eyeglasses with thin frames and short dark hair characterize this person, who wears a dark jacket with long sleeves over a light-colored collar. The person has a slim build and is dressed in black pants while carrying a black backpack on both shoulders.",
+        "retained_facts": [
+          "short dark hair",
+          "eyeglasses with thin frames",
+          "dark jacket with long sleeves",
+          "light-colored collar",
+          "slim build",
+          "black pants",
+          "black backpack on both shoulders"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

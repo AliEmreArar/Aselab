@@ -1,0 +1,96 @@
+{
+  "sample_id": "face::train::026996.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "Middle-aged female with an oval face, prominent cheekbones, almond-shaped eyes, and a small wireless microphone near the right cheek.",
+        "retained_facts": [
+          "Female presentation",
+          "middle-aged",
+          "oval face shape",
+          "prominent cheekbones",
+          "almond-shaped eyes",
+          "small wireless microphone attached near the right cheek"
+        ],
+        "omitted_facts": [
+          "Detailed facial bone structure",
+          "hairline specifics",
+          "nasal and lip details",
+          "expression"
+        ]
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "Middle-aged female with an oval face, prominent cheekbones, medium-thickness soft-arched eyebrows, and almond-shaped eyes. Features include a straight nasal bridge, balanced lips with visible teeth, and a small wireless microphone attached near the right cheek.",
+        "retained_facts": [
+          "Middle-aged female",
+          "oval face",
+          "prominent cheekbones",
+          "medium-thickness soft-arched eyebrows",
+          "almond-shaped eyes",
+          "straight nasal bridge",
+          "balanced lips",
+          "teeth visible",
+          "wireless microphone near right cheek"
+        ],
+        "omitted_facts": [
+          "Specific measurements of facial thirds",
+          "exact columella show",
+          "precise ear positioning"
+        ]
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "Middle-aged female with an oval face, rounded hairline with temporal recession, prominent cheekbones, and shallow nasolabial folds. She has medium-thickness soft-arched eyebrows, almond-shaped eyes with double-creased lids, a straight nasal bridge, and a rounded tip. Her lips are balanced with a defined cupid's bow and visible upper teeth. A small wireless microphone is attached near her right cheek.",
+        "retained_facts": [
+          "Middle-aged female",
+          "oval face",
+          "rounded hairline with temporal recession",
+          "prominent cheekbones",
+          "shallow nasolabial folds",
+          "medium-thickness soft-arched eyebrows",
+          "almond-shaped eyes",
+          "double-creased lids",
+          "straight nasal bridge",
+          "rounded nasal tip",
+          "balanced lips",
+          "defined cupid's bow",
+          "visible upper teeth",
+          "small wireless microphone on right cheek"
+        ],
+        "omitted_facts": [
+          "Capture angle and lighting details",
+          "speaking expression details"
+        ]
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "This is a middle-aged woman with an oval-shaped face and high, prominent cheekbones. She has medium-thick, arched eyebrows over almond-shaped eyes. Her nose is straight and her lips have a nice shape with her top teeth visible. You can see a small wireless microphone clipped near her right cheek.",
+        "retained_facts": [
+          "Middle-aged woman",
+          "oval face",
+          "prominent cheekbones",
+          "medium-thick arched eyebrows",
+          "almond-shaped eyes",
+          "straight nose",
+          "balanced lips",
+          "visible upper teeth",
+          "small wireless microphone near right cheek"
+        ],
+        "omitted_facts": [
+          "Clinical terminology like 'palpebral fissure' or 'nasolabial folds'",
+          "camera-related descriptions"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

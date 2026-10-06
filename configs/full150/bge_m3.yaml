@@ -1,0 +1,17 @@
+name: full150-bge_m3
+dataset: ../../caption_samples_50/all_samples.jsonl
+output_dir: ../../runs/full150/bge_m3
+seed: 42
+agreement_k: 10
+transforms:
+- name: identity
+variant_files:
+- ../../variants/full150/variants.jsonl
+models:
+- name: bge_m3
+  backend: sentence_transformers
+  model_id: BAAI/bge-m3
+  max_length: 8192
+  batch_size: 4
+  device: cpu
+  dtype: float32

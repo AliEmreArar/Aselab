@@ -1,0 +1,47 @@
+{
+  "sample_id": "face::test::196611.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "face; oval shape; prominent cheekbones; forehead; moderate height; straight hairline; minor temporal recession; eyebrows; medium thickness; soft-arched; almond-shaped eyes; upward canthal tilt; double eyelid creases; nose; straight dorsum; medium-width bridge; rounded tip; mouth; moderate vermilion fullness; upturned corners; visible upper teeth; jawline; defined; moderate angle flare; rounded chin; skin; smooth; hair; long reddish-brown; necklace; linked metal",
+        "retained_facts": [
+          "face shape is oval",
+          "prominent cheekbones",
+          "forehead is moderate height with straight hairline and minor temporal recession",
+          "eyebrows are medium thickness and soft-arched",
+          "eyes are almond-shaped with upward canthal tilt and double eyelid creases",
+          "nose has straight dorsum, medium-width bridge, and rounded tip",
+          "mouth has moderate vermilion fullness, upturned corners, and visible upper teeth",
+          "jawline is defined with moderate angle flare and rounded chin",
+          "skin is smooth with no visible marks",
+          "hair is long and reddish-brown",
+          "necklace is linked metal"
+        ]
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Long reddish-brown hair accompanies a woman with prominent cheekbones and an oval face shape featuring a straight hairline with minor temporal recession. Her almond-shaped eyes have an upward canthal tilt and visible double eyelid creases, while her nose has a straight dorsum and rounded tip. She displays a defined jawline with a rounded chin, a mouth with upturned corners and visible upper teeth, and wears a linked metal necklace.",
+        "retained_facts": [
+          "long reddish-brown hair",
+          "prominent cheekbones",
+          "oval face shape",
+          "straight hairline with minor temporal recession",
+          "almond-shaped eyes",
+          "upward canthal tilt",
+          "visible double eyelid creases",
+          "straight dorsum nose with rounded tip",
+          "defined jawline with rounded chin",
+          "mouth with upturned corners and visible upper teeth",
+          "linked metal necklace"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

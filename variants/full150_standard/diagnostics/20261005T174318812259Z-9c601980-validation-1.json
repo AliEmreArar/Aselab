@@ -1,0 +1,73 @@
+{
+  "sample_id": "person::train::11903_4.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "A woman with dark medium-length hair and a white graphic t-shirt with dark trousers.",
+        "retained_facts": [
+          "Female",
+          "dark medium-length hair",
+          "white short-sleeved crew-neck t-shirt featuring a large graphic print of a face",
+          "dark trousers"
+        ],
+        "omitted_facts": [
+          "average build",
+          "dark skin tone",
+          "silver-colored watch on the right wrist"
+        ]
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "A woman of average build and dark skin tone, with dark medium-length hair, wearing a white short-sleeved graphic t-shirt, dark trousers, and a silver watch on her right wrist.",
+        "retained_facts": [
+          "Female",
+          "average build",
+          "dark skin tone",
+          "dark medium-length hair",
+          "white short-sleeved crew-neck t-shirt with graphic print",
+          "dark trousers",
+          "silver-colored watch on the right wrist"
+        ],
+        "omitted_facts": []
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "A female with an average build and dark skin tone, featuring dark medium-length hair. She is wearing a white short-sleeved crew-neck t-shirt that displays a large graphic print of a face on the front, paired with dark trousers and a silver-colored watch worn on the right wrist.",
+        "retained_facts": [
+          "Female",
+          "average build",
+          "dark skin tone",
+          "dark medium-length hair",
+          "white short-sleeved crew-neck t-shirt",
+          "large graphic print of a face on the front",
+          "dark trousers",
+          "silver-colored watch on the right wrist"
+        ],
+        "omitted_facts": []
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "That is a woman with dark skin and shoulder-length dark hair. She has an average build and is wearing a white t-shirt with a big face graphic on it, along with dark pants and a silver watch on her right wrist.",
+        "retained_facts": [
+          "Female",
+          "dark skin tone",
+          "dark medium-length hair",
+          "average build",
+          "white short-sleeved t-shirt with a large face graphic",
+          "dark trousers",
+          "silver-colored watch on the right wrist"
+        ],
+        "omitted_facts": []
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

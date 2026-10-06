@@ -1,0 +1,21 @@
+{
+  "sample_id": "vehicle::gallery_images::20591_c110_03.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "Sedan; BMW 5 Series F10 generation; paint black; wheels multi-spoke alloy; sunroof present; window tint light; front windshield passenger side stickers present"
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Black BMW 5 Series F10 generation sedan with passenger side stickers on the front windshield, multi-spoke alloy wheels, light window tint, and a sunroof."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

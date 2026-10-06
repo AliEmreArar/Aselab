@@ -1,0 +1,33 @@
+{
+  "sample_id": "vehicle::train_images::13184_c012_02.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "sedan; silver; steel wheels; multi-spoke hubcaps; sunroof; white cloth items; rear parcel shelf",
+        "retained_facts": [
+          "Sedan is silver",
+          "Steel wheels have multi-spoke hubcaps",
+          "Vehicle has a sunroof",
+          "Several white cloth items are on the rear parcel shelf"
+        ]
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Silver sedan with multi-spoke hubcaps on steel wheels and a sunroof, featuring several white cloth items located on the rear parcel shelf.",
+        "retained_facts": [
+          "Sedan is silver",
+          "Steel wheels have multi-spoke hubcaps",
+          "Vehicle has a sunroof",
+          "Several white cloth items are on the rear parcel shelf"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

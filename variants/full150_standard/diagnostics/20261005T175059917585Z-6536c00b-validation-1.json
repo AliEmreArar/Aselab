@@ -1,0 +1,31 @@
+{
+  "sample_id": "vehicle::train_images::02440_c090_02.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "Dark brown Hyundai Tucson SUV with alloy wheels and roof rails."
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "Dark brown Hyundai Tucson SUV featuring alloy wheels, silver side steps, roof rails, and a shark fin antenna."
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "Dark brown Hyundai Tucson SUV equipped with alloy wheels, silver-colored side steps, rear bumper trim with silver accents, roof rails, a shark fin antenna, tinted windows, and a circular decal on the rear bumper."
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "A dark brown Hyundai Tucson SUV. It has alloy wheels, roof rails, a shark fin antenna, and tinted windows. You can also spot silver side steps, silver accents on the rear bumper trim, and a circular decal on the back bumper."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

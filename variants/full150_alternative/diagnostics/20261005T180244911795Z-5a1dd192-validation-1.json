@@ -1,0 +1,37 @@
+{
+  "sample_id": "vehicle::train_images::19263_c030_03.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "Sedan Buick Verano; Sedan color light brown; Sedan silver alloy rims; Sedan integrated rear spoiler; Sedan tinted rear windows",
+        "retained_facts": [
+          "Sedan",
+          "Buick Verano",
+          "light brown",
+          "silver alloy rims",
+          "integrated rear spoiler",
+          "tinted rear windows"
+        ]
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Light brown Buick Verano sedan with silver alloy rims, an integrated rear spoiler, and tinted rear windows.",
+        "retained_facts": [
+          "Sedan",
+          "Buick Verano",
+          "light brown",
+          "silver alloy rims",
+          "integrated rear spoiler",
+          "tinted rear windows"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

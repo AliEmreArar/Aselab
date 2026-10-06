@@ -1,0 +1,39 @@
+{
+  "sample_id": "vehicle::train_images::03678_c014_03.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "applicable": true,
+        "text": "sedan: white; brand: Buick; rims: alloy multi-spoke; sunroof: present; window tint: dark; driver's side mirror: red ribbon attached",
+        "retained_facts": [
+          "Sedan is white",
+          "Vehicle is a Buick",
+          "Rims are alloy multi-spoke",
+          "Vehicle has a sunroof",
+          "Window tint is dark",
+          "Driver's side mirror has a red ribbon"
+        ]
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "applicable": true,
+        "text": "Red ribbon attached to the driver's side mirror on a white Buick sedan with alloy multi-spoke rims, a sunroof, and dark window tint.",
+        "retained_facts": [
+          "Red ribbon is on driver's side mirror",
+          "Sedan is white",
+          "Vehicle is a Buick",
+          "Rims are alloy multi-spoke",
+          "Vehicle has a sunroof",
+          "Window tint is dark"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

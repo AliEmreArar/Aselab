@@ -1,0 +1,22 @@
+{
+  "signature": "db9b7254d53d705a21e14052a565fbe85173b03e642522ebef4078c1c43a98d0",
+  "model": "gemini-3.1-flash-lite",
+  "prompt_sha256": "14160ec1a3e02d284fec0e37f440f0f6ed8b481c15e354ff92b51d1e8981daea",
+  "created_at": "2026-10-05T17:40:08.494989+00:00",
+  "completed_captions": 150,
+  "variant_count": 300,
+  "specs": [
+    {
+      "name": "llm_attribute_list",
+      "operation": "summary",
+      "profile": "attribute_list"
+    },
+    {
+      "name": "llm_distinctive_first",
+      "operation": "summary",
+      "profile": "distinctive_first"
+    }
+  ],
+  "skipped": [],
+  "review_note": "Word counts are measurements only. Optional model notes do not determine acceptance."
+}

@@ -1,0 +1,95 @@
+{
+  "sample_id": "face::train::121281.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "A young adult with an oval face, almond-shaped eyes, full lips, and voluminous wavy dark hair.",
+        "retained_facts": [
+          "young adult",
+          "oval face",
+          "almond-shaped eyes",
+          "full lips",
+          "voluminous wavy dark hair"
+        ],
+        "omitted_facts": [
+          "face shape details",
+          "eyebrow shape",
+          "nasal features",
+          "skin texture"
+        ]
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "Young adult with an oval face, dark voluminous wavy hair, almond-shaped eyes with double eyelids, and full lips with a defined cupid's bow.",
+        "retained_facts": [
+          "young adult",
+          "oval face",
+          "dark voluminous wavy hair",
+          "almond-shaped eyes",
+          "double eyelids",
+          "full lips",
+          "defined cupid's bow"
+        ],
+        "omitted_facts": [
+          "facial thirds",
+          "temporal recession",
+          "nasal bridge details",
+          "skin texture"
+        ]
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "Young adult with an oval face, high cheekbones, and rounded hairline with moderate temporal recession. Features include medium-thick soft-arched eyebrows, almond-shaped eyes with double eyelids, a straight nasal bridge, and a medium-width mouth with full, defined lips. The subject has dark voluminous wavy hair and smooth skin with no visible marks.",
+        "retained_facts": [
+          "young adult",
+          "oval face",
+          "high cheekbones",
+          "rounded hairline",
+          "temporal recession",
+          "medium-thick soft-arched eyebrows",
+          "almond-shaped eyes",
+          "double eyelids",
+          "straight nasal bridge",
+          "full lips",
+          "defined cupid's bow",
+          "dark voluminous wavy hair",
+          "smooth skin"
+        ],
+        "omitted_facts": [
+          "medium close-up",
+          "studio lighting",
+          "head pose",
+          "expression"
+        ]
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "She is a young woman with a wavy, dark, and voluminous hairstyle. She has an oval-shaped face with high cheekbones, almond-shaped eyes, and full lips with a clearly defined cupid's bow.",
+        "retained_facts": [
+          "young adult",
+          "voluminous wavy dark hair",
+          "oval face",
+          "high cheekbones",
+          "almond-shaped eyes",
+          "full lips",
+          "defined cupid's bow"
+        ],
+        "omitted_facts": [
+          "nasal features",
+          "eyebrow shape",
+          "skin texture",
+          "hairline specifics"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "sample_id": "person::train::12050_5.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "person; build: average; hair: short, brown; shirt: short-sleeved, white, polo; pants: light brown; shoes: dark brown"
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "A person wearing a short-sleeved white polo shirt with light brown pants and dark brown shoes, featuring short brown hair and an average build."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

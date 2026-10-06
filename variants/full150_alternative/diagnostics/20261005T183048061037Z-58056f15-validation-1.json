@@ -1,0 +1,52 @@
+{
+  "sample_id": "face::train::023736.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "face shape: oval; forehead: average height and width, gently rounded profile, subtle brow ridge prominence; hairline: moderately low, balanced temporal recession; cheekbones: prominent, moderate zygomatic flare, slight cheek hollowing; jawline: defined continuous; chin: rounded, moderate projection; eyebrows: thick, dark, soft-arched, moderate length and spacing; eyes: almond-shaped, slight positive canthal tilt, average orbital depth, double upper-lid creases; nose: straight dorsum, moderate bridge width, rounded tip, average alar width, moderate flare; lips: medium fullness, level corners, well-defined cupid's bow; philtrum: medium-length; ears: free lobes, normal position; facial hair: short dense beard and mustache covering lower jaw and upper lip; hair: short, wavy, dark brown, styled messy on top.",
+        "retained_facts": [
+          "face shape",
+          "forehead",
+          "hairline",
+          "cheekbones",
+          "jawline",
+          "chin",
+          "eyebrows",
+          "eyes",
+          "nose",
+          "lips",
+          "philtrum",
+          "ears",
+          "facial hair",
+          "hair"
+        ]
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Short, wavy dark brown hair styled messy on top accompanies a short, dense beard and mustache covering the lower jaw and upper lip. This middle-aged individual has an oval face shape with strong bone structure, prominent cheekbones with moderate zygomatic flare, and a defined continuous jawline with a rounded chin. The face features thick, dark, soft-arched eyebrows, almond-shaped eyes with a positive canthal tilt, and a straight nose with a rounded tip. The forehead is average in height with a low hairline and balanced temporal recession, while the lips have medium fullness with a well-defined cupid's bow.",
+        "retained_facts": [
+          "hair",
+          "facial hair",
+          "face shape",
+          "bone structure",
+          "cheekbones",
+          "jawline",
+          "chin",
+          "eyebrows",
+          "eyes",
+          "nose",
+          "forehead",
+          "hairline",
+          "lips"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

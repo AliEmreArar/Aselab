@@ -1,0 +1,127 @@
+{
+  "sample_id": "face::train::071174.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "A young adult female with an oval face, almond-shaped eyes, a straight nose, and a small dark mole above her right eyebrow, wearing a head covering.",
+        "retained_facts": [
+          "young adult female",
+          "oval face",
+          "almond-shaped eyes",
+          "straight nose",
+          "small dark mole above right eyebrow",
+          "head covering"
+        ],
+        "omitted_facts": [
+          "face proportions",
+          "forehead contour",
+          "brow ridge",
+          "eyebrow shape",
+          "eyelid creases",
+          "orbital depth",
+          "nasal tip details",
+          "lip details",
+          "philtrum",
+          "skin texture",
+          "garment patterns"
+        ],
+        "change_note": "Extracted only primary identity-defining facial features."
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "A young adult female with an oval face, almond-shaped eyes with upward tilt, and a straight nose. She has a small dark mole above the medial end of her right eyebrow and is wearing a colorful patterned head covering.",
+        "retained_facts": [
+          "young adult female",
+          "oval face",
+          "almond-shaped eyes",
+          "upward canthal tilt",
+          "straight nose",
+          "small dark mole above right eyebrow",
+          "colorful patterned head covering"
+        ],
+        "omitted_facts": [
+          "vertical thirds",
+          "forehead contour",
+          "brow ridge",
+          "glabella",
+          "eyebrow peak",
+          "eyelid crease",
+          "orbital depth",
+          "nasal tip",
+          "alar flare",
+          "lip fullness",
+          "philtrum details",
+          "skin texture"
+        ],
+        "change_note": "Includes main facial features and the distinct mole and head covering."
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "A young adult female with an oval face, rounded forehead contour, and moderate brow ridge. She has soft-arched eyebrows of moderate thickness, almond-shaped eyes with upward tilt and double lids, a straight nose with wide alar flare, and balanced lips. A small dark mole is located above the medial end of her right eyebrow. She is wearing a colorful patterned head covering.",
+        "retained_facts": [
+          "young adult female",
+          "oval face",
+          "rounded forehead contour",
+          "moderate brow ridge",
+          "soft-arched eyebrows",
+          "almond-shaped eyes",
+          "upward canthal tilt",
+          "double upper-lid creases",
+          "straight nose",
+          "wide alar flare",
+          "balanced lip fullness",
+          "small dark mole above right eyebrow",
+          "colorful patterned head covering"
+        ],
+        "omitted_facts": [
+          "glabella width",
+          "orbital depth",
+          "nasal bridge width",
+          "philtrum detail",
+          "skin smoothness",
+          "head tilt",
+          "smiling expression",
+          "lighting conditions"
+        ],
+        "change_note": "Retained all stable structural facial attributes and specific markings."
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "This is a young woman with an oval face and almond-shaped eyes that tilt slightly upward. She has a straight nose and a small dark mole on her forehead just above her right eyebrow. She is wearing a head covering with a colorful pattern.",
+        "retained_facts": [
+          "young woman",
+          "oval face",
+          "almond-shaped eyes",
+          "upward canthal tilt",
+          "straight nose",
+          "small dark mole above right eyebrow",
+          "colorful patterned head covering"
+        ],
+        "omitted_facts": [
+          "vertical thirds",
+          "forehead contour",
+          "brow ridge",
+          "eyelid creases",
+          "orbital depth",
+          "nasal tip projection",
+          "alar flare",
+          "lip details",
+          "philtrum",
+          "skin surface",
+          "head tilt",
+          "smiling"
+        ],
+        "change_note": "Simplified the anatomical descriptions into natural, conversational language."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

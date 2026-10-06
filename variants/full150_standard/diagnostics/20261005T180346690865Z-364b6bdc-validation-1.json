@@ -1,0 +1,80 @@
+{
+  "sample_id": "vehicle::gallery_images::20401_c023_03.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "applicable": true,
+        "text": "Two-tone Smart Fortwo hatchback with a white body and red roof.",
+        "retained_facts": [
+          "Hatchback",
+          "Smart Fortwo",
+          "white body",
+          "red roof"
+        ],
+        "omitted_facts": [
+          "side mirror caps",
+          "five-spoke dark alloy wheels",
+          "tinted windows"
+        ]
+      },
+      {
+        "variant_type": "llm_balanced",
+        "applicable": true,
+        "text": "A two-tone Smart Fortwo hatchback featuring a white body, red roof, and red side mirror caps with dark alloy wheels.",
+        "retained_facts": [
+          "Hatchback",
+          "Smart Fortwo",
+          "white body",
+          "red roof",
+          "red side mirror caps",
+          "dark alloy wheels"
+        ],
+        "omitted_facts": [
+          "five-spoke",
+          "tinted windows"
+        ]
+      },
+      {
+        "variant_type": "llm_detailed",
+        "applicable": true,
+        "text": "Hatchback Smart Fortwo, two-tone white body with red roof and red side mirror caps, five-spoke dark alloy wheels, and tinted windows.",
+        "retained_facts": [
+          "Hatchback",
+          "Smart Fortwo",
+          "white body",
+          "red roof",
+          "red side mirror caps",
+          "five-spoke dark alloy wheels",
+          "tinted windows"
+        ],
+        "omitted_facts": []
+      },
+      {
+        "variant_type": "llm_human_description",
+        "applicable": true,
+        "text": "Look for a small Smart Fortwo hatchback that is two-toned, with a white body and a contrasting red roof and mirror caps, plus dark wheels and tinted windows.",
+        "retained_facts": [
+          "Smart Fortwo",
+          "hatchback",
+          "white body",
+          "red roof",
+          "red side mirror caps",
+          "dark alloy wheels",
+          "tinted windows"
+        ],
+        "omitted_facts": [
+          "five-spoke"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

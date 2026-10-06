@@ -1,0 +1,31 @@
+{
+  "sample_id": "face::train::101485.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "A young adult with an oval face, almond-shaped eyes, and voluminous layered brown hair, wearing large hoop earrings."
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "A young adult woman with an oval face, prominent cheekbones, almond-shaped eyes, and a straight nose. She has voluminous layered brown hair and wears large circular hoop earrings."
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "Young adult with an oval face, prominent cheekbones, and a rounded chin. Features include medium-thin arched eyebrows, almond-shaped eyes with double eyelids, and a straight nose with a rounded tip. She has medium-width lips, a short philtrum, and wears large circular hoop earrings. Her hair is voluminous, layered, and brown, styled to the side."
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "This young woman has an oval face with prominent cheekbones and almond-shaped eyes. She has voluminous, layered brown hair and is wearing large circular hoop earrings and dark makeup."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

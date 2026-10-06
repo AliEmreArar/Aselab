@@ -1,0 +1,21 @@
+{
+  "sample_id": "face::train::090489.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "Face shape; oval; forehead; moderately high wide rounded; hairline; rounded with slight temporal recession; cheekbones; moderately prominent average width; jawline; moderately defined; chin; rounded; eyebrows; medium thickness density length soft-arched; eyes; almond-shaped slight upward slant average intercanthal distance double eyelid creases; nose; straight medium bridge width rounded tip; mouth; medium width balanced vermilion fullness level corners; teeth; upper visible; ears; average size protrusion free lobes; hair; short blonde pulled back."
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Short blonde hair pulled straight back frames an oval face with moderately prominent cheekbones, a rounded chin, and a moderately defined jawline. The subject has soft-arched medium eyebrows, almond-shaped eyes with double eyelid creases and a slight upward slant, and a straight nose with a rounded tip. The forehead is moderately high and wide with slight temporal recession, the mouth is of medium width with level corners and visible upper teeth, and the ears have free lobes."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "sample_id": "vehicle::train_images::03678_c014_03.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "White Buick sedan with a sunroof and a red ribbon on the mirror.",
+        "retained_facts": [
+          "Sedan",
+          "white",
+          "Buick",
+          "sunroof",
+          "red ribbon on driver's side mirror"
+        ],
+        "omitted_facts": [
+          "alloy multi-spoke rims",
+          "dark window tint"
+        ]
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "A white Buick sedan featuring alloy multi-spoke rims, a sunroof, dark window tint, and a red ribbon on the driver's side mirror.",
+        "retained_facts": [
+          "Sedan",
+          "white",
+          "Buick",
+          "alloy multi-spoke rims",
+          "sunroof",
+          "dark window tint",
+          "red ribbon on driver's side mirror"
+        ]
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "White Buick sedan equipped with alloy multi-spoke rims and a sunroof. The vehicle has dark window tinting and a red ribbon secured to the driver's side mirror.",
+        "retained_facts": [
+          "Sedan",
+          "white",
+          "Buick",
+          "alloy multi-spoke rims",
+          "sunroof",
+          "dark window tint",
+          "red ribbon on driver's side mirror"
+        ]
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "It is a white Buick sedan with dark tinted windows and a sunroof. It has nice alloy rims and there is a little red ribbon tied to the driver's side mirror.",
+        "retained_facts": [
+          "Sedan",
+          "white",
+          "Buick",
+          "dark window tint",
+          "sunroof",
+          "alloy multi-spoke rims",
+          "red ribbon on driver's side mirror"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

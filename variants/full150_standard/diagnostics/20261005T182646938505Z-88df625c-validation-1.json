@@ -1,0 +1,79 @@
+{
+  "sample_id": "face::test::185812.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "Adult male with a round face, receding hairline, thin facial hair on the jawline, and thin-metal-frame eyeglasses.",
+        "retained_facts": [
+          "Male-presenting adult",
+          "round face shape",
+          "receding hairline",
+          "thin facial hair along the jawline",
+          "thin-metal-frame eyeglasses"
+        ]
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "Adult male with a round face and receding M-shaped hairline. He has moderately thick straight eyebrows, almond-shaped eyes, and thin facial hair along his jawline, wearing thin-metal-frame eyeglasses.",
+        "retained_facts": [
+          "Male-presenting adult",
+          "round face shape",
+          "receding hairline with irregular M-shaped pattern",
+          "moderately thick straight eyebrows",
+          "almond-shaped eyes",
+          "thin facial hair along the jawline",
+          "thin-metal-frame eyeglasses"
+        ]
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "Male adult with a round face, broad forehead, and moderate temple narrowing. The hairline is receding in an M-shaped pattern. He has a prominent brow ridge, straight moderately thick eyebrows, and almond-shaped eyes with visible upper-lid creases. The nose has a straight dorsum and rounded tip. He has thin lips, a rounded chin, and average-sized ears with free lobes. He wears thin-metal-frame eyeglasses and has short dark hair styled upward with thin facial hair along the jawline.",
+        "retained_facts": [
+          "Male-presenting adult",
+          "round face shape",
+          "broad forehead",
+          "slight temporal recession",
+          "prominent brow ridge",
+          "receding hairline",
+          "M-shaped pattern",
+          "moderately thick straight eyebrows",
+          "almond-shaped eyes",
+          "upper-lid crease",
+          "straight nose dorsum",
+          "rounded tip",
+          "medium width mouth",
+          "thin upper lip",
+          "fuller lower lip",
+          "rounded chin",
+          "free ear lobes",
+          "short dark hair styled upward",
+          "thin facial hair",
+          "thin-metal-frame eyeglasses"
+        ]
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "This is a man with a round face and a noticeably receding M-shaped hairline. He has short dark hair swept up, thin facial hair along his jawline, and wears thin, metal-framed glasses. His eyebrows are straight and thick, and he has a rounded chin.",
+        "retained_facts": [
+          "Male-presenting adult",
+          "round face",
+          "receding M-shaped hairline",
+          "short dark hair styled upward",
+          "thin facial hair along the jawline",
+          "thin-metal-frame eyeglasses",
+          "straight thick eyebrows",
+          "rounded chin"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "sample_id": "person::train::05158_3.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "A man in a black hooded jacket and dark pants."
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "A male of average build wearing a black hooded jacket with long sleeves and dark pants."
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "A male with an average build, wearing a black hooded jacket featuring long sleeves and dark-colored pants."
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "That is an average-built guy wearing a black hooded jacket and dark pants."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "sample_id": "person::train::00197_4.png",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "woman; average-build; hair; long; brown; winter jacket; light brown; fur hood; pants; light blue; shoes; white"
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Light brown winter jacket with a fur hood worn by an average-build woman with long brown hair, light blue pants, and white shoes."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

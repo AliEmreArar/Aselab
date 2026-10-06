@@ -1,0 +1,35 @@
+{
+  "sample_id": "vehicle::train_images::16614_c041_04.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "Sedan, Infiniti M; Sedan, black; Sedan, alloy rims; Sedan, tinted windows.",
+        "retained_facts": [
+          "Sedan",
+          "Infiniti M",
+          "black",
+          "alloy rims",
+          "tinted windows"
+        ]
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Black Infiniti M sedan featuring alloy rims and tinted windows.",
+        "retained_facts": [
+          "black",
+          "Infiniti M",
+          "sedan",
+          "alloy rims",
+          "tinted windows"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

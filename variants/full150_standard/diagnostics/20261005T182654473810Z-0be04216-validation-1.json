@@ -1,0 +1,92 @@
+{
+  "sample_id": "face::test::189858.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "Young woman with voluminous curly reddish-brown hair and an oval face.",
+        "retained_facts": [
+          "young adult woman",
+          "voluminous curly reddish-brown hair",
+          "oval face"
+        ],
+        "omitted_facts": [
+          "detailed facial structure",
+          "eye shape",
+          "nose shape",
+          "mouth details",
+          "expression",
+          "lighting",
+          "pose"
+        ]
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "Young woman with an oval face, almond-shaped eyes, and voluminous curly reddish-brown hair styled with bangs.",
+        "retained_facts": [
+          "young adult woman",
+          "oval face",
+          "almond-shaped eyes",
+          "voluminous curly reddish-brown hair with bangs"
+        ],
+        "omitted_facts": [
+          "precise bone structure measurements",
+          "mentolabial sulcus details",
+          "exact palpebral fissure length",
+          "indoor flash photograph",
+          "head tilt"
+        ]
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "A young adult woman with an oval face and distinct bone structure. She has voluminous curly reddish-brown hair with bangs. Her facial features include almond-shaped eyes with double creases, a straight-dorsum nose, and full lips with a defined cupid's bow. Her chin is rounded and her skin is clear.",
+        "retained_facts": [
+          "young adult woman",
+          "oval face",
+          "distinct bone structure",
+          "voluminous curly reddish-brown hair with bangs",
+          "almond-shaped eyes",
+          "double creases",
+          "straight dorsum nose",
+          "full lips",
+          "defined cupid's bow",
+          "rounded chin",
+          "clear skin"
+        ],
+        "omitted_facts": [
+          "uncalibrated indoor flash photograph",
+          "head turned and tilted",
+          "surprised expression"
+        ]
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "This is a young woman who has a lot of curly, reddish-brown hair worn with bangs. She has a clear complexion, an oval face, and almond-shaped eyes. Her nose is straight and she has fairly full lips with a clear cupid's bow.",
+        "retained_facts": [
+          "young adult woman",
+          "voluminous curly reddish-brown hair with bangs",
+          "clear skin",
+          "oval face",
+          "almond-shaped eyes",
+          "straight nose",
+          "full lips",
+          "defined cupid's bow"
+        ],
+        "omitted_facts": [
+          "technical facial geometry details",
+          "expression",
+          "pose",
+          "camera conditions"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

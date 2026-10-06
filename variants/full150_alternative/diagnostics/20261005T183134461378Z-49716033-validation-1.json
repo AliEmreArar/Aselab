@@ -1,0 +1,55 @@
+{
+  "sample_id": "face::train::060555.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "face shape: oval; forehead: high, wide, gently rounded contour, moderate brow ridge prominence; hairline: receding at temples, rounded frontal shape; cheekbones: moderately wide, prominent, average fullness; lower-face: proportional width, defined jawline, rounded chin; eyebrows: medium thickness, medium density, soft-arched, moderately spaced; eyes: almond-shaped, average palpebral fissure length, moderate canthal tilt, double upper-lid crease, average orbital depth; nose: straight dorsum, medium bridge, rounded tip, moderate alar width, visible nostrils; mouth: medium width, thin upper vermilion, medium lower vermilion, level corners; philtrum: distinct, moderate ridges; ears: partially occluded; hair: short, dark, styled backward; facial hair: clean-shaven; head pose: straight-on.",
+        "retained_facts": [
+          "face shape oval",
+          "forehead high wide",
+          "hairline receding at temples",
+          "hair short dark styled backward",
+          "eyebrows medium thickness",
+          "eyes almond-shaped",
+          "nose straight dorsum",
+          "clean-shaven",
+          "straight-on head pose"
+        ],
+        "omitted_facts": [
+          "neutral expression",
+          "soft lighting",
+          "plain background"
+        ]
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "The subject has short dark hair styled backward with a receding hairline at the temples and a high, wide forehead. The face is oval-shaped with a defined jawline, a rounded chin, and moderately wide, prominent cheekbones. The eyebrows are medium-thick and soft-arched, sitting above almond-shaped eyes with double upper-lid creases. The nose has a straight dorsum and a rounded tip, while the mouth features a thin upper vermilion, a medium lower vermilion, and a distinct philtrum. The individual is clean-shaven and is captured in a straight-on head pose.",
+        "retained_facts": [
+          "short dark hair styled backward",
+          "receding hairline at temples",
+          "oval face shape",
+          "defined jawline",
+          "rounded chin",
+          "prominent cheekbones",
+          "medium-thick soft-arched eyebrows",
+          "almond-shaped eyes",
+          "straight nose dorsum",
+          "clean-shaven",
+          "straight-on head pose"
+        ],
+        "omitted_facts": [
+          "neutral expression",
+          "soft lighting",
+          "plain background"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

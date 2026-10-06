@@ -1,0 +1,66 @@
+{
+  "sample_id": "vehicle::gallery_images::20070_c017_01.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "White and blue bus with AZ7892 printed above the license plate.",
+        "retained_facts": [
+          "Bus",
+          "white and blue paint",
+          "AZ7892 above license plate"
+        ],
+        "omitted_facts": [
+          "digital route display on rear window",
+          "stacked tail lights"
+        ]
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "A white and blue bus with a digital route display on the rear window and AZ7892 printed above the license plate area.",
+        "retained_facts": [
+          "Bus",
+          "white and blue paint",
+          "digital route display on rear window",
+          "AZ7892 above license plate"
+        ],
+        "omitted_facts": [
+          "stacked tail lights"
+        ]
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "A bus featuring white and blue two-tone paint, a digital route display on the rear window, and stacked tail lights on both sides, with the text AZ7892 printed above the license plate area.",
+        "retained_facts": [
+          "Bus",
+          "white and blue paint",
+          "digital route display on rear window",
+          "stacked tail lights",
+          "AZ7892 above license plate"
+        ],
+        "omitted_facts": []
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "Look for a white and blue bus. It has a digital route display on the back window and the code AZ7892 printed just above where the license plate goes.",
+        "retained_facts": [
+          "Bus",
+          "white and blue paint",
+          "digital route display on rear window",
+          "AZ7892 above license plate"
+        ],
+        "omitted_facts": [
+          "stacked tail lights"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

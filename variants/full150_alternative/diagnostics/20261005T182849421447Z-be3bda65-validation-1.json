@@ -1,0 +1,21 @@
+{
+  "sample_id": "face::train::091980.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "face shape: oval; facial thirds: balanced; cheekbones: moderately prominent; left eyebrow: arches slightly higher than right; hair: center-parted, dark brown, soft waves, falling past shoulders; forehead: high with temporal recession; eyebrows: medium thickness, soft-arched, moderately spaced; eyes: almond-shaped, slightly upward slant, average orbital depth, visible upper-lid creases; nose: straight dorsum, moderate bridge width, rounded tip, medium alar width; mouth: medium fullness, level corners, defined cupid's bow, upper teeth showing; skin: smooth; expression: neutral"
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Center-parted dark brown hair with soft waves falling past the shoulders and temporal recession exposing a high forehead identifies this individual. The person has an oval face shape, balanced facial thirds, and moderately prominent cheekbones. The left eyebrow arches slightly higher than the right, while the medium-thickness eyebrows are soft-arched and moderately spaced. The almond-shaped eyes show a slight upward slant, average orbital depth, and visible upper-lid creases. The nose has a straight dorsum, moderate bridge width, rounded tip, and medium alar width. The mouth features medium fullness, level corners, and a defined cupid's bow with upper teeth showing in a closed-smile, set within smooth, mark-free skin."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

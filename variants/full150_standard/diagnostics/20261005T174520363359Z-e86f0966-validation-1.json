@@ -1,0 +1,31 @@
+{
+  "sample_id": "person::gallery::26721_4.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "A person of average build wearing a dark jacket, dark trousers, and dark shoes."
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "A person with an average build wearing a dark long-sleeved jacket, dark trousers, and dark shoes."
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "A person of average build, dressed in a dark-colored, long-sleeved jacket, matching dark trousers, and dark footwear."
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "This is a person with an average build, wearing all dark clothing including a long-sleeved jacket, trousers, and shoes."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

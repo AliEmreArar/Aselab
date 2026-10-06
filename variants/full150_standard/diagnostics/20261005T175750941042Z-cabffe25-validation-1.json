@@ -1,0 +1,31 @@
+{
+  "sample_id": "vehicle::train_images::04455_c078_00.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "Black Toyota Camry sedan with alloy rims and hood damage."
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "A black Toyota Camry sedan featuring alloy rims and damage on the hood near the driver-side headlight."
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "Black sedan, specifically a Toyota Camry, equipped with alloy rims and identifiable damage located on the hood adjacent to the driver-side headlight."
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "That is a black Toyota Camry sedan; it has alloy wheels and a noticeable dent on the hood right by the driver-side headlight."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

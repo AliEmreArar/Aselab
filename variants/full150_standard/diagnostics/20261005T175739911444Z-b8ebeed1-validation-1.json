@@ -1,0 +1,73 @@
+{
+  "sample_id": "vehicle::train_images::19057_c170_04.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "White SUV with a black bumper and dark gray lower cladding.",
+        "retained_facts": [
+          "SUV",
+          "white",
+          "black bumper",
+          "dark gray lower cladding"
+        ],
+        "omitted_facts": [
+          "rectangular yellow sticker on the trunk lid below the rear window",
+          "rear wiper",
+          "tree branches laying across the roof"
+        ]
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "White SUV featuring a black bumper, dark gray lower cladding, and a yellow sticker on the trunk lid.",
+        "retained_facts": [
+          "SUV",
+          "white",
+          "black bumper",
+          "dark gray lower cladding",
+          "rectangular yellow sticker on the trunk lid"
+        ],
+        "omitted_facts": [
+          "rear wiper",
+          "tree branches laying across the roof"
+        ]
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "White SUV with a black bumper and dark gray lower cladding, featuring a rectangular yellow sticker on the trunk lid below the rear window, a rear wiper, and tree branches laying across the roof.",
+        "retained_facts": [
+          "SUV",
+          "white",
+          "black bumper",
+          "dark gray lower cladding",
+          "rectangular yellow sticker on the trunk lid below the rear window",
+          "rear wiper",
+          "tree branches laying across the roof"
+        ],
+        "omitted_facts": []
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "This is a white SUV that has a black bumper and some dark gray cladding along the bottom. It has a rear wiper and a rectangular yellow sticker on the trunk, right under the back window. There are also some tree branches resting on top of the roof.",
+        "retained_facts": [
+          "SUV",
+          "white",
+          "black bumper",
+          "dark gray lower cladding",
+          "rectangular yellow sticker on the trunk lid below the rear window",
+          "rear wiper",
+          "tree branches laying across the roof"
+        ],
+        "omitted_facts": []
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

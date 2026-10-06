@@ -1,0 +1,74 @@
+{
+  "sample_id": "face::train::166091.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "face shape: oval; bone structure: balanced; hairline: M-shaped with moderate temporal recession; brow ridge: moderately prominent; eyebrows: soft-arched, moderate density and length; eyes: almond-shaped, double upper-lid creases; nose: straight dorsum, medium bridge, rounded tip; mouth: medium width, balanced lips, defined cupid's bow, short philtrum; ears: average size, moderate protrusion, rolled helices, free lobes; hair: short dark, styled upwards; facial hair: stubble on jawline and upper lip.",
+        "retained_facts": [
+          "oval face shape",
+          "M-shaped hairline with temporal recession",
+          "soft-arched eyebrows",
+          "almond-shaped eyes",
+          "straight nasal dorsum",
+          "short dark hair",
+          "stubble facial hair"
+        ],
+        "omitted_facts": [
+          "balanced upper, middle, and lower thirds",
+          "moderate facial depth",
+          "symmetrical features",
+          "average glabella width",
+          "moderate spacing between brows",
+          "medium brow-to-eye vertical distance",
+          "average palpebral fissure length",
+          "negligible canthal tilt",
+          "moderate orbital depth",
+          "medium bridge width",
+          "moderate projection and rotation",
+          "average alar width",
+          "moderate alar flare",
+          "level corner orientation",
+          "defined philtrum ridges",
+          "ears positioned level with eye-nose line",
+          "direct frontal view",
+          "closed-mouth smile",
+          "even lighting",
+          "blue background",
+          "digital artifacts"
+        ]
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Short dark hair styled upwards and stubble facial hair on the jawline and upper lip complement an M-shaped hairline with moderate temporal recession. This individual has an oval face shape, soft-arched eyebrows of moderate density, and almond-shaped eyes with double upper-lid creases. The nose has a straight dorsum and rounded tip, while the mouth features a defined cupid's bow and short philtrum. The ears are of average size with rolled helices and free lobes.",
+        "retained_facts": [
+          "short dark hair styled upwards",
+          "stubble facial hair",
+          "M-shaped hairline",
+          "oval face shape",
+          "soft-arched eyebrows",
+          "almond-shaped eyes",
+          "straight nasal dorsum",
+          "rounded nose tip",
+          "defined cupid's bow",
+          "short philtrum",
+          "average size ears"
+        ],
+        "omitted_facts": [
+          "frontal view",
+          "closed-mouth smile",
+          "lighting",
+          "background",
+          "digital artifacts",
+          "anatomical measurements"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "sample_id": "person::train::00837_3.png",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "A man with short hair wearing a dark green jacket, matching trousers, and dark shoes, carrying a bag.",
+        "retained_facts": [
+          "Male",
+          "short hair",
+          "dark green jacket",
+          "dark green trousers",
+          "dark shoes",
+          "carrying a bag"
+        ],
+        "omitted_facts": [
+          "average build",
+          "light-colored hair"
+        ]
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "A man of average build with short, light-colored hair, wearing a dark green long-sleeve jacket and trousers with dark shoes, and carrying a dark bag.",
+        "retained_facts": [
+          "Male",
+          "average build",
+          "light-colored short hair",
+          "dark green long-sleeve jacket",
+          "dark green trousers",
+          "dark shoes",
+          "dark bag"
+        ],
+        "omitted_facts": []
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "A male with an average build and light-colored short hair. He is dressed in a dark green long-sleeve jacket, matching dark green trousers, and dark shoes. He is also carrying a dark-colored bag.",
+        "retained_facts": [
+          "Male",
+          "average build",
+          "light-colored short hair",
+          "dark green long-sleeve jacket",
+          "dark green trousers",
+          "dark shoes",
+          "dark bag"
+        ],
+        "omitted_facts": []
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "There is a man with an average build and short, light hair. He is wearing a dark green long-sleeve jacket with matching dark green pants and dark shoes, and he has a dark bag with him.",
+        "retained_facts": [
+          "Male",
+          "average build",
+          "short light hair",
+          "dark green long-sleeve jacket",
+          "dark green trousers",
+          "dark shoes",
+          "dark bag"
+        ],
+        "omitted_facts": []
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

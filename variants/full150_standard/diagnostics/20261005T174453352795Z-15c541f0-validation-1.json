@@ -1,0 +1,31 @@
+{
+  "sample_id": "person::query::27100_1.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "Male with dark short hair and a cap, wearing a light pink button-down shirt, blue jeans, and a dark backpack."
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "Average-build male with short dark hair and a cap, wearing a light pink long-sleeved button-down shirt, blue jeans, dark shoes, and a dark backpack on one shoulder."
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "Average-build male, dark short hair, cap, long-sleeved light pink button-down shirt, long blue jeans, dark shoes, dark backpack worn on one shoulder."
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "A man with an average build and short dark hair wearing a cap, a light pink long-sleeved button-down shirt, blue jeans, and dark shoes. He is carrying a dark backpack on one shoulder."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

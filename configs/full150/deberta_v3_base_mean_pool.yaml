@@ -1,0 +1,19 @@
+name: full150-deberta_v3_base_mean_pool
+dataset: ../../caption_samples_50/all_samples.jsonl
+output_dir: ../../runs/full150/deberta_v3_base_mean_pool
+seed: 42
+agreement_k: 10
+transforms:
+- name: identity
+variant_files:
+- ../../variants/full150/variants.jsonl
+models:
+- name: deberta_v3_base_mean_pool
+  backend: hf_mean_pool
+  model_id: microsoft/deberta-v3-base
+  tokenizer_use_fast: false
+  dtype: float32
+  max_length: 512
+  batch_size: 8
+  revision: 8ccc9b6f36199bec6961081d44eb72fb3f7353f3
+  device: cpu

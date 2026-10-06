@@ -1,0 +1,31 @@
+{
+  "sample_id": "vehicle::train_images::15907_c041_04.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "Red Mazda 6 sedan."
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "Red Mazda 6 sedan with alloy wheels."
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "Red Mazda 6 sedan featuring alloy wheels."
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "It is a red Mazda 6 sedan that has alloy wheels."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

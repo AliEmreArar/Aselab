@@ -1,0 +1,21 @@
+{
+  "sample_id": "face::train::150659.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "face shape: oval; forehead: high with gentle contour; brow ridge: moderate; glabella width: medium; temple: slight narrowing; hairline: receding at temples with rounded central peak; cheekbones: medium-width with moderate projection; midface length: average; nasolabial folds: shallow; lower-face width: moderate; jawline: defined and continuous; chin: rounded with moderate vertical height; eyebrows: soft-arched with high arch peak, medium thickness and density, moderate spacing; eyes: almond-shaped, moderate palpebral fissure length, level canthal tilt, double upper-lid crease, average orbital depth; nasal dorsum: straight; bridge width: medium; nasal tip: rounded with moderate projection; alar width: moderate; nostrils: visible; mouth width: medium; lip fullness ratio: balanced; vermilion: full; cupid's bow: well-defined; lip corners: level; philtrum: short with defined ridges; ears: average-sized with rolled helix and free lobes, positioned level with eye-nose line; marks/asymmetries: none; lipstick: dark; earrings: dangling; garment: light-colored"
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Wearing dark lipstick and dangling earrings, this person has a light-colored garment and an oval face shape with a receding hairline at the temples featuring a rounded central peak. They possess soft-arched eyebrows with a high arch peak and medium density, almond-shaped eyes with a double upper-lid crease, and a straight nasal dorsum leading to a rounded, moderately projecting tip. Their features include a defined, continuous jawline with a rounded chin, a short philtrum with defined ridges, and full vermilion lips with a well-defined cupid's bow. The face displays a high forehead, medium-width cheekbones with moderate projection, shallow nasolabial folds, and average-sized ears with free lobes. No persistent marks or asymmetries are visible."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

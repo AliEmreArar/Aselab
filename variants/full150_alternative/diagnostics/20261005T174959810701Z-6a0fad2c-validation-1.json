@@ -1,0 +1,21 @@
+{
+  "sample_id": "person::query::26685_1.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "Person: male; build: average; hair: short dark; shirt: long-sleeved light blue button-down; trousers: light brown; shoes: dark"
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "The male has short dark hair and wears a long-sleeved light blue button-down shirt paired with light brown trousers and dark shoes, with an average build."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

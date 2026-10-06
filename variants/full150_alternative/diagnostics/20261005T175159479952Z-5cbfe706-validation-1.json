@@ -1,0 +1,43 @@
+{
+  "sample_id": "person::gallery::26474_5.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "person; male; body; average build; hair; short black; eyes; eyeglasses; jacket; light-colored hooded zip-up; shirt; purple-patterned collared; pants; dark blue; shoes; dark; backpack; black, worn on both shoulders",
+        "retained_facts": [
+          "male",
+          "average build",
+          "short black hair",
+          "eyeglasses",
+          "light-colored hooded zip-up jacket",
+          "purple-patterned collared shirt",
+          "dark blue pants",
+          "dark shoes",
+          "black backpack on both shoulders"
+        ]
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Eyeglasses and short black hair define this male of average build, who is wearing a black backpack on both shoulders over a light-colored hooded zip-up jacket. He is dressed in a purple-patterned collared shirt, dark blue pants, and dark shoes.",
+        "retained_facts": [
+          "male",
+          "average build",
+          "short black hair",
+          "eyeglasses",
+          "light-colored hooded zip-up jacket",
+          "purple-patterned collared shirt",
+          "dark blue pants",
+          "dark shoes",
+          "black backpack on both shoulders"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "sample_id": "face::test::183801.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "Adult woman with an oval face, almond-shaped eyes, straight nose, and small stud earrings.",
+        "retained_facts": [
+          "Woman",
+          "adult",
+          "oval face",
+          "almond-shaped eyes",
+          "straight nasal dorsum",
+          "small stud earrings"
+        ],
+        "omitted_facts": [
+          "hairline details",
+          "eyebrow shape",
+          "lip details",
+          "skin details",
+          "ear details",
+          "capture conditions"
+        ],
+        "change_note": "Focused on primary identifying facial features."
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "Adult woman with an oval face, rounded hairline, soft-arched eyebrows, almond-shaped eyes, and a straight nose, wearing small stud earrings.",
+        "retained_facts": [
+          "Adult woman",
+          "oval face",
+          "rounded hairline",
+          "soft-arched eyebrows",
+          "almond-shaped eyes",
+          "straight nose",
+          "small stud earrings"
+        ],
+        "omitted_facts": [
+          "cheekbone width",
+          "jawline definition",
+          "lip details",
+          "skin texture",
+          "capture conditions"
+        ],
+        "change_note": "Included balanced facial anatomy and accessories."
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "Adult woman with an oval face, defined jawline, and rounded hairline with temporal recession. Features include medium-thick soft-arched eyebrows, almond-shaped eyes with double eyelids, and a straight nose with a rounded tip. Medium width mouth with defined cupid's bow. Smooth skin, no facial hair, and small stud earrings in free-lobed ears.",
+        "retained_facts": [
+          "adult woman",
+          "oval face",
+          "defined jawline",
+          "rounded hairline",
+          "temporal recession",
+          "soft-arched eyebrows",
+          "almond-shaped eyes",
+          "double eyelids",
+          "straight nose",
+          "rounded tip",
+          "medium mouth",
+          "defined cupid's bow",
+          "smooth skin",
+          "no facial hair",
+          "small stud earrings",
+          "free-lobed ears"
+        ],
+        "omitted_facts": [
+          "capture conditions",
+          "lighting",
+          "head tilt"
+        ],
+        "change_note": "Retained all stable structural identity markers."
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "This is an adult woman with an oval-shaped face and a fairly neutral look. She has almond-shaped eyes, eyebrows with a soft arch, and a straight nose. Her hair is pulled back, and she is wearing small stud earrings.",
+        "retained_facts": [
+          "adult woman",
+          "oval face",
+          "almond-shaped eyes",
+          "soft-arched eyebrows",
+          "straight nose",
+          "hair pulled back",
+          "small stud earrings"
+        ],
+        "omitted_facts": [
+          "specific anatomical measurements",
+          "lip proportions",
+          "earlobe type",
+          "skin details",
+          "capture conditions"
+        ],
+        "change_note": "Used natural phrasing for recognition."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

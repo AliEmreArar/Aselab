@@ -1,0 +1,54 @@
+{
+  "sample_id": "face::train::129132.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "applicable": true,
+        "text": "face oval shape; forehead high, wide, rounded contour, prominent brow ridge, temple narrowing; hairline receding at temples, rounded central shape; cheekbones wide, moderate projection, hollowing below; nasolabial folds moderate; lower face wide; jawline defined, slightly rounded; chin rounded, moderate projection; eyebrows medium, soft-arched, lateral tapering; eyes almond-shaped, moderate palpebral fissure, average orbital depth, moderate upper-lid exposure, under-eye fullness; nose straight-dorsumed, moderate bridge width, rounded tip, moderate alar width; mouth medium width, balanced lip fullness, level corners; philtrum defined; skin permanent creases across forehead and around eyes; eyeglasses thin-rimmed, rectangular; shirt patterned, collared; jacket dark.",
+        "retained_facts": [
+          "face shape",
+          "forehead features",
+          "hairline description",
+          "cheekbone description",
+          "nasolabial folds",
+          "jaw and chin description",
+          "eyebrow description",
+          "eye description",
+          "nose description",
+          "mouth description",
+          "skin texture",
+          "eyeglasses description",
+          "shirt description",
+          "jacket color"
+        ]
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "applicable": true,
+        "text": "Thin-rimmed rectangular eyeglasses are worn by a middle-aged adult with an oval face, prominent brow ridge, and receding hairline at the temples. The individual features a straight-dorsumed nose with a rounded tip, medium-thickness soft-arched eyebrows, and almond-shaped eyes with visible under-eye fullness. Permanent creases are present across the forehead and around the eyes. The lower face is wide with a defined, slightly rounded jawline and a rounded, moderately projecting chin. The subject is dressed in a patterned collared shirt and a dark jacket.",
+        "retained_facts": [
+          "eyeglasses",
+          "age group",
+          "face shape",
+          "brow ridge",
+          "hairline",
+          "nose",
+          "eyebrows",
+          "eyes",
+          "skin creases",
+          "jawline",
+          "chin",
+          "shirt",
+          "jacket"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

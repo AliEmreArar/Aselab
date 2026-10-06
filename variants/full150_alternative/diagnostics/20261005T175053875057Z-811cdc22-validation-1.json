@@ -1,0 +1,21 @@
+{
+  "sample_id": "person::query::26943_3.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "male; build: average; hair: short and dark; shirt: red and short-sleeved; pants: dark; shoes: light-colored"
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Red short-sleeved shirt paired with dark pants and light-colored shoes worn by an average-build male with short dark hair."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

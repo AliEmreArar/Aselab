@@ -1,0 +1,31 @@
+{
+  "sample_id": "vehicle::train_images::12341_c073_00.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "Black Nissan Altima sedan with alloy wheels."
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "Black Nissan Altima sedan featuring alloy wheels, a sunroof, and tinted windows."
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "Black Nissan Altima sedan, equipped with alloy wheels, a sunroof, and moderate window tint."
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "It is a black Nissan Altima sedan that has alloy wheels, a sunroof, and windows with a moderate tint."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

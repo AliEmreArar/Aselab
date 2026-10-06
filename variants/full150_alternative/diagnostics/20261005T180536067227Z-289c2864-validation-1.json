@@ -1,0 +1,41 @@
+{
+  "sample_id": "vehicle::train_images::14387_c163_04.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "SUV Volkswagen Tiguan; vehicle color white; wheels alloy; window tint dark; sunroof present; side windows window visors present",
+        "retained_facts": [
+          "SUV",
+          "Volkswagen Tiguan",
+          "white",
+          "alloy wheels",
+          "dark window tint",
+          "sunroof",
+          "window visors on the side windows"
+        ],
+        "omitted_facts": []
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "White Volkswagen Tiguan SUV featuring alloy wheels, dark window tint, a sunroof, and window visors on the side windows.",
+        "retained_facts": [
+          "SUV",
+          "Volkswagen Tiguan",
+          "white",
+          "alloy wheels",
+          "dark window tint",
+          "sunroof",
+          "window visors on the side windows"
+        ],
+        "omitted_facts": []
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

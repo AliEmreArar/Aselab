@@ -1,0 +1,21 @@
+{
+  "sample_id": "face::train::063618.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "oblong facial shape; balanced thirds; angular bone structure; high forehead; prominent brow ridges; deep temples; receding hairline; thin light-colored hair swept backward; thin light-colored soft-arched eyebrows with lateral thinning; deep-set eyes with moderate palpebral fissure length and downward slant; visible upper-lid creases; straight nasal dorsum; moderate bridge width; rounded nasal tip; wide mouth; thin lips; level mouth corners; visible upper teeth; smooth jawline; rounded chin; moderate vertical chin height; high cheekbones with moderate projection; deep nasolabial folds; ears positioned alongside central face line with attached lobes"
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Receding hairline with thin, light-colored hair swept backward and prominent brow ridges on an oblong facial shape with angular bone structure. The face features a high forehead with deep temples, thin light-colored soft-arched eyebrows with lateral thinning, and deep-set eyes with a downward slant and visible upper-lid creases. A wide mouth with thin lips and visible upper teeth is present, along with a straight nasal dorsum and rounded tip. The individual has high cheekbones with moderate projection, deep nasolabial folds, and a smooth jawline with a rounded chin, with ears featuring attached lobes positioned alongside the central face line."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

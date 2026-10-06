@@ -1,0 +1,56 @@
+{
+  "sample_id": "vehicle::train_images::16253_c139_00.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "Black sedan.",
+        "retained_facts": [
+          "Sedan",
+          "black paint"
+        ],
+        "omitted_facts": [
+          "alloy rims"
+        ]
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "Black sedan with alloy rims.",
+        "retained_facts": [
+          "Sedan",
+          "black paint",
+          "alloy rims"
+        ],
+        "omitted_facts": []
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "A black sedan featuring alloy rims.",
+        "retained_facts": [
+          "Sedan",
+          "black paint",
+          "alloy rims"
+        ],
+        "omitted_facts": []
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "It is a black sedan that has alloy rims.",
+        "retained_facts": [
+          "Sedan",
+          "black paint",
+          "alloy rims"
+        ],
+        "omitted_facts": []
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

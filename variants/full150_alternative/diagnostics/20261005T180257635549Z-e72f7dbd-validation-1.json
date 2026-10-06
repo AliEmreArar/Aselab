@@ -1,0 +1,34 @@
+{
+  "sample_id": "vehicle::train_images::07345_c110_03.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "Sedan, white Chevrolet Cruze; alloy wheels; black window tinting; rear window, small sticker.",
+        "retained_facts": [
+          "Sedan",
+          "white Chevrolet Cruze",
+          "alloy wheels",
+          "black window tinting",
+          "rear window small sticker"
+        ]
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "White Chevrolet Cruze sedan with a small sticker on the rear window, featuring black window tinting and alloy wheels.",
+        "retained_facts": [
+          "White Chevrolet Cruze sedan",
+          "small sticker on the rear window",
+          "black window tinting",
+          "alloy wheels"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

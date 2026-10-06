@@ -1,0 +1,39 @@
+{
+  "sample_id": "person::train::13508_2.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "woman; average build; hair: voluminous, black; top: sleeveless, black; skirt: short, black; boots: reaching above the knees, black",
+        "retained_facts": [
+          "woman",
+          "average build",
+          "voluminous black hair",
+          "black sleeveless top",
+          "short black skirt",
+          "black boots reaching above the knees"
+        ],
+        "omitted_facts": []
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "A woman with voluminous black hair wears a black sleeveless top, a short black skirt, and black boots that reach above the knees. She has an average build.",
+        "retained_facts": [
+          "woman",
+          "average build",
+          "voluminous black hair",
+          "black sleeveless top",
+          "short black skirt",
+          "black boots reaching above the knees"
+        ],
+        "omitted_facts": []
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

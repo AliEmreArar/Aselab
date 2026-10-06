@@ -1,0 +1,31 @@
+{
+  "sample_id": "face::train::091980.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "Middle-aged female with oval face, prominent cheekbones, and long, wavy dark brown hair parted in the center."
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "Middle-aged female with an oval face, prominent cheekbones, and center-parted dark brown hair with soft waves. She has almond-shaped eyes, a straight nose, and medium fullness lips shown in a closed-smile."
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "Middle-aged female with an oval face, balanced facial thirds, and prominent cheekbones. Features include center-parted wavy dark brown hair reaching past shoulders, a high forehead with temporal recession, and almond-shaped eyes with upward slant. The nose has a straight dorsum and rounded tip. Mouth shows a closed-smile with defined cupid's bow. Left eyebrow is slightly higher than the right."
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "A middle-aged woman with an oval face and long, wavy dark brown hair parted down the middle. She has a high forehead, noticeable cheekbones, and almond-shaped eyes. She is giving a subtle closed-mouth smile."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

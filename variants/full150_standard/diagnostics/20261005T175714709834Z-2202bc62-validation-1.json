@@ -1,0 +1,63 @@
+{
+  "sample_id": "vehicle::train_images::16747_c163_03.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "White Buick Regal sedan.",
+        "retained_facts": [
+          "white",
+          "Buick Regal",
+          "sedan"
+        ],
+        "omitted_facts": [
+          "sunroof",
+          "stickers on the upper portion of the windshield"
+        ]
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "White Buick Regal sedan with a sunroof.",
+        "retained_facts": [
+          "white",
+          "Buick Regal",
+          "sedan",
+          "sunroof"
+        ],
+        "omitted_facts": [
+          "stickers on the upper portion of the windshield"
+        ]
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "White Buick Regal sedan featuring a sunroof and stickers on the upper portion of the windshield.",
+        "retained_facts": [
+          "white",
+          "Buick Regal",
+          "sedan",
+          "sunroof",
+          "stickers on the upper portion of the windshield"
+        ]
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "It's a white Buick Regal sedan that has a sunroof and some stickers across the top of the windshield.",
+        "retained_facts": [
+          "white",
+          "Buick Regal",
+          "sedan",
+          "sunroof",
+          "stickers on the upper portion of the windshield"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

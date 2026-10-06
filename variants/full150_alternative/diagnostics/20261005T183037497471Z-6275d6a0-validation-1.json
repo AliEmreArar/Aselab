@@ -1,0 +1,21 @@
+{
+  "sample_id": "face::train::168471.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "face shape: oval; forehead: straight contour, moderate height, prominent brow ridge, gentle temple narrowing; hairline: rounded, temporal recession; cheekbones: prominent, moderate width and fullness; jawline: defined; chin: rounded, moderate projection; eyebrows: thick, soft-arched, moderate length and spacing; eyes: almond-shaped, moderate palpebral fissure length, positive canthal tilt, double upper-lid creases, average orbital depth, moderate under-eye fullness; nose: straight nasal dorsum, moderate bridge width, rounded tip with moderate projection, narrow alar base; mouth: average width, lower lip fuller than upper, defined cupid's bow, level lip corners; philtrum: moderate length, defined ridges; earlobes: attached, level with eye-nose line; hair: dark, loose waves, side-swept bangs; hands: chin resting on hand."
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Dark hair styled in loose waves with side-swept bangs frames an oval face with a rounded hairline featuring temporal recession. The face presents with prominent cheekbones, a defined jawline, and a rounded chin with moderate projection. Features include thick, soft-arched eyebrows and almond-shaped eyes with a positive canthal tilt and double upper-lid creases. The nose has a straight dorsum and a rounded tip, while the mouth has a defined cupid's bow and a fuller lower lip. The chin is positioned resting on a hand, and the attached earlobes are level with the eye-nose line."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

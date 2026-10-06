@@ -1,0 +1,31 @@
+{
+  "sample_id": "face::test::196611.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "Adult woman with oval face, almond-shaped eyes, straight nose, and long reddish-brown hair."
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "Adult woman with an oval face, prominent cheekbones, almond-shaped eyes, and a straight nose, wearing a linked metal necklace and featuring long reddish-brown hair."
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "Adult woman with an oval face, prominent cheekbones, and moderate forehead with a straight hairline. Medium-thickness soft-arched eyebrows, almond-shaped eyes with upward canthal tilt, and double eyelid creases. Straight nose, moderate vermilion fullness in the mouth, and a defined jawline with a rounded chin. Hair is long and reddish-brown; wearing a linked metal necklace."
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "A woman with a nice oval face, long reddish-brown hair, and almond-shaped eyes. She has a bright smile, a clear complexion, and she is wearing a linked metal necklace."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

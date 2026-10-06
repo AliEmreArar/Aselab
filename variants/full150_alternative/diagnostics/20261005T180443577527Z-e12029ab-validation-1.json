@@ -1,0 +1,33 @@
+{
+  "sample_id": "vehicle::train_images::05432_c163_04.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "Sedan; Volkswagen Passat; black color; alloy rims.",
+        "retained_facts": [
+          "vehicle is a sedan",
+          "make and model is Volkswagen Passat",
+          "vehicle color is black",
+          "wheels have alloy rims"
+        ]
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Black Volkswagen Passat sedan featuring alloy rims.",
+        "retained_facts": [
+          "vehicle color is black",
+          "make and model is Volkswagen Passat",
+          "vehicle is a sedan",
+          "wheels have alloy rims"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

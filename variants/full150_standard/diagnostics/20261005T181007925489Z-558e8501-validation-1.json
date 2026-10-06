@@ -1,0 +1,92 @@
+{
+  "sample_id": "face::train::149220.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "An adult with an oval face and short facial hair, wearing a yellow headband and a white towel.",
+        "retained_facts": [
+          "Male-presenting adult",
+          "oval face shape",
+          "short facial hair stubble on upper lip and chin",
+          "wearing a yellow headband",
+          "a white towel draped over the head"
+        ],
+        "omitted_facts": [
+          "balanced thirds",
+          "moderate bone structure",
+          "eyebrows thin",
+          "eye shape",
+          "nose details",
+          "mouth details"
+        ]
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "An adult with an oval face, almond-shaped eyes, and short facial hair stubble, wearing a yellow headband and a white towel draped over the head.",
+        "retained_facts": [
+          "Male-presenting adult",
+          "oval face shape",
+          "almond-shaped eyes",
+          "short facial hair stubble",
+          "yellow headband",
+          "white towel draped over the head"
+        ],
+        "omitted_facts": [
+          "balanced thirds",
+          "moderate bone structure",
+          "eyebrow details",
+          "nose details",
+          "mouth details"
+        ]
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "Adult with an oval face, moderate bone structure, and almond-shaped eyes with visible lid creases. The nose has a straight dorsum and rounded tip, and the mouth is medium width with balanced lip fullness. Short facial hair stubble covers the upper lip and chin. The person wears a yellow headband and a white towel draped over the head.",
+        "retained_facts": [
+          "Adult",
+          "oval face",
+          "moderate bone structure",
+          "almond-shaped eyes",
+          "upper-lid creases",
+          "nose straight dorsum",
+          "rounded tip",
+          "medium width mouth",
+          "balanced lip fullness",
+          "short facial hair stubble",
+          "yellow headband",
+          "white towel"
+        ],
+        "omitted_facts": [
+          "head slightly turned",
+          "indoor shot",
+          "neutral expression"
+        ]
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "This is a person with an oval face and a bit of stubble on their chin and upper lip. They have almond-shaped eyes and are wearing a yellow headband with a white towel draped over their head.",
+        "retained_facts": [
+          "oval face",
+          "short facial hair stubble",
+          "almond-shaped eyes",
+          "yellow headband",
+          "white towel draped over the head"
+        ],
+        "omitted_facts": [
+          "moderate bone structure",
+          "nose details",
+          "mouth details"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "sample_id": "face::train::109762.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "Middle-aged male with an oblong face, high receding hairline, and thin straight eyebrows."
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "A middle-aged man with an oblong facial shape, high receding hairline, thin straight eyebrows, and a narrow jawline. He has a straight nose and thin lips."
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "Middle-aged male with an oblong facial shape, straight forehead, and high receding hairline with deep temporal recession. Features include thin straight-arched eyebrows, almond-shaped eyes with double upper-lid creases, a straight nose with a rounded tip, and thin lips with a defined cupid's bow. The jawline is narrow with a rounded chin; ears are average size with attached lobes. Notable permanent features include horizontal forehead creases and nasolabial folds."
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "This is a middle-aged man with an oblong face and a high, receding hairline. He has thin, straight eyebrows and almond-shaped eyes. His nose is straight, and he has thin lips. You can clearly see horizontal forehead lines and some nasolabial folds on his face."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

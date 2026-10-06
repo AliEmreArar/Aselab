@@ -1,0 +1,37 @@
+{
+  "sample_id": "person::train::12462_1.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "man; average-build; hair: short and light; eyeglasses: present; shirt: light blue, short-sleeved, collared; trousers: dark",
+        "retained_facts": [
+          "man",
+          "average-build",
+          "short light hair",
+          "eyeglasses",
+          "light blue short-sleeved collared shirt",
+          "dark trousers"
+        ]
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Light-haired man with eyeglasses wearing a light blue short-sleeved collared shirt and dark trousers, characterized by an average build.",
+        "retained_facts": [
+          "man",
+          "average-build",
+          "short light hair",
+          "eyeglasses",
+          "light blue short-sleeved collared shirt",
+          "dark trousers"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

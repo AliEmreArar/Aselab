@@ -1,0 +1,21 @@
+{
+  "sample_id": "face::train::082954.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "face; heart-shaped; forehead; moderately high, gently rounded; brow ridges; prominent; glabella; moderate width; temple; slightly narrowing; hairline; partially obscured by side-swept bangs parted on the right; cheekbones; medium-width, moderate projection and fullness; jawline; narrowing; chin; rounded, moderate projection; eyebrows; thick, soft-arched, lateral peak, moderate spacing; eyes; almond-shaped, slight upward canthal tilt, moderate palpebral fissure length, average orbital depth, defined upper-lid creases; nose; straight dorsum, moderate bridge width, rounded tip, moderate projection, narrow alar base; mouth; medium-width, thin upper lip, moderately full lower lip, level corners; philtrum; short, well-defined ridges; hair; dark, wavy, worn down, side-swept bangs."
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Dark wavy hair worn down with side-swept bangs parted on the right partially obscures the hairline of this young adult with a heart-shaped face. The face features prominent brow ridges, thick soft-arched eyebrows with a lateral peak, and almond-shaped eyes with an upward canthal tilt and defined upper-lid creases. The straight nose has a rounded tip, while the medium-width mouth consists of a thin upper lip and a moderately full lower lip with a short, well-defined philtrum. The facial structure includes a moderately high forehead, medium-width cheekbones, and a jawline narrowing to a rounded, moderately projecting chin."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

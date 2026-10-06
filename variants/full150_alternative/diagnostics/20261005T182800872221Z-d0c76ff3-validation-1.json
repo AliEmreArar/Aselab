@@ -1,0 +1,79 @@
+{
+  "sample_id": "face::train::137722.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "Face shape: oval; Cheeks and jawline: soft tissue fullness; Hair: straight bangs; Eyebrows: thin, sparse, soft arch; Eyes: almond-shaped, moderate palpebral fissure length, average orbital depth, visible upper-lid creases, average intercanthal distance; Nose: straight dorsum, moderate bridge width, rounded tip, moderate projection, average alar width; Lips: medium-thin, defined cupid's bow, level corners; Philtrum: moderately short; Submental contour: smooth; Neck: mild vertical creases; Headwear: textured white flat cap with a dark band.",
+        "retained_facts": [
+          "Face shape: oval",
+          "Cheeks and jawline: soft tissue fullness",
+          "Hair: straight bangs",
+          "Eyebrows: thin, sparse, soft arch",
+          "Eyes: almond-shaped, moderate palpebral fissure length, average orbital depth, visible upper-lid creases, average intercanthal distance",
+          "Nose: straight dorsum, moderate bridge width, rounded tip, moderate projection, average alar width",
+          "Lips: medium-thin, defined cupid's bow, level corners",
+          "Philtrum: moderately short",
+          "Submental contour: smooth",
+          "Neck: mild vertical creases",
+          "Headwear: textured white flat cap with a dark band"
+        ],
+        "omitted_facts": [
+          "Female presentation",
+          "older adult",
+          "balanced vertical thirds",
+          "moderate width-to-length ratio",
+          "hairline occluded by headwear",
+          "ears occluded",
+          "medium close-up",
+          "soft front lighting",
+          "slight downward camera angle",
+          "neutral expression"
+        ]
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Textured white flat cap with a dark band worn over straight bangs that frame the forehead. The individual has an oval face with soft tissue fullness across the cheeks and jawline, thin and sparse eyebrows with a soft arch, and almond-shaped eyes with visible upper-lid creases. The nose has a straight dorsum and rounded tip, and the mouth features medium-thin lips with a defined cupid's bow. There are mild vertical neck creases beneath a smooth submental contour.",
+        "retained_facts": [
+          "textured white flat cap with a dark band",
+          "straight bangs",
+          "oval face shape",
+          "soft tissue fullness across the cheeks and jawline",
+          "thin and sparse eyebrows with a soft arch",
+          "almond-shaped eyes with visible upper-lid creases",
+          "straight nasal dorsum",
+          "rounded nasal tip",
+          "medium-thin lips with a defined cupid's bow",
+          "mild vertical neck creases",
+          "smooth submental contour"
+        ],
+        "omitted_facts": [
+          "Female presentation",
+          "older adult",
+          "balanced vertical thirds",
+          "moderate width-to-length ratio",
+          "hairline occluded",
+          "ears occluded",
+          "moderate palpebral fissure length",
+          "average orbital depth",
+          "average intercanthal distance",
+          "moderate bridge width",
+          "moderate projection",
+          "average alar width",
+          "level corners of lips",
+          "moderately short philtrum",
+          "medium close-up",
+          "soft front lighting",
+          "slight downward camera angle",
+          "neutral expression"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

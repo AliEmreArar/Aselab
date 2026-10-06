@@ -1,0 +1,61 @@
+{
+  "sample_id": "vehicle::query_images::20249_c003_00.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "applicable": true,
+        "text": "Black Volkswagen Passat sedan.",
+        "retained_facts": [
+          "Volkswagen Passat",
+          "sedan",
+          "black"
+        ],
+        "omitted_facts": [
+          "alloy rims",
+          "sunroof",
+          "tinted windows"
+        ]
+      },
+      {
+        "variant_type": "llm_balanced",
+        "applicable": true,
+        "text": "A black Volkswagen Passat sedan with alloy rims, a sunroof, and tinted windows.",
+        "retained_facts": [
+          "Volkswagen Passat",
+          "sedan",
+          "black",
+          "alloy rims",
+          "sunroof",
+          "tinted windows"
+        ]
+      },
+      {
+        "variant_type": "llm_detailed",
+        "applicable": true,
+        "text": "Black sedan, model Volkswagen Passat, equipped with alloy rims, a sunroof, and tinted windows.",
+        "retained_facts": [
+          "Volkswagen Passat",
+          "sedan",
+          "black",
+          "alloy rims",
+          "sunroof",
+          "tinted windows"
+        ]
+      },
+      {
+        "variant_type": "llm_human_description",
+        "applicable": true,
+        "text": "It is a black Volkswagen Passat sedan that has tinted windows, a sunroof, and alloy rims."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

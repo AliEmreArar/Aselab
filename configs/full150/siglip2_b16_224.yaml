@@ -1,0 +1,20 @@
+name: full150-siglip2_b16_224
+dataset: ../../caption_samples_50/all_samples.jsonl
+output_dir: ../../runs/full150/siglip2_b16_224
+seed: 42
+agreement_k: 10
+transforms:
+- name: identity
+variant_files:
+- ../../variants/full150/variants.jsonl
+models:
+- name: siglip2_b16_224
+  backend: hf_text_features
+  model_id: google/siglip2-base-patch16-224
+  dtype: float32
+  padding: max_length
+  max_length: 64
+  batch_size: 8
+  image_retrieval: true
+  revision: 75de2d55ec2d0b4efc50b3e9ad70dba96a7b2fa2
+  device: cpu

@@ -1,0 +1,76 @@
+{
+  "sample_id": "face::test::201409.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "face shape: oval; facial thirds: balanced; facial depth: moderate; bone structure: strong; forehead: moderately high and wide; brow ridges: prominent; temple: slight narrowing; hairline: receding with temporal recession; eyebrows: thick, dense, and soft-arched; eyes: almond-shaped with moderate palpebral fissure length and visible upper-lid creases; nasal root: medium width; nasal dorsum: straight; nasal tip: rounded; alar: medium width; mouth: medium width with balanced vermilion fullness and defined cupid's bow; facial stubble: short on cheeks, jaw, and chin; ears: partially visible with free lobes; pose: turned; gaze: direct; artifact: severe digital glitch on top of frame.",
+        "retained_facts": [
+          "face shape: oval",
+          "facial thirds: balanced",
+          "facial depth: moderate",
+          "bone structure: strong",
+          "forehead: moderately high and wide",
+          "brow ridges: prominent",
+          "temple: slight narrowing",
+          "hairline: receding with temporal recession",
+          "eyebrows: thick, dense, and soft-arched",
+          "eyes: almond-shaped",
+          "nasal root: medium width",
+          "nasal dorsum: straight",
+          "nasal tip: rounded",
+          "alar: medium width",
+          "mouth: medium width",
+          "facial stubble: short",
+          "ears: partially visible",
+          "pose: turned",
+          "gaze: direct",
+          "artifact: severe digital glitch"
+        ],
+        "omitted_facts": [
+          "Male-presenting",
+          "young adult",
+          "neutral expression",
+          "head-and-shoulders portrait"
+        ]
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Receding hairline with temporal recession and thick, dense, soft-arched eyebrows frame an oval face with strong bone structure, prominent brow ridges, and a moderately high, wide forehead. The subject features almond-shaped eyes with visible upper-lid creases, a straight-dorsum nose with a rounded tip, and a medium-width mouth with a defined cupid's bow. Short facial stubble covers the cheeks, jaw, and chin, while partially visible ears with free lobes are present. The subject is in a turned pose with a direct gaze, with severe digital glitch artifacts distorting the top of the frame.",
+        "retained_facts": [
+          "receding hairline",
+          "temporal recession",
+          "thick dense soft-arched eyebrows",
+          "oval face",
+          "strong bone structure",
+          "prominent brow ridges",
+          "moderately high wide forehead",
+          "almond-shaped eyes",
+          "visible upper-lid creases",
+          "straight dorsum",
+          "rounded tip",
+          "medium-width mouth",
+          "defined cupid's bow",
+          "short facial stubble",
+          "partially visible ears",
+          "free lobes",
+          "turned pose",
+          "direct gaze",
+          "severe digital glitch artifacts"
+        ],
+        "omitted_facts": [
+          "Male-presenting",
+          "young adult",
+          "neutral expression",
+          "head-and-shoulders portrait"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

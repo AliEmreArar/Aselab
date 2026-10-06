@@ -1,0 +1,59 @@
+{
+  "sample_id": "face::test::196777.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "face shape: oval; bone structure: prominent; forehead: medium height, rounded contour; brow ridge: moderate prominence; hairline: rounded, slight temporal recession; cheekbones: wide, moderately projecting, average fullness; lower-face: broad; jawline: strong, square; jaw angle: well-defined; chin: rounded, moderate projection; eyebrows: thick, dense, straight, low vertical distance to eyes; eyes: almond-shaped, medium palpebral fissure length, level canthal tilt, double upper-lid crease; nose: straight dorsum, medium bridge width, bulbous tip, moderate projection, narrow alar base; mouth: medium width, even lip fullness, level corners, defined cupid's bow; philtrum: medium length, distinct ridges; facial hair: short stubble on upper lip, chin, and jawline; ears: free lobes, positioned slightly above eye-nose line",
+        "retained_facts": [
+          "face shape is oval",
+          "forehead is medium height with rounded contour",
+          "brow ridge is moderately prominent",
+          "hairline is rounded with slight temporal recession",
+          "cheekbones are wide and moderately projecting",
+          "lower-face width is broad",
+          "jawline is strong and square",
+          "jaw angle is well-defined",
+          "chin is rounded with moderate projection",
+          "eyebrows are thick, dense, and straight",
+          "eyes are almond-shaped with level canthal tilt",
+          "nose has straight dorsum and bulbous tip",
+          "lips have even fullness",
+          "facial hair consists of short stubble on upper lip, chin, and jawline",
+          "ears have free lobes"
+        ]
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Short stubble covers the upper lip, chin, and jawline of this young adult with a broad lower-face, strong square jawline, and well-defined jaw angle. The subject has an oval face with wide, moderately projecting cheekbones and a rounded chin with moderate projection. The hairline is rounded with slight temporal recession above a medium-height forehead and moderately prominent brow ridge. Thick, dense, straight eyebrows sit low above almond-shaped eyes with double upper-lid creases. The nose features a straight dorsum and bulbous tip, while the mouth has even lip fullness and a defined cupid's bow. Ears with free lobes are positioned slightly above the eye-nose line.",
+        "retained_facts": [
+          "young adult",
+          "short stubble on upper lip, chin, and jawline",
+          "broad lower-face",
+          "strong square jawline",
+          "well-defined jaw angle",
+          "oval face",
+          "wide, moderately projecting cheekbones",
+          "rounded chin with moderate projection",
+          "rounded hairline with slight temporal recession",
+          "medium-height forehead",
+          "moderately prominent brow ridge",
+          "thick, dense, straight eyebrows",
+          "almond-shaped eyes",
+          "double upper-lid creases",
+          "straight nose dorsum",
+          "bulbous nose tip",
+          "even lip fullness",
+          "defined cupid's bow",
+          "ears with free lobes positioned slightly above eye-nose line"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

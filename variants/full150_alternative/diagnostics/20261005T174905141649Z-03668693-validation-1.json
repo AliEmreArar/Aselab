@@ -1,0 +1,37 @@
+{
+  "sample_id": "person::train::09751_6.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "person; male; body; average build; hair; short dark; shirt; long-sleeved white; shorts; dark; shoes; white",
+        "retained_facts": [
+          "male",
+          "average build",
+          "short dark hair",
+          "long-sleeved white shirt",
+          "dark shorts",
+          "white shoes"
+        ]
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "The long-sleeved white shirt worn with dark shorts and white shoes identifies a male with short dark hair and an average build.",
+        "retained_facts": [
+          "long-sleeved white shirt",
+          "dark shorts",
+          "white shoes",
+          "male",
+          "short dark hair",
+          "average build"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

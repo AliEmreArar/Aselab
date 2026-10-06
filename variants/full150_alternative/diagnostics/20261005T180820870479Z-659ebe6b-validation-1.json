@@ -1,0 +1,39 @@
+{
+  "sample_id": "vehicle::query_images::21010_c163_01.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "SUV; Lexus RX; vehicle color black; wheels alloy; roof rails present; window visors attached to top of side windows; dashboard contains sheet of paper.",
+        "retained_facts": [
+          "SUV",
+          "Lexus RX",
+          "black",
+          "alloy wheels",
+          "roof rails",
+          "window visors attached to top of side windows",
+          "sheet of paper on dashboard"
+        ]
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Black Lexus RX SUV featuring window visors attached to the top of the side windows and a sheet of paper on the dashboard, equipped with alloy wheels and roof rails.",
+        "retained_facts": [
+          "black",
+          "Lexus RX",
+          "SUV",
+          "window visors attached to the top of the side windows",
+          "sheet of paper on the dashboard",
+          "alloy wheels",
+          "roof rails"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

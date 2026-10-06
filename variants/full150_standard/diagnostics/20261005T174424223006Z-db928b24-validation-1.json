@@ -1,0 +1,77 @@
+{
+  "sample_id": "person::query::14459_1.png",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "Man with short dark hair and eyeglasses wearing a plaid shirt, dark gray pants, and white shoes.",
+        "retained_facts": [
+          "Man",
+          "short dark hair",
+          "eyeglasses",
+          "plaid shirt",
+          "dark gray pants",
+          "white shoes"
+        ],
+        "omitted_facts": [
+          "Average-build",
+          "long-sleeved",
+          "button-down",
+          "blue, white, and green pattern"
+        ]
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "Average-build man with short dark hair and eyeglasses, wearing a long-sleeved blue, white, and green plaid button-down shirt, dark gray pants, and white shoes.",
+        "retained_facts": [
+          "Average-build",
+          "man",
+          "short dark hair",
+          "eyeglasses",
+          "long-sleeved button-down shirt",
+          "blue, white, and green plaid pattern",
+          "dark gray pants",
+          "white shoes"
+        ],
+        "omitted_facts": []
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "Average-build man with short dark hair and eyeglasses. He wears a long-sleeved button-down shirt featuring a blue, white, and green plaid pattern, dark gray long pants, and white shoes.",
+        "retained_facts": [
+          "Average-build",
+          "man",
+          "short dark hair",
+          "eyeglasses",
+          "long-sleeved button-down shirt",
+          "blue, white, and green plaid pattern",
+          "dark gray long pants",
+          "white shoes"
+        ],
+        "omitted_facts": []
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "There is an average-built man here with short dark hair and glasses. He is wearing a long-sleeved button-down shirt with a blue, white, and green plaid design, paired with dark gray pants and white shoes.",
+        "retained_facts": [
+          "average-built man",
+          "short dark hair",
+          "glasses",
+          "long-sleeved button-down shirt",
+          "blue, white, and green plaid design",
+          "dark gray pants",
+          "white shoes"
+        ],
+        "omitted_facts": []
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

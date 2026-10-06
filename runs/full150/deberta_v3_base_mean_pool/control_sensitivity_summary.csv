@@ -1,0 +1,4 @@
+model,domain,n,mean_gap,preserving_win_rate,tie_rate
+deberta_v3_base_mean_pool,face,15,4.5691260487893774e-05,0.6,0.0
+deberta_v3_base_mean_pool,person,39,-0.0005285862067220971,0.23076923076923078,0.0
+deberta_v3_base_mean_pool,vehicle,31,-0.002578708390774636,0.03225806451612903,0.0

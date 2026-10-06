@@ -1,0 +1,21 @@
+{
+  "sample_id": "vehicle::train_images::12849_c170_02.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "Sedan; Volkswagen Jetta; Black paint; Alloy wheels; Dark window tint"
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Black Volkswagen Jetta sedan with alloy wheels and dark window tint."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "sample_id": "vehicle::query_images::20204_c041_01.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "Sedan; black paint; alloy wheels; chrome trunk trim; tinted rear window.",
+        "retained_facts": [
+          "Sedan",
+          "black paint",
+          "alloy wheels",
+          "chrome trunk trim",
+          "tinted rear window"
+        ]
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Black sedan with chrome trunk trim, alloy wheels, and a tinted rear window.",
+        "retained_facts": [
+          "Sedan",
+          "black paint",
+          "chrome trunk trim",
+          "alloy wheels",
+          "tinted rear window"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

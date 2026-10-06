@@ -1,0 +1,68 @@
+{
+  "sample_id": "face::train::065762.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "face shape: oval; facial structure: balanced thirds, strong bone structure, moderate depth; forehead: average height and width, rounded contour, moderate brow ridge, average glabella width, slight temple narrowing; hairline: rounded, moderate temporal recession; cheekbones: wide, high, moderate projection and fullness; jaw: proportional width, moderately defined angle, continuous line; chin: rounded, moderate projection; eyebrows: medium-thick, soft arches, moderate spacing; eyes: almond-shaped, moderate palpebral fissure, average intercanthal distance, slight upward canthal tilt, double upper-lid creases, average orbital depth; nasal root: average; nasal dorsum: straight; nasal bridge: medium width; nasal tip: rounded, moderate projection; alar width: proportional to inner eye corners; nostrils: partially visible; mouth: moderate width, medium fullness lips, defined cupid's bow, level corners; philtrum: average length, defined ridges; teeth: upper visible at rest; skin: smooth, no marks; head: slight upward tilt; expression: smiling; gaze: direct.",
+        "retained_facts": [
+          "face shape is oval",
+          "hairline is rounded with moderate temporal recession",
+          "cheekbones are wide and high",
+          "jawline is continuous",
+          "chin is rounded",
+          "eyebrows are medium-thick with soft arches",
+          "eyes are almond-shaped with slight upward canthal tilt",
+          "nose has straight dorsum and rounded tip",
+          "lips are medium fullness with defined cupid's bow",
+          "upper teeth are visible",
+          "skin is smooth with no marks"
+        ],
+        "omitted_facts": [
+          "outdoor setting",
+          "soft lighting",
+          "low resolution",
+          "grain",
+          "compression artifacts"
+        ]
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Oval face with rounded hairline and moderate temporal recession, featuring wide high cheekbones, a continuous jawline, and a rounded chin. The individual has medium-thick eyebrows with soft arches, almond-shaped eyes with slight upward canthal tilt and double upper-lid creases, and a straight-bridged nose with a rounded tip. The mouth has medium fullness lips, a defined cupid's bow, and upper teeth visible at rest. The facial structure is balanced with strong bone structure, and the skin is smooth without marks. The head is positioned with a slight upward tilt, accompanied by a smiling expression and direct gaze.",
+        "retained_facts": [
+          "oval face",
+          "rounded hairline with moderate temporal recession",
+          "wide high cheekbones",
+          "continuous jawline",
+          "rounded chin",
+          "medium-thick eyebrows with soft arches",
+          "almond-shaped eyes",
+          "slight upward canthal tilt",
+          "double upper-lid creases",
+          "straight-bridged nose",
+          "rounded tip",
+          "medium fullness lips",
+          "defined cupid's bow",
+          "upper teeth visible at rest",
+          "smooth skin",
+          "slight upward head tilt",
+          "smiling expression",
+          "direct gaze"
+        ],
+        "omitted_facts": [
+          "outdoor setting",
+          "soft lighting",
+          "low resolution",
+          "grain",
+          "compression artifacts"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

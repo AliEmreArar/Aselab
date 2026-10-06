@@ -1,0 +1,21 @@
+{
+  "sample_id": "vehicle::train_images::13608_c139_04.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "sedan: black; chrome grille: vertical slat; Buick emblem: centered; multi-spoke alloy wheels: silver; sunroof: present"
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Black sedan with a chrome vertical slat grille displaying a centered Buick emblem, featuring multi-spoke silver alloy wheels and a sunroof."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

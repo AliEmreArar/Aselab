@@ -4,6 +4,7 @@ __pycache__/
 .mypy_cache/
 .ruff_cache/
 .venv/
+.venv-study/
 venv/
 .DS_Store
 Thumbs.db

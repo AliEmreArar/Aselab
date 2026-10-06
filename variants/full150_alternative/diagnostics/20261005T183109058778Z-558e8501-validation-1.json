@@ -1,0 +1,21 @@
+{
+  "sample_id": "face::train::149220.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "face shape: oval; bone structure: moderate with balanced soft tissue; hairline: occluded; forehead: occluded; eyebrows: thin, soft-arched, moderate spacing; eyes: almond-shaped, moderate palpebral fissure, average orbital depth, upper-lid creases present; nose: straight dorsum, medium bridge width, rounded tip, moderate alar width; mouth: medium width, balanced lip fullness, level corners, philtrum with defined ridges; facial hair: short stubble on upper lip and chin; headband: yellow; towel: white"
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Wearing a yellow headband and a white towel draped over the head, this adult has an oval face with moderate bone structure and balanced soft tissue. The hairline and forehead are occluded. The eyebrows are thin and soft-arched with moderate spacing, and the almond-shaped eyes feature moderate palpebral fissures, average orbital depth, and upper-lid creases. The straight nose has a medium bridge width and rounded tip, while the medium-width mouth shows balanced lip fullness, level corners, and a philtrum with defined ridges. Short facial hair stubble is present on the upper lip and chin, and the head is slightly turned."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

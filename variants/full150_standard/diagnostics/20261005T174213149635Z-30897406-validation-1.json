@@ -1,0 +1,31 @@
+{
+  "sample_id": "person::train::10252_1.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "A woman with long dark hair wearing a black jacket, gray mid-layer, blue trousers, and a black shoulder bag."
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "A woman of average build with long dark hair. She is wearing a black long-sleeved jacket over a light gray mid-layer, dark blue trousers, and dark shoes, carrying a black shoulder bag with a thin strap."
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "Female of average build, long dark hair. She wears a black long-sleeved jacket over a light gray mid-layer garment, dark blue trousers, and dark shoes. She carries a black shoulder bag with a thin strap."
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "There's a woman with long dark hair and an average build. She's wearing a black long-sleeved jacket layered over a light gray top, along with dark blue pants and dark shoes. She's also carrying a black shoulder bag that has a thin strap."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

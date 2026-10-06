@@ -1,0 +1,37 @@
+{
+  "sample_id": "person::gallery::15309_3.png",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "male: average-build; hair: short and dark; shirt: gray short-sleeve collared; pants: dark; shoes: dark",
+        "retained_facts": [
+          "male",
+          "average-build",
+          "short dark hair",
+          "gray short-sleeve collared shirt",
+          "dark pants",
+          "dark shoes"
+        ]
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Gray short-sleeve collared shirt worn by an average-build male with short dark hair, dark pants, and dark shoes.",
+        "retained_facts": [
+          "gray short-sleeve collared shirt",
+          "average-build",
+          "male",
+          "short dark hair",
+          "dark pants",
+          "dark shoes"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "sample_id": "face::test::185812.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "face shape: round; vertical thirds: balanced; forehead: broad, slight temporal recession; brow ridge: prominent; temple: moderate narrowing; hairline: receding at the temples, irregular M-shaped pattern; eyebrows: moderately thick, straight, spaced apart; eyes: almond-shaped, horizontal palpebral fissure, average orbital depth, upper-lid crease visible; nose: straight dorsum, medium bridge width, rounded tip, moderate projection, alar width proportional to inner eye corners; mouth: medium width, thin upper lip, fuller lower lip, level corners; philtrum: shallow with soft ridges; jawline: moderately defined; chin: rounded; submental contour: smooth; ears: average size, free lobes, level with eye-nose line; hair: short, dark, styled upward; facial hair: thin growth along the jawline; eyeglasses: thin-metal-frame; expression: neutral."
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Thin-metal-frame eyeglasses worn by a person with short dark hair styled upward and thin facial hair growth along the jawline. The individual has an irregular M-shaped receding hairline, a broad forehead with slight temporal recession, and a prominent brow ridge. The face is round with balanced vertical thirds, a moderately defined jawline, and a rounded chin. The eyebrows are straight and moderately thick. The eyes are almond-shaped with visible upper-lid creases. The nose has a straight dorsum and a rounded tip of moderate projection. The mouth is medium width with a thin upper lip and a fuller lower lip. The ears are average-sized with free lobes and are level with the eye-nose line."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

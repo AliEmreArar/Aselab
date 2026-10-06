@@ -1,0 +1,39 @@
+{
+  "sample_id": "person::train::06085_7.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "male: average build; hair: short dark; shirt: long-sleeved light gray; pants: dark; shoes: black; backpack: dark, worn on both shoulders.",
+        "retained_facts": [
+          "male",
+          "average build",
+          "short dark hair",
+          "long-sleeved light gray shirt",
+          "dark pants",
+          "black shoes",
+          "dark backpack on both shoulders"
+        ]
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "A dark backpack worn on both shoulders distinguishes this male with short dark hair, who is wearing a long-sleeved light gray shirt, dark pants, and black shoes. He has an average build.",
+        "retained_facts": [
+          "male",
+          "average build",
+          "short dark hair",
+          "long-sleeved light gray shirt",
+          "dark pants",
+          "black shoes",
+          "dark backpack on both shoulders"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "sample_id": "person::train::06597_2.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "man; average-build; hair; short; dark; shirt; dark blue; short-sleeved; collared; trousers; dark; shoes; dark",
+        "retained_facts": [
+          "man",
+          "average-build",
+          "short dark hair",
+          "dark blue short-sleeved collared shirt",
+          "dark trousers",
+          "dark shoes"
+        ]
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Dark blue short-sleeved collared shirt worn by an average-build man with short dark hair, dark trousers, and dark shoes.",
+        "retained_facts": [
+          "dark blue short-sleeved collared shirt",
+          "average-build man",
+          "short dark hair",
+          "dark trousers",
+          "dark shoes"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

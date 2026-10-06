@@ -1,0 +1,33 @@
+{
+  "sample_id": "vehicle::train_images::04724_c110_02.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "hatchback; white; sunroof; alloy wheels",
+        "retained_facts": [
+          "hatchback",
+          "white",
+          "sunroof",
+          "alloy wheels"
+        ]
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "White hatchback featuring a sunroof and alloy wheels.",
+        "retained_facts": [
+          "white",
+          "hatchback",
+          "sunroof",
+          "alloy wheels"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

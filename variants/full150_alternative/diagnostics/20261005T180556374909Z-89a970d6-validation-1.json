@@ -1,0 +1,37 @@
+{
+  "sample_id": "vehicle::train_images::09221_c139_03.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "sedan; white paint finish; toyota badging; grille; alloy rims; windows; light tinting; antenna; roof",
+        "retained_facts": [
+          "Sedan body type",
+          "White paint finish",
+          "Toyota badging on the grille",
+          "Alloy rims",
+          "Lightly tinted windows",
+          "Antenna on the roof"
+        ]
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Toyota-badged white sedan featuring alloy rims, a roof-mounted antenna, and windows with light tinting.",
+        "retained_facts": [
+          "Sedan body type",
+          "White paint finish",
+          "Toyota badging on the grille",
+          "Alloy rims",
+          "Lightly tinted windows",
+          "Antenna on the roof"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

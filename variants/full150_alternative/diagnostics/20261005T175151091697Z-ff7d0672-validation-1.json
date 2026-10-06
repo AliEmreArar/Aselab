@@ -1,0 +1,35 @@
+{
+  "sample_id": "person::query::26761_2.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "Person: average build; hair: dark; jacket: dark long-sleeved hooded; pants: dark; shoes: dark.",
+        "retained_facts": [
+          "Average build",
+          "dark hair",
+          "dark long-sleeved hooded jacket",
+          "dark pants",
+          "dark shoes"
+        ]
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Dark long-sleeved hooded jacket worn with dark pants and dark shoes by a person with dark hair and an average build.",
+        "retained_facts": [
+          "dark long-sleeved hooded jacket",
+          "dark pants",
+          "dark shoes",
+          "dark hair",
+          "average build"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

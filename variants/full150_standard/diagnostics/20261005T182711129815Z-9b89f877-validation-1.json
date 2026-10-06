@@ -1,0 +1,31 @@
+{
+  "sample_id": "face::test::188858.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "A young woman with an oval face, almond-shaped eyes, and a straight nose."
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "Young woman with an oval face, rounded hairline, soft-arched eyebrows, almond-shaped eyes, and a straight nose with a rounded tip."
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "Young adult woman with an oval face shape. Features a rounded hairline with moderate temporal recession, medium-thick soft-arched eyebrows with lateral thinning, almond-shaped eyes with double upper-lid creases, a straight nasal dorsum with a rounded tip, and a medium-width mouth with a defined cupid's bow. Skin is smooth without prominent marks."
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "This is a young woman with an oval-shaped face and smooth skin. She has almond-shaped eyes, arched eyebrows that are thinner toward the outer edges, and a straight nose with a rounded tip. Her mouth has a well-defined cupid's bow and she is showing her upper teeth in a wide smile."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

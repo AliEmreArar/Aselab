@@ -1,0 +1,73 @@
+{
+  "sample_id": "vehicle::query_images::21010_c163_01.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "Black Lexus RX SUV with roof rails and alloy wheels.",
+        "retained_facts": [
+          "SUV",
+          "Lexus RX",
+          "black",
+          "roof rails",
+          "alloy wheels"
+        ],
+        "omitted_facts": [
+          "window visors",
+          "sheet of paper on the dashboard"
+        ]
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "Black Lexus RX SUV featuring alloy wheels, roof rails, and side window visors.",
+        "retained_facts": [
+          "SUV",
+          "Lexus RX",
+          "black",
+          "alloy wheels",
+          "roof rails",
+          "window visors"
+        ],
+        "omitted_facts": [
+          "sheet of paper on the dashboard"
+        ]
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "Black Lexus RX SUV equipped with alloy wheels, roof rails, and window visors attached to the tops of the side windows. A sheet of paper is visible on the dashboard.",
+        "retained_facts": [
+          "SUV",
+          "Lexus RX",
+          "black",
+          "alloy wheels",
+          "roof rails",
+          "window visors",
+          "sheet of paper on the dashboard"
+        ],
+        "omitted_facts": []
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "That's a black Lexus RX SUV. It has alloy wheels, roof rails, and window visors on the side windows, plus a piece of paper sitting on the dashboard.",
+        "retained_facts": [
+          "SUV",
+          "Lexus RX",
+          "black",
+          "alloy wheels",
+          "roof rails",
+          "window visors",
+          "sheet of paper on the dashboard"
+        ],
+        "omitted_facts": []
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

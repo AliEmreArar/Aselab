@@ -1,5 +1,51 @@
 # Caption Encoder Benchmark
 
+## 150 örneklik genişletilmiş çalışma
+
+Caption üretimi tamamlandı: 150 kaynak için altı biçimde 900 Gemini caption.
+[Tüm captionlar (JSONL)](variants/full150/variants.jsonl) ve
+[görsel başına captionlar (CSV)](variants/full150/captions.csv) depoda bulunur.
+[Güncel bulgular](runs/full150/BULGULAR.md) ve grafikler `runs/full150/` altındadır.
+Encoder ölçümü kısmi: CLIP-B/16, CLIP-L/14, Jina-CLIP-v2 ve DeBERTa tamamlandı;
+SigLIP2, BGE-M3, AltCLIP ve EVA henüz tamamlanmadı. Eksik ölçümler sonuç sayılmaz.
+
+`configs/full150_standard.yaml` dört mevcut Gemini profilini tüm 150 kaynak
+caption'a genişletir. Pilotun 15 kaydı, kaynak/prompt imzası korunarak
+`variants/full150_standard` içine kopyalanmıştır; pilot klasörleri değişmez.
+`configs/full150_alternative.yaml` aynı kaynaklardan nesne–özellik listesi ve
+ayırt edici bilgi önce profillerini üretir. Gemini fotoğrafı görmez; bu çalışma
+mevcut açıklamadan türetilmiş tarifleri karşılaştırır.
+
+```powershell
+python -m caption_bench generate --config configs/full150_standard.yaml
+python -m caption_bench generate --config configs/full150_alternative.yaml
+./.venv-study/Scripts/python.exe scripts/run_full150_study.py --prepare --run
+./.venv-study/Scripts/python.exe scripts/analyze_full150_study.py
+```
+
+Üretim caption başına checkpoint ile devam eder. Geçici HTTP 503 sonrasında
+aynı komut tamamlanan örnekleri atlar; tekrar çalıştırmak yeni API istekleri
+gönderebilir. API anahtarı `.env` içinde tutulur ve çıktılara yazılmaz.
+
+Hazırlık, 150 × 6 Gemini varyantının eksiksiz ve kaynakla uyumlu olmasını
+zorunlu tutar. Encoder'lar ayrı süreçlerde çalışır; başarıyla tamamlanan model
+aynı girdi/config imzasıyla tekrar çalıştırılmaz. Model bazlı kayıtlar
+`runs/full150/MODEL/execution.log` içindedir. `--models clip_b16 siglip2_b16_224`
+ile belirli modeller çalıştırılabilir. CPU float32 kullanılır. Mamba-3 bu
+bilgisayarda CUDA/Triton bulunmadığı için dışarıda bırakılmıştır.
+
+Metin–metin ve metin–görsel sonuçları ayrı CSV'lere yazılır. Her kategoride 50
+aday vardır. Kategori başına 25 geliştirme sorgusunda model/tarif seçilir;
+diğer 25 sorguda seçilen tarif değerlendirilir. Pilot örnekleri geliştirme
+grubundadır. Tüm 150 sorgunun skorları betimsel karşılaştırmadır; ayrılmış
+sorguların skorları seçimden bağımsız değerlendirmedir. Aday havuzu her iki
+aşamada da aynı 50 kaynak dosyasıdır. Kimlik veya kamera genellemesi ölçülmez.
+
+`runs/full150/BULGULAR.md`, tüm kombinasyonların CSV'leri, orijinal tarife göre
+eşleştirilmiş bootstrap farkları ve ayrılmış değerlendirme sonuçları üretilir.
+Eksik modeller varsa rapor açıkça KISMİ olarak işaretlenir. Bu çalışma tek
+Gemini üretimi/seed kullandığından prompt etkisi üretim varyasyonunu da içerir.
+
 ## Aligned multimodal encoder expansion
 
 CLIP ViT-L/14, SigLIP2, Jina-CLIP-v2, EVA02-CLIP-L/14 and AltCLIP, plus the

@@ -1,0 +1,21 @@
+{
+  "sample_id": "face::train::071174.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "face shape: oval; forehead: rounded contour; brow ridge: moderate; glabella: narrow; hairline: not discernible; head covering: present; eyebrows: soft-arched, moderate thickness, low peak; eyes: almond-shaped, upward canthal tilt, double upper-lid creases, average orbital depth; nasal dorsum: straight; bridge: medium width; nasal tip: rounded, moderate projection; alar: wide flare; mouth: medium width; lip fullness: balanced; lip corners: level; philtrum: narrow, defined ridges; skin surface: smooth; forehead mole: small, dark, above medial end of right eyebrow; garment: colorful, patterned; head position: slight tilt; expression: gentle smile"
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "A small dark mole sits on the forehead above the medial end of the right eyebrow, framed by colorful patterned garments and a head covering. The face is oval with a rounded forehead contour, moderate brow ridge, and narrow glabella, featuring soft-arched eyebrows with moderate thickness and a low peak. The almond-shaped eyes have an upward canthal tilt, double upper-lid creases, and average orbital depth. The nose has a straight dorsum, medium bridge width, rounded tip with moderate projection, and wide alar flare. The mouth has a medium width, balanced lip fullness, level corners, and a narrow philtrum with defined ridges. The individual has smooth skin, a slight head tilt, and a gentle smile."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

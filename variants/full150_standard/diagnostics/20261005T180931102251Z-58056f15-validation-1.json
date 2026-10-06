@@ -1,0 +1,110 @@
+{
+  "sample_id": "face::train::023736.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "Middle-aged male with an oval face, thick dark eyebrows, a short dense beard, and short wavy dark brown hair.",
+        "retained_facts": [
+          "Male",
+          "middle-aged",
+          "oval face",
+          "thick dark eyebrows",
+          "short dense beard",
+          "short wavy dark brown hair"
+        ],
+        "omitted_facts": [
+          "face structure details",
+          "eye shape",
+          "nose details",
+          "lip details",
+          "ear details",
+          "portrait conditions"
+        ]
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "Middle-aged male with an oval face, prominent cheekbones, and a defined jawline. He has almond-shaped eyes, a straight nose, thick dark eyebrows, and a short dense beard with short wavy dark brown hair.",
+        "retained_facts": [
+          "middle-aged",
+          "male",
+          "oval face",
+          "prominent cheekbones",
+          "defined jawline",
+          "almond-shaped eyes",
+          "straight nose",
+          "thick dark eyebrows",
+          "short dense beard",
+          "short wavy dark brown hair"
+        ],
+        "omitted_facts": [
+          "face thirds",
+          "bone structure",
+          "brow ridge",
+          "philtrum details",
+          "ear details",
+          "portrait conditions"
+        ]
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "Middle-aged male with an oval face, moderate facial depth, and strong bone structure. Features include a low hairline, prominent cheekbones, defined jawline, and rounded chin. He has thick dark soft-arched eyebrows, almond-shaped eyes with positive canthal tilt, a straight nose, and medium-full lips. The face is covered by a short dense beard and mustache, complemented by short wavy dark brown hair styled messy on top.",
+        "retained_facts": [
+          "middle-aged",
+          "male",
+          "oval face",
+          "moderate facial depth",
+          "strong bone structure",
+          "low hairline",
+          "prominent cheekbones",
+          "defined jawline",
+          "rounded chin",
+          "thick dark soft-arched eyebrows",
+          "almond-shaped eyes",
+          "positive canthal tilt",
+          "straight nose",
+          "medium-full lips",
+          "short dense beard and mustache",
+          "short wavy dark brown hair"
+        ],
+        "omitted_facts": [
+          "portrait conditions",
+          "outdoor lighting",
+          "blurred background"
+        ]
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "This is a middle-aged man with an oval face, a well-defined jaw, and prominent cheekbones. He has short, wavy dark brown hair that looks a bit messy, and a short, dense beard and mustache. His eyebrows are thick and dark, and he has almond-shaped eyes and a straightforward nose. He is smiling in the photo.",
+        "retained_facts": [
+          "middle-aged",
+          "male",
+          "oval face",
+          "defined jawline",
+          "prominent cheekbones",
+          "short wavy dark brown hair",
+          "short dense beard and mustache",
+          "thick dark eyebrows",
+          "almond-shaped eyes",
+          "straight nose",
+          "smiling"
+        ],
+        "omitted_facts": [
+          "facial depth",
+          "bone structure details",
+          "philtrum",
+          "ear details",
+          "portrait conditions"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

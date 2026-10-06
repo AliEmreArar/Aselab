@@ -1,0 +1,31 @@
+{
+  "sample_id": "person::train::12050_5.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "A person with short brown hair wearing a white polo and light brown pants."
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "Person of average build with short brown hair, wearing a short-sleeved white polo shirt, light brown pants, and dark brown shoes."
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "Average build person featuring short brown hair. They are dressed in a short-sleeved white polo shirt, light brown pants, and dark brown shoes."
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "I'm looking for a person with an average build and short brown hair. They are wearing a white short-sleeved polo shirt with light brown pants and dark brown shoes."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

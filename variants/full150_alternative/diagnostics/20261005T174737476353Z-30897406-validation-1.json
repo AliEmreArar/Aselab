@@ -1,0 +1,41 @@
+{
+  "sample_id": "person::train::10252_1.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "Person: female, average build, long dark hair; jacket: black, long-sleeved; mid-layer garment: light gray; trousers: dark blue; shoes: dark; bag: black shoulder bag, thin strap.",
+        "retained_facts": [
+          "female",
+          "average build",
+          "long dark hair",
+          "black long-sleeved jacket",
+          "light gray mid-layer garment",
+          "dark blue trousers",
+          "dark shoes",
+          "black shoulder bag with a thin strap"
+        ]
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Black shoulder bag with a thin strap worn over a black long-sleeved jacket and light gray mid-layer garment, paired with dark blue trousers and dark shoes. The individual is a female of average build with long dark hair.",
+        "retained_facts": [
+          "black shoulder bag with a thin strap",
+          "black long-sleeved jacket",
+          "light gray mid-layer garment",
+          "dark blue trousers",
+          "dark shoes",
+          "female",
+          "average build",
+          "long dark hair"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

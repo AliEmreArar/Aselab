@@ -1,0 +1,31 @@
+{
+  "sample_id": "person::train::08924_1.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "An average-build woman with dark hair in a dark blue long-sleeved top and dark pants."
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "Average-build woman with dark hair, wearing a dark blue long-sleeved top, dark pants, and dark shoes, carrying a dark bag and a smartphone."
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "An average-build female featuring dark hair. She is wearing a dark blue long-sleeved top, dark pants, and dark shoes. She is carrying a dark bag by its strap and holding a smartphone."
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "There is an average-built woman with dark hair. She has on a dark blue long-sleeved shirt with dark pants and shoes. She is also carrying a dark bag and holding onto a smartphone."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "sample_id": "person::train::05158_3.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "male; person build: average; hooded jacket: black, long sleeves; pants: dark"
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Black hooded jacket with long sleeves worn by a male of average build, dressed in dark pants."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

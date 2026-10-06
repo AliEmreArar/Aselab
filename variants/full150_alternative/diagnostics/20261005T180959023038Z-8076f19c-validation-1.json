@@ -1,0 +1,33 @@
+{
+  "sample_id": "vehicle::gallery_images::20535_c170_02.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "sedan, body style; Volkswagen Passat B4, make/model; silver, paint color; alloy wheels, wheel type",
+        "retained_facts": [
+          "Sedan",
+          "Volkswagen Passat B4",
+          "silver",
+          "alloy wheels"
+        ]
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Silver Volkswagen Passat B4 sedan featuring alloy wheels.",
+        "retained_facts": [
+          "Sedan",
+          "Volkswagen Passat B4",
+          "silver",
+          "alloy wheels"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

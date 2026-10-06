@@ -1,0 +1,88 @@
+{
+  "sample_id": "face::train::063708.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "Face shape: oval; Forehead: medium height, medium width, gently rounded profile, moderate brow ridge; Hairline: low center, slight temporal recession; Cheekbones: average width, moderate projection; Lower face: rounded chin, moderate jawline definition; Eyebrows: medium thickness, medium density, medium length, soft arch; Eyes: almond-shaped, neutral palpebral fissure slant, medium upper-lid crease; Nose: straight dorsum, medium bridge width, rounded tip; Mouth: medium width, balanced vermilion fullness, level corners; Ears: medium size, free lobes; Hair: short, dark, styled forward; Clothing: white shirt",
+        "retained_facts": [
+          "oval face shape",
+          "medium height and width forehead",
+          "gently rounded forehead profile",
+          "moderate brow ridge",
+          "low center hairline",
+          "slight temporal recession",
+          "average width cheekbones",
+          "moderate cheekbone projection",
+          "rounded chin",
+          "moderate jawline definition",
+          "medium thickness/density/length eyebrows",
+          "soft eyebrow arch",
+          "almond-shaped eyes",
+          "neutral palpebral fissure slant",
+          "medium upper-lid crease",
+          "straight nose dorsum",
+          "medium nose bridge width",
+          "rounded nose tip",
+          "medium mouth width",
+          "balanced vermilion fullness",
+          "level mouth corners",
+          "medium size ears",
+          "free ear lobes",
+          "short dark hair styled forward",
+          "white shirt"
+        ],
+        "omitted_facts": [
+          "adult",
+          "male presentation",
+          "balanced upper/middle/lower thirds",
+          "moderate bone structure prominence",
+          "natural daylight",
+          "slight head turn",
+          "neutral expression"
+        ]
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Short dark hair styled forward and a white shirt define this individual, who has an oval face with a low-centered hairline showing slight temporal recession. The forehead is of medium height and width with a moderate brow ridge, leading down to almond-shaped eyes with a neutral palpebral fissure slant and medium upper-lid crease. Features include medium-thickness eyebrows with a soft arch, a straight-dorsum nose with a rounded tip, and medium-width mouth with balanced vermilion fullness. The lower face shows a rounded chin and moderate jawline definition, with medium-size ears featuring free lobes and cheekbones of average width.",
+        "retained_facts": [
+          "short dark hair styled forward",
+          "white shirt",
+          "oval face",
+          "low-centered hairline",
+          "slight temporal recession",
+          "medium height and width forehead",
+          "moderate brow ridge",
+          "almond-shaped eyes",
+          "neutral palpebral fissure slant",
+          "medium upper-lid crease",
+          "medium-thickness eyebrows",
+          "soft eyebrow arch",
+          "straight-dorsum nose",
+          "rounded nose tip",
+          "medium-width mouth",
+          "balanced vermilion fullness",
+          "rounded chin",
+          "moderate jawline definition",
+          "medium-size ears",
+          "free ear lobes",
+          "average width cheekbones"
+        ],
+        "omitted_facts": [
+          "adult",
+          "male presentation",
+          "balanced facial thirds",
+          "natural daylight",
+          "slight head turn",
+          "neutral expression"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

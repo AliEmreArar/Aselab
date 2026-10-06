@@ -1,0 +1,20 @@
+name: full150-clip_b16
+dataset: ../../caption_samples_50/all_samples.jsonl
+output_dir: ../../runs/full150/clip_b16
+seed: 42
+agreement_k: 10
+transforms:
+- name: identity
+variant_files:
+- ../../variants/full150/variants.jsonl
+models:
+- name: clip_b16
+  backend: hf_text_features
+  model_id: openai/clip-vit-base-patch16
+  revision: refs/pr/16
+  use_safetensors: true
+  max_length: 77
+  batch_size: 8
+  image_retrieval: true
+  device: cpu
+  dtype: float32

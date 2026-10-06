@@ -1,0 +1,21 @@
+{
+  "sample_id": "person::query::14459_1.png",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "man; average-build; hair; short dark; eyeglasses; shirt; long-sleeved button-down; shirt pattern; blue, white, and green plaid; pants; dark gray long; shoes; white"
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Blue, white, and green plaid long-sleeved button-down shirt worn by an average-build man with short dark hair and eyeglasses. He wears dark gray long pants and white shoes."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

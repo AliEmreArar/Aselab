@@ -1,0 +1,21 @@
+{
+  "sample_id": "face::train::123459.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "Face shape: oval; forehead: high with rounded hairline and moderate temporal recession; brow ridge: prominent; eyebrows: straight, moderate density; eyes: almond-shaped, moderate palpebral fissure, slight upward slant, defined double eyelid creases, average orbital depth; nose: straight nasal dorsum, moderate bridge width, rounded tip with moderate projection, average alar width; lips: medium-thickness, defined cupid's bow, level mouth corners; philtrum: short with distinct ridges; jawline: narrow; chin: rounded with moderate projection; facial hair: short dark, thin mustache, stubble along jaw; hair: short dark; head: slight downward tilt."
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Short dark hair paired with a short dark thin mustache and jawline stubble defines this person, who has an oval face with a high forehead and rounded hairline showing moderate temporal recession. The face features a prominent brow ridge above straight, moderate-density eyebrows and almond-shaped eyes with double eyelid creases and a slight upward slant. The nose has a straight dorsum with a rounded, moderately projecting tip, while the lips are medium-thick with a defined cupid's bow and a short, ridged philtrum. The chin is rounded with moderate projection, leading into a narrow jawline, and the head is held at a slight downward tilt."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

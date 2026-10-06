@@ -1,0 +1,21 @@
+{
+  "sample_id": "person::train::01108_7.png",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "person: male; build: average; hair: dark brown medium-length; jacket: dark blue hooded, long sleeves; pants: dark; shoes: dark"
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Dark brown medium-length hair and a dark blue hooded jacket with long sleeves are worn by an average build male in dark pants and dark shoes."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "reason": "All calculations and final log verified; non-daemon Transformers auto_conversion thread blocked shutdown",
+  "released_worker_pids": [
+    6900,
+    12264
+  ]
+}

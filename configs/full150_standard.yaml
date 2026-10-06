@@ -1,0 +1,28 @@
+name: gemini-full150-standard
+dataset: ../caption_samples_50/all_samples.jsonl
+env_file: ../.env
+model: gemini-3.1-flash-lite
+prompt_file: ../prompts/gemini_caption_variants_v2.md
+output_dir: ../variants/full150_standard
+temperature: 1.0
+seed: 42
+max_output_tokens: 4096
+timeout_seconds: 120
+request_retries: 2
+validation_retries: 1
+max_api_requests_per_caption: 3
+request_interval_seconds: 1.0
+variants:
+- name: llm_brief
+  operation: summary
+  profile: brief
+- name: llm_balanced
+  operation: summary
+  profile: balanced
+- name: llm_detailed
+  operation: summary
+  profile: detailed
+- name: llm_human_description
+  operation: human_description
+  profile: human_description
+min_request_interval_seconds: 4.5

@@ -1,0 +1,21 @@
+{
+  "sample_id": "vehicle::train_images::04455_c078_00.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "Sedan, Toyota Camry; paint, black; rims, alloy; hood, damaged near driver-side headlight"
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Damaged hood near the driver-side headlight on a black Toyota Camry sedan with alloy rims."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

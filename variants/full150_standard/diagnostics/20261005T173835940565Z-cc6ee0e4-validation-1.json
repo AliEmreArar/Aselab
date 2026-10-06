@@ -1,0 +1,31 @@
+{
+  "sample_id": "person::train::10977_1.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "A woman with dark brown hair and a white face mask, wearing a light gray top, dark pants, and dark sandals while carrying a dark shoulder bag."
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "An average-build woman with shoulder-length dark brown hair, wearing black sunglasses and a white face mask, a light gray short-sleeved top, dark pants, and dark sandals, carrying a dark shoulder bag."
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "Average-build woman with shoulder-length dark brown hair, black sunglasses, and a white face mask covering the lower face; wearing a light gray short-sleeved top, dark pants, and dark sandals; carrying a dark shoulder bag with a strap over one shoulder."
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "I see a woman of average build with shoulder-length dark brown hair. She has black sunglasses on and a white face mask over the lower part of her face. She's dressed in a light gray short-sleeved shirt, dark pants, and dark sandals, and she is carrying a dark bag over her shoulder."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

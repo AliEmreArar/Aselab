@@ -205,6 +205,54 @@ def test_generated_variants_run_through_existing_encoder_pipeline(config_path):
         run_experiment(benchmark)
 
 
+def test_google_json_retry_info_is_respected(monkeypatch):
+    import io
+    waits = []
+    def fail(request, timeout):
+        body = {"error": {"details": [{"@type": "type.googleapis.com/google.rpc.RetryInfo",
+                                       "retryDelay": "36s"}]}}
+        raise HTTPError(request.full_url, 429, "Rate limit", {}, io.BytesIO(json.dumps(body).encode()))
+    monkeypatch.setattr("caption_bench.gemini.urlopen", fail)
+    monkeypatch.setattr("caption_bench.gemini.time.sleep", waits.append)
+    with pytest.raises(RuntimeError, match="429"):
+        GeminiClient("secret-key", "gemini-3.1-flash-lite", {"request_retries": 1}).generate("s", "u", {})
+    assert waits == [36]
+
+
+def test_remote_disconnect_is_a_resumable_connection_error(tmp_path, monkeypatch):
+    from http.client import RemoteDisconnected
+    def fail(*args, **kwargs):
+        raise RemoteDisconnected('closed')
+    monkeypatch.setattr('caption_bench.gemini.urlopen', fail)
+    monkeypatch.setattr('caption_bench.gemini.time.sleep', lambda _: None)
+    client = GeminiClient('secret-key', 'gemini-3.1-flash-lite', {'request_retries': 1}, audit_dir=tmp_path)
+    with pytest.raises(RuntimeError, match='can be resumed'):
+        client.generate('s', 'u', {})
+    records = [json.loads(p.read_text()) for p in tmp_path.glob('*.json')]
+    assert len(records) == 2
+    assert {r['status'] for r in records} == {'connection_error'}
+
+
+def test_minimum_request_spacing_survives_caption_boundary(monkeypatch):
+    waits = []
+    times = iter([10.0, 12.0, 20.0])
+    class Response:
+        def __enter__(self): return self
+        def __exit__(self, *args): pass
+        def read(self):
+            return json.dumps({"candidates": [{"finishReason": "STOP", "content": {
+                "parts": [{"text": "{}"}]}}]}).encode()
+    monkeypatch.setattr("caption_bench.gemini.urlopen", lambda *a, **k: Response())
+    monkeypatch.setattr("caption_bench.gemini.time.monotonic", lambda: next(times))
+    monkeypatch.setattr("caption_bench.gemini.time.sleep", waits.append)
+    client = GeminiClient("secret-key", "gemini-3.1-flash-lite", {"min_request_interval_seconds": 9})
+    client.begin_caption("a")
+    client.generate("s", "u", {})
+    client.begin_caption("b")
+    client.generate("s", "u", {})
+    assert waits == [7.0]
+
+
 def test_auxiliary_metadata_does_not_trigger_paid_regeneration(config_path):
     response_item = item()
     response_item.update({"retained_facts": [], "change_note": " ", "skip_reason": "Not applicable"})

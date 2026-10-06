@@ -1,0 +1,21 @@
+{
+  "sample_id": "person::query::27008_3.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "Person: average build; hair: dark; jacket: long-sleeved, black; pants: dark; shoes: light-colored; object: smartphone held in hand"
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Holding a smartphone, this person wears a long-sleeved black jacket, dark pants, and light-colored shoes. They have dark hair and an average build."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

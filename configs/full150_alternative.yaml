@@ -1,0 +1,22 @@
+name: gemini-full150-alternative-prompts
+dataset: ../caption_samples_50/all_samples.jsonl
+env_file: ../.env
+model: gemini-3.1-flash-lite
+prompt_file: ../prompts/full150_alternative.md
+output_dir: ../variants/full150_alternative
+temperature: 1.0
+seed: 42
+max_output_tokens: 4096
+timeout_seconds: 120
+request_retries: 2
+validation_retries: 1
+max_api_requests_per_caption: 3
+request_interval_seconds: 1.0
+variants:
+- name: llm_attribute_list
+  operation: summary
+  profile: attribute_list
+- name: llm_distinctive_first
+  operation: summary
+  profile: distinctive_first
+min_request_interval_seconds: 4.5

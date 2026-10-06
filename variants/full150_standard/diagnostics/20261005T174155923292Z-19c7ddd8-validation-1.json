@@ -1,0 +1,83 @@
+{
+  "sample_id": "person::train::08528_6.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "Average-build male with short dark hair, dark cap, black jacket, white shirt, blue jeans, and white shoes.",
+        "retained_facts": [
+          "Average-build male",
+          "short dark hair",
+          "dark cap",
+          "black jacket",
+          "white shirt",
+          "blue jeans",
+          "white shoes"
+        ],
+        "omitted_facts": [
+          "long-sleeved",
+          "zipped",
+          "light skin tone"
+        ]
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "An average-build male with short dark hair and a dark cap. He wears a long-sleeved black jacket zipped over a white shirt, light blue jeans, and white shoes.",
+        "retained_facts": [
+          "Average-build male",
+          "short dark hair",
+          "dark cap",
+          "long-sleeved black jacket",
+          "zipped",
+          "white shirt",
+          "light blue jeans",
+          "white shoes"
+        ],
+        "omitted_facts": [
+          "light skin tone"
+        ]
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "Average-build male with light skin tone and short dark hair, wearing a dark cap. He is dressed in a long-sleeved black jacket zipped over a white shirt, paired with light blue jeans and white shoes.",
+        "retained_facts": [
+          "Average-build male",
+          "light skin tone",
+          "short dark hair",
+          "dark cap",
+          "long-sleeved black jacket",
+          "zipped",
+          "white shirt",
+          "light blue jeans",
+          "white shoes"
+        ]
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "There's a guy of average build with short dark hair and a dark cap. He's wearing a black jacket zipped up over a white shirt, light blue jeans, and white sneakers.",
+        "retained_facts": [
+          "Average-build male",
+          "short dark hair",
+          "dark cap",
+          "black jacket",
+          "zipped",
+          "white shirt",
+          "light blue jeans",
+          "white shoes"
+        ],
+        "omitted_facts": [
+          "long-sleeved",
+          "light skin tone"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

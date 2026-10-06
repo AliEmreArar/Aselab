@@ -1,0 +1,100 @@
+{
+  "sample_id": "face::train::138886.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "applicable": true,
+        "text": "Young adult woman with an oval face, high cheekbones, and long dark hair.",
+        "retained_facts": [
+          "Woman",
+          "young adult",
+          "oval face shape",
+          "high cheekbones",
+          "long dark hair"
+        ],
+        "omitted_facts": [
+          "nasal structure",
+          "lip details",
+          "eye shape",
+          "forehead details",
+          "facial expression",
+          "background distortion"
+        ]
+      },
+      {
+        "variant_type": "llm_balanced",
+        "applicable": true,
+        "text": "Young adult woman with an oval face, high cheekbones, and long dark hair. She has almond-shaped eyes with double creases and a straight nose with a rounded tip.",
+        "retained_facts": [
+          "Woman",
+          "young adult",
+          "oval face shape",
+          "high cheekbones",
+          "long dark hair",
+          "almond-shaped eyes",
+          "double upper-lid creases",
+          "straight nasal dorsum",
+          "rounded nasal tip"
+        ],
+        "omitted_facts": [
+          "brow ridge",
+          "forehead contour",
+          "chin shape",
+          "background distortion"
+        ]
+      },
+      {
+        "variant_type": "llm_detailed",
+        "applicable": true,
+        "text": "Young adult woman, oval face, high cheekbones. Forehead height is average with rounded contour. Eyebrows are medium thickness, soft-arched. Almond-shaped eyes, upward slant, double lid creases. Straight nasal dorsum, rounded tip with moderate flare. Mouth has balanced lip fullness and level corners. Rounded chin, smooth skin, long dark hair.",
+        "retained_facts": [
+          "young adult woman",
+          "oval face",
+          "high cheekbones",
+          "average forehead height",
+          "medium thickness eyebrows",
+          "almond-shaped eyes",
+          "double lid creases",
+          "straight nasal dorsum",
+          "rounded nasal tip",
+          "balanced lip fullness",
+          "rounded chin",
+          "long dark hair"
+        ],
+        "omitted_facts": [
+          "digital distortion",
+          "background features"
+        ]
+      },
+      {
+        "variant_type": "llm_human_description",
+        "applicable": true,
+        "text": "A young woman with a long dark hairstyle and an oval face. She has high cheekbones, almond-shaped eyes with a slight upward tilt, and a straight nose. Her expression is neutral, and her skin looks smooth.",
+        "retained_facts": [
+          "young woman",
+          "long dark hair",
+          "oval face",
+          "high cheekbones",
+          "almond-shaped eyes",
+          "straight nose",
+          "neutral expression",
+          "smooth skin"
+        ],
+        "omitted_facts": [
+          "specific nasal measurements",
+          "palpebral fissure length",
+          "orbital depth"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

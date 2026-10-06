@@ -1,0 +1,69 @@
+{
+  "sample_id": "person::train::13508_2.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "applicable": true,
+        "text": "Average-build woman with black hair in a black sleeveless top, skirt, and knee-high boots.",
+        "retained_facts": [
+          "average-build woman",
+          "black hair",
+          "black sleeveless top",
+          "black skirt",
+          "black boots reaching above the knees"
+        ],
+        "omitted_facts": [
+          "voluminous"
+        ]
+      },
+      {
+        "variant_type": "llm_balanced",
+        "applicable": true,
+        "text": "An average-build woman with voluminous black hair, wearing a black sleeveless top, a short black skirt, and black boots that reach above her knees.",
+        "retained_facts": [
+          "average-build woman",
+          "voluminous black hair",
+          "black sleeveless top",
+          "short black skirt",
+          "black boots reaching above the knees"
+        ],
+        "omitted_facts": []
+      },
+      {
+        "variant_type": "llm_detailed",
+        "applicable": true,
+        "text": "Woman of average build with voluminous black hair. She is wearing a black sleeveless top paired with a short black skirt and black boots that extend above the knees.",
+        "retained_facts": [
+          "average-build woman",
+          "voluminous black hair",
+          "black sleeveless top",
+          "short black skirt",
+          "black boots reaching above the knees"
+        ],
+        "omitted_facts": []
+      },
+      {
+        "variant_type": "llm_human_description",
+        "applicable": true,
+        "text": "That's an average-build woman with big, voluminous black hair. She's wearing an all-black outfit consisting of a sleeveless top, a short skirt, and high boots that go up over her knees.",
+        "retained_facts": [
+          "average-build woman",
+          "voluminous black hair",
+          "black sleeveless top",
+          "short black skirt",
+          "black boots reaching above the knees"
+        ],
+        "omitted_facts": []
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

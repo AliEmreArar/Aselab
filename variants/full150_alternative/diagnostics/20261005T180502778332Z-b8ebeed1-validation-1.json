@@ -1,0 +1,42 @@
+{
+  "sample_id": "vehicle::train_images::19057_c170_04.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "SUV; SUV color white; SUV bumper black; SUV lower cladding dark gray; SUV trunk lid sticker rectangular yellow; SUV rear wiper present; SUV roof tree branches present",
+        "retained_facts": [
+          "SUV",
+          "white",
+          "black bumper",
+          "dark gray lower cladding",
+          "rectangular yellow sticker on the trunk lid",
+          "rear wiper",
+          "tree branches laying across the roof"
+        ],
+        "omitted_facts": [
+          "location of sticker below rear window"
+        ]
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "A white SUV with a rectangular yellow sticker on the trunk lid below the rear window features a black bumper, dark gray lower cladding, a rear wiper, and tree branches laying across the roof.",
+        "retained_facts": [
+          "SUV",
+          "white",
+          "black bumper",
+          "dark gray lower cladding",
+          "rectangular yellow sticker on the trunk lid below the rear window",
+          "rear wiper",
+          "tree branches laying across the roof"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

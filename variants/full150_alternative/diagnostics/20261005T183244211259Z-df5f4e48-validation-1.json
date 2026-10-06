@@ -1,0 +1,21 @@
+{
+  "sample_id": "face::train::088914.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "face shape: oval; forehead: rounded contour; hairline: receding; cheekbones: prominent with moderate fullness; jawline: defined; chin: rounded with moderate projection; nose: straight dorsum with moderate bridge width and rounded tip; lips: moderate fullness with level corners; philtrum: defined ridges; facial hair: thin mustache and goatee; eyewear: dark sunglasses; hands: saluting near head"
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Dark sunglasses obscure the eyes and eyebrows while a thin mustache and goatee accent the face. The individual has an oval face shape, a receding hairline, and a rounded forehead. Prominent cheekbones, a defined jawline, and a rounded chin with moderate projection complete the facial structure. A hand is positioned in a salute near the head, and the nose features a straight dorsum with a rounded tip."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

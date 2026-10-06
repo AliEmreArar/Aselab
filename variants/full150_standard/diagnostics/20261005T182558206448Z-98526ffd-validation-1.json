@@ -1,0 +1,31 @@
+{
+  "sample_id": "face::train::178129.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "A middle-aged adult with an oval face, rounded hairline, thin arched eyebrows, almond eyes, and a narrow nose, wearing drop earrings."
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "A middle-aged adult featuring an oval face, moderately wide jawline, rounded hairline with temporal recession, high-arched thin eyebrows, almond-shaped eyes, and a straight nose with a rounded tip, accessorized with drop earrings."
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "A middle-aged adult with an oval face, moderately wide jawline, and no persistent asymmetries. Features include a rounded hairline with moderate temporal recession, thin high-arched eyebrows, almond-shaped eyes with double creases, and a narrow nose with a straight dorsum and rounded tip. The individual has thin lips, visible upper teeth, smooth skin, and wears drop earrings on free ear lobes."
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "This middle-aged person has an oval-shaped face with a noticeable jawline and a rounded hairline that recedes slightly at the temples. They have thin, high-arched eyebrows, almond-shaped eyes, and a narrow nose with a rounded tip. You can see their upper teeth when they smile, and they are wearing a pair of drop earrings."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "sample_id": "vehicle::train_images::04922_c023_01.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "hatchback; BAIC E-Series; color bright red; wheels alloy; sunroof present; window tint present",
+        "retained_facts": [
+          "hatchback",
+          "BAIC E-Series",
+          "bright red",
+          "alloy wheels",
+          "sunroof",
+          "window tint"
+        ]
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Bright red BAIC E-Series hatchback with alloy wheels, a sunroof, and window tint.",
+        "retained_facts": [
+          "bright red",
+          "BAIC E-Series",
+          "hatchback",
+          "alloy wheels",
+          "sunroof",
+          "window tint"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

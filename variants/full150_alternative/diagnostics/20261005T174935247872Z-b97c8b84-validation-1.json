@@ -1,0 +1,21 @@
+{
+  "sample_id": "person::train::26249_12.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "adult male; stocky build; short dark hair; light skin tone; light blue long-sleeved collared shirt; shirt sleeves rolled-up; dark trousers; black shoes; white rectangular folder; two-wheeled cart; green mesh container"
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "A light blue long-sleeved collared shirt with rolled-up sleeves and dark trousers worn by an adult male with a stocky build, short dark hair, and light skin tone. He is wearing black shoes, holding a white rectangular folder, and pulling a two-wheeled cart with a green mesh container."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

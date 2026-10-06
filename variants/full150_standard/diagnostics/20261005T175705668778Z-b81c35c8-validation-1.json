@@ -1,0 +1,64 @@
+{
+  "sample_id": "vehicle::train_images::13946_c012_04.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "Silver minivan.",
+        "retained_facts": [
+          "Minivan",
+          "silver"
+        ],
+        "omitted_facts": [
+          "sunroof",
+          "alloy wheels"
+        ],
+        "change_note": "Focused on primary vehicle type and color."
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "Silver minivan with a sunroof and alloy wheels.",
+        "retained_facts": [
+          "Minivan",
+          "silver",
+          "sunroof",
+          "alloy wheels"
+        ],
+        "omitted_facts": [],
+        "change_note": "Included all provided attributes in a natural descriptive flow."
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "Silver minivan featuring a sunroof and alloy wheels.",
+        "retained_facts": [
+          "Minivan",
+          "silver",
+          "sunroof",
+          "alloy wheels"
+        ],
+        "omitted_facts": [],
+        "change_note": "Maintained all identified vehicle features."
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "There is a silver minivan that has a sunroof and alloy wheels.",
+        "retained_facts": [
+          "Minivan",
+          "silver",
+          "sunroof",
+          "alloy wheels"
+        ],
+        "omitted_facts": [],
+        "change_note": "Phrased as a natural observation for vehicle recognition."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

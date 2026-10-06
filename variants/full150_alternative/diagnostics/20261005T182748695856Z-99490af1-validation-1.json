@@ -1,0 +1,21 @@
+{
+  "sample_id": "face::train::081413.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "face oblong shape; facial thirds balanced; bone structure defined; forehead high and moderately wide; horizontal creases prominent; hairline receding at temples; brow ridge moderate; eyebrows low and soft-arched; eyes almond-shaped with moderate upper-lid exposure; orbital depth deep-set; nasal bridge straight; nasal tip slightly downturned and bulbous; alar width moderate; mouth medium-width; lips thin; mouth corners level; philtrum short with defined ridges; jawline sharp with moderate angularity; chin rounded; ears moderate size with attached lobes positioned level with eye-nose line; hair short grey and styled back; mustache short grey; head tilt slight upward."
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Short grey hair styled back and a short grey mustache accompany an oblong facial shape with defined bone structure. The forehead is high and moderately wide with prominent horizontal creases and a receding hairline at the temples. The face features low, soft-arched eyebrows over almond-shaped eyes with deep-set orbital depth and moderate upper-lid exposure. The nose has a straight bridge and a slightly downturned, bulbous tip with moderate alar width. The mouth is medium-width with thin lips and level corners, situated below a short philtrum with defined ridges. The sharp jawline leads to a rounded chin, with moderate-sized ears featuring attached lobes positioned level with the eye-nose line."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

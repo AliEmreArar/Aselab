@@ -1,0 +1,37 @@
+{
+  "sample_id": "vehicle::train_images::19666_c077_02.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "Minivan, Volkswagen Touran; paint, black; rims, alloy; roof rails, silver; windows, tinted.",
+        "retained_facts": [
+          "Vehicle type is minivan",
+          "Make and model is Volkswagen Touran",
+          "Paint color is black",
+          "Rims are alloy",
+          "Roof rails are silver",
+          "Windows are tinted"
+        ]
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Black Volkswagen Touran minivan featuring silver roof rails, alloy rims, and tinted windows.",
+        "retained_facts": [
+          "Paint color is black",
+          "Make and model is Volkswagen Touran",
+          "Vehicle type is minivan",
+          "Roof rails are silver",
+          "Rims are alloy",
+          "Windows are tinted"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

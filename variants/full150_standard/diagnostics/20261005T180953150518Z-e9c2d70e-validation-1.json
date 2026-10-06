@@ -1,0 +1,103 @@
+{
+  "sample_id": "face::train::063708.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "An adult male with an oval face, short dark hair styled forward, and a white shirt.",
+        "retained_facts": [
+          "Male",
+          "adult",
+          "oval face shape",
+          "short dark hair styled forward",
+          "white shirt"
+        ],
+        "omitted_facts": [
+          "facial structure details",
+          "eye shape",
+          "nose shape",
+          "ear size",
+          "head turn",
+          "lighting"
+        ]
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "An adult male with an oval face, short dark hair styled forward, and a white shirt. He has almond-shaped eyes, a straight nose, and medium-thickness arched eyebrows.",
+        "retained_facts": [
+          "Male",
+          "adult",
+          "oval face shape",
+          "short dark hair styled forward",
+          "white shirt",
+          "almond-shaped eyes",
+          "straight nose",
+          "medium-thickness arched eyebrows"
+        ],
+        "omitted_facts": [
+          "bone structure",
+          "forehead details",
+          "jawline definition",
+          "ear details",
+          "lighting",
+          "head turn"
+        ]
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "Adult male with an oval face, moderate bone structure, and a rounded chin. He has short dark hair styled forward, a low-center hairline with slight temporal recession, medium-thickness arched eyebrows, almond-shaped eyes, and a straight nose with a rounded tip. He is wearing a white shirt.",
+        "retained_facts": [
+          "Male",
+          "adult",
+          "oval face shape",
+          "moderate bone structure",
+          "rounded chin",
+          "short dark hair styled forward",
+          "low-center hairline",
+          "temporal recession",
+          "medium-thickness arched eyebrows",
+          "almond-shaped eyes",
+          "straight nose",
+          "rounded tip",
+          "white shirt"
+        ],
+        "omitted_facts": [
+          "lighting",
+          "head turn",
+          "expression"
+        ]
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "This is an adult man with an oval face and short, dark hair that is brushed forward. He has a straight nose, almond-shaped eyes, and medium-thick, arched eyebrows. He is wearing a white shirt.",
+        "retained_facts": [
+          "Male",
+          "adult",
+          "oval face shape",
+          "short dark hair brushed forward",
+          "straight nose",
+          "almond-shaped eyes",
+          "medium-thick arched eyebrows",
+          "white shirt"
+        ],
+        "omitted_facts": [
+          "bone structure",
+          "forehead height",
+          "ear size",
+          "jawline definition",
+          "lighting",
+          "head turn",
+          "expression"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

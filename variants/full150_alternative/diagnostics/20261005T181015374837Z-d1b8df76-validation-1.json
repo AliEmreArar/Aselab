@@ -1,0 +1,37 @@
+{
+  "sample_id": "vehicle::gallery_images::20159_c003_00.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "Sedan, Toyota Camry; vehicle color, black; wheels, hubcap; windows, moderate tint; rear bumper, chrome trim strip",
+        "retained_facts": [
+          "Sedan",
+          "Toyota Camry",
+          "black",
+          "hubcap wheels",
+          "moderate window tint",
+          "chrome trim strip on the rear bumper"
+        ]
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Black Toyota Camry sedan with a chrome trim strip on the rear bumper, hubcap wheels, and moderate window tint.",
+        "retained_facts": [
+          "black",
+          "Toyota Camry",
+          "sedan",
+          "chrome trim strip on the rear bumper",
+          "hubcap wheels",
+          "moderate window tint"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

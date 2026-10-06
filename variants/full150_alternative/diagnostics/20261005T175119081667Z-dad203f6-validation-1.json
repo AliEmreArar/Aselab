@@ -1,0 +1,35 @@
+{
+  "sample_id": "person::query::26935_2.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "person; average build; headwear white; jacket long-sleeved light green; pants dark; shoes dark",
+        "retained_facts": [
+          "average build",
+          "white headwear",
+          "long-sleeved light green jacket",
+          "dark pants",
+          "dark shoes"
+        ]
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "White headwear worn with a long-sleeved light green jacket, dark pants, and dark shoes on a person of average build.",
+        "retained_facts": [
+          "white headwear",
+          "long-sleeved light green jacket",
+          "dark pants",
+          "dark shoes",
+          "average build"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

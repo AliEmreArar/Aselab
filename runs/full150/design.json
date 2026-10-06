@@ -1,0 +1,37 @@
+{
+  "caption_count": 150,
+  "profiles": [
+    "llm_brief",
+    "llm_balanced",
+    "llm_detailed",
+    "llm_human_description",
+    "llm_attribute_list",
+    "llm_distinctive_first"
+  ],
+  "models": [
+    "clip_b16",
+    "clip_l14",
+    "siglip2_b16_224",
+    "jina_clip_v2",
+    "eva02_clip_l14",
+    "altclip",
+    "deberta_v3_base_mean_pool",
+    "bge_m3"
+  ],
+  "source": "Existing source captions; Gemini does not view images",
+  "excluded": {
+    "mamba3": "CUDA/Triton unavailable; raw causal LM is not image aligned"
+  },
+  "pilot_reuse": 15,
+  "controls": 229,
+  "precision": "CPU float32",
+  "package_versions": {
+    "torch": "2.10.0",
+    "transformers": "4.57.6",
+    "sentence-transformers": "5.7.0",
+    "open-clip-torch": "3.3.0",
+    "numpy": "2.4.2"
+  },
+  "query_selection": "25 development / 25 held-out per domain; pilot examples assigned to development",
+  "gallery": "All 50 images/captions of the same domain; exact source-file retrieval"
+}

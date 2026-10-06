@@ -1,0 +1,31 @@
+{
+  "sample_id": "vehicle::train_images::10839_c110_00.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "Silver Volkswagen Polo hatchback."
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "Silver Volkswagen Polo hatchback with alloy wheels and fog lights."
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "Silver Volkswagen Polo hatchback featuring multi-spoke alloy wheels, front bumper fog lights, and a rearview mirror air freshener."
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "That is a silver Volkswagen Polo hatchback; you can spot it by the alloy wheels, the fog lights on the front bumper, and there is an air freshener hanging from the rearview mirror."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

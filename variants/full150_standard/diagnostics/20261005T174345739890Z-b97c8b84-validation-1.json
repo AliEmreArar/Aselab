@@ -1,0 +1,35 @@
+{
+  "sample_id": "person::train::26249_12.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "applicable": true,
+        "text": "Stocky adult male with short dark hair, wearing a light blue long-sleeved shirt and dark trousers."
+      },
+      {
+        "variant_type": "llm_balanced",
+        "applicable": true,
+        "text": "Stocky adult male with short dark hair, wearing a light blue long-sleeved collared shirt, dark trousers, and black shoes, carrying a white folder and a two-wheeled cart with a green mesh container."
+      },
+      {
+        "variant_type": "llm_detailed",
+        "applicable": true,
+        "text": "Stocky adult male with light skin tone and short dark hair, wearing a light blue long-sleeved collared shirt with rolled-up sleeves, dark trousers, and black shoes. He is holding a white rectangular folder and pulling a two-wheeled cart equipped with a green mesh container."
+      },
+      {
+        "variant_type": "llm_human_description",
+        "applicable": true,
+        "text": "There is a stocky man with short dark hair and light skin. He is dressed in a light blue collared shirt with the sleeves rolled up, dark pants, and black shoes. He is carrying a white rectangular folder and pulling along a two-wheeled cart that has a green mesh basket on it."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

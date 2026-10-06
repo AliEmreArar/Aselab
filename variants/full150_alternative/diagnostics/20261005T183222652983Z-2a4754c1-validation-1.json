@@ -1,0 +1,21 @@
+{
+  "sample_id": "face::train::073196.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "Face shape: oblong; hairline: straight with moderate temporal recession; forehead: high; brow ridge: moderate; glabella width: average; cheekbones: moderate projection; nasolabial folds: shallow; jawline: defined continuous with moderate angle flare; chin: rounded with moderate vertical height and projection; eyebrows: thick, medium-length, soft-arched with lateral thinning and moderate interbrow spacing; eyes: almond-shaped, slight upward canthal tilt, double upper-lid crease, average orbital depth; nose: straight dorsum, average bridge width, rounded tip with moderate projection and rotation, medium alar width with slight flare; mouth: medium width, balanced lip fullness, level corners, short philtrum with defined ridges, upper teeth visible; ears: average-sized with free lobes; hair: short dark with textured styling; facial hair: light stubble on jaw and chin; expression: smiling; gaze: forward; head position: slight head turn."
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Short dark textured hairstyle paired with light stubble on the jaw and chin characterize this adult with an oblong face. The individual has thick, soft-arched eyebrows with lateral thinning, almond-shaped eyes with a slight upward canthal tilt, and a straight nasal dorsum with a rounded tip. The face features a high forehead with a straight hairline showing moderate temporal recession, a defined continuous jawline with moderate angle flare, and a rounded chin. The mouth is of medium width with a short philtrum, displaying the upper teeth at rest, while the ears are average-sized with free lobes."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

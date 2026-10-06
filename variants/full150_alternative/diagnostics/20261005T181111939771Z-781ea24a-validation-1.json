@@ -1,0 +1,35 @@
+{
+  "sample_id": "vehicle::gallery_images::21216_c003_04.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "Sedan, Volkswagen Passat; color silver; wheels five-spoke alloy; windows tinted.",
+        "retained_facts": [
+          "Sedan",
+          "Volkswagen Passat",
+          "silver",
+          "five-spoke alloy wheels",
+          "tinted windows"
+        ]
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Silver Volkswagen Passat sedan with five-spoke alloy wheels and tinted windows.",
+        "retained_facts": [
+          "Sedan",
+          "Volkswagen Passat",
+          "silver",
+          "five-spoke alloy wheels",
+          "tinted windows"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "sample_id": "person::query::27100_1.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "male; build: average; hair: dark, short; cap: worn; shirt: long-sleeved, light pink, button-down; jeans: long, blue; shoes: dark; backpack: dark, worn on one shoulder."
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "The long-sleeved light pink button-down shirt paired with a dark backpack worn on one shoulder characterizes the average-build male, who wears a cap, long blue jeans, dark shoes, and has short dark hair."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

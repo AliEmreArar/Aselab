@@ -1,0 +1,21 @@
+{
+  "sample_id": "face::train::178182.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "face shape: oval; eyebrows: moderately thick, soft-arched, lateral peak, moderate brow-to-eye vertical distance; eyes: almond, slight upward canthal tilt, average palpebral fissure length, moderate upper-lid double crease, average intercanthal distance; nose: straight nasal dorsum, average root width, rounded tip, moderate projection, narrow alar base; mouth: medium-width, even upper-to-lower fullness ratio, defined cupid's bow, level lip corners; skin surface: smooth, no persistent marks"
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Almond eyes with a slight upward canthal tilt, moderate upper-lid double crease, and average intercanthal distance accompany moderately thick, soft-arched eyebrows featuring a lateral peak and moderate brow-to-eye vertical distance. The oval face displays a straight nasal dorsum with a rounded tip, moderate projection, and a narrow alar base, alongside a medium-width mouth characterized by a defined cupid's bow, even fullness ratio, and level lip corners. The skin surface is smooth with no persistent marks visible."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

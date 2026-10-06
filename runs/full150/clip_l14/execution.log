@@ -1,0 +1,5 @@
+Token indices sequence length is longer than the specified maximum sequence length for this model (302 > 77). Running this sequence through the model will result in indexing errors
+'(ProtocolError('Connection aborted.', ConnectionResetError(10054, 'Varolan bir baðlantý uzaktaki bir ana bilgisayar tarafýndan zorla kapatýldý', None, 10054, None)), '(Request ID: 5f27d5c8-86e6-4e65-926c-775094c33b06)')' thrown while requesting HEAD https://huggingface.co/openai/clip-vit-large-patch14/resolve/main/processor_config.json
+Retrying in 1s [Retry 1/5].
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+C:\Users\ali\Desktop\aselab\Aselab\runs\full150\clip_l14

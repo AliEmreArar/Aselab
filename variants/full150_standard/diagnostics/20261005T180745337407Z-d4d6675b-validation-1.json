@@ -1,0 +1,94 @@
+{
+  "sample_id": "face::train::143554.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "A young adult with pink hair, a red heart-shaped headpiece, and two small moles on her left cheek.",
+        "retained_facts": [
+          "young adult",
+          "pink hair",
+          "red heart-shaped headpiece",
+          "two small round dark moles on the left cheek"
+        ],
+        "omitted_facts": [
+          "face shape",
+          "nose details",
+          "mouth details",
+          "sunglasses",
+          "earring",
+          "lipstick",
+          "skin texture"
+        ]
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "Young adult with pink hair, a red heart-shaped headpiece, black rectangular sunglasses, and red lipstick. She has two small moles on her left cheek and wears a dangling earring.",
+        "retained_facts": [
+          "young adult",
+          "pink hair",
+          "red heart-shaped headpiece",
+          "black rectangular sunglasses",
+          "red lipstick",
+          "two small round dark moles on the left cheek",
+          "dangling earring"
+        ],
+        "omitted_facts": [
+          "face shape",
+          "nose details",
+          "mouth details",
+          "skin texture"
+        ]
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "Young adult female with pink hair and a red heart-shaped headpiece. Her oval face features black rectangular sunglasses, heavy red lipstick, and a narrow nose. Two small round dark moles are visible on the left cheek, and she wears a dangling earring on her visible left earlobe.",
+        "retained_facts": [
+          "young adult",
+          "female presentation",
+          "pink hair",
+          "red heart-shaped headpiece",
+          "oval face",
+          "black rectangular sunglasses",
+          "heavy red lipstick",
+          "narrow nose",
+          "two small round dark moles on the left cheek",
+          "dangling earring",
+          "left earlobe"
+        ],
+        "omitted_facts": [
+          "forehead occlusion",
+          "eyebrow status",
+          "philtrum details"
+        ]
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "A young woman with bright pink hair wearing a red heart-shaped headpiece. She has on dark rectangular sunglasses and bold red lipstick. You can see two little moles on her left cheek and a dangling earring on her ear.",
+        "retained_facts": [
+          "young adult",
+          "pink hair",
+          "red heart-shaped headpiece",
+          "black rectangular sunglasses",
+          "red lipstick",
+          "two small moles on the left cheek",
+          "dangling earring"
+        ],
+        "omitted_facts": [
+          "face shape",
+          "nose details",
+          "mouth details",
+          "skin texture"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

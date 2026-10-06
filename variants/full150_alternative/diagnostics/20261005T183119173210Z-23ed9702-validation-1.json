@@ -1,0 +1,21 @@
+{
+  "sample_id": "face::train::060309.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "face shape; round, forehead; high and rounded with strongly convex profile, hairline; receding with hair at temples and back of head, eyebrows; thin and sparse and arched and wide-spaced, eyes; almond-shaped with moderate palpebral fissure length and average orbital depth, upper lids; partially obscured by frames, nose; straight dorsum and wide bridge and bulbous tip and moderate alar width and flaring nostrils, mouth; wide with thin upper lip and fuller lower lip and upturned corners, teeth; visible upper at rest, philtrum; medium-length with well-defined ridges, skin; permanent horizontal forehead creases and prominent nasolabial folds, eyeglasses; dark-rimmed rectangular, shirt; striped dark"
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Dark-rimmed rectangular eyeglasses and a striped dark shirt worn by an older adult with a round face shape, high rounded forehead, strongly convex profile, and receding hairline present only at temples and back. The face features thin sparse arched eyebrows, almond-shaped eyes with lids partially obscured by frames, a straight-bridged nose with a bulbous tip and flaring nostrils, and a wide mouth with thin upper lip, fuller lower lip, upturned corners, and visible upper teeth. The skin shows permanent horizontal forehead creases and prominent nasolabial folds."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

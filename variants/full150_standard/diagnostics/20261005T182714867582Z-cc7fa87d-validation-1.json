@@ -1,0 +1,35 @@
+{
+  "sample_id": "face::test::196777.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "applicable": true,
+        "text": "Young adult male with an oval face, square jawline, thick straight eyebrows, and short stubble."
+      },
+      {
+        "variant_type": "llm_balanced",
+        "applicable": true,
+        "text": "Young adult male with an oval face shape, square jawline, and thick straight eyebrows. He has an almond-shaped eye structure and short stubble on his upper lip, chin, and jawline."
+      },
+      {
+        "variant_type": "llm_detailed",
+        "applicable": true,
+        "text": "Young adult male with an oval face, moderate soft tissue, and prominent bone structure. Features include a medium forehead with slight temporal recession, thick straight eyebrows, and almond-shaped eyes with a double lid crease. The nose has a straight dorsum and bulbous tip. The jaw is broad and square with a rounded chin. Short stubble covers the upper lip, chin, and jawline. Ears have free lobes."
+      },
+      {
+        "variant_type": "llm_human_description",
+        "applicable": true,
+        "text": "A young guy with an oval face and a strong, square jaw. He has thick, straight eyebrows and a bit of stubble on his chin and jawline. His nose is fairly prominent with a rounded tip, and he has almond-shaped eyes."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

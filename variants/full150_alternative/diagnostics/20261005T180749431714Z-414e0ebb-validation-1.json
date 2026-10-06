@@ -1,0 +1,39 @@
+{
+  "sample_id": "vehicle::query_images::20039_c015_00.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "box truck JAC brand; box truck silver paint; box truck black side mirrors; box truck black front grill; box truck clear windshield; box truck roof-mounted wind deflector",
+        "retained_facts": [
+          "box truck",
+          "JAC brand",
+          "silver paint",
+          "black side mirrors",
+          "black front grill",
+          "clear windshield",
+          "roof-mounted wind deflector"
+        ]
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "JAC brand silver box truck with a roof-mounted wind deflector, featuring a black front grill and black side mirrors with a clear windshield.",
+        "retained_facts": [
+          "JAC brand",
+          "silver",
+          "box truck",
+          "roof-mounted wind deflector",
+          "black front grill",
+          "black side mirrors",
+          "clear windshield"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

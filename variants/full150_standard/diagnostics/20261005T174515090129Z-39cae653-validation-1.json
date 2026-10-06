@@ -1,0 +1,31 @@
+{
+  "sample_id": "person::gallery::26789_1.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "Average-build man in a dark red jacket and light gray trousers."
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "Average-build man wearing a long-sleeved dark red jacket, light gray trousers, and dark shoes."
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "Average-build man wearing a long-sleeved dark red jacket, light gray trousers, and dark shoes."
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "There is an average-build man wearing a dark red long-sleeved jacket paired with light gray trousers and dark shoes."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

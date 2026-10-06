@@ -1,0 +1,43 @@
+{
+  "sample_id": "person::train::08528_6.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "male build: average; male hair: short, dark; male accessory: dark cap; male skin tone: light; jacket: long-sleeved, black, zipped; shirt: white; jeans: light blue; shoes: white",
+        "retained_facts": [
+          "Average-build male",
+          "short dark hair",
+          "dark cap",
+          "light skin tone",
+          "long-sleeved black jacket",
+          "zipped",
+          "white shirt",
+          "light blue jeans",
+          "white shoes"
+        ]
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "A dark cap worn by an average-build male with short dark hair and light skin tone, wearing a long-sleeved black jacket zipped over a white shirt, light blue jeans, and white shoes.",
+        "retained_facts": [
+          "Average-build male",
+          "short dark hair",
+          "dark cap",
+          "light skin tone",
+          "long-sleeved black jacket",
+          "zipped",
+          "white shirt",
+          "light blue jeans",
+          "white shoes"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

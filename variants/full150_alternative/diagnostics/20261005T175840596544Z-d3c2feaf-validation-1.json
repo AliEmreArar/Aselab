@@ -1,0 +1,43 @@
+{
+  "sample_id": "person::gallery::26735_2.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "male; build: average; hair: short and black; shirt: long-sleeve, horizontal stripes in blue, white, and purple; pants: dark; shoes: light brown; backpack: black, worn on both shoulders.",
+        "retained_facts": [
+          "male",
+          "average build",
+          "short black hair",
+          "long-sleeve shirt",
+          "blue, white, and purple horizontal stripes",
+          "dark pants",
+          "light brown shoes",
+          "black backpack",
+          "worn on both shoulders"
+        ]
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Long-sleeve shirt with blue, white, and purple horizontal stripes and a black backpack worn on both shoulders; male of average build with short black hair, dark pants, and light brown shoes.",
+        "retained_facts": [
+          "long-sleeve shirt",
+          "blue, white, and purple horizontal stripes",
+          "black backpack",
+          "worn on both shoulders",
+          "male",
+          "average build",
+          "short black hair",
+          "dark pants",
+          "light brown shoes"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

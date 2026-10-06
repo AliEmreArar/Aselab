@@ -1,0 +1,58 @@
+{
+  "sample_id": "person::query::26935_2.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "A person with an average build wearing a white headwear, light green jacket, and dark pants.",
+        "retained_facts": [
+          "average build",
+          "white headwear",
+          "light green jacket",
+          "dark pants"
+        ]
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "A person of average build wearing white headwear, a long-sleeved light green jacket, dark pants, and dark shoes.",
+        "retained_facts": [
+          "average build",
+          "white headwear",
+          "long-sleeved light green jacket",
+          "dark pants",
+          "dark shoes"
+        ]
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "Individual of average build, wearing white headwear and a long-sleeved light green jacket paired with dark pants and dark shoes.",
+        "retained_facts": [
+          "average build",
+          "white headwear",
+          "long-sleeved light green jacket",
+          "dark pants",
+          "dark shoes"
+        ]
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "There is a person with an average build, wearing a white hat, a long-sleeved light green jacket, dark pants, and dark shoes.",
+        "retained_facts": [
+          "average build",
+          "white headwear",
+          "long-sleeved light green jacket",
+          "dark pants",
+          "dark shoes"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

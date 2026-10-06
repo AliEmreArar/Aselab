@@ -1,0 +1,31 @@
+{
+  "sample_id": "person::gallery::26735_2.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "Male with short black hair wearing a striped shirt and dark pants, carrying a black backpack."
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "Male of average build with short black hair. He is wearing a long-sleeve shirt with blue, white, and purple horizontal stripes, dark pants, and light brown shoes, carrying a black backpack on both shoulders."
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "Male of average build with short black hair. He is wearing a long-sleeve shirt featuring blue, white, and purple horizontal stripes, paired with dark pants and light brown shoes. He carries a black backpack on both shoulders."
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "That guy is a male with short black hair and an average build. He's wearing a long-sleeved shirt with blue, white, and purple horizontal stripes, dark pants, and light brown shoes. He also has a black backpack on that he's wearing over both shoulders."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

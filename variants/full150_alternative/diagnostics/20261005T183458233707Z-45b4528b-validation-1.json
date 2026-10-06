@@ -1,0 +1,21 @@
+{
+  "sample_id": "face::test::184003.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "Face: oval shape, balanced facial thirds, moderate soft tissue coverage; Forehead: medium height, gently rounded profile, slight temple narrowing; Hairline: rounded, low temporal recession, moderate height; Cheekbones: average width, moderate projection; Midface: medium length; Nasolabial folds: shallow; Lower face: width proportional to cheekbones, continuous jawline; Chin: rounded, moderate projection; Mentolabial sulcus: shallow; Eyebrows: medium thickness and density, soft arch, moderate spacing; Eyes: almond-shaped, slight upward canthal tilt, moderate palpebral fissure length, average intercanthal distance, visible double upper-lid creases, average orbital depth; Nasal root: medium width; Nasal dorsum: straight; Bridge: medium width; Nasal tip: rounded, moderate projection; Alar: width proportional to inner eye corners; Nostrils: partially visible; Columella: moderate show; Mouth: moderate width; Lips: medium fullness, defined cupid's bow; Mouth corners: slightly upturned; Philtrum: moderate length, defined ridges; Facial hair: clean-shaven; Ears: average size, free lobes, positioned in line with eye-nose region."
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Almond-shaped eyes with a slight upward canthal tilt, visible double upper-lid creases, and moderate palpebral fissure length define this face, which has an oval shape and moderate soft tissue coverage. The forehead is of medium height with a rounded hairline and low temporal recession. The nose features a straight dorsum and a rounded tip with moderate projection. The lips have medium fullness with a defined cupid's bow, and the chin is rounded with moderate projection. The individual is clean-shaven, and the ears are of average size with free lobes."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

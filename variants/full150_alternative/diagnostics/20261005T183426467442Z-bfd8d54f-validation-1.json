@@ -1,0 +1,21 @@
+{
+  "sample_id": "face::test::183801.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "face shape: oval; cheekbones: moderate width; jawline: defined; hairline: rounded and pulled backward; temporal recession: moderate; eyebrows: medium-thick, soft-arched with lateral peak; eyebrow spacing: moderate; eyes: almond-shaped with slight upward slant; palpebral fissure: moderate length; eyelids: double with visible upper lid exposure; orbital depth: average; nasal dorsum: straight; nose bridge: medium width; nose tip: rounded with moderate projection; nostrils: visible; mouth width: medium; lips: even fullness ratio with defined cupid's bow; lip corners: level; skin: smooth without permanent marks; ears: average-sized with free lobes; earrings: small stud"
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Small stud earrings adorn the free lobes of average-sized ears on an individual with a rounded, moderately recessed hairline. The face features a defined jawline, moderate cheekbone width, and an oval shape. The almond-shaped eyes show a slight upward slant, moderate palpebral fissure length, and double eyelids with upper lid exposure. Medium-thick, soft-arched eyebrows have a lateral peak and moderate spacing. The nose has a straight dorsum, medium bridge width, and a rounded, moderately projecting tip with visible nostrils. The medium-width mouth displays even lip fullness, a defined cupid's bow, and level corners. The skin is smooth with no permanent marks or facial hair."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

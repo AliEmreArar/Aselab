@@ -1,0 +1,21 @@
+{
+  "sample_id": "face::train::089537.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "face shape: oval; forehead: smooth contour; brow ridge: moderate; glabella width: average; temples: obscured by hair; hairline: obscured by bangs; cheekbones: moderately prominent, average fullness; nasolabial folds: shallow; lower face: tapering; chin: rounded, moderate projection; eyebrows: medium thickness, soft-arched, moderate spacing; eyes: almond-shaped, horizontal palpebral fissure, average inner-corner distance, upward canthal tilt, double upper-lid crease, average orbital depth; nasal root: medium width; dorsum profile: straight; bridge width: medium; tip shape: bulbous; tip projection: moderate; tip rotation: moderate; alar width: proportional to inner eye corners; nostrils: partially visible; mouth width: proportional to inter-pupillary distance; lips: balanced fullness, moderate vermilion fullness; cupid's bow: defined; corner orientation: level; philtrum: short, defined ridges; ears: occluded; marks: none visible; asymmetries: none visible; head position: slightly tilted and turned; expression: neutral."
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Almond-shaped eyes with upward canthal tilt and double upper-lid creases, accompanied by a bulbous-tipped nose and balanced, moderately full lips with a defined cupid's bow. The face is oval-shaped with moderately prominent cheekbones, shallow nasolabial folds, and a rounded chin with moderate projection. The forehead is smooth with a moderate brow ridge, while the hairline and temples are obscured by bangs. The eyebrows are medium-thick and soft-arched with moderate spacing. The philtrum is short with defined ridges, and the nostrils are partially visible."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

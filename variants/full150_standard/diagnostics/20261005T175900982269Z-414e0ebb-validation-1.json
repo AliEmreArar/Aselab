@@ -1,0 +1,31 @@
+{
+  "sample_id": "vehicle::query_images::20039_c015_00.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "Silver JAC box truck with a roof-mounted wind deflector."
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "Silver JAC box truck featuring a roof-mounted wind deflector, black side mirrors, and a black front grill."
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "Silver JAC box truck with black side mirrors, a black front grill, a clear windshield, and a roof-mounted wind deflector."
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "There is a silver JAC box truck here. It has black side mirrors and a black front grill, along with a wind deflector mounted on the roof and a clear windshield."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

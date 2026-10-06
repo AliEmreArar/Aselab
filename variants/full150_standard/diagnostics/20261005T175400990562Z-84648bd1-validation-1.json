@@ -1,0 +1,31 @@
+{
+  "sample_id": "vehicle::train_images::05685_c100_04.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "A silver sedan with a sunroof."
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "A silver sedan featuring a sunroof, alloy rims, and side window visors."
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "A silver sedan equipped with a sunroof, alloy rims, and window visors on the side windows."
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "It is a silver sedan that has a sunroof, alloy wheels, and those little visors over the side windows."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

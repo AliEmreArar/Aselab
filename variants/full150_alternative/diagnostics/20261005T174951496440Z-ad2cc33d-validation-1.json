@@ -1,0 +1,21 @@
+{
+  "sample_id": "person::train::00837_3.png",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "Person: male; build: average; hair: light-colored, short; jacket: dark green, long-sleeve; trousers: dark green; shoes: dark; bag: dark"
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "The dark green long-sleeve jacket and dark green trousers are worn by a male of average build with light-colored short hair, dark shoes, and a dark bag."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

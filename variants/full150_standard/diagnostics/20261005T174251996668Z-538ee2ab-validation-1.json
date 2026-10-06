@@ -1,0 +1,62 @@
+{
+  "sample_id": "person::train::09715_3.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "A male with an average build wearing a black cap, black hooded sweatshirt, and black shorts.",
+        "retained_facts": [
+          "male",
+          "average build",
+          "black cap",
+          "black hooded sweatshirt",
+          "black shorts"
+        ],
+        "omitted_facts": [
+          "long-sleeve"
+        ]
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "A male of average build wearing a black cap, a black long-sleeve hooded sweatshirt, and black shorts.",
+        "retained_facts": [
+          "male",
+          "average build",
+          "black cap",
+          "black long-sleeve hooded sweatshirt",
+          "black shorts"
+        ]
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "A male with an average build, wearing a black cap, a long-sleeve black hooded sweatshirt, and black shorts.",
+        "retained_facts": [
+          "male",
+          "average build",
+          "black cap",
+          "long-sleeve black hooded sweatshirt",
+          "black shorts"
+        ]
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "I see a guy of average build dressed all in black. He is wearing a black baseball cap, a black hoodie with long sleeves, and black shorts.",
+        "retained_facts": [
+          "male",
+          "average build",
+          "black cap",
+          "black long-sleeve hooded sweatshirt",
+          "black shorts"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "sample_id": "face::train::178182.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "A young adult female with an oval face, almond-shaped eyes with upward canthal tilt, and a straight-bridged nose.",
+        "retained_facts": [
+          "Young adult female",
+          "Oval face shape",
+          "Almond eyes with upward canthal tilt",
+          "Straight nasal dorsum"
+        ],
+        "omitted_facts": [
+          "Eyebrow shape",
+          "Lip details",
+          "Skin texture",
+          "Background",
+          "Lighting",
+          "Camera conditions"
+        ],
+        "change_note": "Selected most prominent stable facial features."
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "Young adult female with an oval face, almond eyes with an upward canthal tilt, moderately thick soft-arched eyebrows, and a straight-bridged nose with a rounded tip.",
+        "retained_facts": [
+          "Young adult female",
+          "Oval face",
+          "Almond eyes with upward canthal tilt",
+          "Moderately thick soft-arched eyebrows",
+          "Straight nasal dorsum",
+          "Rounded nasal tip"
+        ],
+        "omitted_facts": [
+          "Skin texture",
+          "Lip details",
+          "Lighting",
+          "Camera conditions",
+          "Background"
+        ],
+        "change_note": "Added eyebrow and nose details for a more complete profile."
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "A young adult female with an oval face shape. Features include moderately thick, soft-arched eyebrows with a lateral peak; almond eyes with an upward canthal tilt and double crease; a straight nasal dorsum with a rounded, projecting tip; and a medium-width mouth with a defined cupid's bow. The skin surface is smooth with no persistent marks.",
+        "retained_facts": [
+          "Young adult female",
+          "Oval face shape",
+          "Moderately thick soft-arched eyebrows with lateral peak",
+          "Almond eyes with upward canthal tilt and double crease",
+          "Straight nasal dorsum with rounded tip",
+          "Medium-width mouth with defined cupid's bow",
+          "Smooth skin with no marks"
+        ],
+        "omitted_facts": [
+          "Lighting",
+          "Camera conditions",
+          "Background",
+          "Philtrum detail"
+        ],
+        "change_note": "Included all identifiable facial markers present in the source."
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "This is a young woman with an oval face. She has almond-shaped eyes that tilt up slightly at the corners and moderately thick, arched eyebrows. Her nose is straight with a rounded tip, and she has a medium-sized mouth with a clear cupid's bow. Her skin looks smooth.",
+        "retained_facts": [
+          "Young adult female",
+          "Oval face",
+          "Almond eyes with upward tilt",
+          "Moderately thick arched eyebrows",
+          "Straight nose with rounded tip",
+          "Medium mouth with cupid's bow",
+          "Smooth skin"
+        ],
+        "omitted_facts": [
+          "Technical anatomical jargon like palpebral fissure or alar base",
+          "Lighting",
+          "Background"
+        ],
+        "change_note": "Used natural phrasing to describe the subject's stable facial features."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

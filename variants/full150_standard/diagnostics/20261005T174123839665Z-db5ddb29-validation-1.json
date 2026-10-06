@@ -1,0 +1,75 @@
+{
+  "sample_id": "person::train::00969_2.png",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "A person of average build with dark medium-length hair, wearing dark clothing and carrying a white patterned shopping bag.",
+        "retained_facts": [
+          "average build",
+          "dark medium-length hair",
+          "dark clothing",
+          "white shopping bag with a dark pattern"
+        ],
+        "omitted_facts": [
+          "dark sunglasses",
+          "long sleeves",
+          "dark trousers",
+          "dark shoes"
+        ]
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "Person of average build, dark medium-length hair, wearing dark sunglasses, a dark jacket, dark trousers, and dark shoes, carrying a white shopping bag with a dark pattern.",
+        "retained_facts": [
+          "average build",
+          "dark medium-length hair",
+          "dark sunglasses",
+          "dark jacket",
+          "dark trousers",
+          "dark shoes",
+          "white shopping bag with a dark pattern"
+        ],
+        "omitted_facts": [
+          "long sleeves"
+        ]
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "Person of average build with dark brown medium-length hair, wearing dark sunglasses, a dark long-sleeved jacket, dark trousers, and dark shoes, carrying a white shopping bag with a dark pattern.",
+        "retained_facts": [
+          "average build",
+          "dark brown medium-length hair",
+          "dark sunglasses",
+          "dark long-sleeved jacket",
+          "dark trousers",
+          "dark shoes",
+          "white shopping bag with a dark pattern"
+        ],
+        "omitted_facts": []
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "I see someone of average build with dark, medium-length hair. They are wearing dark sunglasses and a dark jacket with long sleeves, along with dark pants and shoes. They are also carrying a white shopping bag that has a dark pattern on it.",
+        "retained_facts": [
+          "average build",
+          "dark medium-length hair",
+          "dark sunglasses",
+          "dark jacket with long sleeves",
+          "dark trousers",
+          "dark shoes",
+          "white shopping bag with a dark pattern"
+        ],
+        "omitted_facts": []
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

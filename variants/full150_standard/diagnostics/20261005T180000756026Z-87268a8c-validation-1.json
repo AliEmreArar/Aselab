@@ -1,0 +1,31 @@
+{
+  "sample_id": "vehicle::query_images::20272_c102_00.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "Black Volkswagen Lamando sedan."
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "Black Volkswagen Lamando sedan with alloy wheels and dark window tint."
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "Black Volkswagen Lamando sedan featuring alloy wheels and dark window tinting."
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "It's a black Volkswagen Lamando sedan that has alloy wheels and dark tinted windows."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

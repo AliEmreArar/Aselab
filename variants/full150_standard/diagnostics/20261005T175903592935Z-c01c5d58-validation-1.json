@@ -1,0 +1,56 @@
+{
+  "sample_id": "vehicle::query_images::20298_c122_00.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "Silver MPV.",
+        "retained_facts": [
+          "MPV",
+          "silver"
+        ],
+        "omitted_facts": [
+          "silver alloy wheels"
+        ]
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "Silver MPV with silver alloy wheels.",
+        "retained_facts": [
+          "MPV",
+          "silver",
+          "silver alloy wheels"
+        ],
+        "omitted_facts": []
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "Silver MPV, featuring silver-colored alloy wheels.",
+        "retained_facts": [
+          "MPV",
+          "silver",
+          "silver alloy wheels"
+        ],
+        "omitted_facts": []
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "A silver MPV that has silver alloy wheels.",
+        "retained_facts": [
+          "MPV",
+          "silver",
+          "silver alloy wheels"
+        ],
+        "omitted_facts": []
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

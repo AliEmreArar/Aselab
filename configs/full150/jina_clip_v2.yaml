@@ -1,0 +1,21 @@
+name: full150-jina_clip_v2
+dataset: ../../caption_samples_50/all_samples.jsonl
+output_dir: ../../runs/full150/jina_clip_v2
+seed: 42
+agreement_k: 10
+transforms:
+- name: identity
+variant_files:
+- ../../variants/full150/variants.jsonl
+models:
+- name: jina_clip_v2
+  backend: jina_clip
+  model_id: jinaai/jina-clip-v2
+  revision: e10d47f5691d0454a0fb5d13f46f2199b74cb436
+  code_revision: 39e6a55ae971b59bea6e44675d237c99762e7ee2
+  trust_remote_code: true
+  dtype: float32
+  max_length: 8192
+  batch_size: 2
+  image_retrieval: true
+  device: cpu

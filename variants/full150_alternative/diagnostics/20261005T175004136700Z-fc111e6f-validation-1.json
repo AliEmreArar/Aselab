@@ -1,0 +1,21 @@
+{
+  "sample_id": "person::query::14604_1.png",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "male; build: average; headwear: black; upper garment: dark gray long-sleeved; pants: blue; shoes: black; backpack: black, carried on both shoulders."
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Black headwear and a black backpack carried on both shoulders identify an average build male wearing a dark gray long-sleeved upper garment, blue pants, and black shoes."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

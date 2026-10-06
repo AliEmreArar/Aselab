@@ -1,0 +1,21 @@
+{
+  "sample_id": "person::query::14994_1.png",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "male: average build; hair: short black; jacket: dark green, long-sleeved; trousers: dark gray, loose; shoes: white; backpack: yellow, worn on both shoulders."
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Yellow backpack worn on both shoulders over a dark green long-sleeved jacket, paired with dark gray loose trousers and white shoes on an average build male with short black hair."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "sample_id": "person::gallery::26774_3.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "Person: male; build: average; hair: short dark; jacket: blue hooded, long sleeves; pants: dark blue; shoes: white; backpack: black, worn on both shoulders.",
+        "retained_facts": [
+          "Male",
+          "average build",
+          "short dark hair",
+          "blue hooded jacket with long sleeves",
+          "dark blue pants",
+          "white shoes",
+          "black backpack on both shoulders"
+        ]
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "A black backpack worn on both shoulders accompanies a person in a blue hooded jacket with long sleeves, dark blue pants, and white shoes. The individual has an average build and short dark hair.",
+        "retained_facts": [
+          "black backpack on both shoulders",
+          "blue hooded jacket with long sleeves",
+          "dark blue pants",
+          "white shoes",
+          "average build",
+          "short dark hair",
+          "Male"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

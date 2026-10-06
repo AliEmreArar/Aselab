@@ -1,0 +1,21 @@
+{
+  "sample_id": "face::test::189457.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "face shape: oval; hairline: rounded with moderate temporal recession; eyebrows: medium thickness/density/length with soft-arched shape; eyes: almond-shaped with double upper-lid creases; nose: straight dorsum with rounded tip; lips: balanced fullness with defined cupid's bow and upturned corners; facial hair: short stubble along the jawline; skin: clear; jawline: continuous and well-defined; chin: rounded with moderate projection; forehead: medium height/width with moderate brow ridge; cheekbones: prominent of medium width and height"
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Short facial stubble along the jawline marks this young adult male with an oval face, rounded hairline showing moderate temporal recession, and prominent cheekbones. He features almond-shaped eyes with double upper-lid creases and a straight nose with a rounded tip. His well-defined jawline leads to a rounded chin of moderate projection, complemented by medium-thickness soft-arched eyebrows and a mouth with upturned corners and a defined cupid's bow."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

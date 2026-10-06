@@ -1,0 +1,4 @@
+model,domain,within_domain_cosine_mean,within_domain_cosine_std,global_domain_silhouette
+deberta_v3_base_mean_pool,face,0.9909022450447083,0.005325865466147661,0.5153631798962816
+deberta_v3_base_mean_pool,person,0.9736313223838806,0.01111033745110035,0.5153631798962816
+deberta_v3_base_mean_pool,vehicle,0.9642240405082703,0.01941874623298645,0.5153631798962816

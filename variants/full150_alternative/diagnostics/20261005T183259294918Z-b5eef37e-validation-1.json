@@ -1,0 +1,21 @@
+{
+  "sample_id": "face::train::001042.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "face shape: oval; hairline: rounded with slight temporal recession; eyebrows: medium thickness, soft arch; eyes: almond-shaped, slight upward slant, visible upper-lid crease, under-eye fullness; nose: straight dorsum, rounded tip; lips: moderate fullness, defined cupid's bow, defined philtrum ridges; skin: clear; hand: partially occluding lower face, occluding teeth; head: turned slightly."
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "With a hand partially occluding the lower face and teeth, this adult presents an oval face shape and a rounded hairline exhibiting slight temporal recession. The face features almond-shaped eyes with a slight upward slant and visible upper-lid creases, a nose with a straight dorsum and rounded tip, and lips with moderate fullness and a defined cupid's bow. The eyebrows have a soft arch and medium thickness, and the skin is clear."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

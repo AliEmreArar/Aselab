@@ -1,0 +1,66 @@
+{
+  "sample_id": "person::train::12462_1.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "Man with short light hair, eyeglasses, a light blue collared shirt, and dark trousers.",
+        "retained_facts": [
+          "man",
+          "short light hair",
+          "eyeglasses",
+          "light blue collared shirt",
+          "dark trousers"
+        ],
+        "omitted_facts": [
+          "average-build",
+          "short-sleeved"
+        ]
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "Average-build man with short light hair and eyeglasses, wearing a light blue short-sleeved collared shirt and dark trousers.",
+        "retained_facts": [
+          "average-build",
+          "man",
+          "short light hair",
+          "eyeglasses",
+          "light blue short-sleeved collared shirt",
+          "dark trousers"
+        ]
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "Average-build man, short light hair, wearing eyeglasses, a light blue short-sleeved collared shirt, and dark trousers.",
+        "retained_facts": [
+          "average-build",
+          "man",
+          "short light hair",
+          "eyeglasses",
+          "light blue short-sleeved collared shirt",
+          "dark trousers"
+        ]
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "There is an average-build man here with short light hair and glasses. He is wearing a light blue short-sleeved collared shirt with dark pants.",
+        "retained_facts": [
+          "average-build",
+          "man",
+          "short light hair",
+          "eyeglasses",
+          "light blue short-sleeved collared shirt",
+          "dark trousers"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

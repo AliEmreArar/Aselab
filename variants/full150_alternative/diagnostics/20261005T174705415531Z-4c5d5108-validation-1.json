@@ -1,0 +1,45 @@
+{
+  "sample_id": "person::train::11561_6.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "woman; average build; hair dark short; skin tone light; jacket light blue hooded puffer with long sleeves; pants dark blue; boots dark brown; shoulder bag light brown with long strap",
+        "retained_facts": [
+          "woman",
+          "average build",
+          "dark short hair",
+          "light skin tone",
+          "light blue hooded puffer jacket",
+          "long sleeves",
+          "dark blue pants",
+          "dark brown boots",
+          "light brown shoulder bag",
+          "long strap"
+        ]
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Light blue hooded puffer jacket with long sleeves worn over dark blue pants, dark brown boots, and a light brown shoulder bag with a long strap on a woman with dark short hair, light skin tone, and an average build.",
+        "retained_facts": [
+          "woman",
+          "average build",
+          "dark short hair",
+          "light skin tone",
+          "light blue hooded puffer jacket",
+          "long sleeves",
+          "dark blue pants",
+          "dark brown boots",
+          "light brown shoulder bag",
+          "long strap"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

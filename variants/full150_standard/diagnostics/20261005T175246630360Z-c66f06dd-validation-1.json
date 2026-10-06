@@ -1,0 +1,75 @@
+{
+  "sample_id": "vehicle::train_images::19520_c034_01.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "A white Ford Escape SUV.",
+        "retained_facts": [
+          "SUV",
+          "white",
+          "Ford Escape"
+        ],
+        "omitted_facts": [
+          "dual exhaust tips",
+          "silver roof rails",
+          "silver alloy rims",
+          "panoramic sunroof",
+          "tinted windows"
+        ]
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "A white Ford Escape SUV with silver roof rails, silver alloy rims, and tinted windows.",
+        "retained_facts": [
+          "SUV",
+          "white",
+          "Ford Escape",
+          "silver roof rails",
+          "silver alloy rims",
+          "tinted windows"
+        ],
+        "omitted_facts": [
+          "dual exhaust tips",
+          "panoramic sunroof"
+        ]
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "A white Ford Escape SUV featuring dual exhaust tips, silver roof rails, silver alloy rims, a panoramic sunroof, and tinted windows.",
+        "retained_facts": [
+          "SUV",
+          "white",
+          "Ford Escape",
+          "dual exhaust tips",
+          "silver roof rails",
+          "silver alloy rims",
+          "panoramic sunroof",
+          "tinted windows"
+        ]
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "This is a white Ford Escape SUV that has a panoramic sunroof, tinted windows, silver roof rails, silver rims, and dual exhaust tips.",
+        "retained_facts": [
+          "SUV",
+          "white",
+          "Ford Escape",
+          "panoramic sunroof",
+          "tinted windows",
+          "silver roof rails",
+          "silver alloy rims",
+          "dual exhaust tips"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

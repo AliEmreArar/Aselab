@@ -1,0 +1,21 @@
+{
+  "sample_id": "face::train::138886.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "face shape; oval; forehead; average height and gently rounded; brow ridge; moderately prominent; hairline; rounded with moderate temporal recession and high placement; eyebrows; medium thickness and density, soft-arched with downward angling lateral tails; eyes; almond-shaped, upward slanting, positive canthal tilt, double upper-lid creases, moderate lid exposure; nasal root; average width; nasal dorsum; straight; nasal tip; rounded; alar; moderate flare; mouth; moderate width, balanced lip fullness, moderately defined cupid's bow; chin; rounded; skin; smooth texture; hair; long and dark"
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Long dark hair frames an oval face with a rounded hairline showing moderate temporal recession and high forehead placement. The soft-arched eyebrows are of medium thickness with downward-angled lateral tails, set above almond-shaped eyes with an upward slant, positive canthal tilt, and moderate double-lid creases. The nose has a straight dorsum and rounded tip with moderate alar flare, while the mouth exhibits balanced lip fullness and a moderately defined cupid's bow. The chin is rounded and the skin texture is smooth, with the subject captured in a direct sideways gaze and neutral expression."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

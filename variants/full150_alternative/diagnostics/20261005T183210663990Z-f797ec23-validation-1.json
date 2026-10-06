@@ -1,0 +1,21 @@
+{
+  "sample_id": "face::train::042973.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "face shape: oval; midface: rounded cheekbones, smooth infraorbital contours, shallow nasolabial folds; jawline: continuous, moderately defined; chin: rounded, shallow mentolabial sulcus; eyebrows: thin, soft-arched; eyes: almond-shaped, medium palpebral fissure, upward canthal tilt, double upper-lid creases; nose: straight dorsum, medium bridge width, rounded tip of moderate projection, narrow alar bases; mouth: medium width, balanced lip fullness, defined cupid's bow, level lip corners, smooth philtrum; hair: brown, strands partially obscuring forehead and left eye region."
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Brown hair with strands partially obscuring the forehead and left eye region frames an oval face with a rounded chin and a continuous, moderately defined jawline. The features include thin, soft-arched eyebrows and almond-shaped eyes with a slight upward canthal tilt and double upper-lid creases. The nose has a straight dorsum and a rounded tip of moderate projection, while the medium-width mouth displays balanced lip fullness and a defined cupid's bow."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

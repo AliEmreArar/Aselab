@@ -1,0 +1,21 @@
+{
+  "sample_id": "vehicle::train_images::16747_c163_03.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "Sedan, Buick Regal; vehicle color, white; sunroof, present; windshield upper portion, stickers."
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "White Buick Regal sedan featuring stickers on the upper portion of the windshield and a sunroof."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

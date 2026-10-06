@@ -1,0 +1,31 @@
+{
+  "sample_id": "vehicle::train_images::08854_c110_02.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "Dark gray sedan with alloy wheels."
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "A dark gray sedan featuring alloy wheels and dark window tint."
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "A dark gray sedan equipped with alloy wheels and heavily tinted windows."
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "It is a dark gray sedan with alloy wheels and tinted windows."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

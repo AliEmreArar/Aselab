@@ -1,0 +1,31 @@
+{
+  "sample_id": "person::query::26789_3.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "Average-build male with short dark hair, a dark red long-sleeved shirt, blue pants, and a light-colored backpack."
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "An average-build male with short dark hair, wearing a dark red long-sleeved shirt and blue pants, carrying a light-colored backpack on both shoulders."
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "Average-build male with short dark hair. He is wearing a dark red long-sleeved shirt, blue pants, and a light-colored backpack secured with straps over both shoulders."
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "There is a guy of average build with short dark hair. He is wearing a long-sleeved dark red shirt, blue pants, and has a light-colored backpack on his back."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

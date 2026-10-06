@@ -1,0 +1,61 @@
+{
+  "sample_id": "vehicle::train_images::12849_c170_02.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "Black Volkswagen Jetta sedan.",
+        "retained_facts": [
+          "Volkswagen Jetta",
+          "Sedan",
+          "Black paint"
+        ],
+        "omitted_facts": [
+          "Alloy wheels",
+          "Dark window tint"
+        ]
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "A black Volkswagen Jetta sedan with alloy wheels and dark window tint.",
+        "retained_facts": [
+          "Sedan",
+          "Volkswagen Jetta",
+          "Black paint",
+          "Alloy wheels",
+          "Dark window tint"
+        ]
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "Black Volkswagen Jetta sedan featuring alloy wheels and dark-tinted windows.",
+        "retained_facts": [
+          "Sedan",
+          "Volkswagen Jetta",
+          "Black paint",
+          "Alloy wheels",
+          "Dark window tint"
+        ]
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "It's a black Volkswagen Jetta sedan. It has alloy wheels and the windows are tinted dark.",
+        "retained_facts": [
+          "Sedan",
+          "Volkswagen Jetta",
+          "Black paint",
+          "Alloy wheels",
+          "Dark window tint"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

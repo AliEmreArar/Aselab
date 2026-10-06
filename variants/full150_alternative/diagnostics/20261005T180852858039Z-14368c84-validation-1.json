@@ -1,0 +1,21 @@
+{
+  "sample_id": "vehicle::query_images::21112_c079_00.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "vehicle: compact crossover SUV; make/model: Honda CR-V; vehicle: white primary color; wheels: silver alloy; exterior: roof rails; windows: clear; windshield: green registration sticker on upper corner; dashboard: small white bobblehead ornament"
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "White Honda CR-V compact crossover SUV featuring a green registration sticker on the upper corner of the windshield and a small white bobblehead ornament on the dashboard, equipped with silver alloy wheels and roof rails with clear windows."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

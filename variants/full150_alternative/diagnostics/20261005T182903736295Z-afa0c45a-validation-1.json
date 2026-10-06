@@ -1,0 +1,21 @@
+{
+  "sample_id": "face::train::114832.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "face shape: oval; cheekbones: moderately prominent; forehead: medium height/width, gently rounded; hairline: straight, slight temporal recession; eyebrows: thick, dark, soft-arched; eyes: almond-shaped, average palpebral fissure, level canthal tilt, double eyelids; nose: straight dorsum, medium bridge width, rounded tip; mouth: medium width, balanced vermilion, well-defined cupid's bow, level corners; philtrum: moderate length, defined ridges; jawline: defined, moderate angle flare; chin: rounded projection; facial hair: light stubble on upper lip and chin; right cheek: small mole; ears: partially visible, free lobes; neck region: vertical artifact distortion."
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Small mole on the right cheek near the mouth, thick dark soft-arched eyebrows, and light stubble on the upper lip and chin identify this young adult male with an oval face shape. The hairline is straight with slight temporal recession above a medium height forehead. He features almond-shaped eyes with double eyelids, a straight-dorsum nose with a rounded tip, and a defined jawline with a rounded chin. The ears have free lobes and are partially visible, and there is vertical artifact distortion on the neck region."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

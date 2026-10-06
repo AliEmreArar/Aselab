@@ -1,0 +1,125 @@
+{
+  "sample_id": "face::train::157804.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "Older adult male with an oval face, receding hairline, thin sparse eyebrows, and a cleft chin.",
+        "retained_facts": [
+          "Male",
+          "Older adult",
+          "Oval face shape",
+          "Receding hairline",
+          "Thin sparse eyebrows",
+          "Cleft chin"
+        ],
+        "omitted_facts": [
+          "Facial thirds",
+          "Jawline",
+          "Forehead details",
+          "Almond eyes",
+          "Nose details",
+          "Mouth details",
+          "Philtrum",
+          "Vertical cheek crease",
+          "Facial hair",
+          "Pose",
+          "Expression",
+          "Lighting",
+          "Artifacts"
+        ],
+        "change_note": "Focused on primary structural identifiers."
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "Older adult male with an oval face, wide jawline, and receding hairline. He has thin sparse eyebrows, a straight nose, thin lips with a closed-mouth smile, and a prominent cleft chin.",
+        "retained_facts": [
+          "Male",
+          "Older adult",
+          "Oval face",
+          "Wide jawline",
+          "Receding hairline",
+          "Thin sparse eyebrows",
+          "Straight nose",
+          "Thin lips",
+          "Closed-mouth smile",
+          "Cleft chin"
+        ],
+        "omitted_facts": [
+          "Facial thirds",
+          "Forehead shape",
+          "Almond eye shape",
+          "Philtrum definition",
+          "Vertical cheek crease",
+          "Facial hair",
+          "Lighting",
+          "Artifacts"
+        ],
+        "change_note": "Included secondary features for a more balanced profile."
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "Older adult male with an oval face, balanced facial thirds, and a wide jawline. The forehead is high and rounded with a receding hairline. He has thin sparse eyebrows, almond-shaped eyes, a straight nose, a wide mouth with thin lips, and a defined philtrum. Distinguishing marks include a vertical crease on the left cheek and a prominent cleft chin.",
+        "retained_facts": [
+          "Male",
+          "Older adult",
+          "Oval face",
+          "Balanced facial thirds",
+          "Wide jawline",
+          "High rounded forehead",
+          "Receding hairline",
+          "Thin sparse eyebrows",
+          "Almond-shaped eyes",
+          "Straight nose",
+          "Wide mouth",
+          "Thin lips",
+          "Defined philtrum",
+          "Vertical crease on left cheek",
+          "Prominent cleft chin"
+        ],
+        "omitted_facts": [
+          "Facial hair",
+          "Pose",
+          "Expression",
+          "Lighting",
+          "Artifacts"
+        ],
+        "change_note": "Included all structural and permanent identity markers."
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "An older man with an oval-shaped face and a bit of a receding hairline. He has thin eyebrows, a straight nose, and a wide mouth. You can spot a cleft chin and a small vertical crease on his left cheek.",
+        "retained_facts": [
+          "Older man",
+          "Oval-shaped face",
+          "Receding hairline",
+          "Thin eyebrows",
+          "Straight nose",
+          "Wide mouth",
+          "Cleft chin",
+          "Vertical crease on left cheek"
+        ],
+        "omitted_facts": [
+          "Facial thirds",
+          "Jawline width",
+          "Forehead height",
+          "Almond eyes",
+          "Thin lips",
+          "Defined philtrum",
+          "Facial hair",
+          "Pose",
+          "Expression"
+        ],
+        "change_note": "Simplified descriptions for casual recognition."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

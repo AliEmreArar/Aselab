@@ -1,0 +1,31 @@
+{
+  "sample_id": "vehicle::query_images::20506_c051_01.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "White Ford Focus hatchback."
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "White Ford Focus hatchback with a sunroof and alloy rims."
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "White Ford Focus hatchback, equipped with a sunroof and alloy wheels."
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "It is a white Ford Focus hatchback that has a sunroof and nice alloy rims."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

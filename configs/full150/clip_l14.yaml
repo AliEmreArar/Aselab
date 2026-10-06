@@ -1,0 +1,20 @@
+name: full150-clip_l14
+dataset: ../../caption_samples_50/all_samples.jsonl
+output_dir: ../../runs/full150/clip_l14
+seed: 42
+agreement_k: 10
+transforms:
+- name: identity
+variant_files:
+- ../../variants/full150/variants.jsonl
+models:
+- name: clip_l14
+  backend: hf_text_features
+  model_id: openai/clip-vit-large-patch14
+  use_safetensors: true
+  dtype: float32
+  max_length: 77
+  batch_size: 8
+  image_retrieval: true
+  revision: 32bd64288804d66eefd0ccbe215aa642df71cc41
+  device: cpu

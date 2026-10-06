@@ -1,0 +1,41 @@
+{
+  "sample_id": "person::train::01287_5.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "person; average build; hair; dark; scarf; red; coat; light gray, long-sleeved, front pockets; skirt; white; leggings; black; shoes; black",
+        "retained_facts": [
+          "average build",
+          "dark hair",
+          "red scarf",
+          "light gray long-sleeved coat",
+          "front pockets on coat",
+          "white skirt",
+          "black leggings",
+          "black shoes"
+        ]
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "A red scarf wrapped around the neck and a light gray long-sleeved coat with front pockets worn over a white skirt and black leggings with black shoes characterize this person with an average build and dark hair.",
+        "retained_facts": [
+          "red scarf",
+          "light gray long-sleeved coat",
+          "front pockets on coat",
+          "white skirt",
+          "black leggings",
+          "black shoes",
+          "average build",
+          "dark hair"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

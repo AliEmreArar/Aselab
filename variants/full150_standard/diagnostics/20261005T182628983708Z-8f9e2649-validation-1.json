@@ -1,0 +1,31 @@
+{
+  "sample_id": "face::train::032580.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "Adult male with an oblong face, high M-shaped hairline, dark wavy hair, and a clean-shaven face with light stubble on the upper lip."
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "Adult male with an oblong face, prominent bone structure, and a high M-shaped hairline. He has almond-shaped eyes, a straight nose with a bulbous tip, a strong jawline with a rounded chin, and short dark wavy hair. His face is clean-shaven with light stubble on the upper lip."
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "Adult male with an oblong face, prominent bone structure, and a high, broad forehead. Features include a high M-shaped hairline with temporal recession, prominent brow ridges, and medium-thick soft-arched eyebrows. Eyes are almond-shaped with moderate creases. The nose has a straight bridge and a bulbous tip. Lips are thin, and the chin is rounded with a central indentation. Ears are free-lobed and positioned level with the eye-nose line. He has short dark wavy hair styled back and a clean-shaven face with light upper-lip stubble."
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "A man with an oblong-shaped face and strong features. He has a high, receding hairline and short, wavy dark hair. He has prominent eyebrows and almond-shaped eyes, with a straight nose and a rounded chin. He is clean-shaven, though he has a bit of light stubble on his upper lip."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

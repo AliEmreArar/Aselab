@@ -1,0 +1,31 @@
+{
+  "sample_id": "vehicle::train_images::07345_c110_03.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "White Chevrolet Cruze sedan."
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "White Chevrolet Cruze sedan with alloy wheels and tinted windows."
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "A white Chevrolet Cruze sedan, equipped with alloy wheels, dark window tinting, and a small sticker on the rear window."
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "That is a white Chevrolet Cruze sedan. It has alloy wheels, black tinted windows, and a little sticker on the back window."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

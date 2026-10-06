@@ -1,0 +1,91 @@
+{
+  "sample_id": "face::train::025692.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "An adult woman with an oval face, almond-shaped eyes, and soft-textured hair with wispy bangs.",
+        "retained_facts": [
+          "Woman",
+          "adult",
+          "oval face shape",
+          "almond-shaped eyes",
+          "soft-textured hairstyle",
+          "wispy bangs"
+        ],
+        "omitted_facts": [
+          "brow ridge",
+          "cheekbone width",
+          "jawline",
+          "eyebrow shape",
+          "nasal dorsum details",
+          "mouth details",
+          "ears"
+        ]
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "An adult woman with an oval face, medium-thickness soft-arched eyebrows, almond-shaped eyes, a straight nose, and a soft-textured hairstyle with wispy bangs.",
+        "retained_facts": [
+          "Woman",
+          "adult",
+          "oval face shape",
+          "medium thickness eyebrows",
+          "soft-arched eyebrow shape",
+          "almond-shaped eyes",
+          "straight nasal dorsum",
+          "soft-textured hairstyle",
+          "wispy bangs"
+        ],
+        "omitted_facts": [
+          "brow ridge",
+          "cheekbone width",
+          "jawline",
+          "philtrum",
+          "lip fullness"
+        ]
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "An adult woman featuring an oval face with moderate cheekbones and a tapering jawline to a rounded chin. She has medium-thickness soft-arched eyebrows, almond-shaped eyes with double-lid creases, and a straight nose of medium width. Her mouth is of average width with medium lip fullness, and she wears her hair in a soft-textured style with wispy bangs.",
+        "retained_facts": [
+          "adult woman",
+          "oval face",
+          "moderate cheekbone width",
+          "tapering jawline",
+          "rounded chin",
+          "medium thickness soft-arched eyebrows",
+          "almond-shaped eyes",
+          "double upper-lid creases",
+          "straight nasal dorsum",
+          "average mouth width",
+          "medium lip fullness",
+          "soft-textured hairstyle",
+          "wispy bangs"
+        ]
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "This is an adult woman with an oval-shaped face and a soft-textured hairstyle with wispy bangs. She has arched eyebrows, almond-shaped eyes with visible creases, and a straight nose.",
+        "retained_facts": [
+          "adult woman",
+          "oval face",
+          "soft-textured hairstyle",
+          "wispy bangs",
+          "arched eyebrows",
+          "almond-shaped eyes",
+          "double upper-lid creases",
+          "straight nose"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

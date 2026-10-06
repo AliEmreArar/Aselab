@@ -1,0 +1,21 @@
+{
+  "sample_id": "face::test::188858.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "face shape: oval; facial thirds: balanced; soft tissue: moderate; asymmetry: not discernible; hairline: rounded; temporal recession: moderate; eyebrows: medium-thick and soft-arched with lateral thinning; eyes: almond-shaped with moderate palpebral fissure length, slight upward canthal tilt, and visible double upper-lid creases; nasal dorsum: straight; nasal bridge: moderate width; nasal tip: rounded with average projection; alar: average width; mouth: medium width; lip fullness: balanced; vermilion height: moderate; cupid's bow: well-defined; lip corners: upturned; upper teeth: visible; facial hair: not discernible; skin: smooth; marks: none; ears: partially occluded; head: slight turn to the right; expression: wide smile"
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Almond-shaped eyes with slight upward canthal tilt and visible double upper-lid creases, paired with an oval face shape, rounded hairline with moderate temporal recession, and a wide smile revealing upper teeth. The subject has medium-thick, soft-arched eyebrows with lateral thinning, a straight nasal dorsum, and a medium-width mouth with balanced lip fullness, a well-defined cupid's bow, and upturned corners. The facial thirds are balanced with moderate soft tissue and no discernible asymmetry. The skin is smooth, and ears are partially occluded."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

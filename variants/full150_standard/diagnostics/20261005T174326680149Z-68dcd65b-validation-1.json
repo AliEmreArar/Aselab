@@ -1,0 +1,31 @@
+{
+  "sample_id": "person::train::03720_4.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "Child with short dark hair in a dark pink hooded puffer coat and black pants."
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "Slim child with short dark hair, wearing a long-sleeved dark pink hooded puffer coat, black pants, and pink and white shoes."
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "Child, slim build, short dark hair, wearing a long-sleeved dark pink hooded puffer coat, black pants, and pink and white shoes."
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "A slim child with short dark hair. They are wearing a long-sleeved dark pink hooded puffer jacket, black pants, and pink and white shoes."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

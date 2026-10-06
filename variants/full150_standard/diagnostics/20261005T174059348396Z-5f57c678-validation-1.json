@@ -1,0 +1,75 @@
+{
+  "sample_id": "person::train::01924_2.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "A man with short dark hair in a grey and black patterned puffer jacket, dark blue pants, and red shoes.",
+        "retained_facts": [
+          "Male",
+          "short dark hair",
+          "grey and black patterned puffer jacket",
+          "dark blue pants",
+          "red shoes"
+        ],
+        "omitted_facts": [
+          "average build",
+          "hooded",
+          "layered over a striped shirt",
+          "white soles"
+        ]
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "Male with short dark hair, wearing a hooded grey and black patterned puffer jacket over a striped shirt, dark blue pants, and red shoes with white soles.",
+        "retained_facts": [
+          "Male",
+          "short dark hair",
+          "hooded grey and black patterned puffer jacket",
+          "striped shirt",
+          "dark blue pants",
+          "red shoes",
+          "white soles"
+        ],
+        "omitted_facts": [
+          "average build"
+        ]
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "A male of average build with short dark hair. He wears a hooded, grey and black patterned puffer jacket over a striped shirt, paired with dark blue pants and red shoes with white soles.",
+        "retained_facts": [
+          "Male",
+          "average build",
+          "short dark hair",
+          "hooded grey and black patterned puffer jacket",
+          "striped shirt",
+          "dark blue pants",
+          "red shoes",
+          "white soles"
+        ]
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "Look for a guy with short dark hair. He's wearing this grey and black patterned hooded puffer jacket over a striped shirt, plus dark blue pants and red sneakers with white soles.",
+        "retained_facts": [
+          "Male",
+          "short dark hair",
+          "grey and black patterned hooded puffer jacket",
+          "striped shirt",
+          "dark blue pants",
+          "red shoes",
+          "white soles"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

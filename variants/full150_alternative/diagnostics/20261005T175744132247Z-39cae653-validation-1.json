@@ -1,0 +1,37 @@
+{
+  "sample_id": "person::gallery::26789_1.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "man;build:average;jacket:long-sleeved dark red;trousers:light gray;shoes:dark",
+        "retained_facts": [
+          "man",
+          "average-build",
+          "long-sleeved dark red jacket",
+          "light gray trousers",
+          "dark shoes"
+        ],
+        "omitted_facts": []
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "A long-sleeved dark red jacket worn with light gray trousers and dark shoes is on an average-build man.",
+        "retained_facts": [
+          "long-sleeved dark red jacket",
+          "light gray trousers",
+          "dark shoes",
+          "average-build",
+          "man"
+        ],
+        "omitted_facts": []
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

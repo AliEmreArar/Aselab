@@ -1,0 +1,65 @@
+{
+  "sample_id": "vehicle::train_images::13608_c139_04.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "Black sedan with chrome grille and sunroof.",
+        "retained_facts": [
+          "Sedan",
+          "black",
+          "chrome vertical slat grille",
+          "sunroof"
+        ],
+        "omitted_facts": [
+          "Buick emblem",
+          "multi-spoke silver alloy wheels"
+        ]
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "Black sedan featuring a chrome vertical slat grille with a Buick emblem, silver alloy wheels, and a sunroof.",
+        "retained_facts": [
+          "Sedan",
+          "black",
+          "chrome vertical slat grille",
+          "Buick emblem",
+          "multi-spoke silver alloy wheels",
+          "sunroof"
+        ]
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "Black sedan equipped with a chrome vertical slat grille displaying a centered Buick emblem, multi-spoke silver alloy wheels, and a sunroof.",
+        "retained_facts": [
+          "Sedan",
+          "black",
+          "chrome vertical slat grille",
+          "centered Buick emblem",
+          "multi-spoke silver alloy wheels",
+          "sunroof"
+        ]
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "It is a black sedan with a chrome grille that has a Buick badge in the center, silver multi-spoke wheels, and a sunroof.",
+        "retained_facts": [
+          "Sedan",
+          "black",
+          "chrome vertical slat grille",
+          "centered Buick emblem",
+          "multi-spoke silver alloy wheels",
+          "sunroof"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

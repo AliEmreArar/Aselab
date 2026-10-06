@@ -1,0 +1,21 @@
+{
+  "sample_id": "face::train::092618.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "face shape: oval; forehead: moderately high, gently rounded contour; cheekbones: average width and projection; jawline: defined; chin: rounded; hair: short tousled light brown; eyebrows: medium thickness, soft-arched, moderately spaced; eyes: almond-shaped, medium palpebral fissure length, neutral canthal tilt, visible upper-lid crease; nose: straight dorsum, medium bridge width, rounded tip; mouth: medium width, thin upper and lower lips, level corners, upper teeth showing; facial hair: light stubble along jawline and chin; ears: free lobes, metal ring piercing in left lobe"
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Short tousled light brown hair and a metal ring piercing in the left ear lobe characterize this individual, who has an oval face with a defined jawline and rounded chin. They exhibit light stubble along the jawline and chin, medium-thickness soft-arched eyebrows, and almond-shaped eyes with a neutral canthal tilt. The nose has a straight dorsum with a rounded tip, while the mouth features thin lips and shows upper teeth in a smile."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

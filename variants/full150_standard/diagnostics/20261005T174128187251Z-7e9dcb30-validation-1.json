@@ -1,0 +1,31 @@
+{
+  "sample_id": "person::train::09634_1.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "Female with long dark hair, wearing a white cardigan, white top, and black pants."
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "Average-build female with long dark hair, wearing a white cardigan over a white top, black pants, and a dark crossbody bag."
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "Average-build female with long dark hair, wearing a white cardigan over a white top, black pants, and dark shoes. She wears a dark crossbody bag and a watch on her wrist."
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "That's an average-build woman with long dark hair. She has on a white cardigan over a white shirt, along with black trousers, dark shoes, and a watch. She is also carrying a dark bag with the strap across her body."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

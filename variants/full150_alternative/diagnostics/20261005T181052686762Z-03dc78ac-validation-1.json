@@ -1,0 +1,35 @@
+{
+  "sample_id": "vehicle::gallery_images::20070_c017_01.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "Bus; paint white and blue two-tone; rear window digital route display; text AZ7892 above license plate area; tail lights stacked on both sides",
+        "retained_facts": [
+          "Bus",
+          "paint white and blue two-tone",
+          "rear window digital route display",
+          "text AZ7892 above license plate area",
+          "tail lights stacked on both sides"
+        ]
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Bus with AZ7892 printed above the license plate area, featuring a white and blue two-tone paint job, a digital route display on the rear window, and stacked tail lights on both sides.",
+        "retained_facts": [
+          "Bus",
+          "AZ7892 printed above the license plate area",
+          "white and blue two-tone paint",
+          "digital route display on the rear window",
+          "stacked tail lights on both sides"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

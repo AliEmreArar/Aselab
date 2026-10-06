@@ -1,0 +1,71 @@
+{
+  "sample_id": "vehicle::gallery_images::20877_c110_00.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "Dark gray sedan with alloy rims and a spoiler.",
+        "retained_facts": [
+          "Sedan",
+          "dark gray",
+          "alloy rims",
+          "spoiler"
+        ],
+        "omitted_facts": [
+          "tinted windows",
+          "small oval decal on the right side of the rear bumper",
+          "rectangular decal on the right side of the trunk lid"
+        ]
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "A dark gray sedan featuring alloy rims, a rear spoiler, and tinted windows.",
+        "retained_facts": [
+          "Sedan",
+          "dark gray",
+          "alloy rims",
+          "spoiler",
+          "tinted windows"
+        ],
+        "omitted_facts": [
+          "small oval decal on the right side of the rear bumper",
+          "rectangular decal on the right side of the trunk lid"
+        ]
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "A dark gray sedan equipped with alloy rims, a spoiler, and tinted windows. The vehicle has a small oval decal on the right side of the rear bumper and a rectangular decal on the right side of the trunk lid.",
+        "retained_facts": [
+          "Sedan",
+          "dark gray",
+          "alloy rims",
+          "spoiler",
+          "tinted windows",
+          "small oval decal on the right side of the rear bumper",
+          "rectangular decal on the right side of the trunk lid"
+        ]
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "That's a dark gray sedan with tinted windows and alloy wheels. It has a spoiler on the back, and I noticed a small oval sticker on the right side of the rear bumper plus a rectangular sticker on the right side of the trunk lid.",
+        "retained_facts": [
+          "Sedan",
+          "dark gray",
+          "alloy rims",
+          "spoiler",
+          "tinted windows",
+          "small oval decal on the right side of the rear bumper",
+          "rectangular decal on the right side of the trunk lid"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "sample_id": "face::train::060555.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "Middle-aged male with an oval face, receding hairline, and short dark hair."
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "Middle-aged male with an oval face, receding hairline, short dark hair, and a clean-shaven face with straight-on head pose."
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "Middle-aged male, oval face with balanced structure, high wide forehead with receding hairline at temples, medium thick soft-arched eyebrows, almond-shaped eyes with double creases, straight-bridged nose with rounded tip, medium width mouth with thin upper lip, and short dark hair styled backward; clean-shaven."
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "A middle-aged man with short dark hair that's styled back. He has an oval-shaped face, a clean-shaven look, and a high forehead with a receding hairline. He has medium-thick eyebrows and almond-shaped eyes."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

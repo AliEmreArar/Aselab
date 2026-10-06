@@ -1,0 +1,21 @@
+{
+  "sample_id": "vehicle::train_images::12341_c073_00.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "Sedan, Nissan Altima; paint, black; wheels, alloy; sunroof, present; window tint, moderate"
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Black Nissan Altima sedan with alloy wheels, a sunroof, and moderate window tint."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

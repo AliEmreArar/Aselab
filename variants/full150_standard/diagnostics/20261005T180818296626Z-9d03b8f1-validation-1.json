@@ -1,0 +1,138 @@
+{
+  "sample_id": "face::train::063618.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "Older man with an oblong face, receding hairline with thin light-colored hair, and a wide mouth with thin lips.",
+        "retained_facts": [
+          "Male-presenting older adult",
+          "oblong facial shape",
+          "receding hairline",
+          "thin light-colored hair",
+          "wide mouth",
+          "thin lips"
+        ],
+        "omitted_facts": [
+          "balanced thirds",
+          "angular bone structure",
+          "high forehead",
+          "prominent brow ridges",
+          "deep temples",
+          "light-colored soft-arched eyebrows",
+          "deep-set eyes",
+          "straight nasal dorsum",
+          "smooth jawline",
+          "high cheekbones",
+          "attached earlobes",
+          "expression",
+          "lighting"
+        ]
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "Older man with an oblong facial shape, a receding hairline with thin light-colored hair, deep-set eyes, and a wide mouth with thin lips.",
+        "retained_facts": [
+          "Male-presenting older adult",
+          "oblong facial shape",
+          "receding hairline",
+          "thin light-colored hair",
+          "deep-set eyes",
+          "wide mouth",
+          "thin lips"
+        ],
+        "omitted_facts": [
+          "balanced thirds",
+          "angular bone structure",
+          "high forehead",
+          "brow ridges",
+          "deep temples",
+          "eyebrow details",
+          "nasal dorsum details",
+          "jawline details",
+          "cheekbone details",
+          "ear details",
+          "expression",
+          "lighting"
+        ]
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "Older man with an oblong facial shape, angular bone structure, and high forehead. Features include a receding hairline with thin light-colored hair, thin light-colored eyebrows, deep-set eyes with downward slant, a straight nasal dorsum with a rounded tip, and a wide mouth with thin lips and visible upper teeth. Has a smooth jawline with a rounded chin, high cheekbones with deep nasolabial folds, and ears with attached lobes.",
+        "retained_facts": [
+          "Male-presenting older adult",
+          "oblong facial shape",
+          "angular bone structure",
+          "high forehead",
+          "receding hairline",
+          "thin light-colored hair",
+          "thin light-colored eyebrows",
+          "deep-set eyes",
+          "downward slant",
+          "straight nasal dorsum",
+          "rounded tip",
+          "wide mouth",
+          "thin lips",
+          "visible upper teeth",
+          "smooth jawline",
+          "rounded chin",
+          "high cheekbones",
+          "deep nasolabial folds",
+          "ears with attached lobes"
+        ],
+        "omitted_facts": [
+          "balanced thirds",
+          "brow ridges",
+          "deep temples",
+          "palpebral fissure length",
+          "upper-lid creases",
+          "bridge width",
+          "level corners",
+          "vertical height",
+          "moderate projection",
+          "head turn",
+          "expression",
+          "lighting"
+        ]
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "An older man with an oblong face and a receding hairline with thin, light hair. He has thin eyebrows, deep-set eyes that slant downward, and a wide mouth with thin lips. You can see his upper teeth when he smiles.",
+        "retained_facts": [
+          "Male-presenting older adult",
+          "oblong facial shape",
+          "receding hairline",
+          "thin light-colored hair",
+          "thin eyebrows",
+          "deep-set eyes",
+          "downward slant",
+          "wide mouth",
+          "thin lips",
+          "visible upper teeth",
+          "smiling"
+        ],
+        "omitted_facts": [
+          "angular bone structure",
+          "high forehead",
+          "prominent brow ridges",
+          "deep temples",
+          "nasal dorsum details",
+          "jawline and chin details",
+          "high cheekbones",
+          "nasolabial folds",
+          "ear details",
+          "head turn",
+          "lighting"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

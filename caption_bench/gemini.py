@@ -7,6 +7,7 @@ import os
 import re
 import time
 from datetime import datetime, timezone
+from http.client import RemoteDisconnected
 from pathlib import Path
 from urllib.error import HTTPError, URLError
 from urllib.parse import quote
@@ -92,6 +93,7 @@ class GeminiClient:
         self.audit_dir = audit_dir
         self.sample_id = "unspecified"
         self.requests_for_caption = 0
+        self.last_request_at = 0.0
         self.request_cap = int(config.get("max_api_requests_per_caption", 3))
         if self.request_cap < 1:
             raise ValueError("max_api_requests_per_caption must be positive.")
@@ -127,6 +129,10 @@ class GeminiClient:
         for attempt in range(retries + 1):
             if self.requests_for_caption >= self.request_cap:
                 raise RuntimeError(f"Stopped: {self.sample_id} reached the limit of {self.request_cap} API requests. HTTP retries and content retries share this limit. Inspect saved diagnostics before rerunning.")
+            spacing = max(0.0, float(self.config.get("min_request_interval_seconds", 0)))
+            if spacing and self.last_request_at:
+                time.sleep(max(0.0, spacing - (time.monotonic() - self.last_request_at)))
+            self.last_request_at = time.monotonic()
             self.requests_for_caption += 1
             stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%S%fZ")
             audit_path = self.audit_dir / f"{stamp}-{digest(self.sample_id)[:8]}-{self.requests_for_caption}.json" if self.audit_dir else None
@@ -168,8 +174,17 @@ class GeminiClient:
                     raise RuntimeError(f"Gemini HTTP {status}. {hint}") from None
                 retry_after = exc.headers.get("Retry-After", "")
                 delay = min(float(retry_after), 60.0) if retry_after.isdigit() else min(2 ** attempt, 30)
+                # Google may supply RetryInfo in its JSON rather than an HTTP header.
+                try:
+                    details = json.loads(error_text).get("error", {}).get("details", [])
+                    for detail in details:
+                        match = re.fullmatch(r"(\d+(?:\.\d+)?)s", str(detail.get("retryDelay", "")))
+                        if match:
+                            delay = max(delay, min(float(match.group(1)), 60.0))
+                except (ValueError, AttributeError, TypeError):
+                    pass
                 time.sleep(delay)
-            except (URLError, TimeoutError):
+            except (URLError, TimeoutError, ConnectionError, RemoteDisconnected):
                 record.update({"status": "connection_error"})
                 self._audit(audit_path, record)
                 print("  Connection error; no usable response received.", flush=True)

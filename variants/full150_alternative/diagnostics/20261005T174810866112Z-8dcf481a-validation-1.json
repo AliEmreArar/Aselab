@@ -1,0 +1,37 @@
+{
+  "sample_id": "person::train::02319_1.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "build; average; hair; short dark; jacket; orange and dark brown hooded puffer with long sleeves; pants; black; shoes; white",
+        "retained_facts": [
+          "average build",
+          "short dark hair",
+          "orange and dark brown hooded puffer jacket",
+          "long sleeves on jacket",
+          "black pants",
+          "white shoes"
+        ]
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "The orange and dark brown hooded puffer jacket with long sleeves is paired with black pants and white shoes. This person has short dark hair and an average build.",
+        "retained_facts": [
+          "orange and dark brown hooded puffer jacket",
+          "long sleeves on jacket",
+          "black pants",
+          "white shoes",
+          "short dark hair",
+          "average build"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

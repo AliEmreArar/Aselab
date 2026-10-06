@@ -1,0 +1,31 @@
+{
+  "sample_id": "vehicle::train_images::18263_c110_02.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "Silver Nissan Qashqai SUV."
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "Silver Nissan Qashqai SUV with roof rails and a sunroof."
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "Silver Nissan Qashqai SUV featuring silver-painted alloy wheels, a sunroof, and roof rails."
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "There is a silver Nissan Qashqai SUV that has roof rails, a sunroof, and silver-painted alloy wheels."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

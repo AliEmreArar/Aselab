@@ -1,0 +1,31 @@
+{
+  "sample_id": "face::train::073196.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "Adult male with an oblong face, short dark textured hair, and light stubble."
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "Adult male with an oblong face, prominent bone structure, short dark textured hair, and light stubble on the jaw and chin."
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "Adult male, oblong face, prominent bone structure, moderate soft tissue, straight hairline with temporal recession, high forehead. Thick, medium-length, soft-arched eyebrows with lateral thinning. Almond-shaped eyes, slight upward canthal tilt, double upper-lid crease. Straight nasal dorsum, rounded tip. Balanced lips, short philtrum, teeth visible at rest. Average-sized ears, free lobes. Short dark textured hairstyle, light stubble on jaw and chin."
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "A man with an oblong face, short dark textured hair, and some light stubble on his jaw and chin. He has a prominent bone structure, thick eyebrows, and is smiling."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

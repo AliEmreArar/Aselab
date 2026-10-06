@@ -1,0 +1,21 @@
+{
+  "sample_id": "person::gallery::15194_3.png",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "person; average build; hair; short dark; eyeglasses; jacket; dark purple full-zip; trousers; light gray; shoes; dark; papers; held in hand"
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Eyeglasses and short dark hair characterize this person of average build. They are wearing a long-sleeved dark purple full-zip jacket paired with light gray trousers and dark shoes, and they hold papers in their hand."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

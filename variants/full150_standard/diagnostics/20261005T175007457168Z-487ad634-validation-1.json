@@ -1,0 +1,31 @@
+{
+  "sample_id": "person::gallery::15309_3.png",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "Average-build male with short dark hair, wearing a gray shirt and dark pants."
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "Average-build male with short dark hair, wearing a gray short-sleeve collared shirt, dark pants, and dark shoes."
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "An average-build male featuring short dark hair, a gray short-sleeve collared shirt, dark pants, and dark shoes."
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "A man with an average build and short dark hair. He is dressed in a gray collared short-sleeve shirt paired with dark pants and shoes."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

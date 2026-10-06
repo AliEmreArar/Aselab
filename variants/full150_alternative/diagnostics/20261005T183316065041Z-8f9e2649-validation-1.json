@@ -1,0 +1,21 @@
+{
+  "sample_id": "face::train::032580.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "face; oblong with balanced vertical thirds; bone structure; prominent; forehead; high and broad; hairline; high M-shaped with deep temporal recession; brow ridges; prominent; eyebrows; medium-thick soft-arched with downward sloping lateral tails; eyes; almond-shaped with moderate upper-lid crease; nasal bridge; straight with high root; nasal tip; slightly bulbous; lips; thin; mouth corners; level; philtrum; shallow with well-defined ridges; jawline; strong continuous; jaw angle; moderate sharpness; chin; rounded with moderate vertical height and slight central indentation; ears; moderate-sized free-lobed; hair; short dark wavy; face; clean-shaven with light stubble on upper lip"
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "High M-shaped hairline with deep temporal recession and short dark wavy hair styled away from the forehead characterize this adult with a clean-shaven face and light stubble on the upper lip. The subject has an oblong face with a prominent bone structure, a high and broad forehead, and prominent brow ridges with minimal spacing. Features include medium-thick soft-arched eyebrows with downward sloping lateral tails, almond-shaped eyes with moderate upper-lid creases, and a straight nasal bridge with a slightly bulbous tip. The jawline is strong and continuous with a rounded chin showing a slight central indentation, while moderate-sized free-lobed ears are positioned level with the eye-nose line."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

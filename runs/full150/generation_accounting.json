@@ -1,0 +1,19 @@
+{
+  "variant_count": 900,
+  "completed_sources": 150,
+  "profiles": {
+    "llm_brief": 150,
+    "llm_balanced": 150,
+    "llm_detailed": 150,
+    "llm_human_description": 150,
+    "llm_attribute_list": 150,
+    "llm_distinctive_first": 150
+  },
+  "total_recorded_requests": 387,
+  "requests_in_final_resume": 78,
+  "final_resume_statuses": {
+    "200": 69,
+    "503": 9
+  },
+  "remaining_sources": 0
+}

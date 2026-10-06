@@ -1,0 +1,21 @@
+{
+  "sample_id": "face::train::008309.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "face: oblong, balanced thirds, prominent bone structure; hairline: receding with deep temporal recession; hair: dark, wavy; eyebrows: medium thickness, soft arch; eyes: almond-shaped, neutral canthal tilt, defined upper-lid creases; nose: straight bridge, medium width, rounded tip; mouth: medium width, balanced fullness, defined philtrum; facial hair: light stubble on upper lip and chin; skin: smooth, no persistent marks; hand: resting near temple."
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Deep temporal recession at the hairline and light stubble on the upper lip and chin characterize this individual, who has dark wavy hair and an oblong face with prominent bone structure. The person has almond-shaped eyes with defined upper-lid creases and a straight nasal bridge. A hand is resting near the temple, and the skin surface is smooth."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

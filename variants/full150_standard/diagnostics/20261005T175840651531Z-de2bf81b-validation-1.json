@@ -1,0 +1,31 @@
+{
+  "sample_id": "vehicle::train_images::08361_c094_04.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "Silver Nissan Tiida sedan."
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "A silver Nissan Tiida sedan with alloy wheels and a sunroof."
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "A silver Nissan Tiida sedan, equipped with alloy wheels, a sunroof, and wind deflectors on the front and rear passenger windows."
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "This is a silver Nissan Tiida sedan. It has a sunroof, alloy wheels, and wind deflectors over the front and rear passenger windows."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

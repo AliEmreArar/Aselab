@@ -1,0 +1,21 @@
+{
+  "sample_id": "face::test::186223.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "face shape oval; forehead height moderate and rounded; brow ridge subtle; glabella width average; temples full; hairline obscured by bangs; hair dark, styled up with loose side strands; eyebrows medium thickness and density, soft-arched; eyes almond-shaped, horizontal palpebral fissures, average intercanthal distance, neutral canthal tilt, upper lids with creases, orbital depth moderate; nose root width average, dorsum straight, bridge width medium, tip rounded, alar base proportional; mouth width medium, lip fullness balanced, vermilion full, cupid's bow defined, corners slightly upturned; philtrum with defined ridges; facial hair none; skin smooth; accessories tiara, veil, necklace"
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Wearing a tiara, veil, and necklace, this individual has dark hair styled up with loose side strands and bangs obscuring the hairline. The person has an oval face with moderate, rounded forehead, subtle brow ridge, and medium-density soft-arched eyebrows. The almond-shaped eyes feature horizontal palpebral fissures and visible upper lid creases. The straight-dorsum nose has a rounded tip, and the mouth has defined cupid's bow, full vermilion, and slightly upturned corners."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

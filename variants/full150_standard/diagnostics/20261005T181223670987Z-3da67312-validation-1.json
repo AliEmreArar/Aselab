@@ -1,0 +1,99 @@
+{
+  "sample_id": "face::train::150659.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "Young female with an oval face, receding hairline, almond-shaped eyes, and straight nasal dorsum, wearing dark lipstick and dangling earrings.",
+        "retained_facts": [
+          "Young adult female",
+          "oval face shape",
+          "receding hairline",
+          "almond-shaped eyes",
+          "straight nasal dorsum",
+          "dark lipstick",
+          "dangling earrings"
+        ],
+        "omitted_facts": [
+          "forehead contour",
+          "cheekbone width",
+          "lip details",
+          "ear description",
+          "head pose",
+          "lighting",
+          "garment color"
+        ]
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "Young adult female with an oval face, receding hairline, soft-arched eyebrows, almond-shaped eyes, and a straight nasal dorsum, wearing dark lipstick and dangling earrings.",
+        "retained_facts": [
+          "Young adult female",
+          "oval face shape",
+          "receding hairline",
+          "soft-arched eyebrows",
+          "almond-shaped eyes",
+          "straight nasal dorsum",
+          "dark lipstick",
+          "dangling earrings"
+        ],
+        "omitted_facts": [
+          "detailed facial measurements",
+          "nasolabial folds",
+          "lip fullness details",
+          "ear details",
+          "head pose"
+        ]
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "Young adult female presenting an oval face with balanced vertical thirds, high forehead with receding hairline, moderate brow ridge, medium-width cheekbones, defined jawline, and rounded chin. Features soft-arched eyebrows with high peaks, almond-shaped eyes, straight nasal dorsum, and a defined mouth with full vermilion. Wears dark lipstick and dangling earrings; no persistent marks or asymmetries.",
+        "retained_facts": [
+          "Young adult female",
+          "oval face shape",
+          "receding hairline",
+          "soft-arched eyebrows",
+          "almond-shaped eyes",
+          "straight nasal dorsum",
+          "defined jawline",
+          "dark lipstick",
+          "dangling earrings",
+          "no persistent marks"
+        ],
+        "omitted_facts": [
+          "lighting conditions",
+          "studio setting",
+          "head pose"
+        ]
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "This is a young woman with an oval-shaped face and a high, receding hairline. She has almond-shaped eyes, arched eyebrows, and a straight nose. She is wearing dark lipstick and dangling earrings, and she has no noticeable marks or facial asymmetries.",
+        "retained_facts": [
+          "Young woman",
+          "oval-shaped face",
+          "receding hairline",
+          "almond-shaped eyes",
+          "arched eyebrows",
+          "straight nose",
+          "dark lipstick",
+          "dangling earrings",
+          "no marks"
+        ],
+        "omitted_facts": [
+          "technical anatomical measurements",
+          "nasolabial fold depth",
+          "philtrum description"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

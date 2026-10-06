@@ -1,0 +1,21 @@
+{
+  "sample_id": "face::train::109762.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "face shape: oblong; forehead: straight; brow ridge: prominent; temple: moderate narrowing; hairline: high receding with deep temporal recession; cheekbones: moderate projection with slight hollowing; jawline: narrow with defined jaw; chin: rounded; eyebrows: thin, sparse, straight-arched with moderate spacing and high vertical distance to eyes; eyes: almond-shaped, medium palpebral fissure, moderate intercanthal distance, horizontal canthal tilt, visible double upper-lid crease, average orbital depth, moderate under-eye fullness; nose: straight dorsum, narrow bridge, rounded tip with moderate projection, moderate alar width, visible nostrils; mouth: moderate width, thin lips, level corners, defined cupid's bow, short philtrum with defined ridges, upper teeth visible at rest; ears: average size with attached lobes and moderate protrusion; skin: permanent horizontal forehead creases and nasolabial folds; hair: short wavy light brown styled upwards"
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "The subject has short wavy light brown hair styled upwards and a high receding hairline with deep temporal recession. The face is oblong with a straight forehead, prominent brow ridge, and moderate temple narrowing. It features thin, sparse, straight-arched eyebrows with a high vertical distance to almond-shaped eyes that show a horizontal canthal tilt and visible double upper-lid creases. The nose has a straight dorsum and rounded tip, while the mouth has thin lips and shows upper teeth at rest. The jawline is narrow with a rounded chin, and the skin exhibits permanent horizontal forehead creases and nasolabial folds."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

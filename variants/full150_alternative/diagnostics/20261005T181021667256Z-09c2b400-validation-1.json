@@ -1,0 +1,35 @@
+{
+  "sample_id": "vehicle::gallery_images::21199_c014_04.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "Sedan, FAW V5; car body, silver; wheels, multi-spoke alloy rims; windows, light tint.",
+        "retained_facts": [
+          "Sedan",
+          "FAW V5",
+          "silver body",
+          "multi-spoke alloy rims",
+          "light window tint"
+        ]
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Silver FAW V5 sedan featuring multi-spoke alloy rims and light window tint.",
+        "retained_facts": [
+          "silver",
+          "FAW V5",
+          "sedan",
+          "multi-spoke alloy rims",
+          "light window tint"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

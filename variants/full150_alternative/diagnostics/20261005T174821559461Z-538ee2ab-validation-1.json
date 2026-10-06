@@ -1,0 +1,21 @@
+{
+  "sample_id": "person::train::09715_3.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "person; average build; cap; black; hooded sweatshirt; long-sleeve; black; shorts; black"
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Wearing a black cap, long-sleeve black hooded sweatshirt, and black shorts, this person is of average build."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

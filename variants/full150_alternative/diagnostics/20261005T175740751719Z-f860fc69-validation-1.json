@@ -1,0 +1,21 @@
+{
+  "sample_id": "person::gallery::27153_5.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "adult: average build; shirt: long-sleeved, light gray; pants: dark; shoes: light-colored"
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Light gray long-sleeved shirt and dark pants worn by an average build adult with light-colored shoes."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "sample_id": "face::train::123459.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "Adult male with an oval face, dark hair, thin mustache, and facial stubble."
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "Adult male with an oval face, high forehead, and straight eyebrows. He has short dark hair and facial hair styled as a thin mustache and stubble along the jaw."
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "Male adult with an oval face and high forehead with a rounded hairline. Features include straight eyebrows, almond-shaped eyes with defined double eyelid creases, and a straight nasal dorsum with a rounded tip. He has medium-thickness lips with a defined cupid's bow and a short philtrum. The jawline is narrow with a rounded chin. Facial hair includes a short, dark thin mustache and stubble along the jaw, matching his short dark hair."
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "A man with an oval-shaped face and short dark hair. He has a high forehead, straight eyebrows, and almond-shaped eyes. He also has a thin mustache and some short dark stubble growing along his jawline."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

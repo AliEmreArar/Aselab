@@ -1,0 +1,37 @@
+{
+  "sample_id": "vehicle::query_images::20249_c003_00.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "Sedan, Volkswagen Passat; vehicle, black; wheels, alloy rims; roof, sunroof; windows, tinted",
+        "retained_facts": [
+          "Sedan",
+          "Volkswagen Passat",
+          "black",
+          "alloy rims",
+          "sunroof",
+          "tinted windows"
+        ]
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Black Volkswagen Passat sedan featuring alloy rims, a sunroof, and tinted windows.",
+        "retained_facts": [
+          "Black",
+          "Volkswagen Passat",
+          "sedan",
+          "alloy rims",
+          "sunroof",
+          "tinted windows"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "sample_id": "face::train::129132.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "A middle-aged man with an oval face, receding hairline, and thin-rimmed rectangular eyeglasses.",
+        "retained_facts": [
+          "middle-aged adult",
+          "oval face shape",
+          "receding hairline",
+          "thin-rimmed rectangular eyeglasses"
+        ],
+        "omitted_facts": [
+          "bone structure details",
+          "eye shape",
+          "nose shape",
+          "mouth details",
+          "clothing details",
+          "neutral expression"
+        ]
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "A middle-aged man with an oval face, prominent brow ridge, and a receding hairline. He has almond-shaped eyes, a straight-dorsumed nose, and wears thin-rimmed rectangular eyeglasses with a dark jacket over a patterned collared shirt.",
+        "retained_facts": [
+          "middle-aged adult",
+          "oval face shape",
+          "prominent brow ridge",
+          "receding hairline",
+          "almond-shaped eyes",
+          "straight-dorsumed nose",
+          "thin-rimmed rectangular eyeglasses",
+          "dark jacket",
+          "patterned collared shirt"
+        ],
+        "omitted_facts": [
+          "facial creases",
+          "jawline specifics",
+          "mouth details"
+        ]
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "A middle-aged man with an oval face characterized by prominent bone structure, a high forehead with a receding hairline, and a defined jawline. Features include medium-thickness soft-arched eyebrows, almond-shaped eyes with visible under-eye fullness, and a straight-dorsumed nose. He has permanent creases on the forehead and around the eyes. He wears thin-rimmed rectangular eyeglasses, a patterned collared shirt, and a dark jacket.",
+        "retained_facts": [
+          "middle-aged adult",
+          "oval face shape",
+          "prominent bone structure",
+          "high forehead",
+          "receding hairline",
+          "defined jawline",
+          "medium-thickness soft-arched eyebrows",
+          "almond-shaped eyes",
+          "under-eye fullness",
+          "straight-dorsumed nose",
+          "permanent creases",
+          "thin-rimmed rectangular eyeglasses",
+          "patterned collared shirt",
+          "dark jacket"
+        ],
+        "omitted_facts": [
+          "nasolabial fold detail",
+          "exact jaw width",
+          "philtrum detail"
+        ]
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "This is a middle-aged man with an oval face and some noticeable lines on his forehead and around his eyes. He has a receding hairline and is wearing thin-rimmed, rectangular glasses. He is dressed in a dark jacket over a patterned shirt and looks straight ahead with a neutral expression.",
+        "retained_facts": [
+          "middle-aged adult",
+          "oval face shape",
+          "permanent creases",
+          "receding hairline",
+          "thin-rimmed rectangular eyeglasses",
+          "dark jacket",
+          "patterned collared shirt",
+          "neutral expression",
+          "direct gaze"
+        ],
+        "omitted_facts": [
+          "specific bone structure terminology",
+          "precise nose and eye measurements"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

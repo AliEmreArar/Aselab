@@ -1,0 +1,21 @@
+{
+  "sample_id": "face::train::143554.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "face shape: oval; cheekbones: moderately prominent; forehead: partially occluded by hair; nose: narrow root, straight dorsum, narrow bridge, narrow and slightly rounded tip, narrow alar base; mouth: medium width, full vermilion lips, well-defined cupid's bow, level corners, philtrum with defined ridges; skin: smooth, two small round dark moles on left cheek; earlobe: left visible with dangling earring; hair: pink; headpiece: red heart-shaped; lipstick: heavy red; sunglasses: black rectangular"
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "The person features pink hair, a red heart-shaped headpiece, heavy red lipstick, and black rectangular sunglasses that occlude the eyes and periocular region. Two small round dark moles appear on the left cheek below the outer corner of the eye, and a dangling earring is visible on the left earlobe. The face is oval with moderately prominent cheekbones, a narrow nasal root, straight dorsum, narrow bridge, and a narrow, slightly rounded tip. The mouth is medium width with full vermilion lips, a well-defined cupid's bow, and defined ridges on the philtrum."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

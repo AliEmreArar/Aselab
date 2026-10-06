@@ -1,0 +1,109 @@
+{
+  "sample_id": "face::train::065762.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "Adult with an oval face, high cheekbones, and a rounded chin.",
+        "retained_facts": [
+          "adult",
+          "oval face shape",
+          "high cheekbones",
+          "rounded chin"
+        ],
+        "omitted_facts": [
+          "all facial anatomy details",
+          "expression",
+          "head tilt",
+          "skin condition",
+          "setting",
+          "image quality"
+        ]
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "Adult with an oval face, wide high cheekbones, a defined jawline, and rounded chin. Features include medium-thick arched eyebrows, almond-shaped eyes with double lids, and a straight-bridged nose.",
+        "retained_facts": [
+          "adult",
+          "oval face shape",
+          "high cheekbones",
+          "defined jawline",
+          "rounded chin",
+          "medium-thick eyebrows",
+          "arched eyebrows",
+          "almond-shaped eyes",
+          "double lids",
+          "straight-bridged nose"
+        ],
+        "omitted_facts": [
+          "facial thirds proportions",
+          "forehead details",
+          "mouth details",
+          "skin condition",
+          "expression",
+          "head tilt",
+          "image quality"
+        ]
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "Adult with an oval face, strong bone structure, and high, wide cheekbones. Features include a rounded hairline with moderate temporal recession, medium-thick soft-arched eyebrows, almond-shaped eyes with double lids and slight upward tilt, a straight-bridged nose with a rounded tip, and medium-full lips with a defined cupid's bow. The jawline is continuous with a rounded chin and moderately defined jaw angle. Skin is smooth with no persistent marks.",
+        "retained_facts": [
+          "adult",
+          "oval face shape",
+          "strong bone structure",
+          "high wide cheekbones",
+          "rounded hairline",
+          "moderate temporal recession",
+          "medium-thick soft-arched eyebrows",
+          "almond-shaped eyes",
+          "double lids",
+          "upward canthal tilt",
+          "straight-bridged nose",
+          "rounded tip",
+          "medium-full lips",
+          "defined cupid's bow",
+          "continuous jawline",
+          "rounded chin",
+          "defined jaw angle",
+          "smooth skin"
+        ],
+        "omitted_facts": [
+          "expression",
+          "head tilt",
+          "gaze",
+          "setting",
+          "image quality"
+        ]
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "A person with an oval-shaped face and high, prominent cheekbones. They have medium-thick, softly arched eyebrows, almond-shaped eyes, and a straight nose. Their jawline is clearly defined, ending in a rounded chin.",
+        "retained_facts": [
+          "oval face shape",
+          "high cheekbones",
+          "medium-thick eyebrows",
+          "arched eyebrows",
+          "almond-shaped eyes",
+          "straight nose",
+          "defined jawline",
+          "rounded chin"
+        ],
+        "omitted_facts": [
+          "all clinical technical details",
+          "expression",
+          "head tilt",
+          "image quality"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

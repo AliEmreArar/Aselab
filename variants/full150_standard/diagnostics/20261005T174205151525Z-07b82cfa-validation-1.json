@@ -1,0 +1,77 @@
+{
+  "sample_id": "person::train::01287_5.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "A person with dark hair wearing a light gray coat, a red scarf, a white skirt, and black leggings.",
+        "retained_facts": [
+          "dark hair",
+          "light gray coat",
+          "red scarf",
+          "white skirt",
+          "black leggings"
+        ],
+        "omitted_facts": [
+          "average build",
+          "front pockets",
+          "black shoes"
+        ]
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "A person of average build with dark hair, wearing a red scarf and a light gray long-sleeved coat with front pockets, paired with a white skirt, black leggings, and black shoes.",
+        "retained_facts": [
+          "average build",
+          "dark hair",
+          "red scarf",
+          "light gray long-sleeved coat",
+          "front pockets",
+          "white skirt",
+          "black leggings",
+          "black shoes"
+        ],
+        "omitted_facts": []
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "A person of average build and dark hair, wearing a light gray long-sleeved coat with front pockets, a red scarf wrapped around the neck, a white skirt, black leggings, and black shoes.",
+        "retained_facts": [
+          "average build",
+          "dark hair",
+          "red scarf",
+          "light gray long-sleeved coat",
+          "front pockets",
+          "white skirt",
+          "black leggings",
+          "black shoes"
+        ],
+        "omitted_facts": []
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "There's a person with dark hair who is wearing a light gray coat with pockets and a red scarf. They also have on a white skirt with black leggings underneath and black shoes.",
+        "retained_facts": [
+          "dark hair",
+          "light gray coat",
+          "front pockets",
+          "red scarf",
+          "white skirt",
+          "black leggings",
+          "black shoes"
+        ],
+        "omitted_facts": [
+          "average build"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "sample_id": "vehicle::train_images::19520_c034_01.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "SUV; vehicle color white; Ford Escape; exhaust tips dual; roof rails silver; alloy rims silver; sunroof panoramic; windows tinted"
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "White Ford Escape SUV featuring dual exhaust tips, silver roof rails, silver alloy rims, a panoramic sunroof, and tinted windows."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

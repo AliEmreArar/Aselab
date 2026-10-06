@@ -1,0 +1,73 @@
+{
+  "sample_id": "vehicle::query_images::20949_c003_01.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "Black sedan with alloy rims and a sunroof.",
+        "retained_facts": [
+          "Sedan",
+          "black paint",
+          "alloy rims",
+          "sunroof"
+        ],
+        "omitted_facts": [
+          "multi-spoke design",
+          "dark window tint",
+          "circular stickers on windshield"
+        ]
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "Black sedan with a sunroof, dark window tint, and multi-spoke alloy rims.",
+        "retained_facts": [
+          "Sedan",
+          "black paint",
+          "sunroof",
+          "dark window tint",
+          "alloy rims",
+          "multi-spoke design"
+        ],
+        "omitted_facts": [
+          "circular stickers on the lower passenger side of the windshield"
+        ]
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "Black sedan featuring a sunroof, dark window tint, multi-spoke alloy rims, and multiple circular stickers on the lower passenger side of the windshield.",
+        "retained_facts": [
+          "Sedan",
+          "black paint",
+          "sunroof",
+          "dark window tint",
+          "alloy rims",
+          "multi-spoke design",
+          "multiple circular stickers on the lower passenger side of the windshield"
+        ],
+        "omitted_facts": []
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "I see a black sedan with a sunroof and tinted windows. It has multi-spoke alloy wheels and there are some circular stickers on the bottom corner of the passenger side windshield.",
+        "retained_facts": [
+          "Sedan",
+          "black paint",
+          "sunroof",
+          "dark window tint",
+          "alloy rims",
+          "multi-spoke design",
+          "multiple circular stickers on the lower passenger side of the windshield"
+        ],
+        "omitted_facts": []
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

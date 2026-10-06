@@ -1,0 +1,39 @@
+{
+  "sample_id": "vehicle::train_images::06987_c051_04.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "hatchback; dark gray paint; black roof rails; alloy wheels; aftermarket blue accent lighting strip beneath the headlights",
+        "retained_facts": [
+          "hatchback",
+          "dark gray paint",
+          "black roof rails",
+          "alloy wheels",
+          "aftermarket blue accent lighting strip beneath the headlights"
+        ]
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Hatchback with aftermarket blue accent lighting strip beneath the headlights, dark gray paint, black roof rails, and alloy wheels.",
+        "retained_facts": [
+          "hatchback",
+          "aftermarket blue accent lighting strip beneath the headlights",
+          "dark gray paint",
+          "black roof rails",
+          "alloy wheels"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [
+      "Contains capture/context detail: lighting"
+    ],
+    "llm_distinctive_first": [
+      "Contains capture/context detail: lighting"
+    ]
+  }
+}

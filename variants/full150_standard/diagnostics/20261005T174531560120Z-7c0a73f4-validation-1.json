@@ -1,0 +1,86 @@
+{
+  "sample_id": "person::gallery::26991_3.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "A male with short dark hair wearing a white long-sleeved shirt with dark stripes and light brown pants, holding a smartphone.",
+        "retained_facts": [
+          "Male",
+          "short dark hair",
+          "white long-sleeved shirt",
+          "dark stripes",
+          "light brown pants",
+          "smartphone held in hand"
+        ],
+        "omitted_facts": [
+          "average build",
+          "light skin",
+          "chest text",
+          "white shoes"
+        ]
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "A male of average build with short dark hair wearing a long-sleeved white shirt with dark shoulder stripes and chest text, light brown pants, and white shoes, holding a smartphone.",
+        "retained_facts": [
+          "Male",
+          "average build",
+          "short dark hair",
+          "long-sleeved white shirt",
+          "dark stripes on shoulders",
+          "chest text",
+          "light brown pants",
+          "white shoes",
+          "smartphone held in hand"
+        ],
+        "omitted_facts": [
+          "light skin"
+        ]
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "Male with average build and light skin, sporting short dark hair. He is wearing a long-sleeved white shirt featuring dark stripes on the shoulders and text on the chest, paired with loose light brown pants and white shoes. He is holding a smartphone in his hand.",
+        "retained_facts": [
+          "Male",
+          "average build",
+          "short dark hair",
+          "light skin",
+          "long-sleeved white shirt",
+          "dark stripes on shoulders",
+          "chest text",
+          "loose light brown pants",
+          "white shoes",
+          "smartphone held in hand"
+        ],
+        "omitted_facts": []
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "That's a man with an average build and short dark hair. He's wearing a white long-sleeved shirt with some dark stripes on the shoulders and writing on the chest, along with loose light brown pants and white shoes. You can see he is holding a smartphone in his hand.",
+        "retained_facts": [
+          "Male",
+          "average build",
+          "short dark hair",
+          "long-sleeved white shirt",
+          "dark stripes on shoulders",
+          "chest text",
+          "loose light brown pants",
+          "white shoes",
+          "smartphone held in hand"
+        ],
+        "omitted_facts": [
+          "light skin"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

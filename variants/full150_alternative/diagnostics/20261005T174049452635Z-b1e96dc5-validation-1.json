@@ -1,0 +1,21 @@
+{
+  "sample_id": "person::train::01742_4.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "woman; average-build; hair: dark brown, tied back in a ponytail; eyeglasses; scarf: dark brown, wrapped around neck; coat: light brown, hooded, winter, long sleeves, knee-length hem; pants: black; shoes: light brown"
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Dark brown ponytail, eyeglasses, and dark brown neck scarf worn by an average-build woman. She is wearing a light brown hooded winter coat with long sleeves and a knee-length hem, paired with black pants and light brown shoes."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

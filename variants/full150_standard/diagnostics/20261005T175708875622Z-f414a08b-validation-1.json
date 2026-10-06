@@ -1,0 +1,57 @@
+{
+  "sample_id": "vehicle::train_images::14133_c170_01.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "Black sedan with tree branches on the roof.",
+        "retained_facts": [
+          "Sedan",
+          "black paint",
+          "tree branches secured to the roof"
+        ],
+        "omitted_facts": [
+          "dark tinted rear windows"
+        ]
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "Black sedan with dark tinted rear windows and tree branches secured to the roof.",
+        "retained_facts": [
+          "Sedan",
+          "black paint",
+          "dark tinted rear windows",
+          "tree branches secured to the roof"
+        ]
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "A black sedan featuring dark tinted rear windows and tree branches secured to its roof.",
+        "retained_facts": [
+          "Sedan",
+          "black paint",
+          "dark tinted rear windows",
+          "tree branches secured to the roof"
+        ]
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "It is a black sedan that has dark tinted rear windows and some tree branches tied down on the roof.",
+        "retained_facts": [
+          "Sedan",
+          "black paint",
+          "dark tinted rear windows",
+          "tree branches secured to the roof"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

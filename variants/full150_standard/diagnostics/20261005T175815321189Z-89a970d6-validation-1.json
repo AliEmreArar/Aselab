@@ -1,0 +1,68 @@
+{
+  "sample_id": "vehicle::train_images::09221_c139_03.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "A white Toyota sedan.",
+        "retained_facts": [
+          "white sedan",
+          "Toyota brand"
+        ],
+        "omitted_facts": [
+          "grille badge",
+          "alloy rims",
+          "tinted windows",
+          "roof antenna"
+        ]
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "A white Toyota sedan with alloy rims, light window tint, and a roof antenna.",
+        "retained_facts": [
+          "white sedan",
+          "Toyota brand",
+          "alloy rims",
+          "light tinting",
+          "roof antenna"
+        ],
+        "omitted_facts": [
+          "Toyota badging on grille"
+        ]
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "A white sedan featuring Toyota badging on the grille, alloy rims, light window tinting, and an antenna on the roof.",
+        "retained_facts": [
+          "white sedan",
+          "Toyota badging on grille",
+          "alloy rims",
+          "light tinting",
+          "roof antenna"
+        ],
+        "omitted_facts": []
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "This is a white Toyota sedan. It has alloy rims, slightly tinted windows, and an antenna on the roof, with a Toyota badge visible on the front grille.",
+        "retained_facts": [
+          "white sedan",
+          "Toyota brand",
+          "alloy rims",
+          "light tinting",
+          "roof antenna",
+          "Toyota badging on grille"
+        ],
+        "omitted_facts": []
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

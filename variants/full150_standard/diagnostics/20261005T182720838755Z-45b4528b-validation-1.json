@@ -1,0 +1,70 @@
+{
+  "sample_id": "face::test::184003.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "A young adult male with an oval face, rounded chin, and clean-shaven face.",
+        "retained_facts": [
+          "Male",
+          "young adult",
+          "oval face shape",
+          "rounded chin",
+          "clean-shaven"
+        ]
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "Young adult male with an oval face, medium-height forehead, and rounded chin. He features medium-thickness arched eyebrows, almond-shaped eyes with double-lid creases, and a straight nose with a rounded tip. He is clean-shaven.",
+        "retained_facts": [
+          "Male",
+          "young adult",
+          "oval face shape",
+          "medium-height forehead",
+          "rounded chin",
+          "clean-shaven",
+          "medium-thickness arched eyebrows",
+          "almond-shaped eyes",
+          "double upper-lid creases",
+          "straight nasal dorsum",
+          "rounded nasal tip"
+        ]
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "Young adult male with an oval face, medium-height forehead, and rounded chin. Facial features include medium-thickness arched eyebrows, almond-shaped eyes with upward canthal tilt and visible double upper-lid creases, and a straight nose with a rounded, moderately projecting tip. The mouth is moderate in width with medium-full lips and a defined cupid's bow. He has a clean-shaven face and average-sized ears with free lobes.",
+        "retained_facts": [
+          "Male",
+          "young adult",
+          "oval face shape",
+          "medium-height forehead",
+          "rounded chin",
+          "clean-shaven",
+          "medium-thickness arched eyebrows",
+          "almond-shaped eyes",
+          "upward canthal tilt",
+          "double upper-lid creases",
+          "straight nasal dorsum",
+          "rounded nasal tip",
+          "moderate mouth width",
+          "medium-full lips",
+          "defined cupid's bow",
+          "average-sized ears",
+          "free lobes"
+        ]
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "This is a young adult man with an oval-shaped face and a clean-shaven look. He has a fairly rounded chin, medium-height forehead, and neatly arched eyebrows. His eyes are almond-shaped with visible double-lids, and he has a straight nose with a rounded tip. His mouth is medium-sized with well-defined lips."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "sample_id": "face::train::089537.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "A young adult female with an oval face, medium-thickness soft-arched eyebrows, almond-shaped eyes with upward tilt, and a nose with a bulbous tip."
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "A young adult female with an oval face shape, medium soft-arched eyebrows, and almond-shaped eyes featuring a double upper-lid crease and upward canthal tilt. She has a straight nose with a bulbous tip and balanced lips with a defined cupid's bow."
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "A young adult female with an oval face, moderate brow ridge, and cheekbones of average fullness. She has medium-thickness soft-arched eyebrows, almond-shaped eyes with upward canthal tilt and double upper-lid creases. The nose has a straight dorsum and bulbous tip. Her mouth has a balanced lip fullness ratio and a short philtrum with defined ridges. There are no persistent marks visible."
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "This is a young woman with an oval face and bangs covering her hairline. She has medium, nicely arched eyebrows, almond-shaped eyes that tilt upward slightly, and a nose with a rounder tip. Her mouth has a clear cupid's bow and she has a neutral expression."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

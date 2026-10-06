@@ -1,0 +1,37 @@
+{
+  "sample_id": "vehicle::gallery_images::20762_c156_00.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "applicable": true,
+        "text": "vehicle; compact minivan; Nissan Livina; body; black; rims; five-spoke alloy; roof rails; silver",
+        "retained_facts": [
+          "Vehicle is a compact minivan",
+          "Vehicle make and model is Nissan Livina",
+          "Vehicle body is black",
+          "Vehicle has five-spoke alloy rims",
+          "Vehicle has silver roof rails"
+        ]
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "applicable": true,
+        "text": "Black Nissan Livina compact minivan featuring silver roof rails and five-spoke alloy rims.",
+        "retained_facts": [
+          "Vehicle is a compact minivan",
+          "Vehicle make and model is Nissan Livina",
+          "Vehicle body is black",
+          "Vehicle has five-spoke alloy rims",
+          "Vehicle has silver roof rails"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

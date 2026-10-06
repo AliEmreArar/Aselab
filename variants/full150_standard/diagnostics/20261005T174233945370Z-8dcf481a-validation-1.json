@@ -1,0 +1,62 @@
+{
+  "sample_id": "person::train::02319_1.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "Person with short dark hair wearing an orange and dark brown hooded puffer jacket, black pants, and white shoes.",
+        "retained_facts": [
+          "short dark hair",
+          "orange and dark brown hooded puffer jacket",
+          "black pants",
+          "white shoes"
+        ],
+        "omitted_facts": [
+          "average build"
+        ]
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "A person of average build with short dark hair, wearing an orange and dark brown hooded puffer jacket, black pants, and white shoes.",
+        "retained_facts": [
+          "average build",
+          "short dark hair",
+          "orange and dark brown hooded puffer jacket",
+          "black pants",
+          "white shoes"
+        ]
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "Person of average build, short dark hair, wearing an orange and dark brown hooded puffer jacket with long sleeves, black pants, and white shoes.",
+        "retained_facts": [
+          "average build",
+          "short dark hair",
+          "orange and dark brown hooded puffer jacket",
+          "long sleeves",
+          "black pants",
+          "white shoes"
+        ]
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "That's a person with short dark hair and an average build. They are wearing a hooded puffer jacket that is orange and dark brown, paired with black pants and white shoes.",
+        "retained_facts": [
+          "short dark hair",
+          "average build",
+          "orange and dark brown hooded puffer jacket",
+          "black pants",
+          "white shoes"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "sample_id": "face::train::082954.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "Young female with a heart-shaped face, dark wavy hair, and side-swept bangs.",
+        "retained_facts": [
+          "Female presentation",
+          "young adult",
+          "heart-shaped face",
+          "dark wavy hair",
+          "side-swept bangs"
+        ],
+        "omitted_facts": [
+          "Facial measurements",
+          "brow details",
+          "eye shape",
+          "nasal details",
+          "mouth details",
+          "lighting",
+          "expression"
+        ]
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "Young female with a heart-shaped face, dark wavy hair with side-swept bangs, thick soft-arched eyebrows, and almond-shaped eyes.",
+        "retained_facts": [
+          "Female presentation",
+          "young adult",
+          "heart-shaped face",
+          "dark wavy hair",
+          "side-swept bangs",
+          "thick soft-arched eyebrows",
+          "almond-shaped eyes"
+        ],
+        "omitted_facts": [
+          "Specific facial measurements",
+          "nasal details",
+          "mouth details",
+          "lighting",
+          "expression"
+        ]
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "Young female with a heart-shaped face consisting of a moderately high forehead, medium-width cheekbones, and a rounded chin. Features include dark wavy hair with side-swept bangs, thick soft-arched eyebrows with a lateral peak, almond-shaped eyes with an upward canthal tilt, a straight nasal dorsum, and a medium-width mouth with a thin upper lip and fuller lower lip.",
+        "retained_facts": [
+          "Female presentation",
+          "young adult",
+          "heart-shaped face",
+          "high forehead",
+          "cheekbones",
+          "rounded chin",
+          "dark wavy hair",
+          "side-swept bangs",
+          "thick soft-arched eyebrows",
+          "almond-shaped eyes",
+          "straight nasal dorsum",
+          "medium-width mouth",
+          "thin upper lip",
+          "fuller lower lip"
+        ],
+        "omitted_facts": [
+          "Lighting",
+          "expression",
+          "minor anatomical measurements"
+        ]
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "A young woman with a heart-shaped face and long, dark, wavy hair styled with side-swept bangs. She has arched eyebrows, almond-shaped eyes, and a neutral expression.",
+        "retained_facts": [
+          "Young woman",
+          "heart-shaped face",
+          "dark wavy hair",
+          "side-swept bangs",
+          "arched eyebrows",
+          "almond-shaped eyes",
+          "neutral expression"
+        ],
+        "omitted_facts": [
+          "Technical anatomical descriptions",
+          "specific lip and nose measurements"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

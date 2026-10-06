@@ -1,0 +1,41 @@
+{
+  "sample_id": "person::gallery::14888_1.png",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "person; slim build; short dark hair; jacket; bright blue; long-sleeved; hooded; jeans; blue; long; shoes; light brown; messenger bag; black; messenger bag strap; single; long; across right shoulder",
+        "retained_facts": [
+          "Male",
+          "slim build",
+          "short dark hair",
+          "long-sleeved bright blue hooded jacket",
+          "long blue jeans",
+          "light brown shoes",
+          "black messenger bag",
+          "single long strap across the right shoulder"
+        ]
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Black messenger bag with a single long strap across the right shoulder worn by a male with short dark hair, slim build, a long-sleeved bright blue hooded jacket, long blue jeans, and light brown shoes.",
+        "retained_facts": [
+          "black messenger bag",
+          "single long strap across the right shoulder",
+          "Male",
+          "short dark hair",
+          "slim build",
+          "long-sleeved bright blue hooded jacket",
+          "long blue jeans",
+          "light brown shoes"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

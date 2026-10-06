@@ -1,0 +1,20 @@
+name: full150-eva02_clip_l14
+dataset: ../../caption_samples_50/all_samples.jsonl
+output_dir: ../../runs/full150/eva02_clip_l14
+seed: 42
+agreement_k: 10
+transforms:
+- name: identity
+variant_files:
+- ../../variants/full150/variants.jsonl
+models:
+- name: eva02_clip_l14
+  backend: open_clip
+  model_id: EVA02-L-14
+  pretrained: merged2b_s4b_b131k
+  precision: fp32
+  max_length: 77
+  batch_size: 8
+  image_retrieval: true
+  device: cpu
+  dtype: float32

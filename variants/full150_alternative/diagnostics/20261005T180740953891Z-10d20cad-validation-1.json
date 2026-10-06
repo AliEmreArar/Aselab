@@ -1,0 +1,37 @@
+{
+  "sample_id": "vehicle::query_images::21022_c078_01.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "SUV; FAW; white; alloy rims; roof rails; sunroof.",
+        "retained_facts": [
+          "SUV",
+          "FAW",
+          "white",
+          "alloy rims",
+          "roof rails",
+          "sunroof"
+        ]
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "White FAW SUV with alloy rims, roof rails, and a sunroof.",
+        "retained_facts": [
+          "white",
+          "FAW",
+          "SUV",
+          "alloy rims",
+          "roof rails",
+          "sunroof"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

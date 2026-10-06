@@ -1,0 +1,21 @@
+{
+  "sample_id": "face::train::053065.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "face shape: oval; facial thirds: balanced; soft tissue coverage: moderate; hairline: obscured; forehead: moderate height and width; eyebrows: thin, soft-arched, moderate spacing; eyes: almond-shaped, medium palpebral fissure length, horizontal canthal tilt, double eyelids with moderate exposure; nose: straight dorsum, average root width, rounded tip, moderate alar width; mouth: medium width, balanced lip fullness, corners slightly upturned, moderate philtrum length with defined ridges; teeth: upper visible at rest; skin: clear; hair: partial occlusion"
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Almond-shaped eyes with double eyelids and horizontal canthal tilt combined with an oval face shape and a nose featuring a straight dorsum and rounded tip. The subject has thin, soft-arched eyebrows with moderate spacing and a mouth of medium width with slightly upturned corners and visible upper teeth. The forehead is of moderate height and width, the hairline is obscured by hair with partial occlusion, and the skin is clear."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

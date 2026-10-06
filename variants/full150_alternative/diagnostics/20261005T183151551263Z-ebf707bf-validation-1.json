@@ -1,0 +1,21 @@
+{
+  "sample_id": "face::train::026996.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "face shape: oval; forehead: moderately high, gently rounded; temples: full; hairline: rounded, moderate temporal recession; cheekbones: prominent, wide; midface: average length; nasolabial folds: shallow; jawline: smooth, continuous; jaw angle: rounded; chin: rounded, moderate projection, moderate vertical height; eyebrows: medium thickness, medium density, soft-arched; medial spacing: one eye width; eyebrow position: moderately high; eyes: almond-shaped, moderate palpebral fissure length, slight upward slant, neutral canthal tilt; upper-lid crease: double, well-defined; lid exposure: moderate; orbital depth: average; under-eye: smooth; nasal root: medium width, medium depth; nasal dorsum: straight; nasal bridge: medium width; nasal tip: rounded, moderate projection, moderate rotation; alar: width equal to intercanthal distance, slight flare; nostrils: partially visible; columella: moderate show; mouth: width equal to interocular distance; lip ratio: balanced; vermilion height: moderate; cupid's bow: moderately defined; corners: level; philtrum: average length, average width, distinct ridges; upper teeth: visible at rest; ears: average size, free lobes, level with eye-nose line; microphone: small wireless, attached near right cheek."
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Small wireless microphone attached near the right cheek on a middle-aged adult with an oval face shape. The face features prominent wide cheekbones, a rounded chin with moderate projection, and a rounded hairline with moderate temporal recession. The almond-shaped eyes have a slight upward slant and well-defined double upper-lid creases, positioned below moderately high soft-arched eyebrows. The straight-bridged nose has a rounded tip, and the mouth shows balanced lips with visible upper teeth. The ears have free lobes level with the eye-nose line, and the individual is captured with a slight head turn to the right and a backward tilt."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

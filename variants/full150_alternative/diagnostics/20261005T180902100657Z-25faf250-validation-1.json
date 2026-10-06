@@ -1,0 +1,39 @@
+{
+  "sample_id": "vehicle::query_images::20949_c003_01.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "Sedan; vehicle body black paint; alloy rims multi-spoke design; sunroof present; window tint dark; windshield passenger side multiple circular stickers.",
+        "retained_facts": [
+          "Sedan",
+          "black paint",
+          "alloy rims with multi-spoke design",
+          "sunroof",
+          "dark window tint",
+          "multiple circular stickers on the lower passenger side of the windshield"
+        ],
+        "omitted_facts": []
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Multiple circular stickers on the lower passenger side of the windshield identify this black sedan, which features a sunroof, dark window tint, and alloy rims with a multi-spoke design.",
+        "retained_facts": [
+          "Sedan",
+          "black paint",
+          "alloy rims with multi-spoke design",
+          "sunroof",
+          "dark window tint",
+          "multiple circular stickers on the lower passenger side of the windshield"
+        ],
+        "omitted_facts": []
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

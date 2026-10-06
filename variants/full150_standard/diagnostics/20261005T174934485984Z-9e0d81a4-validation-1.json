@@ -1,0 +1,84 @@
+{
+  "sample_id": "person::gallery::14888_1.png",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "Slim male with short dark hair, bright blue hooded jacket, blue jeans, and a black messenger bag.",
+        "retained_facts": [
+          "Male",
+          "slim build",
+          "short dark hair",
+          "bright blue hooded jacket",
+          "blue jeans",
+          "black messenger bag"
+        ],
+        "omitted_facts": [
+          "light brown shoes",
+          "long-sleeved",
+          "single long strap",
+          "right shoulder"
+        ]
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "A slim male with short dark hair, wearing a long-sleeved bright blue hooded jacket, blue jeans, and light brown shoes, carrying a black messenger bag with a single strap.",
+        "retained_facts": [
+          "Male",
+          "slim build",
+          "short dark hair",
+          "long-sleeved bright blue hooded jacket",
+          "blue jeans",
+          "light brown shoes",
+          "black messenger bag",
+          "single strap"
+        ],
+        "omitted_facts": [
+          "right shoulder"
+        ]
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "Slim male with short dark hair, wearing a long-sleeved bright blue hooded jacket, blue jeans, and light brown shoes. He carries a black messenger bag with a single long strap worn across his right shoulder.",
+        "retained_facts": [
+          "Male",
+          "slim build",
+          "short dark hair",
+          "long-sleeved bright blue hooded jacket",
+          "blue jeans",
+          "light brown shoes",
+          "black messenger bag",
+          "single long strap",
+          "right shoulder"
+        ],
+        "omitted_facts": []
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "That's a slim guy with short dark hair. He's wearing a bright blue hoodie, blue jeans, and light brown shoes, and he has a black messenger bag slung across his right shoulder.",
+        "retained_facts": [
+          "Male",
+          "slim build",
+          "short dark hair",
+          "bright blue hooded jacket",
+          "blue jeans",
+          "light brown shoes",
+          "black messenger bag",
+          "right shoulder"
+        ],
+        "omitted_facts": [
+          "long-sleeved",
+          "single long strap"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

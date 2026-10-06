@@ -1,0 +1,68 @@
+{
+  "sample_id": "vehicle::gallery_images::20762_c156_00.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "applicable": true,
+        "text": "Black Nissan Livina compact minivan.",
+        "retained_facts": [
+          "Compact minivan",
+          "Nissan Livina",
+          "black"
+        ],
+        "omitted_facts": [
+          "five-spoke alloy rims",
+          "silver roof rails"
+        ]
+      },
+      {
+        "variant_type": "llm_balanced",
+        "applicable": true,
+        "text": "Black Nissan Livina compact minivan with silver roof rails and five-spoke alloy rims.",
+        "retained_facts": [
+          "Compact minivan",
+          "Nissan Livina",
+          "black",
+          "five-spoke alloy rims",
+          "silver roof rails"
+        ],
+        "omitted_facts": []
+      },
+      {
+        "variant_type": "llm_detailed",
+        "applicable": true,
+        "text": "A black Nissan Livina compact minivan featuring silver roof rails and five-spoke alloy rims.",
+        "retained_facts": [
+          "Compact minivan",
+          "Nissan Livina",
+          "black",
+          "five-spoke alloy rims",
+          "silver roof rails"
+        ],
+        "omitted_facts": []
+      },
+      {
+        "variant_type": "llm_human_description",
+        "applicable": true,
+        "text": "It is a black Nissan Livina compact minivan, equipped with silver roof rails and five-spoke alloy wheels.",
+        "retained_facts": [
+          "Compact minivan",
+          "Nissan Livina",
+          "black",
+          "five-spoke alloy rims",
+          "silver roof rails"
+        ],
+        "omitted_facts": []
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

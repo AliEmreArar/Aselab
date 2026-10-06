@@ -1,0 +1,77 @@
+{
+  "sample_id": "face::train::166091.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "Adult male with an oval face, M-shaped hairline, dark short hair styled upwards, and stubble facial hair.",
+        "retained_facts": [
+          "Male presentation",
+          "adult",
+          "oval face",
+          "M-shaped hairline",
+          "short dark hair styled upwards",
+          "stubble facial hair"
+        ]
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "Adult male with an oval face, almond-shaped eyes, a straight nose, and M-shaped hairline. He has short dark hair styled upwards and stubble on his jawline and upper lip.",
+        "retained_facts": [
+          "Male presentation",
+          "adult",
+          "oval face",
+          "almond-shaped eyes",
+          "straight nasal dorsum",
+          "M-shaped hairline",
+          "short dark hair styled upwards",
+          "stubble facial hair on jawline and upper lip"
+        ]
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "Adult male, oval face shape, symmetrical features, M-shaped hairline with temporal recession. Soft-arched eyebrows, almond-shaped eyes with double upper-lid creases, straight nose with rounded tip, and medium mouth. Ears are average size with free lobes. Short dark hair styled upwards, stubble on jawline and upper lip, closed-mouth smile.",
+        "retained_facts": [
+          "Male presentation",
+          "adult",
+          "oval face",
+          "symmetrical features",
+          "M-shaped hairline",
+          "temporal recession",
+          "soft-arched eyebrows",
+          "almond-shaped eyes",
+          "double upper-lid creases",
+          "straight nose",
+          "rounded tip",
+          "medium mouth",
+          "average ears",
+          "free lobes",
+          "short dark hair styled upwards",
+          "stubble facial hair",
+          "closed-mouth smile"
+        ]
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "A man with an oval face and short, dark hair styled upwards. He has a receding M-shaped hairline, stubble on his jaw and upper lip, and almond-shaped eyes. He is wearing a closed-mouth smile.",
+        "retained_facts": [
+          "Male presentation",
+          "oval face",
+          "short dark hair styled upwards",
+          "M-shaped hairline",
+          "stubble facial hair",
+          "almond-shaped eyes",
+          "closed-mouth smile"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

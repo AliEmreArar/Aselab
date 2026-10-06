@@ -1,0 +1,31 @@
+{
+  "sample_id": "person::train::06597_2.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "An average-build man with short dark hair, wearing a dark blue shirt and dark trousers."
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "An average-build man with short dark hair, wearing a dark blue short-sleeved collared shirt, dark trousers, and dark shoes."
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "An average-build man with short dark hair, wearing a dark blue short-sleeved collared shirt, dark trousers, and dark shoes."
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "You are looking for an average-build man with short dark hair. He is wearing a dark blue short-sleeved collared shirt, along with dark pants and shoes."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

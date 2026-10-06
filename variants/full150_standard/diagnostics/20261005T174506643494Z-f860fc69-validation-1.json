@@ -1,0 +1,31 @@
+{
+  "sample_id": "person::gallery::27153_5.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "An adult in a light gray long-sleeved shirt and dark pants."
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "An adult of average build wearing a long-sleeved light gray shirt, dark pants, and light-colored shoes."
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "An adult with an average build, dressed in a long-sleeved light gray shirt, dark trousers, and light-colored shoes."
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "That's an average-sized adult wearing a light gray long-sleeved shirt with dark pants and light shoes."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

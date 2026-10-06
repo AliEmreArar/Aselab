@@ -1,0 +1,21 @@
+{
+  "sample_id": "person::train::00969_2.png",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "person; average build; hair: dark brown medium-length; eyes: dark sunglasses; jacket: dark, long sleeves; trousers: dark; shoes: dark; shopping bag: white, dark pattern."
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Dark sunglasses paired with a white shopping bag featuring a dark pattern are held by a person of average build who has dark brown medium-length hair, wearing a dark long-sleeved jacket, dark trousers, and dark shoes."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

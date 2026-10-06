@@ -1,0 +1,31 @@
+{
+  "sample_id": "vehicle::query_images::21112_c079_00.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "White Honda CR-V crossover SUV with silver alloy wheels and roof rails."
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "White Honda CR-V crossover SUV featuring silver alloy wheels, roof rails, and a green registration sticker on the windshield."
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "White Honda CR-V compact crossover SUV with silver alloy wheels, roof rails, clear windows, a green registration sticker on the upper corner of the windshield, and a small white bobblehead ornament on the dashboard."
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "It is a white Honda CR-V crossover SUV. It has silver alloy wheels and roof rails on top. There is a small green registration sticker near the top corner of the windshield and a little white bobblehead on the dashboard."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

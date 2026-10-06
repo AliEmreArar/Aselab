@@ -1,0 +1,21 @@
+{
+  "sample_id": "face::train::170623.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "Face shape oval; jawline moderately defined; chin rounded, moderate projection, slight vertical height; hairline M-shaped, temporal recession; eyebrows medium thickness, soft-arched, low peak, moderate spacing, moderate brow-to-eye distance; eyes almond-shaped, moderate palpebral fissure length, horizontal slant, average inner corner distance, double moderate upper-lid crease, moderate lid exposure, average orbital depth; nasal root moderate width/depth; nasal dorsum straight; nasal bridge moderate width; nasal tip rounded, moderate projection/rotation; alar width moderate; alar flare moderate; nostrils partially visible; mouth width moderate; upper-to-lower lip ratio balanced; vermilion fullness moderate; cupid's bow defined; corners level; philtrum moderate length/width, defined ridges; upper dental alignment visible; ears average size, moderate protrusion, helix rolled, antihelix defined, lobes free, aligned with eye-nose line."
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "M-shaped hairline with temporal recession on an oval-shaped face featuring a moderate, rounded chin and a moderately defined jawline. The eyes are almond-shaped with a horizontal slant, double upper-lid creases of moderate height, and moderate lid exposure, set beneath soft-arched, medium-thickness eyebrows with a low peak. The nose has a straight dorsum, rounded tip with moderate projection, and partially visible nostrils. The mouth features a defined cupid's bow, balanced lip fullness, and visible upper dental alignment. Ears are of average size and protrusion with free lobes, aligned with the eye-nose line."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

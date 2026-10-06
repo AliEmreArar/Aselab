@@ -1,0 +1,45 @@
+{
+  "sample_id": "person::gallery::26991_3.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "male; average build; hair short and dark; skin light; shirt long-sleeved white with dark shoulder stripes and chest text; pants light brown loose; shoes white; smartphone held in hand",
+        "retained_facts": [
+          "Male",
+          "average build",
+          "short dark hair",
+          "light skin",
+          "long-sleeved white shirt",
+          "dark stripes on the shoulders",
+          "chest text on shirt",
+          "loose light brown pants",
+          "white shoes",
+          "smartphone held in hand"
+        ]
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Long-sleeved white shirt with dark shoulder stripes and chest text worn with loose light brown pants and white shoes. This male of average build has short dark hair and light skin, and is holding a smartphone in his hand.",
+        "retained_facts": [
+          "long-sleeved white shirt",
+          "dark shoulder stripes",
+          "chest text",
+          "loose light brown pants",
+          "white shoes",
+          "male",
+          "average build",
+          "short dark hair",
+          "light skin",
+          "smartphone held in hand"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

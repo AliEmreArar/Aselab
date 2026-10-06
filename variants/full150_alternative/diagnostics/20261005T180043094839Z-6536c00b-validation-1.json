@@ -1,0 +1,45 @@
+{
+  "sample_id": "vehicle::train_images::02440_c090_02.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "SUV; Hyundai Tucson; SUV color dark brown; SUV wheels alloy; SUV side steps silver-colored; SUV rear bumper trim silver accents; SUV roof rails; SUV shark fin antenna; SUV windows tinted; SUV circular decal on rear bumper",
+        "retained_facts": [
+          "SUV",
+          "Hyundai Tucson",
+          "dark brown",
+          "alloy wheels",
+          "silver-colored side steps",
+          "rear bumper trim with silver accents",
+          "roof rails",
+          "shark fin antenna",
+          "tinted windows",
+          "circular decal on the rear bumper"
+        ]
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Dark brown Hyundai Tucson SUV featuring a circular decal on the rear bumper, silver-colored side steps, and rear bumper trim with silver accents. The vehicle is equipped with alloy wheels, roof rails, a shark fin antenna, and tinted windows.",
+        "retained_facts": [
+          "SUV",
+          "Hyundai Tucson",
+          "dark brown",
+          "alloy wheels",
+          "silver-colored side steps",
+          "rear bumper trim with silver accents",
+          "roof rails",
+          "shark fin antenna",
+          "tinted windows",
+          "circular decal on the rear bumper"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

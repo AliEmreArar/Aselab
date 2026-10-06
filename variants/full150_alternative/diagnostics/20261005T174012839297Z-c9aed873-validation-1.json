@@ -1,0 +1,21 @@
+{
+  "sample_id": "person::train::03736_1.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "man;build:average;hair:short and dark;face:eyeglasses;skin tone:medium;jacket:black long-sleeved quilted with light gray collar lining;inner collar:dark;pants:black long;shoes:black;bag:white plastic"
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Man with eyeglasses and short dark hair wears a black long-sleeved quilted jacket featuring a light gray collar lining over a dark inner collar, paired with black long pants and black shoes, while carrying a white plastic bag. He has a medium skin tone and an average build."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

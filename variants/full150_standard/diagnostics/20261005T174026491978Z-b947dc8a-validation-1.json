@@ -1,0 +1,72 @@
+{
+  "sample_id": "person::train::06085_7.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "A man with short dark hair wearing a light gray long-sleeved shirt and dark pants.",
+        "retained_facts": [
+          "Male",
+          "short dark hair",
+          "long-sleeved light gray shirt",
+          "dark pants"
+        ],
+        "omitted_facts": [
+          "average build",
+          "black shoes",
+          "dark backpack"
+        ]
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "A man of average build with short dark hair, wearing a light gray long-sleeved shirt, dark pants, and black shoes, carrying a dark backpack.",
+        "retained_facts": [
+          "Male",
+          "average build",
+          "short dark hair",
+          "long-sleeved light gray shirt",
+          "dark pants",
+          "black shoes",
+          "dark backpack"
+        ],
+        "omitted_facts": []
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "A male with an average build and short dark hair. He is wearing a light gray long-sleeved shirt, dark pants, and black shoes, and carrying a dark backpack on both shoulders.",
+        "retained_facts": [
+          "Male",
+          "average build",
+          "short dark hair",
+          "long-sleeved light gray shirt",
+          "dark pants",
+          "black shoes",
+          "dark backpack on both shoulders"
+        ],
+        "omitted_facts": []
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "There is a guy of average build with short dark hair. He's wearing a long-sleeved light gray shirt with dark pants and black shoes, and he has a dark backpack on.",
+        "retained_facts": [
+          "Male",
+          "average build",
+          "short dark hair",
+          "long-sleeved light gray shirt",
+          "dark pants",
+          "black shoes",
+          "dark backpack"
+        ],
+        "omitted_facts": []
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "sample_id": "person::train::08529_4.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "male; build: average; outer jacket: dark blue, long-sleeved; inner garment: white; trousers: white; shoes: dark; headwear: dark",
+        "retained_facts": [
+          "male",
+          "average-build",
+          "dark blue long-sleeved outer jacket",
+          "white inner garment",
+          "white trousers",
+          "dark shoes",
+          "dark headwear"
+        ]
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Dark headwear and a dark blue long-sleeved outer jacket worn over a white inner garment define this average-build male, who is further dressed in white trousers and dark shoes.",
+        "retained_facts": [
+          "dark headwear",
+          "dark blue long-sleeved outer jacket",
+          "white inner garment",
+          "average-build male",
+          "white trousers",
+          "dark shoes"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

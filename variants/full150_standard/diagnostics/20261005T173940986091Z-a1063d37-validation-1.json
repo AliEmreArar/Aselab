@@ -1,0 +1,86 @@
+{
+  "sample_id": "person::train::02167_1.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "Slim male with short dark hair, thin-framed eyeglasses, a dark jacket, black pants, and a black backpack.",
+        "retained_facts": [
+          "Male",
+          "slim build",
+          "short dark hair",
+          "thin-framed eyeglasses",
+          "dark jacket",
+          "black pants",
+          "black backpack"
+        ],
+        "omitted_facts": [
+          "long sleeves",
+          "light-colored collar",
+          "worn on both shoulders"
+        ]
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "Slim male with short dark hair and thin-framed glasses, wearing a dark long-sleeved jacket over a light collar, black pants, and a black backpack.",
+        "retained_facts": [
+          "Male",
+          "slim build",
+          "short dark hair",
+          "thin-framed eyeglasses",
+          "dark jacket",
+          "long sleeves",
+          "light-colored collar",
+          "black pants",
+          "black backpack"
+        ],
+        "omitted_facts": [
+          "worn on both shoulders"
+        ]
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "A slim male with short dark hair and thin-framed eyeglasses. He is wearing a dark, long-sleeved jacket over a light-colored collar, paired with black pants and a black backpack carried on both shoulders.",
+        "retained_facts": [
+          "Male",
+          "slim build",
+          "short dark hair",
+          "thin-framed eyeglasses",
+          "dark jacket",
+          "long sleeves",
+          "light-colored collar",
+          "black pants",
+          "black backpack",
+          "carried on both shoulders"
+        ],
+        "omitted_facts": []
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "A slim guy with short dark hair and thin glasses. He's wearing a dark jacket over a light-colored collar, black pants, and has a black backpack on his back.",
+        "retained_facts": [
+          "Male",
+          "slim build",
+          "short dark hair",
+          "thin-framed eyeglasses",
+          "dark jacket",
+          "light-colored collar",
+          "black pants",
+          "black backpack"
+        ],
+        "omitted_facts": [
+          "long sleeves",
+          "carried on both shoulders"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

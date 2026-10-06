@@ -1,0 +1,31 @@
+{
+  "sample_id": "vehicle::gallery_images::20559_c170_01.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "White sedan with a stylized trunk badge and rectangular taillights."
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "A white sedan featuring rectangular taillights and a badge on the center of the trunk lid with interlocking circular and geometric elements."
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "White sedan with rectangular taillights on either side of the trunk. The center of the trunk lid features a badge depicting a stylized symbol of interlocking circular and geometric elements."
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "This is a white sedan. It has a distinctive badge in the middle of the trunk lid that looks like a symbol made of circles and geometric shapes, and it has rectangular taillights on the sides of the trunk."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

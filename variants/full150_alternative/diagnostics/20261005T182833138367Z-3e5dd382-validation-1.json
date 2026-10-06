@@ -1,0 +1,75 @@
+{
+  "sample_id": "face::train::157804.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "face shape: oval; facial thirds: balanced; jawline: wide; forehead: moderately high and gently rounded; hairline: receding at temples with light hair density; eyebrows: thin, sparse, and lightly arched; eyes: almond-shaped, slightly upturned, average orbital depth, visible upper-lid creases; nose: straight dorsum, moderate bridge width, rounded tip, visible nostrils; mouth: wide, thin vermilion lips, even fullness ratio, level corners, upper dental show; philtrum: defined with moderate ridge separation; facial hair: clean-shaven; marks: vertical crease on the left cheek, prominent cleft chin; pose: forward-facing, closed-mouth smile.",
+        "retained_facts": [
+          "face shape: oval",
+          "facial thirds: balanced",
+          "jawline: wide",
+          "forehead: moderately high and gently rounded",
+          "hairline: receding at temples with light hair density",
+          "eyebrows: thin, sparse, and lightly arched",
+          "eyes: almond-shaped, slightly upturned, average orbital depth, visible upper-lid creases",
+          "nose: straight dorsum, moderate bridge width, rounded tip, visible nostrils",
+          "mouth: wide, thin vermilion lips, even fullness ratio, level corners, upper dental show",
+          "philtrum: defined with moderate ridge separation",
+          "facial hair: clean-shaven",
+          "marks: vertical crease on the left cheek, prominent cleft chin",
+          "pose: forward-facing, closed-mouth smile"
+        ],
+        "omitted_facts": [
+          "Male presenting",
+          "older adult",
+          "Ears are not visible",
+          "bright lighting",
+          "visible compression artifacts"
+        ]
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Prominent cleft chin and a vertical crease on the left cheek identify this older adult with a clean-shaven face. The oval-shaped head features a wide jawline and a moderately high, gently rounded forehead with a receding hairline at the temples. Thin, sparse, lightly arched eyebrows sit above almond-shaped, slightly upturned eyes with visible upper-lid creases. The nose has a straight dorsum and rounded tip, while the wide mouth has thin lips with an upper dental show during a closed-mouth smile. The philtrum is defined, and the head is held in a forward-facing pose.",
+        "retained_facts": [
+          "cleft chin",
+          "vertical crease on the left cheek",
+          "older adult",
+          "clean-shaven",
+          "oval-shaped face",
+          "wide jawline",
+          "moderately high, gently rounded forehead",
+          "receding hairline at the temples",
+          "thin, sparse, lightly arched eyebrows",
+          "almond-shaped, slightly upturned eyes",
+          "visible upper-lid creases",
+          "straight dorsum and rounded tip nose",
+          "wide mouth with thin lips",
+          "upper dental show",
+          "closed-mouth smile",
+          "defined philtrum",
+          "forward-facing pose"
+        ],
+        "omitted_facts": [
+          "Male presenting",
+          "balanced facial thirds",
+          "average orbital depth",
+          "moderate bridge width",
+          "visible nostrils",
+          "even fullness ratio",
+          "level corners",
+          "moderate ridge separation",
+          "Ears are not visible",
+          "bright lighting",
+          "visible compression artifacts"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "sample_id": "vehicle::train_images::13946_c012_04.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "Minivan; silver color; sunroof present; alloy wheels",
+        "retained_facts": [
+          "Minivan",
+          "silver",
+          "sunroof",
+          "alloy wheels"
+        ]
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Silver minivan with a sunroof and alloy wheels.",
+        "retained_facts": [
+          "Minivan",
+          "silver",
+          "sunroof",
+          "alloy wheels"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

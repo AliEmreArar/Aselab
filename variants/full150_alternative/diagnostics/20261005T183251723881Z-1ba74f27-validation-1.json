@@ -1,0 +1,65 @@
+{
+  "sample_id": "face::train::141457.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "face shape: oval; forehead: medium height, gently rounded profile; hairline: receding evenly at temples; eyebrows: thin, sparse, soft arch; eyes: almond-shaped, neutral canthal tilt, visible upper-lid creases; nose: straight, medium bridge, rounded tip; mouth: moderate width, thin vermilion lips, level corners; hair: short, styled forward; facial hair: clean-shaven; eyewear: round glasses, yellow-tinted lenses; outerwear: high-collared, dark; hand: ring on finger resting against cheek.",
+        "retained_facts": [
+          "face shape is oval",
+          "forehead is medium height and gently rounded",
+          "hairline is receding evenly at the temples",
+          "eyebrows are thin, sparse, and soft arched",
+          "eyes are almond-shaped with neutral canthal tilt and visible upper-lid creases",
+          "nose is straight with medium bridge and rounded tip",
+          "mouth is moderate width with thin vermilion lips and level corners",
+          "hair is short and styled forward",
+          "clean-shaven",
+          "round glasses with yellow-tinted lenses",
+          "high-collared dark outerwear",
+          "ring on the finger resting against the cheek"
+        ],
+        "omitted_facts": [
+          "Male-presenting middle-aged adult",
+          "balanced upper, middle, and lower thirds",
+          "moderate soft tissue depth",
+          "captured in a close-up",
+          "motion blur",
+          "heavy compression artifacts stretching the top edge of the frame"
+        ]
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Round glasses with yellow-tinted lenses and a ring on a finger resting against the cheek are worn by a clean-shaven individual with short hair styled forward. The person has an oval face shape, a medium-height forehead with an evenly receding hairline, and thin, sparse eyebrows with a soft arch. The almond-shaped eyes feature neutral canthal tilt and visible upper-lid creases, complemented by a straight nose with a medium bridge and rounded tip. The mouth is of moderate width with thin vermilion lips and level corners, and the individual wears high-collared dark outerwear.",
+        "retained_facts": [
+          "round glasses with yellow-tinted lenses",
+          "ring on the finger resting against the cheek",
+          "clean-shaven",
+          "short hair styled forward",
+          "oval face shape",
+          "medium-height forehead",
+          "hairline receding evenly at the temples",
+          "thin, sparse eyebrows with a soft arch",
+          "almond-shaped eyes with neutral canthal tilt and visible upper-lid creases",
+          "straight nose with a medium bridge and rounded tip",
+          "mouth of moderate width with thin vermilion lips and level corners",
+          "high-collared dark outerwear"
+        ],
+        "omitted_facts": [
+          "Male-presenting middle-aged adult",
+          "balanced upper, middle, and lower thirds",
+          "moderate soft tissue depth",
+          "captured in a close-up",
+          "motion blur",
+          "heavy compression artifacts stretching the top edge of the frame"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

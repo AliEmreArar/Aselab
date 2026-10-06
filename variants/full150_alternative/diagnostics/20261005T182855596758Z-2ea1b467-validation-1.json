@@ -1,0 +1,21 @@
+{
+  "sample_id": "face::train::121281.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "face shape: oval; facial thirds: balanced; cheekbones: high; asymmetries: not discernible; hairline: rounded with moderate temporal recession; eyebrows: medium-thick soft-arched with lateral tapering; eyes: almond-shaped with moderate palpebral fissure length, average canthal tilt, and visible double eyelids; nasal bridge: straight; nasal tip: rounded; alar width: moderate; mouth: medium-width; lips: full with defined cupid's bow and level corners; skin: smooth with no visible permanent marks; hair: dark voluminous wavy"
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Dark voluminous wavy hair surrounds an oval face with high cheekbones, balanced facial thirds, and a rounded hairline showing moderate temporal recession. The features include medium-thick soft-arched eyebrows with lateral tapering, almond-shaped eyes with visible double eyelids, and a straight nasal bridge ending in a rounded tip. The mouth is medium-width with full lips and a defined cupid's bow, and the skin is smooth with no visible marks and no discernible asymmetries."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

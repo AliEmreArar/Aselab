@@ -1,0 +1,69 @@
+{
+  "sample_id": "person::query::26943_3.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "Male with short dark hair, wearing a red shirt, dark pants, and light shoes.",
+        "retained_facts": [
+          "Male",
+          "Short dark hair",
+          "Red shirt",
+          "Dark pants",
+          "Light shoes"
+        ],
+        "omitted_facts": [
+          "Average-build",
+          "Short-sleeved"
+        ]
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "Average-build male with short dark hair, wearing a red short-sleeved shirt, dark pants, and light-colored shoes.",
+        "retained_facts": [
+          "Average-build",
+          "Male",
+          "Short dark hair",
+          "Red short-sleeved shirt",
+          "Dark pants",
+          "Light-colored shoes"
+        ],
+        "omitted_facts": []
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "Average-build male with short dark hair, wearing a red short-sleeved shirt, dark pants, and light-colored shoes.",
+        "retained_facts": [
+          "Average-build",
+          "Male",
+          "Short dark hair",
+          "Red short-sleeved shirt",
+          "Dark pants",
+          "Light-colored shoes"
+        ],
+        "omitted_facts": []
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "A man with an average build and short dark hair. He is dressed in a red short-sleeved shirt, dark trousers, and light-colored shoes.",
+        "retained_facts": [
+          "Average-build",
+          "Male",
+          "Short dark hair",
+          "Red short-sleeved shirt",
+          "Dark pants",
+          "Light-colored shoes"
+        ],
+        "omitted_facts": []
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

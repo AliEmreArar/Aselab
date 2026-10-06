@@ -1,0 +1,21 @@
+{
+  "sample_id": "face::train::025692.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "Face shape: oval; forehead: gently rounded; brow ridge: moderate; glabella width: average; cheekbone width: moderate; jawline: tapering; chin: rounded; eyebrows: medium thickness, soft-arched shape, moderate spacing; eyes: almond-shaped, neutral canthal tilt, average palpebral fissure length, visible double upper-lid creases; nose: straight dorsum, medium width, moderate tip projection, narrow alar base; mouth: average width, medium lip fullness, level corners, defined philtrum; hair: soft-textured, wispy bangs; ears: occluded by hair."
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "The subject has a soft-textured hairstyle with wispy bangs and an oval face shape characterized by a gently rounded forehead, tapering jawline, and rounded chin. They feature almond-shaped eyes with double upper-lid creases, a straight nose of medium width with a narrow alar base, and medium-full lips. The eyebrows are medium thickness with a soft-arched shape, and the face exhibits a moderate brow ridge and moderate cheekbone width."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

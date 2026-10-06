@@ -1,0 +1,31 @@
+{
+  "sample_id": "face::train::141457.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "Middle-aged man with short forward-styled hair, a clean-shaven face, and yellow-tinted round glasses, wearing dark high-collared outerwear."
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "Middle-aged male with an oval face, receding hairline, short forward-styled hair, and thin eyebrows. He is clean-shaven and wears yellow-tinted round glasses with dark, high-collared outerwear; a ring is visible on his finger."
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "Middle-aged male with an oval face, moderate soft tissue, and medium-height forehead. Features include a receding hairline at the temples, thin arched eyebrows, almond-shaped eyes with upper-lid creases, a straight nose with a rounded tip, and a mouth with thin lips. He has short hair styled forward and is clean-shaven. He wears round glasses with yellow-tinted lenses, dark high-collared outerwear, and a ring on the finger resting against his cheek."
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "A middle-aged man with short hair combed forward, wearing yellow-tinted round glasses. He has a clean-shaven face and is wearing a dark, high-collared jacket or coat. He has a ring on his finger, which he is resting against his cheek."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

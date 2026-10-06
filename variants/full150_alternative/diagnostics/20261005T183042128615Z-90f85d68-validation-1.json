@@ -1,0 +1,21 @@
+{
+  "sample_id": "face::train::101485.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "face shape: oval; forehead: high, gently rounded, moderate temple narrowing; cheekbones: prominent; cheeks: moderate fullness; lower face: narrow; chin: rounded; eyebrows: medium-thin, soft arches; eyes: almond-shaped, moderate upward slant, visible double eyelids, average orbital depth; nose bridge: straight; nose tip: rounded; alar base: narrow; lips: medium-width, balanced fullness, upturned corners; philtrum: short, well-defined; skin: smooth, no prominent permanent marks; earrings: large circular hoop; hair: voluminous layered brown, styled to the side; makeup: dark; facial expression: smiling; gaze: direct; head: turned slightly."
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Voluminous layered brown hair styled to the side paired with large circular hoop earrings on a person with dark makeup and a smiling direct gaze. The subject has an oval face shape, prominent cheekbones, moderate cheek fullness, and a narrow lower face with a rounded chin. The forehead is high and gently rounded with moderate temple narrowing. The almond-shaped eyes show a moderate upward slant with visible double eyelids and average orbital depth. The nose features a straight bridge, rounded tip, and narrow alar base, while the lips are medium-width with balanced fullness and upturned corners. The philtrum is short and well-defined, and the skin is smooth with no prominent permanent marks."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

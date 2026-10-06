@@ -1,0 +1,39 @@
+{
+  "sample_id": "vehicle::gallery_images::20401_c023_03.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "Vehicle: Smart Fortwo; Body: two-tone white; Roof: red; Side mirror caps: red; Wheels: five-spoke dark alloy; Windows: tinted; Body type: hatchback",
+        "retained_facts": [
+          "Hatchback",
+          "Smart Fortwo",
+          "two-tone white body",
+          "red roof",
+          "red side mirror caps",
+          "five-spoke dark alloy wheels",
+          "tinted windows"
+        ]
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "A two-tone white Smart Fortwo hatchback with a red roof and red side mirror caps, featuring five-spoke dark alloy wheels and tinted windows.",
+        "retained_facts": [
+          "Hatchback",
+          "Smart Fortwo",
+          "two-tone white body",
+          "red roof",
+          "red side mirror caps",
+          "five-spoke dark alloy wheels",
+          "tinted windows"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

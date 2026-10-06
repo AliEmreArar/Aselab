@@ -1,0 +1,66 @@
+{
+  "sample_id": "person::query::27008_3.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "A person of average build with dark hair, wearing a black jacket, dark pants, and light shoes.",
+        "retained_facts": [
+          "average build",
+          "dark hair",
+          "black jacket",
+          "dark pants",
+          "light shoes"
+        ],
+        "omitted_facts": [
+          "long-sleeved",
+          "holding a smartphone"
+        ]
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "A person with an average build and dark hair, wearing a long-sleeved black jacket, dark pants, and light-colored shoes, while holding a smartphone.",
+        "retained_facts": [
+          "average build",
+          "dark hair",
+          "long-sleeved black jacket",
+          "dark pants",
+          "light-colored shoes",
+          "holding a smartphone"
+        ]
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "An individual of average build with dark hair. They are dressed in a long-sleeved black jacket, dark trousers, and light-colored shoes, and are carrying a smartphone.",
+        "retained_facts": [
+          "average build",
+          "dark hair",
+          "long-sleeved black jacket",
+          "dark pants",
+          "light-colored shoes",
+          "holding a smartphone"
+        ]
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "There is a person of average build with dark hair. They are wearing a long-sleeved black jacket with dark pants and light-colored shoes, and they are holding a smartphone.",
+        "retained_facts": [
+          "average build",
+          "dark hair",
+          "long-sleeved black jacket",
+          "dark pants",
+          "light-colored shoes",
+          "holding a smartphone"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

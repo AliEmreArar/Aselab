@@ -1,0 +1,35 @@
+{
+  "sample_id": "vehicle::train_images::06987_c051_04.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "Dark gray hatchback with black roof rails and alloy wheels."
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "A dark gray hatchback featuring black roof rails, alloy wheels, and blue accent lighting under the headlights."
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "Hatchback in dark gray paint, equipped with black roof rails and alloy wheels, featuring an aftermarket blue accent lighting strip positioned beneath the headlights."
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "It is a dark gray hatchback that has black roof rails, alloy wheels, and a custom blue light strip under the headlights."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [
+      "Contains capture/context detail: lighting"
+    ],
+    "llm_detailed": [
+      "Contains capture/context detail: lighting"
+    ],
+    "llm_human_description": []
+  }
+}

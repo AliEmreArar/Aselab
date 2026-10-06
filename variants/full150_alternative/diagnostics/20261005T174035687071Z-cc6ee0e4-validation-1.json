@@ -1,0 +1,21 @@
+{
+  "sample_id": "person::train::10977_1.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "woman; shoulder-length dark brown hair; black sunglasses; white face mask; light gray short-sleeved top; dark pants; dark sandals; dark shoulder bag; shoulder bag strap"
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Dark shoulder bag with a strap over one shoulder, black sunglasses, and a white face mask on an average-build woman with shoulder-length dark brown hair, wearing a light gray short-sleeved top, dark pants, and dark sandals."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

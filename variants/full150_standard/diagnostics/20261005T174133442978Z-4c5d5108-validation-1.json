@@ -1,0 +1,91 @@
+{
+  "sample_id": "person::train::11561_6.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "A woman with short dark hair wearing a light blue puffer jacket and dark blue pants.",
+        "retained_facts": [
+          "woman",
+          "short dark hair",
+          "light blue puffer jacket",
+          "dark blue pants"
+        ],
+        "omitted_facts": [
+          "average build",
+          "light skin tone",
+          "hooded",
+          "long sleeves",
+          "dark brown boots",
+          "light brown shoulder bag",
+          "long strap"
+        ],
+        "change_note": "Focused on primary identifying clothing and hair."
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "A woman with short dark hair and an average build, wearing a light blue hooded puffer jacket, dark blue pants, dark brown boots, and a light brown shoulder bag.",
+        "retained_facts": [
+          "woman",
+          "short dark hair",
+          "average build",
+          "light blue hooded puffer jacket",
+          "dark blue pants",
+          "dark brown boots",
+          "light brown shoulder bag"
+        ],
+        "omitted_facts": [
+          "light skin tone",
+          "long sleeves",
+          "long strap"
+        ],
+        "change_note": "Included all primary clothing and major accessories."
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "A woman with light skin and an average build, wearing short dark hair. She is dressed in a light blue hooded puffer jacket with long sleeves, dark blue pants, dark brown boots, and carries a light brown shoulder bag with a long strap.",
+        "retained_facts": [
+          "woman",
+          "light skin",
+          "average build",
+          "short dark hair",
+          "light blue hooded puffer jacket",
+          "long sleeves",
+          "dark blue pants",
+          "dark brown boots",
+          "light brown shoulder bag",
+          "long strap"
+        ],
+        "omitted_facts": [],
+        "change_note": "Retained all identifying details from the source."
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "I'm looking for a woman with short dark hair and an average build. She has on a light blue puffer jacket with a hood, dark blue pants, and dark brown boots. She is also carrying a light brown shoulder bag with a long strap.",
+        "retained_facts": [
+          "woman",
+          "short dark hair",
+          "average build",
+          "light blue hooded puffer jacket",
+          "dark blue pants",
+          "dark brown boots",
+          "light brown shoulder bag",
+          "long strap"
+        ],
+        "omitted_facts": [
+          "light skin tone",
+          "long sleeves"
+        ],
+        "change_note": "Used conversational framing for person recognition."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "sample_id": "person::train::11903_4.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "person; average build; dark skin tone; dark medium-length hair; white short-sleeved crew-neck t-shirt; t-shirt; large graphic print of a face; dark trousers; silver-colored watch; watch on right wrist."
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "A white short-sleeved crew-neck t-shirt featuring a large graphic print of a face on the front distinguishes this person, who has dark medium-length hair, dark skin tone, and an average build. She wears dark trousers and a silver-colored watch on the right wrist."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

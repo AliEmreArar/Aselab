@@ -1,0 +1,37 @@
+{
+  "sample_id": "vehicle::train_images::10839_c110_00.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "Vehicle: hatchback, Volkswagen Polo, silver; Wheels: multi-spoke alloy; Interior: rearview mirror air freshener; Front bumper: fog lights.",
+        "retained_facts": [
+          "Hatchback",
+          "Volkswagen Polo",
+          "silver",
+          "multi-spoke alloy wheels",
+          "rearview mirror air freshener",
+          "front bumper fog lights"
+        ]
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Silver Volkswagen Polo hatchback featuring multi-spoke alloy wheels, with an air freshener hanging from the rearview mirror and fog lights integrated into the front bumper.",
+        "retained_facts": [
+          "silver",
+          "Volkswagen Polo",
+          "hatchback",
+          "multi-spoke alloy wheels",
+          "rearview mirror air freshener",
+          "front bumper fog lights"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

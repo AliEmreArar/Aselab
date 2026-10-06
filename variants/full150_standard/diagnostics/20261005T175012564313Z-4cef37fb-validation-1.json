@@ -1,0 +1,31 @@
+{
+  "sample_id": "person::gallery::15194_3.png",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "A male with short dark hair and eyeglasses wearing a purple jacket, gray trousers, and dark shoes."
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "A male of average build with short dark hair and eyeglasses, wearing a long-sleeved dark purple full-zip jacket, light gray trousers, and dark shoes, holding papers."
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "Male of average build, short dark hair, wearing eyeglasses. He is dressed in a long-sleeved dark purple full-zip jacket, light gray trousers, and dark shoes. He is holding papers in his hand."
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "You can recognize him as a man with an average build, short dark hair, and glasses. He has on a dark purple zip-up jacket, light gray pants, and dark shoes, and he's carrying some papers."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

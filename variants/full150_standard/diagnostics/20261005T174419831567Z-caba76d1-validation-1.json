@@ -1,0 +1,31 @@
+{
+  "sample_id": "person::query::14994_1.png",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "Male with short black hair wearing a dark green jacket, dark gray trousers, white shoes, and a yellow backpack."
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "A man of average build with short black hair, wearing a dark green long-sleeved jacket, dark gray loose trousers, white shoes, and a yellow backpack on his shoulders."
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "A male of average build, short black hair, dark green long-sleeved jacket, dark gray loose trousers, white shoes, and a yellow backpack worn on both shoulders."
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "That's a man of average build with short black hair; he's wearing a dark green long-sleeved jacket, loose dark gray pants, white shoes, and has a yellow backpack on."
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}

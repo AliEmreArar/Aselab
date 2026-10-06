@@ -1,0 +1,31 @@
+{
+  "sample_id": "vehicle::train_images::16253_c139_00.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "text": "sedan; sedan body color black; sedan rims alloy.",
+        "retained_facts": [
+          "Sedan",
+          "black paint",
+          "alloy rims"
+        ]
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "text": "Black sedan with alloy rims.",
+        "retained_facts": [
+          "Sedan",
+          "black paint",
+          "alloy rims"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "sample_id": "person::train::08634_3.jpg",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_attribute_list",
+        "applicable": true,
+        "text": "person; average build; light skin tone; short gray hair; sunglasses; white sleeveless outer vest; short-sleeved striped shirt with horizontal white, black, and blue stripes; dark blue shirt collar; black pants; black shoes; black shoulder bag; long bag strap; blue garment draped over the shoulder bag; watch on left wrist.",
+        "retained_facts": [
+          "Female",
+          "average build",
+          "short gray hair",
+          "sunglasses",
+          "white sleeveless outer vest",
+          "short-sleeved striped shirt with horizontal white, black, and blue stripes",
+          "dark blue collar",
+          "light skin tone",
+          "black pants",
+          "black shoes",
+          "black shoulder bag with a long strap",
+          "blue garment draped over the shoulder bag",
+          "watch on left wrist"
+        ]
+      },
+      {
+        "variant_type": "llm_distinctive_first",
+        "applicable": true,
+        "text": "Short gray hair and sunglasses worn with a white sleeveless outer vest and a short-sleeved striped shirt featuring horizontal white, black, and blue stripes and a dark blue collar. This person has a light skin tone and an average build, wearing black pants and black shoes. They carry a black shoulder bag with a long strap and a blue garment draped over the bag, with a watch on their left wrist.",
+        "retained_facts": [
+          "Female",
+          "average build",
+          "short gray hair",
+          "sunglasses",
+          "white sleeveless outer vest",
+          "short-sleeved striped shirt with horizontal white, black, and blue stripes",
+          "dark blue collar",
+          "light skin tone",
+          "black pants",
+          "black shoes",
+          "black shoulder bag with a long strap",
+          "blue garment draped over the shoulder bag",
+          "watch on left wrist"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_attribute_list": [],
+    "llm_distinctive_first": []
+  }
+}

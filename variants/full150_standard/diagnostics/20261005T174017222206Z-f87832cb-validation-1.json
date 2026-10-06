@@ -1,0 +1,71 @@
+{
+  "sample_id": "person::train::01108_7.png",
+  "validation_attempt": 1,
+  "status": "accepted",
+  "response": {
+    "variants": [
+      {
+        "variant_type": "llm_brief",
+        "text": "Male with dark brown medium-length hair wearing a dark blue hooded jacket, dark pants, and dark shoes.",
+        "retained_facts": [
+          "Male",
+          "dark brown medium-length hair",
+          "dark blue hooded jacket",
+          "dark pants",
+          "dark shoes"
+        ],
+        "omitted_facts": [
+          "average build"
+        ]
+      },
+      {
+        "variant_type": "llm_balanced",
+        "text": "Male of average build with dark brown medium-length hair, wearing a dark blue hooded jacket, dark pants, and dark shoes.",
+        "retained_facts": [
+          "Male",
+          "average build",
+          "dark brown medium-length hair",
+          "dark blue hooded jacket",
+          "dark pants",
+          "dark shoes"
+        ],
+        "omitted_facts": []
+      },
+      {
+        "variant_type": "llm_detailed",
+        "text": "Male with average build and dark brown medium-length hair. He is wearing a dark blue long-sleeved hooded jacket, dark pants, and dark shoes.",
+        "retained_facts": [
+          "Male",
+          "average build",
+          "dark brown medium-length hair",
+          "dark blue hooded jacket",
+          "long sleeves",
+          "dark pants",
+          "dark shoes"
+        ],
+        "omitted_facts": []
+      },
+      {
+        "variant_type": "llm_human_description",
+        "text": "A guy with an average build and medium-length, dark brown hair. He's wearing a dark blue hoodie, dark trousers, and dark shoes.",
+        "retained_facts": [
+          "Male",
+          "average build",
+          "dark brown medium-length hair",
+          "dark blue hooded jacket",
+          "dark pants",
+          "dark shoes"
+        ],
+        "omitted_facts": [
+          "long sleeves"
+        ]
+      }
+    ]
+  },
+  "review_warnings": {
+    "llm_brief": [],
+    "llm_balanced": [],
+    "llm_detailed": [],
+    "llm_human_description": []
+  }
+}
