@@ -14,3 +14,8 @@ Thumbs.db
 .model_cache/
 *.egg-info/
 
+# Keep presentation source, not runtime links or temporary validation artifacts.
+.presentation-build/**
+!.presentation-build/caption_bulgular/
+!.presentation-build/caption_bulgular/build.mjs
+
