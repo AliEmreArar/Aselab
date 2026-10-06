@@ -57,7 +57,11 @@ def merge(base: Path, additions: list[Path], output: Path) -> None:
     if output.exists():
         raise FileExistsError(f"Output already exists: {output}")
     base_variants = _read_jsonl(base / "variants.jsonl")
-    shutil.copytree(base, output)
+    for addition in additions:
+        if _read_jsonl(addition / "variants.jsonl") != base_variants:
+            raise ValueError(f"Variant rows differ: {addition}")
+    shutil.copytree(base, output, ignore=shutil.ignore_patterns(
+        '.execution.lock', 'completed.json', 'execution.log'))
     manifests = [json.loads((base / "manifest.json").read_text(encoding="utf-8"))]
     details = [pd.read_csv(base / "details.csv")]
     summaries = [pd.read_csv(base / "summary.csv")]
@@ -76,14 +80,21 @@ def merge(base: Path, additions: list[Path], output: Path) -> None:
     pd.concat(details, ignore_index=True).to_csv(output / "details.csv", index=False)
     pd.concat(summaries, ignore_index=True).to_csv(output / "summary.csv", index=False)
     pd.concat(diagnostics, ignore_index=True).to_csv(output / "embedding_diagnostics.csv", index=False)
+    # Every image-aligned encoder contributes its own image scores, not just the base.
+    for filename in ("image_retrieval_details.csv", "image_retrieval_summary.csv"):
+        tables = [pd.read_csv(folder / filename) for folder in [base] + additions
+                  if (folder / filename).exists()]
+        if tables:
+            pd.concat(tables, ignore_index=True).to_csv(output / filename, index=False)
     manifest = manifests[0]
     manifest["name"] = manifests[0]["name"] + "-merged"
     manifest["created_at"] = datetime.now(timezone.utc).isoformat()
     manifest["models"] = [model for item in manifests for model in item["models"]]
     manifest["config"]["models"] = [model for item in manifests for model in item["config"]["models"]]
-    manifest["notes"].append(
-        "Mamba-3 SISO is a raw causal-LM last-token baseline, not a sentence-embedding or vision-aligned model."
-    )
+    if any("mamba" in name.lower() for name in manifest["models"]):
+        manifest["notes"].append(
+            "Mamba-3 SISO is a raw causal-LM last-token baseline, not a sentence-embedding or vision-aligned model."
+        )
     (output / "manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")
     _agreement(output, manifest["models"], int(manifest["config"].get("agreement_k", 10))).to_csv(
         output / "encoder_agreement.csv", index=False

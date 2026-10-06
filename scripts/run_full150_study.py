@@ -128,7 +128,8 @@ if __name__ == '__main__':
     parser.add_argument('--worker', type=Path)
     args = parser.parse_args()
     if args.worker:
-        os.environ['HF_HOME'] = str(ROOT / '.model_cache')
+        # A resumed run may use an already populated cache on a different host.
+        os.environ.setdefault('HF_HOME', str(ROOT / '.model_cache'))
         os.environ['HF_HUB_DISABLE_XET'] = '1'
         os.environ['TOKENIZERS_PARALLELISM'] = 'false'
         os.environ['DISABLE_SAFETENSORS_CONVERSION'] = 'true'

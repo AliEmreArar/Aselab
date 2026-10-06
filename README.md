@@ -6,8 +6,14 @@ Caption üretimi tamamlandı: 150 kaynak için altı biçimde 900 Gemini caption
 [Tüm captionlar (JSONL)](variants/full150/variants.jsonl) ve
 [görsel başına captionlar (CSV)](variants/full150/captions.csv) depoda bulunur.
 [Güncel bulgular](runs/full150/BULGULAR.md) ve grafikler `runs/full150/` altındadır.
-Encoder ölçümü kısmi: CLIP-B/16, CLIP-L/14, Jina-CLIP-v2 ve DeBERTa tamamlandı;
-SigLIP2, BGE-M3, AltCLIP ve EVA henüz tamamlanmadı. Eksik ölçümler sonuç sayılmaz.
+Encoder ölçümünün durumu `runs/full150/BULGULAR.md` içinde doğrulanır.
+Sunum için yorumlu rapor `runs/full150/SUNUM_RAPORU.html` ve Markdown karşılığıdır.
+6 Ekim 2026: sekiz text encoder tamamlandı; altı modelde görsel retrieval da hazır.
+Kısa/uzun vektör karşılaştırması, eşleştirilmiş ayrılmış-sorgu farkları ve token
+kesilme oranları raporda yer alır. `caption_inceleme.html` tam 150 görsellik seti
+sekiz modelin birleşik sonuçlarıyla gösterir. İlk dört koşunun PyTorch sürümü
+2.10.0, devam koşularınınki 2.6.0+cu124'tür; tümü CPU float32 kullanır.
+Bu ortam farkı `completion_validation.json` içinde kaydedilir.
 
 `configs/full150_standard.yaml` dört mevcut Gemini profilini tüm 150 kaynak
 caption'a genişletir. Pilotun 15 kaydı, kaynak/prompt imzası korunarak
@@ -21,6 +27,9 @@ python -m caption_bench generate --config configs/full150_standard.yaml
 python -m caption_bench generate --config configs/full150_alternative.yaml
 ./.venv-study/Scripts/python.exe scripts/run_full150_study.py --prepare --run
 ./.venv-study/Scripts/python.exe scripts/analyze_full150_study.py
+python scripts/verify_full150_completion.py
+python scripts/plot_full150_study.py
+python scripts/build_full150_presentation.py
 ```
 
 Üretim caption başına checkpoint ile devam eder. Geçici HTTP 503 sonrasında
@@ -31,8 +40,8 @@ Hazırlık, 150 × 6 Gemini varyantının eksiksiz ve kaynakla uyumlu olmasını
 zorunlu tutar. Encoder'lar ayrı süreçlerde çalışır; başarıyla tamamlanan model
 aynı girdi/config imzasıyla tekrar çalıştırılmaz. Model bazlı kayıtlar
 `runs/full150/MODEL/execution.log` içindedir. `--models clip_b16 siglip2_b16_224`
-ile belirli modeller çalıştırılabilir. CPU float32 kullanılır. Mamba-3 bu
-bilgisayarda CUDA/Triton bulunmadığı için dışarıda bırakılmıştır.
+ile belirli modeller çalıştırılabilir. CPU float32 kullanılır. Mamba-3 full150
+çalışmasının sekiz-model setine dahil değildir; önceki pilotta ayrı değerlendirilmiştir.
 
 Metin–metin ve metin–görsel sonuçları ayrı CSV'lere yazılır. Her kategoride 50
 aday vardır. Kategori başına 25 geliştirme sorgusunda model/tarif seçilir;

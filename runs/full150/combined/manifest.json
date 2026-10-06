@@ -1,0 +1,131 @@
+{
+  "name": "full150-clip_b16-merged",
+  "created_at": "2026-10-06T09:09:27.138069+00:00",
+  "config": {
+    "name": "full150-clip_b16",
+    "dataset": "../../caption_samples_50/all_samples.jsonl",
+    "output_dir": "../../runs/full150/clip_b16",
+    "seed": 42,
+    "agreement_k": 10,
+    "transforms": [
+      {
+        "name": "identity"
+      }
+    ],
+    "variant_files": [
+      "../../variants/full150/variants.jsonl"
+    ],
+    "models": [
+      {
+        "name": "clip_b16",
+        "backend": "hf_text_features",
+        "model_id": "openai/clip-vit-base-patch16",
+        "revision": "refs/pr/16",
+        "use_safetensors": true,
+        "max_length": 77,
+        "batch_size": 8,
+        "image_retrieval": true,
+        "device": "cpu",
+        "dtype": "float32"
+      },
+      {
+        "name": "clip_l14",
+        "backend": "hf_text_features",
+        "model_id": "openai/clip-vit-large-patch14",
+        "use_safetensors": true,
+        "dtype": "float32",
+        "max_length": 77,
+        "batch_size": 8,
+        "image_retrieval": true,
+        "revision": "32bd64288804d66eefd0ccbe215aa642df71cc41",
+        "device": "cpu"
+      },
+      {
+        "name": "siglip2_b16_224",
+        "backend": "hf_text_features",
+        "model_id": "google/siglip2-base-patch16-224",
+        "dtype": "float32",
+        "padding": "max_length",
+        "max_length": 64,
+        "batch_size": 8,
+        "image_retrieval": true,
+        "revision": "75de2d55ec2d0b4efc50b3e9ad70dba96a7b2fa2",
+        "device": "cpu"
+      },
+      {
+        "name": "jina_clip_v2",
+        "backend": "jina_clip",
+        "model_id": "jinaai/jina-clip-v2",
+        "revision": "e10d47f5691d0454a0fb5d13f46f2199b74cb436",
+        "code_revision": "39e6a55ae971b59bea6e44675d237c99762e7ee2",
+        "trust_remote_code": true,
+        "dtype": "float32",
+        "max_length": 8192,
+        "batch_size": 2,
+        "image_retrieval": true,
+        "device": "cpu"
+      },
+      {
+        "name": "eva02_clip_l14",
+        "backend": "open_clip",
+        "model_id": "EVA02-L-14",
+        "pretrained": "merged2b_s4b_b131k",
+        "precision": "fp32",
+        "max_length": 77,
+        "batch_size": 8,
+        "image_retrieval": true,
+        "device": "cpu",
+        "dtype": "float32"
+      },
+      {
+        "name": "altclip",
+        "backend": "hf_text_features",
+        "model_id": "BAAI/AltCLIP",
+        "dtype": "float32",
+        "batch_size": 8,
+        "image_retrieval": true,
+        "device": "cpu"
+      },
+      {
+        "name": "deberta_v3_base_mean_pool",
+        "backend": "hf_mean_pool",
+        "model_id": "microsoft/deberta-v3-base",
+        "tokenizer_use_fast": false,
+        "dtype": "float32",
+        "max_length": 512,
+        "batch_size": 8,
+        "revision": "8ccc9b6f36199bec6961081d44eb72fb3f7353f3",
+        "device": "cpu"
+      },
+      {
+        "name": "bge_m3",
+        "backend": "sentence_transformers",
+        "model_id": "BAAI/bge-m3",
+        "max_length": 8192,
+        "batch_size": 4,
+        "device": "cpu",
+        "dtype": "float32"
+      }
+    ]
+  },
+  "caption_count": 150,
+  "variant_count": 1279,
+  "models": [
+    "clip_b16",
+    "clip_l14",
+    "siglip2_b16_224",
+    "jina_clip_v2",
+    "eva02_clip_l14",
+    "altclip",
+    "deberta_v3_base_mean_pool",
+    "bge_m3"
+  ],
+  "notes": [
+    "Retrieval ranking is computed against original captions within the same domain.",
+    "Cosine scales are not calibrated across model families; compare ranks, margins and relative changes.",
+    "word_dropout is a stress test and is not guaranteed to preserve all identity evidence.",
+    "Bootstrap intervals use 2,000 deterministic resamples per model/domain/variant group.",
+    "encoder_agreement.csv compares the complete 150x150 original-caption similarity geometry.",
+    "image_retrieval files rank each caption's matching image within the same domain for multimodal encoders."
+  ]
+}

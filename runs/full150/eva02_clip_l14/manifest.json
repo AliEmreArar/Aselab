@@ -1,0 +1,46 @@
+{
+  "name": "full150-eva02_clip_l14",
+  "created_at": "2026-10-06T09:01:26.340724+00:00",
+  "config": {
+    "name": "full150-eva02_clip_l14",
+    "dataset": "../../caption_samples_50/all_samples.jsonl",
+    "output_dir": "../../runs/full150/eva02_clip_l14",
+    "seed": 42,
+    "agreement_k": 10,
+    "transforms": [
+      {
+        "name": "identity"
+      }
+    ],
+    "variant_files": [
+      "../../variants/full150/variants.jsonl"
+    ],
+    "models": [
+      {
+        "name": "eva02_clip_l14",
+        "backend": "open_clip",
+        "model_id": "EVA02-L-14",
+        "pretrained": "merged2b_s4b_b131k",
+        "precision": "fp32",
+        "max_length": 77,
+        "batch_size": 8,
+        "image_retrieval": true,
+        "device": "cpu",
+        "dtype": "float32"
+      }
+    ]
+  },
+  "caption_count": 150,
+  "variant_count": 1279,
+  "models": [
+    "eva02_clip_l14"
+  ],
+  "notes": [
+    "Retrieval ranking is computed against original captions within the same domain.",
+    "Cosine scales are not calibrated across model families; compare ranks, margins and relative changes.",
+    "word_dropout is a stress test and is not guaranteed to preserve all identity evidence.",
+    "Bootstrap intervals use 2,000 deterministic resamples per model/domain/variant group.",
+    "encoder_agreement.csv compares the complete 150x150 original-caption similarity geometry.",
+    "image_retrieval files rank each caption's matching image within the same domain for multimodal encoders."
+  ]
+}

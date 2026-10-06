@@ -203,7 +203,8 @@ def main():
               'aralıkları ve çoklu karşılaştırmalar kesin üstünlük iddiasını desteklemez. '
               'Caption doğruluğu otomatik uyarılarla izlenir; insan tarafından onaylanmış '
               'görsel etiket olarak yorumlanmamalıdır.', '',
-              'Mamba-3 CUDA/Triton olmadığı için bu çalıştırmada dışarıda bırakılmıştır. '
+              'Mamba-3, full150 çalışmasının önceden tanımlı sekiz-model setine dahil değildir; '
+              'önceki pilotta ayrı bir ham causal-LM baseline olarak değerlendirilmiştir. '
               'CPU float32 kullanılmıştır; önceki pilotun sayısal hassasiyetiyle aynı değildir.']
     accounting_path = STUDY / 'generation_accounting.json'
     if accounting_path.exists():

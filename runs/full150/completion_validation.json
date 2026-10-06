@@ -1,0 +1,112 @@
+{
+  "models": [
+    {
+      "model": "clip_b16",
+      "caption_rows": 1279,
+      "text_rows": 1279,
+      "image_rows": 1279,
+      "max_cosine_error": 2.9802322398797543e-07,
+      "device": "cpu",
+      "dtype": "float32",
+      "revision": "refs/pr/16"
+    },
+    {
+      "model": "clip_l14",
+      "caption_rows": 1279,
+      "text_rows": 1279,
+      "image_rows": 1279,
+      "max_cosine_error": 2.9802322398797543e-07,
+      "device": "cpu",
+      "dtype": "float32",
+      "revision": "32bd64288804d66eefd0ccbe215aa642df71cc41"
+    },
+    {
+      "model": "siglip2_b16_224",
+      "caption_rows": 1279,
+      "text_rows": 1279,
+      "image_rows": 1279,
+      "max_cosine_error": 3.5762786865234375e-07,
+      "device": "cpu",
+      "dtype": "float32",
+      "revision": "75de2d55ec2d0b4efc50b3e9ad70dba96a7b2fa2",
+      "local_cached_main_commit": "75de2d55ec2d0b4efc50b3e9ad70dba96a7b2fa2"
+    },
+    {
+      "model": "jina_clip_v2",
+      "caption_rows": 1279,
+      "text_rows": 1279,
+      "image_rows": 1279,
+      "max_cosine_error": 3.923414143569559e-07,
+      "device": "cpu",
+      "dtype": "float32",
+      "revision": "e10d47f5691d0454a0fb5d13f46f2199b74cb436"
+    },
+    {
+      "model": "eva02_clip_l14",
+      "caption_rows": 1279,
+      "text_rows": 1279,
+      "image_rows": 1279,
+      "max_cosine_error": 3.5762786887438835e-07,
+      "device": "cpu",
+      "dtype": "float32",
+      "revision": null,
+      "local_cached_main_commit": "bf4190eb65dd5204ffb03e980108beb1200e0873"
+    },
+    {
+      "model": "altclip",
+      "caption_rows": 1279,
+      "text_rows": 1279,
+      "image_rows": 1279,
+      "max_cosine_error": 3.0350004198709257e-07,
+      "device": "cpu",
+      "dtype": "float32",
+      "revision": null,
+      "local_cached_main_commit": "17788d7d45af0e41d0f10682fe91d655ac96435c"
+    },
+    {
+      "model": "deberta_v3_base_mean_pool",
+      "caption_rows": 1279,
+      "text_rows": 1279,
+      "image_rows": 0,
+      "max_cosine_error": 3.5368475637120866e-07,
+      "device": "cpu",
+      "dtype": "float32",
+      "revision": "8ccc9b6f36199bec6961081d44eb72fb3f7353f3"
+    },
+    {
+      "model": "bge_m3",
+      "caption_rows": 1279,
+      "text_rows": 1279,
+      "image_rows": 0,
+      "max_cosine_error": 3.333044940045937e-07,
+      "device": "cpu",
+      "dtype": "float32",
+      "revision": null,
+      "local_cached_main_commit": "5617a9f61b028005a4858fdac845db406aefb181"
+    }
+  ],
+  "validation": "exact variants, cached text cosine, coverage, image R@K from ranks",
+  "image_vectors_not_cached": "Image cosine cannot be independently recomputed from the available npz files",
+  "original_host_versions": {
+    "torch": "2.10.0",
+    "transformers": "4.57.6",
+    "sentence-transformers": "5.7.0",
+    "open-clip-torch": "3.3.0",
+    "numpy": "2.4.2"
+  },
+  "resumed_models": [
+    "siglip2_b16_224",
+    "eva02_clip_l14",
+    "altclip",
+    "bge_m3"
+  ],
+  "resumed_platform": "Windows-11-10.0.26200-SP0",
+  "resumed_package_versions": {
+    "torch": "2.6.0+cu124",
+    "transformers": "4.57.6",
+    "sentence-transformers": "5.7.0",
+    "open-clip-torch": "3.3.0",
+    "numpy": "2.2.6"
+  },
+  "variants_sha256": "eaa4c928ba5e2660303c727b176449fcb0ae8634d466a67b818c33b028771a88"
+}

@@ -1,0 +1,4 @@
+model,domain,n,mean_gap,preserving_win_rate,tie_rate
+eva02_clip_l14,face,15,0.028371955429334208,1.0,0.0
+eva02_clip_l14,person,39,0.0427652534881493,1.0,0.0
+eva02_clip_l14,vehicle,31,0.14859559207370246,1.0,0.0
